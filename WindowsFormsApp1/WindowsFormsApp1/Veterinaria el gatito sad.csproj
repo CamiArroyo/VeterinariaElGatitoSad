@@ -97,6 +97,9 @@
     <EmbeddedResource Include="Interfaces\Empleados\Consultar_Empleado.resx">
       <DependentUpon>Consultar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Empleados\Modificar_Empleado.resx">
+      <DependentUpon>Modificar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Empleados\Registrar_Empleado.resx">
       <DependentUpon>Registrar_Empleado.cs</DependentUpon>
     </EmbeddedResource>

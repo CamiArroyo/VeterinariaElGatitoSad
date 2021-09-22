@@ -53,5 +53,19 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                 dataGrd_Consultar_Empleado.Rows.Add(fila);
             }
         }
+
+        private void Btn_Modificar_Empleado_Click(object sender, EventArgs e)
+        {
+            if (dataGrd_Consultar_Empleado.SelectedRows.Count == 1)
+            {
+                //LLamar Modificar
+                var id = Convert.ToInt32(dataGrd_Consultar_Empleado.SelectedRows[0].Cells["Id"].Value);
+                new Modificar_Empleado(id).Show();
+                Visible = false;
+                ConsultarEmpleados();
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
     }
 }

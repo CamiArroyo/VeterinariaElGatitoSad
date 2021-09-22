@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Matricula,
             this.Usuario,
             this.Email});
-            this.dataGrd_Consultar_Empleado.Location = new System.Drawing.Point(-11, 120);
+            this.dataGrd_Consultar_Empleado.Location = new System.Drawing.Point(3, 121);
             this.dataGrd_Consultar_Empleado.Name = "dataGrd_Consultar_Empleado";
-            this.dataGrd_Consultar_Empleado.Size = new System.Drawing.Size(892, 150);
+            this.dataGrd_Consultar_Empleado.Size = new System.Drawing.Size(842, 150);
             this.dataGrd_Consultar_Empleado.TabIndex = 0;
             this.dataGrd_Consultar_Empleado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -136,6 +136,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Btn_Modificar_Empleado.TabIndex = 2;
             this.Btn_Modificar_Empleado.Text = "Modificar empleado";
             this.Btn_Modificar_Empleado.UseVisualStyleBackColor = true;
+            this.Btn_Modificar_Empleado.Click += new System.EventHandler(this.Btn_Modificar_Empleado_Click);
             // 
             // Btn_Eliminar_Empleado
             // 
