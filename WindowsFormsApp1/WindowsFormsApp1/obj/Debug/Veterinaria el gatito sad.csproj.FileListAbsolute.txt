@@ -1,0 +1,24 @@
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.AssemblyReference.cache
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMenu_Principal.resources
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.GenerateResource.cache
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.CoreCompileInputs.cache
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\Wolfrunner\Source\Repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.FrmIniciar_sesion.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.AssemblyReference.cache
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.FrmIniciar_sesion.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMenu_Principal.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.GenerateResource.cache
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.CoreCompileInputs.cache
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Frm_Registrar_Empleado.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Frm_Consultar_Empleado.resources
