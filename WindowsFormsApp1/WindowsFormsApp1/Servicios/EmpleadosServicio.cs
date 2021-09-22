@@ -10,7 +10,7 @@ namespace WindowsFormsApp1.Servicios
 {
     class EmpleadosServicio
     {
-        
+
         private EmpleadosRepositorio empleadosRepositorio;
         public static Empleado EmpleadoLogueado;
 
@@ -46,6 +46,18 @@ namespace WindowsFormsApp1.Servicios
             return false;
         }
 
+        public Empleado GetEmpleado(long id)
+        {
+            var empleado = empleadosRepositorio.GetEmpleado(id);
+            return empleado;
+        }
+
+        public void ActualizarEmpleado(Empleado e)
+        {
+            var filasAfectadas = empleadosRepositorio.ActualizarEmpleado(e);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
     }
 
 }

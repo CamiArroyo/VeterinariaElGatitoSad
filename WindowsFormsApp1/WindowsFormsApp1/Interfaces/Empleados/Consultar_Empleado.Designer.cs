@@ -40,6 +40,8 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Usuario = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Consultar_Empleados = new System.Windows.Forms.Button();
+            this.Btn_Modificar_Empleado = new System.Windows.Forms.Button();
+            this.Btn_Eliminar_Empleado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrd_Consultar_Empleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,13 +120,31 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // btn_Consultar_Empleados
             // 
-            this.btn_Consultar_Empleados.Location = new System.Drawing.Point(99, 291);
+            this.btn_Consultar_Empleados.Location = new System.Drawing.Point(24, 78);
             this.btn_Consultar_Empleados.Name = "btn_Consultar_Empleados";
-            this.btn_Consultar_Empleados.Size = new System.Drawing.Size(75, 23);
+            this.btn_Consultar_Empleados.Size = new System.Drawing.Size(111, 23);
             this.btn_Consultar_Empleados.TabIndex = 1;
-            this.btn_Consultar_Empleados.Text = "Consultar";
+            this.btn_Consultar_Empleados.Text = "Consultar empleado";
             this.btn_Consultar_Empleados.UseVisualStyleBackColor = true;
             this.btn_Consultar_Empleados.Click += new System.EventHandler(this.btn_Consultar_Empleados_Click);
+            // 
+            // Btn_Modificar_Empleado
+            // 
+            this.Btn_Modificar_Empleado.Location = new System.Drawing.Point(564, 291);
+            this.Btn_Modificar_Empleado.Name = "Btn_Modificar_Empleado";
+            this.Btn_Modificar_Empleado.Size = new System.Drawing.Size(111, 23);
+            this.Btn_Modificar_Empleado.TabIndex = 2;
+            this.Btn_Modificar_Empleado.Text = "Modificar empleado";
+            this.Btn_Modificar_Empleado.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Eliminar_Empleado
+            // 
+            this.Btn_Eliminar_Empleado.Location = new System.Drawing.Point(691, 291);
+            this.Btn_Eliminar_Empleado.Name = "Btn_Eliminar_Empleado";
+            this.Btn_Eliminar_Empleado.Size = new System.Drawing.Size(111, 23);
+            this.Btn_Eliminar_Empleado.TabIndex = 3;
+            this.Btn_Eliminar_Empleado.Text = "Eliminar empleado";
+            this.Btn_Eliminar_Empleado.UseVisualStyleBackColor = true;
             // 
             // Frm_Consultar_Empleado
             // 
@@ -132,6 +152,8 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(847, 450);
+            this.Controls.Add(this.Btn_Eliminar_Empleado);
+            this.Controls.Add(this.Btn_Modificar_Empleado);
             this.Controls.Add(this.btn_Consultar_Empleados);
             this.Controls.Add(this.dataGrd_Consultar_Empleado);
             this.Name = "Frm_Consultar_Empleado";
@@ -155,5 +177,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         private System.Windows.Forms.DataGridViewTextBoxColumn Usuario;
         private System.Windows.Forms.DataGridViewTextBoxColumn Email;
         private System.Windows.Forms.Button btn_Consultar_Empleados;
+        private System.Windows.Forms.Button Btn_Modificar_Empleado;
+        private System.Windows.Forms.Button Btn_Eliminar_Empleado;
     }
 }

@@ -22,8 +22,6 @@ namespace WindowsFormsApp1.RepositoriosBD
                 EmpleadoResultado = new Empleado();
                 EmpleadoResultado.usuario = row["usuario"].ToString();
                 EmpleadoResultado.id_empleado = Convert.ToInt32(row["id_empleado"]);
-
-
             }
             return EmpleadoResultado;
         }
@@ -35,17 +33,10 @@ namespace WindowsFormsApp1.RepositoriosBD
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
             return filasAfectadas;
         }
-        /*public int ActualizarEmpleado(Empleado emp)
+
+        public int ActualizarEmpleado(Empleado e)
         {
-            var sentenciaSql = $"UPDATE Empleados SET id_perfil='{u.Perfil.Id}', password='{u.Contrasenia}', email='{u.Email}' WHERE id_usuario={u.Id}";
-            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
-            return filasAfectadas;
-        }
-        */
-        public int DarBajaEmpleado(Empleado emp)
-        {
-            var estado = emp.Estado ? "S" : "N";
-            var sentenciaSql = $"UPDATE Empleados D estado='{estado}' WHERE id_usuario={u.Id}";
+            var sentenciaSql = $"UPDATE EMPLEADOS SET nombre='{e.nombre}', apellido='{e.apellido}', password='{e.password}',email='{e.email}' where id_empleado={e.id_empleado}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
@@ -55,24 +46,43 @@ namespace WindowsFormsApp1.RepositoriosBD
             var lista_empleados = new List<Empleado>();
             var sentenciaSql = $"SELECT * FROM EMPLEADOS";
             var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
-            var date1 = new DateTime(2022, 01, 01, 01, 01, 01);
 
             foreach (DataRow fila in tablaResultado.Rows)
             {
-                var emp = new Empleado();
-                emp.id_empleado = Convert.ToInt32(fila["id_empleado"] is DBNull ? " " : fila["id_empleado"]);
-                emp.nro_doc_empleado = Convert.ToString(fila["nro_doc_emp"] is DBNull ? " " : fila["nro_doc_emp"]);
-                emp.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
-                emp.apellido = Convert.ToString(fila["apellido"] is DBNull ? " " : fila["apellido"]);
-                emp.fecha_nacimiento = Convert.ToDateTime(fila["fecha_nacimiento"] is DBNull ? date1 : fila["fecha_nacimiento"]);
-                emp.fecha_ingreso = Convert.ToDateTime(fila["fecha_ingreso"] is DBNull ? date1 : fila["fecha_ingreso"]);
-                emp.matricula = Convert.ToString(fila["matricula"] is DBNull ? " " : fila["matricula"]);
-                emp.usuario = Convert.ToString(fila["usuario"] is DBNull ? " " : fila["usuario"]);
-                emp.email = Convert.ToString(fila["email"] is DBNull ? " " : fila["email"]);
-
+                var emp = MapearEmpleado(fila);
                 lista_empleados.Add(emp);
             }
             return lista_empleados;
+        }
+
+        public Empleado GetEmpleado(long id)
+        {
+            var empleado = new Empleado();
+            var sentenciaSql = $"Select * from EMPLEADOS where id_empleado={id}";
+            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
+            foreach (DataRow fila in tablaResultado.Rows)
+            {
+                empleado = MapearEmpleado(fila);
+            }
+            return empleado;
+        }
+
+        private Empleado MapearEmpleado(DataRow fila)
+        {
+            var date1 = new DateTime(2022, 01, 01, 01, 01, 01);
+
+            var empleado = new Empleado();
+            empleado.id_empleado = Convert.ToInt32(fila["id_empleado"] is DBNull ? " " : fila["id_empleado"]);
+            empleado.nro_doc_empleado = Convert.ToString(fila["nro_doc_emp"] is DBNull ? " " : fila["nro_doc_emp"]);
+            empleado.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
+            empleado.apellido = Convert.ToString(fila["apellido"] is DBNull ? " " : fila["apellido"]);
+            empleado.fecha_nacimiento = Convert.ToDateTime(fila["fecha_nacimiento"] is DBNull ? date1 : fila["fecha_nacimiento"]);
+            empleado.fecha_ingreso = Convert.ToDateTime(fila["fecha_ingreso"] is DBNull ? date1 : fila["fecha_ingreso"]);
+            empleado.matricula = Convert.ToString(fila["matricula"] is DBNull ? " " : fila["matricula"]);
+            empleado.usuario = Convert.ToString(fila["usuario"] is DBNull ? " " : fila["usuario"]);
+            empleado.email = Convert.ToString(fila["email"] is DBNull ? " " : fila["email"]);
+
+            return empleado;
         }
     }
 
