@@ -146,6 +146,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Btn_Eliminar_Empleado.TabIndex = 3;
             this.Btn_Eliminar_Empleado.Text = "Eliminar empleado";
             this.Btn_Eliminar_Empleado.UseVisualStyleBackColor = true;
+            this.Btn_Eliminar_Empleado.Click += new System.EventHandler(this.Btn_Eliminar_Empleado_Click);
             // 
             // Frm_Consultar_Empleado
             // 
