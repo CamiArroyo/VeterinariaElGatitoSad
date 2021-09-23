@@ -58,6 +58,14 @@ namespace WindowsFormsApp1.Servicios
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
+
+        public void DarBajaEmpleado(Empleado e)
+        {
+            var filasAfectadas = empleadosRepositorio.DarBajaEmpleado(e);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
     }
 
 }

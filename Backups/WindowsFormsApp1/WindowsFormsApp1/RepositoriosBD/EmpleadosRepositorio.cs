@@ -84,6 +84,15 @@ namespace WindowsFormsApp1.RepositoriosBD
 
             return empleado;
         }
+
+        public int DarBajaEmpleado(Empleado e)
+        {
+            //completar
+            var sentenciaSql = $"Delete from EMPLEADOS where id_empleado={e.id_empleado}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
+        
     }
 
 }  

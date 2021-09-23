@@ -13,11 +13,13 @@ using WindowsFormsApp1.Entidades;
 namespace WindowsFormsApp1.Interfaces.Empleados
 {
     public partial class Frm_Consultar_Empleado : Form
-    {
+    { 
+        private Empleado emp;
         private EmpleadosServicio emp_serv;
-        public Frm_Consultar_Empleado()
+        public Frm_Consultar_Empleado(long id)
         {
             emp_serv = new EmpleadosServicio();
+            emp = emp_serv.GetEmpleado(id);
             InitializeComponent();
         }
 
@@ -28,8 +30,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
 
         private void btn_Consultar_Empleados_Click(object sender, EventArgs e)
         {
-            ConsultarEmpleados();
-            
+            ConsultarEmpleados();      
         }
         private void ConsultarEmpleados()
         {
@@ -66,6 +67,17 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void Btn_Eliminar_Empleado_Click(object sender, EventArgs e)
+        {
+            DarBajaEmpleado();
+        }
+
+        private void DarBajaEmpleado()
+        {
+            emp_serv.DarBajaEmpleado(emp);
+            MessageBox.Show("La operación se realizó con éxito", "Información", MessageBoxButtons.OK);
         }
     }
 }

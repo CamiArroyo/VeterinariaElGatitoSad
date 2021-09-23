@@ -98,13 +98,14 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             var password_1 = Txt_Password.Text;
             var password_2 = Txt_Repetir_Password.Text;
             var email = Txt_Email.Text;
+            var estado = "Activo";
 
             if (password_1 != password_2)
             {
                 MessageBox.Show("Las contraseñas no coinciden", "Error: Contraseña invalida", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-            var emp_ingresado = new Empleado(DNI, nombre, apellido, fecha_nac, fecha_ing, matricula, user, password_1, email);
+            var emp_ingresado = new Empleado(DNI, nombre, apellido, fecha_nac, fecha_ing, matricula, user, password_1, email, estado);
             emp = emp_ingresado;
             return true;
             

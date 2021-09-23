@@ -73,21 +73,23 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // BtnM_Cancelar
             // 
-            this.BtnM_Cancelar.Location = new System.Drawing.Point(259, 385);
+            this.BtnM_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnM_Cancelar.Location = new System.Drawing.Point(258, 415);
             this.BtnM_Cancelar.Name = "BtnM_Cancelar";
             this.BtnM_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.BtnM_Cancelar.TabIndex = 41;
             this.BtnM_Cancelar.Text = "Cancelar";
-            this.BtnM_Cancelar.UseVisualStyleBackColor = true;
+            this.BtnM_Cancelar.UseVisualStyleBackColor = false;
             // 
             // BtnM_Guardar_Cambios
             // 
-            this.BtnM_Guardar_Cambios.Location = new System.Drawing.Point(133, 385);
+            this.BtnM_Guardar_Cambios.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnM_Guardar_Cambios.Location = new System.Drawing.Point(133, 415);
             this.BtnM_Guardar_Cambios.Name = "BtnM_Guardar_Cambios";
             this.BtnM_Guardar_Cambios.Size = new System.Drawing.Size(120, 23);
             this.BtnM_Guardar_Cambios.TabIndex = 40;
             this.BtnM_Guardar_Cambios.Text = "Guardar cambios";
-            this.BtnM_Guardar_Cambios.UseVisualStyleBackColor = true;
+            this.BtnM_Guardar_Cambios.UseVisualStyleBackColor = false;
             this.BtnM_Guardar_Cambios.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // TxtM_Email
@@ -246,6 +248,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(351, 450);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TxtM_DNI);
@@ -270,6 +273,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Modificar_Empleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar_Empleado";
             this.Load += new System.EventHandler(this.Modificar_Empleado_Load);
             this.ResumeLayout(false);
