@@ -65,6 +65,12 @@
     <Compile Include="Interfaces\Empleados\Consultar_Empleado.Designer.cs">
       <DependentUpon>Consultar_Empleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Empleados\Eliminar_Empleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Empleados\Eliminar_Empleado.Designer.cs">
+      <DependentUpon>Eliminar_Empleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Empleados\Modificar_Empleado.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     <Compile Include="Servicios\EmpleadosServicio.cs" />
     <EmbeddedResource Include="Interfaces\Empleados\Consultar_Empleado.resx">
       <DependentUpon>Consultar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Empleados\Eliminar_Empleado.resx">
+      <DependentUpon>Eliminar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Empleados\Modificar_Empleado.resx">
       <DependentUpon>Modificar_Empleado.cs</DependentUpon>

@@ -38,8 +38,10 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             dataGrd_Consultar_Empleado.Rows.Clear();
             foreach (var emp in lista_emp)
             {
-                var fila = new String[]
+                if (emp.estado != "Inactivo")
                 {
+                    var fila = new String[]
+                    {
                     emp.id_empleado.ToString(),
                     emp.nro_doc_empleado,
                     emp.nombre,
@@ -50,9 +52,10 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                     emp.usuario,
                     emp.email,
                     emp.estado
-                };
+                    };
 
-                dataGrd_Consultar_Empleado.Rows.Add(fila);
+                    dataGrd_Consultar_Empleado.Rows.Add(fila);
+                }
             }
         }
 

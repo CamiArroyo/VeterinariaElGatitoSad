@@ -212,22 +212,24 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // Btn_Registrar
             // 
+            this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Registrar.Location = new System.Drawing.Point(66, 467);
             this.Btn_Registrar.Name = "Btn_Registrar";
             this.Btn_Registrar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Registrar.TabIndex = 19;
             this.Btn_Registrar.Text = "Registrar";
-            this.Btn_Registrar.UseVisualStyleBackColor = true;
+            this.Btn_Registrar.UseVisualStyleBackColor = false;
             this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // Btn_Cancelar
             // 
+            this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Cancelar.Location = new System.Drawing.Point(211, 467);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(75, 23);
             this.Btn_Cancelar.TabIndex = 20;
             this.Btn_Cancelar.Text = "Cancelar";
-            this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.UseVisualStyleBackColor = false;
             // 
             // label10
             // 
@@ -252,7 +254,8 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(374, 552);
+            this.BackColor = System.Drawing.Color.MistyRose;
+            this.ClientSize = new System.Drawing.Size(374, 512);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.Txt_Repetir_Password);
             this.Controls.Add(this.Btn_Cancelar);
@@ -276,6 +279,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_DNI);
             this.Name = "Frm_Registrar_Empleado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar_Empleado";
             this.Load += new System.EventHandler(this.Frm_Registrar_Empleado_Load);
             this.ResumeLayout(false);

@@ -65,7 +65,5 @@ namespace WindowsFormsApp1.Servicios
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
-
     }
-
 }

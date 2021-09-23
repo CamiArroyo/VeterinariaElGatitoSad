@@ -28,15 +28,15 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int RegistrarEmpleado(Empleado emp)
         {
-            var sentenciaSQL = $"INSERT INTO Empleados (nro_doc_emp, nombre, apellido, fecha_nacimiento, fecha_ingreso, matricula,usuario,password,email)" +
-                $" VALUES({emp.nro_doc_empleado},'{emp.nombre}','{emp.apellido}','{emp.fecha_nacimiento}','{emp.fecha_ingreso}','{emp.matricula}','{emp.usuario}','{emp.password}','{emp.email}')";
+            var sentenciaSQL = $"INSERT INTO Empleados (nro_doc_emp, nombre, apellido, fecha_nacimiento, fecha_ingreso, matricula,usuario,password,email,estado)" +
+                $" VALUES({emp.nro_doc_empleado},'{emp.nombre}','{emp.apellido}','{emp.fecha_nacimiento}','{emp.fecha_ingreso}','{emp.matricula}','{emp.usuario}','{emp.password}','{emp.email}', '{emp.estado}')";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
             return filasAfectadas;
         }
 
         public int ActualizarEmpleado(Empleado e)
         {
-            var sentenciaSql = $"UPDATE EMPLEADOS SET nombre='{e.nombre}', apellido='{e.apellido}', password='{e.password}',email='{e.email}' where id_empleado={e.id_empleado}";
+            var sentenciaSql = $"UPDATE EMPLEADOS SET nombre='{e.nombre}', apellido='{e.apellido}', password='{e.password}',email='{e.email}', estado='{e.estado}' where id_empleado={e.id_empleado}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
@@ -81,18 +81,16 @@ namespace WindowsFormsApp1.RepositoriosBD
             empleado.matricula = Convert.ToString(fila["matricula"] is DBNull ? " " : fila["matricula"]);
             empleado.usuario = Convert.ToString(fila["usuario"] is DBNull ? " " : fila["usuario"]);
             empleado.email = Convert.ToString(fila["email"] is DBNull ? " " : fila["email"]);
+            empleado.estado = Convert.ToString(fila["estado"] is DBNull ? "Inactivo" : fila["estado"]);
 
             return empleado;
         }
-
         public int DarBajaEmpleado(Empleado e)
         {
             //completar
-            var sentenciaSql = $"Delete from EMPLEADOS where id_empleado={e.id_empleado}";
+            var sentenciaSql = $"UPDATE Empleados SET estado='Inactivo' WHERE id_empleado={e.id_empleado}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
-        
     }
-
 }  

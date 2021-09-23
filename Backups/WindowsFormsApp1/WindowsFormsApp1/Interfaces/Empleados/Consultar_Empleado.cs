@@ -13,13 +13,13 @@ using WindowsFormsApp1.Entidades;
 namespace WindowsFormsApp1.Interfaces.Empleados
 {
     public partial class Frm_Consultar_Empleado : Form
-    { 
+    {
         private Empleado emp;
         private EmpleadosServicio emp_serv;
-        public Frm_Consultar_Empleado(long id)
+
+        public Frm_Consultar_Empleado()
         {
             emp_serv = new EmpleadosServicio();
-            emp = emp_serv.GetEmpleado(id);
             InitializeComponent();
         }
 
@@ -38,8 +38,10 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             dataGrd_Consultar_Empleado.Rows.Clear();
             foreach (var emp in lista_emp)
             {
-                var fila = new String[]
+                if (emp.estado != "Inactivo")
                 {
+                    var fila = new String[]
+                    {
                     emp.id_empleado.ToString(),
                     emp.nro_doc_empleado,
                     emp.nombre,
@@ -48,10 +50,12 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                     emp.fecha_ingreso.ToString(),
                     emp.matricula,
                     emp.usuario,
-                    emp.email
-                };
+                    emp.email,
+                    emp.estado
+                    };
 
-                dataGrd_Consultar_Empleado.Rows.Add(fila);
+                    dataGrd_Consultar_Empleado.Rows.Add(fila);
+                }
             }
         }
 
@@ -71,13 +75,16 @@ namespace WindowsFormsApp1.Interfaces.Empleados
 
         private void Btn_Eliminar_Empleado_Click(object sender, EventArgs e)
         {
-            DarBajaEmpleado();
-        }
-
-        private void DarBajaEmpleado()
-        {
-            emp_serv.DarBajaEmpleado(emp);
-            MessageBox.Show("La operación se realizó con éxito", "Información", MessageBoxButtons.OK);
+            if (dataGrd_Consultar_Empleado.SelectedRows.Count == 1)
+            {
+                //LLamar Modificar
+                var id = Convert.ToInt32(dataGrd_Consultar_Empleado.SelectedRows[0].Cells["Id"].Value);
+                new Eliminar_Empleado(id).Show();
+                Visible = false;
+                ConsultarEmpleados();
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
         }
     }
 }

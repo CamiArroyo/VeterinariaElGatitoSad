@@ -18,8 +18,9 @@ namespace WindowsFormsApp1.Entidades
         public string usuario { get; set; }
         public string password { get; set; }
         public string email { get; set; }
+        public string estado { get; set; }
 
-        public Empleado(string dni, string name, string surname, DateTime fecha_nac, DateTime fecha_ing, string matri, string user, string pass, string mail)
+        public Empleado(string dni, string name, string surname, DateTime fecha_nac, DateTime fecha_ing, string matri, string user, string pass, string mail, string estado)
         {
             nro_doc_empleado = dni;
             nombre = name;
@@ -30,7 +31,7 @@ namespace WindowsFormsApp1.Entidades
             usuario = user;
             password = pass;
             email = mail;
-
+            this.estado = estado;
         }
 
         public Empleado()
