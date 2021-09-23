@@ -37,7 +37,9 @@ namespace WindowsFormsApp1.Interfaces
             this.label2 = new System.Windows.Forms.Label();
             this.txtbox_Usuario = new System.Windows.Forms.TextBox();
             this.txtbox_Password = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // fileSystemWatcher1
@@ -48,9 +50,9 @@ namespace WindowsFormsApp1.Interfaces
             // btn_Ingresar
             // 
             this.btn_Ingresar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.btn_Ingresar.Location = new System.Drawing.Point(129, 149);
+            this.btn_Ingresar.Location = new System.Drawing.Point(129, 303);
             this.btn_Ingresar.Name = "btn_Ingresar";
-            this.btn_Ingresar.Size = new System.Drawing.Size(75, 23);
+            this.btn_Ingresar.Size = new System.Drawing.Size(75, 34);
             this.btn_Ingresar.TabIndex = 0;
             this.btn_Ingresar.Text = "Ingresar";
             this.btn_Ingresar.UseVisualStyleBackColor = false;
@@ -59,17 +61,18 @@ namespace WindowsFormsApp1.Interfaces
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.button2.Location = new System.Drawing.Point(235, 149);
+            this.button2.Location = new System.Drawing.Point(235, 303);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(75, 34);
             this.button2.TabIndex = 1;
             this.button2.Text = "Cancelar";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(46, 52);
+            this.label1.Location = new System.Drawing.Point(46, 220);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 13);
             this.label1.TabIndex = 2;
@@ -80,7 +83,7 @@ namespace WindowsFormsApp1.Interfaces
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(46, 99);
+            this.label2.Location = new System.Drawing.Point(46, 262);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 3;
@@ -88,7 +91,7 @@ namespace WindowsFormsApp1.Interfaces
             // 
             // txtbox_Usuario
             // 
-            this.txtbox_Usuario.Location = new System.Drawing.Point(129, 49);
+            this.txtbox_Usuario.Location = new System.Drawing.Point(129, 217);
             this.txtbox_Usuario.MaxLength = 50;
             this.txtbox_Usuario.Name = "txtbox_Usuario";
             this.txtbox_Usuario.Size = new System.Drawing.Size(181, 20);
@@ -97,18 +100,29 @@ namespace WindowsFormsApp1.Interfaces
             // 
             // txtbox_Password
             // 
-            this.txtbox_Password.Location = new System.Drawing.Point(129, 92);
+            this.txtbox_Password.Location = new System.Drawing.Point(129, 262);
             this.txtbox_Password.MaxLength = 50;
             this.txtbox_Password.Name = "txtbox_Password";
             this.txtbox_Password.Size = new System.Drawing.Size(181, 20);
             this.txtbox_Password.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(129, 56);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(181, 136);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // FrmIniciar_sesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(362, 205);
+            this.ClientSize = new System.Drawing.Size(432, 392);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtbox_Password);
             this.Controls.Add(this.txtbox_Usuario);
             this.Controls.Add(this.label2);
@@ -121,6 +135,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Text = "Iniciar_sesion";
             this.Load += new System.EventHandler(this.FrmIniciar_sesion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.fileSystemWatcher1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -135,5 +150,6 @@ namespace WindowsFormsApp1.Interfaces
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_Ingresar;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

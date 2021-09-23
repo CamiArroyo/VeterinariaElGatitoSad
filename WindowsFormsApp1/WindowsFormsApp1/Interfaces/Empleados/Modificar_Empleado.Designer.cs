@@ -80,6 +80,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.BtnM_Cancelar.TabIndex = 41;
             this.BtnM_Cancelar.Text = "Cancelar";
             this.BtnM_Cancelar.UseVisualStyleBackColor = false;
+            this.BtnM_Cancelar.Click += new System.EventHandler(this.BtnM_Cancelar_Click);
             // 
             // BtnM_Guardar_Cambios
             // 

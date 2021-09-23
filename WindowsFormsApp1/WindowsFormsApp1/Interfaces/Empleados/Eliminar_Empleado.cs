@@ -56,5 +56,16 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         {
             this.Dispose();
         }
+
+        private void LblE_Confirmar_Operacion_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnE_Cancelar_Click(object sender, EventArgs e)
+        {
+            Form menu = new FrmMenu_Principal();
+            menu.Show();
+        }
     }
 }

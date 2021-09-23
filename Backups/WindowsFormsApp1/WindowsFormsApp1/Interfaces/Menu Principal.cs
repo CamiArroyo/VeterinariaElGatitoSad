@@ -86,13 +86,17 @@ namespace WindowsFormsApp1
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
         }
 
         private void verUsuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form consultar_emp = new Frm_Consultar_Empleado();
             consultar_emp.Show();
+        }
+
+        private void BtnMP_Salir_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

@@ -93,5 +93,12 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             TxtM_Repetir_Password.Text = emp.password;
             TxtM_Email.Text = emp.email;
         }
+
+        private void BtnM_Cancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            Form menu = new FrmMenu_Principal();
+            menu.Show();
+        }
     }
 }

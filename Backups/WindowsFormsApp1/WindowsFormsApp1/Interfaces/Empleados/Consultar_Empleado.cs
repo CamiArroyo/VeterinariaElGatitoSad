@@ -31,6 +31,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         private void btn_Consultar_Empleados_Click(object sender, EventArgs e)
         {
             ConsultarEmpleados();      
+            
         }
         private void ConsultarEmpleados()
         {
@@ -38,7 +39,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             dataGrd_Consultar_Empleado.Rows.Clear();
             foreach (var emp in lista_emp)
             {
-                if (emp.estado != "Inactivo")
+                if (emp.estado != "Inactivo" && emp.usuario != "admin")
                 {
                     var fila = new String[]
                     {
@@ -85,6 +86,45 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void BtnC_Deshabilitados_Click(object sender, EventArgs e)
+        {
+            MostrarDeshabilitados();
+        }
+
+        private void MostrarDeshabilitados() 
+        {
+            var lista_emp = emp_serv.GetEmpleados();
+            dataGrd_Consultar_Empleado.Rows.Clear();
+            foreach (var emp in lista_emp)
+            {
+                if (emp.estado == "Inactivo")
+                {
+                    var fila = new String[]
+                    {
+                    emp.id_empleado.ToString(),
+                    emp.nro_doc_empleado,
+                    emp.nombre,
+                    emp.apellido,
+                    emp.fecha_nacimiento.ToString(),
+                    emp.fecha_ingreso.ToString(),
+                    emp.matricula,
+                    emp.usuario,
+                    emp.email,
+                    emp.estado
+                    };
+
+                    dataGrd_Consultar_Empleado.Rows.Add(fila);
+                }
+            }
+        }
+
+        private void BtnC_Salir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form menu = new FrmMenu_Principal();
+            menu.Show();
         }
     }
 }

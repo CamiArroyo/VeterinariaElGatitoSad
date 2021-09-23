@@ -213,9 +213,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // Btn_Registrar
             // 
             this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar.Location = new System.Drawing.Point(66, 467);
+            this.Btn_Registrar.Location = new System.Drawing.Point(66, 457);
             this.Btn_Registrar.Name = "Btn_Registrar";
-            this.Btn_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Registrar.Size = new System.Drawing.Size(75, 33);
             this.Btn_Registrar.TabIndex = 19;
             this.Btn_Registrar.Text = "Registrar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
@@ -224,12 +224,13 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(211, 467);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(211, 457);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(75, 33);
             this.Btn_Cancelar.TabIndex = 20;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // label10
             // 

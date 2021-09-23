@@ -57,6 +57,8 @@ namespace WindowsFormsApp1
             this.dueñosYMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Bienvenido = new System.Windows.Forms.Label();
+            this.BtnMP_Salir = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -117,7 +119,7 @@ namespace WindowsFormsApp1
             this.listadosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(729, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(620, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -269,12 +271,34 @@ namespace WindowsFormsApp1
             this.diagnosticosYConsultasToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.diagnosticosYConsultasToolStripMenuItem.Text = "Diagnosticos y consultas";
             // 
+            // Bienvenido
+            // 
+            this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenido.Location = new System.Drawing.Point(189, 181);
+            this.Bienvenido.Name = "Bienvenido";
+            this.Bienvenido.Size = new System.Drawing.Size(297, 54);
+            this.Bienvenido.TabIndex = 1;
+            this.Bienvenido.Text = "¡¡Bienvenido!!";
+            // 
+            // BtnMP_Salir
+            // 
+            this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnMP_Salir.Location = new System.Drawing.Point(492, 388);
+            this.BtnMP_Salir.Name = "BtnMP_Salir";
+            this.BtnMP_Salir.Size = new System.Drawing.Size(116, 39);
+            this.BtnMP_Salir.TabIndex = 2;
+            this.BtnMP_Salir.Text = "Salir";
+            this.BtnMP_Salir.UseVisualStyleBackColor = false;
+            this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
+            // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(729, 585);
+            this.ClientSize = new System.Drawing.Size(620, 439);
+            this.Controls.Add(this.BtnMP_Salir);
+            this.Controls.Add(this.Bienvenido);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
@@ -317,6 +341,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem iniciarSesionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verUsuariosToolStripMenuItem;
+        private System.Windows.Forms.Label Bienvenido;
+        private System.Windows.Forms.Button BtnMP_Salir;
     }
 }
 
