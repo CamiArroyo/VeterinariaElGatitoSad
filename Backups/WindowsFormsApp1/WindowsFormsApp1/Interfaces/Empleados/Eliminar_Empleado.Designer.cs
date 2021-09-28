@@ -78,7 +78,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Controls.Add(this.BtnE_Empleado);
             this.Name = "Eliminar_Empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar_Empleado";
+            this.Text = "Eliminar";
             this.Load += new System.EventHandler(this.Eliminar_Empleado_Load);
             this.ResumeLayout(false);
 

@@ -34,8 +34,8 @@ namespace WindowsFormsApp1
             this.registrarNuevaMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verContactosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarLaboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verContactosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +59,9 @@ namespace WindowsFormsApp1
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Bienvenido = new System.Windows.Forms.Label();
             this.BtnMP_Salir = new System.Windows.Forms.Button();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSintomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarSintomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,18 +89,12 @@ namespace WindowsFormsApp1
             // laboratorioToolStripMenuItem
             // 
             this.laboratorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verContactosToolStripMenuItem,
-            this.registrarLaboratorioToolStripMenuItem});
+            this.registrarLaboratorioToolStripMenuItem,
+            this.verContactosToolStripMenuItem});
             this.laboratorioToolStripMenuItem.Name = "laboratorioToolStripMenuItem";
             this.laboratorioToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.laboratorioToolStripMenuItem.Text = "Laboratorios";
             this.laboratorioToolStripMenuItem.Click += new System.EventHandler(this.laboratorioToolStripMenuItem_Click);
-            // 
-            // verContactosToolStripMenuItem
-            // 
-            this.verContactosToolStripMenuItem.Name = "verContactosToolStripMenuItem";
-            this.verContactosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.verContactosToolStripMenuItem.Text = "Ver contactos";
             // 
             // registrarLaboratorioToolStripMenuItem
             // 
@@ -105,6 +102,13 @@ namespace WindowsFormsApp1
             this.registrarLaboratorioToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.registrarLaboratorioToolStripMenuItem.Text = "Registrar laboratorio";
             this.registrarLaboratorioToolStripMenuItem.Click += new System.EventHandler(this.registrarLaboratorioToolStripMenuItem_Click);
+            // 
+            // verContactosToolStripMenuItem
+            // 
+            this.verContactosToolStripMenuItem.Name = "verContactosToolStripMenuItem";
+            this.verContactosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.verContactosToolStripMenuItem.Text = "Ver contactos";
+            this.verContactosToolStripMenuItem.Click += new System.EventHandler(this.verContactosToolStripMenuItem_Click);
             // 
             // menuStrip1
             // 
@@ -116,10 +120,11 @@ namespace WindowsFormsApp1
             this.laboratorioToolStripMenuItem,
             this.diagnosticosToolStripMenuItem,
             this.reportesToolStripMenuItem,
-            this.listadosToolStripMenuItem});
+            this.listadosToolStripMenuItem,
+            this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(620, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(706, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -274,7 +279,7 @@ namespace WindowsFormsApp1
             // Bienvenido
             // 
             this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.Location = new System.Drawing.Point(189, 181);
+            this.Bienvenido.Location = new System.Drawing.Point(159, 180);
             this.Bienvenido.Name = "Bienvenido";
             this.Bienvenido.Size = new System.Drawing.Size(297, 54);
             this.Bienvenido.TabIndex = 1;
@@ -291,12 +296,34 @@ namespace WindowsFormsApp1
             this.BtnMP_Salir.UseVisualStyleBackColor = false;
             this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verSintomasToolStripMenuItem,
+            this.registrarSintomaToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
+            this.toolStripMenuItem1.Text = "Sintomas";
+            // 
+            // verSintomasToolStripMenuItem
+            // 
+            this.verSintomasToolStripMenuItem.Name = "verSintomasToolStripMenuItem";
+            this.verSintomasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.verSintomasToolStripMenuItem.Text = "Ver sintomas";
+            this.verSintomasToolStripMenuItem.Click += new System.EventHandler(this.verSintomasToolStripMenuItem_Click);
+            // 
+            // registrarSintomaToolStripMenuItem
+            // 
+            this.registrarSintomaToolStripMenuItem.Name = "registrarSintomaToolStripMenuItem";
+            this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.registrarSintomaToolStripMenuItem.Text = "Registrar sintoma";
+            // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(620, 439);
+            this.ClientSize = new System.Drawing.Size(706, 439);
             this.Controls.Add(this.BtnMP_Salir);
             this.Controls.Add(this.Bienvenido);
             this.Controls.Add(this.menuStrip1);
@@ -343,6 +370,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem verUsuariosToolStripMenuItem;
         private System.Windows.Forms.Label Bienvenido;
         private System.Windows.Forms.Button BtnMP_Salir;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem verSintomasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarSintomaToolStripMenuItem;
     }
 }
 

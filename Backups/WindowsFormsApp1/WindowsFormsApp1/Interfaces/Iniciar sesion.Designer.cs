@@ -103,6 +103,7 @@ namespace WindowsFormsApp1.Interfaces
             this.txtbox_Password.Location = new System.Drawing.Point(129, 262);
             this.txtbox_Password.MaxLength = 50;
             this.txtbox_Password.Name = "txtbox_Password";
+            this.txtbox_Password.PasswordChar = '*';
             this.txtbox_Password.Size = new System.Drawing.Size(181, 20);
             this.txtbox_Password.TabIndex = 5;
             // 

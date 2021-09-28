@@ -20,7 +20,6 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         public Frm_Registrar_Empleado()
         {
             emp_serv = new EmpleadosServicio();
-
             InitializeComponent();
 
         }
@@ -122,6 +121,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             MessageBox.Show("El empleado se registró con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
+
         private void Txt_Repetir_Password_TextChanged(object sender, EventArgs e)
         {
 

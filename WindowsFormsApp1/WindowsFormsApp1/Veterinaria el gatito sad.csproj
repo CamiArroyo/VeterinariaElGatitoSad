@@ -115,6 +115,12 @@
     <Compile Include="Interfaces\Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.Designer.cs">
+      <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Sintomas\Registrar_Sintoma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +134,21 @@
     <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
     <Compile Include="Servicios\EmpleadosServicio.cs" />
     <Compile Include="Servicios\LaboratoriosServicio.cs" />
+    <Compile Include="Sintomas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Sintomas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Vacunas.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Vacunas.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Interfaces\Empleados\Consultar_Empleado.resx">
       <DependentUpon>Consultar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +176,9 @@
     <EmbeddedResource Include="Interfaces\Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Sintomas\Consultar_Sintomas.resx">
+      <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Sintomas\Registrar_Sintoma.resx">
       <DependentUpon>Registrar_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
@@ -166,6 +190,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -176,12 +201,46 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Sintomas.xsc">
+      <DependentUpon>Sintomas.xsd</DependentUpon>
+    </None>
+    <None Include="Sintomas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Sintomas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Sintomas.xss">
+      <DependentUpon>Sintomas.xsd</DependentUpon>
+    </None>
+    <None Include="Vacunas.xsc">
+      <DependentUpon>Vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="Vacunas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Vacunas.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Vacunas.xss">
+      <DependentUpon>Vacunas.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <Folder Include="Recursos\" />
+    <None Include="Recursos\Sintomas.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

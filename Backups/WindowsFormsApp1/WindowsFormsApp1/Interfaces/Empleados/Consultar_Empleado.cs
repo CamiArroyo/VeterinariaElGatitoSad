@@ -14,7 +14,6 @@ namespace WindowsFormsApp1.Interfaces.Empleados
 {
     public partial class Frm_Consultar_Empleado : Form
     {
-        private Empleado emp;
         private EmpleadosServicio emp_serv;
 
         public Frm_Consultar_Empleado()

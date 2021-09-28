@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
+using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1
 {
@@ -106,6 +107,12 @@ namespace WindowsFormsApp1
             Form Clab = new Consultar_Laboratorio();
             Clab.Show();
             this.Dispose();
+        }
+
+        private void verSintomasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form consultar_sint = new Frm_Consultar_Sintoma();
+            consultar_sint.Show();
         }
     }
 }
