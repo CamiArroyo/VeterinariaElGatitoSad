@@ -54,7 +54,7 @@
     <Compile Include="Entidades\Dueño.cs" />
     <Compile Include="Entidades\Empleado.cs" />
     <Compile Include="Entidades\Especie.cs" />
-    <Compile Include="Entidades\Lavoratorio.cs" />
+    <Compile Include="Entidades\Laboratorio.cs" />
     <Compile Include="Entidades\Mascota.cs" />
     <Compile Include="Entidades\Medicamento.cs" />
     <Compile Include="Entidades\MedicinaXConsulta.cs" />
@@ -91,6 +91,24 @@
     <Compile Include="Interfaces\Iniciar sesion.Designer.cs">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Laboratorios\Consultar_Laboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Consultar_Laboratorio.Designer.cs">
+      <DependentUpon>Consultar_Laboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Eliminar_Laboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Eliminar_Laboratorio.Designer.cs">
+      <DependentUpon>Eliminar_Laboratorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.Designer.cs">
+      <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Menu Principal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,7 +125,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoriosBD\DBHelper.cs" />
     <Compile Include="RepositoriosBD\EmpleadosRepositorio.cs" />
+    <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
     <Compile Include="Servicios\EmpleadosServicio.cs" />
+    <Compile Include="Servicios\LaboratoriosServicio.cs" />
     <EmbeddedResource Include="Interfaces\Empleados\Consultar_Empleado.resx">
       <DependentUpon>Consultar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
@@ -122,6 +142,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Iniciar sesion.resx">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Laboratorios\Consultar_Laboratorio.resx">
+      <DependentUpon>Consultar_Laboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Laboratorios\Eliminar_Laboratorio.resx">
+      <DependentUpon>Eliminar_Laboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Laboratorios\Registrar_Laboratorio.resx">
+      <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>

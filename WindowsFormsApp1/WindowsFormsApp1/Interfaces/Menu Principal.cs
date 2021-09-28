@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Interfaces.Empleados;
+using WindowsFormsApp1.Interfaces.Laboratorios;
 
 namespace WindowsFormsApp1
 {
@@ -71,7 +72,8 @@ namespace WindowsFormsApp1
 
         private void registrarLaboratorioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Form labs = new Registrar_Laboratorio();
+            labs.Show();
         }
 
         private void registrarDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -97,6 +99,13 @@ namespace WindowsFormsApp1
         private void BtnMP_Salir_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void verContactosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form Clab = new Consultar_Laboratorio();
+            Clab.Show();
+            this.Dispose();
         }
     }
 }

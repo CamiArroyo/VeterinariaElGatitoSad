@@ -86,8 +86,8 @@ namespace WindowsFormsApp1
             // laboratorioToolStripMenuItem
             // 
             this.laboratorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verContactosToolStripMenuItem,
-            this.registrarLaboratorioToolStripMenuItem});
+            this.registrarLaboratorioToolStripMenuItem,
+            this.verContactosToolStripMenuItem});
             this.laboratorioToolStripMenuItem.Name = "laboratorioToolStripMenuItem";
             this.laboratorioToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
             this.laboratorioToolStripMenuItem.Text = "Laboratorios";
@@ -98,6 +98,7 @@ namespace WindowsFormsApp1
             this.verContactosToolStripMenuItem.Name = "verContactosToolStripMenuItem";
             this.verContactosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
             this.verContactosToolStripMenuItem.Text = "Ver contactos";
+            this.verContactosToolStripMenuItem.Click += new System.EventHandler(this.verContactosToolStripMenuItem_Click);
             // 
             // registrarLaboratorioToolStripMenuItem
             // 
@@ -182,14 +183,14 @@ namespace WindowsFormsApp1
             // registrarVacunaToolStripMenuItem
             // 
             this.registrarVacunaToolStripMenuItem.Name = "registrarVacunaToolStripMenuItem";
-            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarVacunaToolStripMenuItem.Text = "Registrar vacuna";
             this.registrarVacunaToolStripMenuItem.Click += new System.EventHandler(this.registrarVacunaToolStripMenuItem_Click);
             // 
             // verStockToolStripMenuItem1
             // 
             this.verStockToolStripMenuItem1.Name = "verStockToolStripMenuItem1";
-            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.verStockToolStripMenuItem1.Text = "Ver stock";
             // 
             // diagnosticosToolStripMenuItem
@@ -274,7 +275,7 @@ namespace WindowsFormsApp1
             // Bienvenido
             // 
             this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.Location = new System.Drawing.Point(189, 181);
+            this.Bienvenido.Location = new System.Drawing.Point(159, 180);
             this.Bienvenido.Name = "Bienvenido";
             this.Bienvenido.Size = new System.Drawing.Size(297, 54);
             this.Bienvenido.TabIndex = 1;
