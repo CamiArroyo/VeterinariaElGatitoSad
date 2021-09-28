@@ -30,6 +30,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
 
         private void btn_Consultar_Empleados_Click(object sender, EventArgs e)
         {
+            Btn_Eliminar_Empleado.Visible = true;
             ConsultarEmpleados();      
             
         }
@@ -90,6 +91,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
 
         private void BtnC_Deshabilitados_Click(object sender, EventArgs e)
         {
+            Btn_Eliminar_Empleado.Visible = false;
             MostrarDeshabilitados();
         }
 
