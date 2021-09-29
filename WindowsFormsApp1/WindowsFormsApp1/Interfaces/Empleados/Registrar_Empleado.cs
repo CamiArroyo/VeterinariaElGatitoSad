@@ -75,9 +75,6 @@ namespace WindowsFormsApp1.Interfaces.Empleados
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            
-
-
         }
         private bool EsOperacionConfirmada()
         {
