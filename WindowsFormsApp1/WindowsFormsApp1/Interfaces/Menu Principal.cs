@@ -114,5 +114,27 @@ namespace WindowsFormsApp1
             Form consultar_sint = new Frm_Consultar_Sintoma();
             consultar_sint.Show();
         }
+
+        private void Bienvenido_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Empleados_Click(object sender, EventArgs e)
+        {
+            Form consultar_emp = new Frm_Consultar_Empleado();
+            consultar_emp.Show();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

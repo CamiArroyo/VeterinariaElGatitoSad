@@ -114,5 +114,10 @@ namespace WindowsFormsApp1
             Form consultar_sint = new Frm_Consultar_Sintoma();
             consultar_sint.Show();
         }
+
+        private void Bienvenido_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

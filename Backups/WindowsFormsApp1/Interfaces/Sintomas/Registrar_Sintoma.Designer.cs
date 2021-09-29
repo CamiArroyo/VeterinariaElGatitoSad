@@ -34,6 +34,8 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.lbl_Nombre = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Btn_Registrar_Sintoma = new System.Windows.Forms.Button();
+            this.Btn_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -82,18 +84,41 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
+            // Btn_Registrar_Sintoma
+            // 
+            this.Btn_Registrar_Sintoma.Location = new System.Drawing.Point(221, 384);
+            this.Btn_Registrar_Sintoma.Name = "Btn_Registrar_Sintoma";
+            this.Btn_Registrar_Sintoma.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Registrar_Sintoma.TabIndex = 5;
+            this.Btn_Registrar_Sintoma.Text = "Guardar Sintoma\r\n";
+            this.Btn_Registrar_Sintoma.UseVisualStyleBackColor = true;
+            this.Btn_Registrar_Sintoma.Click += new System.EventHandler(this.Btn_Registrar_Sintoma_Click);
+            // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Btn_Salir.Location = new System.Drawing.Point(560, 384);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Salir.TabIndex = 6;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = true;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            // 
             // Frm_Registrar_Sintoma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(659, 450);
+            this.Controls.Add(this.Btn_Salir);
+            this.Controls.Add(this.Btn_Registrar_Sintoma);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lbl_Nombre);
             this.Controls.Add(this.Txt_Registrar_Descripcion);
             this.Controls.Add(this.Txt_Registrar_Nombre);
-            this.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Frm_Registrar_Sintoma";
             this.Text = "Nuevo Sintoma";
             this.Load += new System.EventHandler(this.Registrar_Sintoma_Load);
@@ -110,5 +135,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
         private System.Windows.Forms.Label lbl_Nombre;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_Registrar_Sintoma;
+        private System.Windows.Forms.Button Btn_Salir;
     }
 }

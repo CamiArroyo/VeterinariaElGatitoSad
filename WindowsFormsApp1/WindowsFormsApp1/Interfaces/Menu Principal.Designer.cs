@@ -30,25 +30,26 @@ namespace WindowsFormsApp1
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMenu_Principal));
+            this.Bienvenido = new System.Windows.Forms.Label();
+            this.BtnMP_Salir = new System.Windows.Forms.Button();
             this.mascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarNuevaMascotaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarLaboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verContactosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iniciarSesionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.medicamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarMedicamentoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verStockToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.vacunasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarVacunaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verStockToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.laboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarLaboratorioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.verContactosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarDiagnosticoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.verDiagnosticosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.verSintomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.registrarSintomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.especieDeMascotaMasAtendidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,13 +58,40 @@ namespace WindowsFormsApp1
             this.dueñosYMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Bienvenido = new System.Windows.Forms.Label();
-            this.BtnMP_Salir = new System.Windows.Forms.Button();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.verSintomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.registrarSintomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Btn_Insumos = new System.Windows.Forms.Button();
+            this.Btn_Empleados = new System.Windows.Forms.Button();
+            this.Btn_Sintomatologia = new System.Windows.Forms.Button();
+            this.Btn_Animales = new System.Windows.Forms.Button();
+            this.Btn_Reportes = new System.Windows.Forms.Button();
+            this.Btn_Listados = new System.Windows.Forms.Button();
+            this.Btn_Menu_Mascotas = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Bienvenido
+            // 
+            this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenido.Location = new System.Drawing.Point(283, 56);
+            this.Bienvenido.Name = "Bienvenido";
+            this.Bienvenido.Size = new System.Drawing.Size(325, 54);
+            this.Bienvenido.TabIndex = 1;
+            this.Bienvenido.Text = "¡¡¡Bienvenido!!!";
+            this.Bienvenido.Click += new System.EventHandler(this.Bienvenido_Click);
+            // 
+            // BtnMP_Salir
+            // 
+            this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnMP_Salir.Location = new System.Drawing.Point(549, 447);
+            this.BtnMP_Salir.Name = "BtnMP_Salir";
+            this.BtnMP_Salir.Size = new System.Drawing.Size(146, 56);
+            this.BtnMP_Salir.TabIndex = 2;
+            this.BtnMP_Salir.Text = "Salir";
+            this.BtnMP_Salir.UseVisualStyleBackColor = false;
+            this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
             // 
             // mascotasToolStripMenuItem
             // 
@@ -85,72 +113,6 @@ namespace WindowsFormsApp1
             this.verMascotasToolStripMenuItem.Name = "verMascotasToolStripMenuItem";
             this.verMascotasToolStripMenuItem.Size = new System.Drawing.Size(203, 22);
             this.verMascotasToolStripMenuItem.Text = "Ver mascotas";
-            // 
-            // laboratorioToolStripMenuItem
-            // 
-            this.laboratorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.registrarLaboratorioToolStripMenuItem,
-            this.verContactosToolStripMenuItem});
-            this.laboratorioToolStripMenuItem.Name = "laboratorioToolStripMenuItem";
-            this.laboratorioToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
-            this.laboratorioToolStripMenuItem.Text = "Laboratorios";
-            this.laboratorioToolStripMenuItem.Click += new System.EventHandler(this.laboratorioToolStripMenuItem_Click);
-            // 
-            // registrarLaboratorioToolStripMenuItem
-            // 
-            this.registrarLaboratorioToolStripMenuItem.Name = "registrarLaboratorioToolStripMenuItem";
-            this.registrarLaboratorioToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.registrarLaboratorioToolStripMenuItem.Text = "Registrar laboratorio";
-            this.registrarLaboratorioToolStripMenuItem.Click += new System.EventHandler(this.registrarLaboratorioToolStripMenuItem_Click);
-            // 
-            // verContactosToolStripMenuItem
-            // 
-            this.verContactosToolStripMenuItem.Name = "verContactosToolStripMenuItem";
-            this.verContactosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.verContactosToolStripMenuItem.Text = "Ver contactos";
-            this.verContactosToolStripMenuItem.Click += new System.EventHandler(this.verContactosToolStripMenuItem_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.usuariosToolStripMenuItem,
-            this.mascotasToolStripMenuItem,
-            this.medicamentoToolStripMenuItem,
-            this.vacunasToolStripMenuItem,
-            this.laboratorioToolStripMenuItem,
-            this.diagnosticosToolStripMenuItem,
-            this.reportesToolStripMenuItem,
-            this.listadosToolStripMenuItem,
-            this.toolStripMenuItem1});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(706, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // usuariosToolStripMenuItem
-            // 
-            this.usuariosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.iniciarSesionToolStripMenuItem,
-            this.verUsuariosToolStripMenuItem});
-            this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(77, 20);
-            this.usuariosToolStripMenuItem.Text = "Empleados";
-            this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
-            // 
-            // iniciarSesionToolStripMenuItem
-            // 
-            this.iniciarSesionToolStripMenuItem.Name = "iniciarSesionToolStripMenuItem";
-            this.iniciarSesionToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.iniciarSesionToolStripMenuItem.Text = "Registrar empleados";
-            this.iniciarSesionToolStripMenuItem.Click += new System.EventHandler(this.iniciarSesionToolStripMenuItem_Click);
-            // 
-            // verUsuariosToolStripMenuItem
-            // 
-            this.verUsuariosToolStripMenuItem.Name = "verUsuariosToolStripMenuItem";
-            this.verUsuariosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
-            this.verUsuariosToolStripMenuItem.Text = "Ver empleados";
-            this.verUsuariosToolStripMenuItem.Click += new System.EventHandler(this.verUsuariosToolStripMenuItem_Click);
             // 
             // medicamentoToolStripMenuItem
             // 
@@ -187,15 +149,39 @@ namespace WindowsFormsApp1
             // registrarVacunaToolStripMenuItem
             // 
             this.registrarVacunaToolStripMenuItem.Name = "registrarVacunaToolStripMenuItem";
-            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarVacunaToolStripMenuItem.Text = "Registrar vacuna";
             this.registrarVacunaToolStripMenuItem.Click += new System.EventHandler(this.registrarVacunaToolStripMenuItem_Click);
             // 
             // verStockToolStripMenuItem1
             // 
             this.verStockToolStripMenuItem1.Name = "verStockToolStripMenuItem1";
-            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.verStockToolStripMenuItem1.Text = "Ver stock";
+            // 
+            // laboratorioToolStripMenuItem
+            // 
+            this.laboratorioToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.registrarLaboratorioToolStripMenuItem,
+            this.verContactosToolStripMenuItem});
+            this.laboratorioToolStripMenuItem.Name = "laboratorioToolStripMenuItem";
+            this.laboratorioToolStripMenuItem.Size = new System.Drawing.Size(85, 20);
+            this.laboratorioToolStripMenuItem.Text = "Laboratorios";
+            this.laboratorioToolStripMenuItem.Click += new System.EventHandler(this.laboratorioToolStripMenuItem_Click);
+            // 
+            // registrarLaboratorioToolStripMenuItem
+            // 
+            this.registrarLaboratorioToolStripMenuItem.Name = "registrarLaboratorioToolStripMenuItem";
+            this.registrarLaboratorioToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.registrarLaboratorioToolStripMenuItem.Text = "Registrar laboratorio";
+            this.registrarLaboratorioToolStripMenuItem.Click += new System.EventHandler(this.registrarLaboratorioToolStripMenuItem_Click);
+            // 
+            // verContactosToolStripMenuItem
+            // 
+            this.verContactosToolStripMenuItem.Name = "verContactosToolStripMenuItem";
+            this.verContactosToolStripMenuItem.Size = new System.Drawing.Size(181, 22);
+            this.verContactosToolStripMenuItem.Text = "Ver contactos";
+            this.verContactosToolStripMenuItem.Click += new System.EventHandler(this.verContactosToolStripMenuItem_Click);
             // 
             // diagnosticosToolStripMenuItem
             // 
@@ -218,6 +204,28 @@ namespace WindowsFormsApp1
             this.verDiagnosticosToolStripMenuItem.Name = "verDiagnosticosToolStripMenuItem";
             this.verDiagnosticosToolStripMenuItem.Size = new System.Drawing.Size(185, 22);
             this.verDiagnosticosToolStripMenuItem.Text = "Ver diagnosticos";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.verSintomasToolStripMenuItem,
+            this.registrarSintomaToolStripMenuItem});
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
+            this.toolStripMenuItem1.Text = "Sintomas";
+            // 
+            // verSintomasToolStripMenuItem
+            // 
+            this.verSintomasToolStripMenuItem.Name = "verSintomasToolStripMenuItem";
+            this.verSintomasToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.verSintomasToolStripMenuItem.Text = "Ver sintomas";
+            this.verSintomasToolStripMenuItem.Click += new System.EventHandler(this.verSintomasToolStripMenuItem_Click);
+            // 
+            // registrarSintomaToolStripMenuItem
+            // 
+            this.registrarSintomaToolStripMenuItem.Name = "registrarSintomaToolStripMenuItem";
+            this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.registrarSintomaToolStripMenuItem.Text = "Registrar sintoma";
             // 
             // reportesToolStripMenuItem
             // 
@@ -276,54 +284,122 @@ namespace WindowsFormsApp1
             this.diagnosticosYConsultasToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.diagnosticosYConsultasToolStripMenuItem.Text = "Diagnosticos y consultas";
             // 
-            // Bienvenido
+            // menuStrip1
             // 
-            this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.Location = new System.Drawing.Point(159, 180);
-            this.Bienvenido.Name = "Bienvenido";
-            this.Bienvenido.Size = new System.Drawing.Size(297, 54);
-            this.Bienvenido.TabIndex = 1;
-            this.Bienvenido.Text = "¡¡Bienvenido!!";
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mascotasToolStripMenuItem,
+            this.medicamentoToolStripMenuItem,
+            this.vacunasToolStripMenuItem,
+            this.laboratorioToolStripMenuItem,
+            this.diagnosticosToolStripMenuItem,
+            this.toolStripMenuItem1,
+            this.reportesToolStripMenuItem,
+            this.listadosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(716, 24);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // BtnMP_Salir
+            // pictureBox1
             // 
-            this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnMP_Salir.Location = new System.Drawing.Point(492, 388);
-            this.BtnMP_Salir.Name = "BtnMP_Salir";
-            this.BtnMP_Salir.Size = new System.Drawing.Size(116, 39);
-            this.BtnMP_Salir.TabIndex = 2;
-            this.BtnMP_Salir.Text = "Salir";
-            this.BtnMP_Salir.UseVisualStyleBackColor = false;
-            this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
+            this.pictureBox1.BackColor = System.Drawing.Color.ForestGreen;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(162, 505);
+            this.pictureBox1.TabIndex = 3;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // toolStripMenuItem1
+            // Btn_Insumos
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verSintomasToolStripMenuItem,
-            this.registrarSintomaToolStripMenuItem});
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
-            this.toolStripMenuItem1.Text = "Sintomas";
+            this.Btn_Insumos.Location = new System.Drawing.Point(0, 135);
+            this.Btn_Insumos.Name = "Btn_Insumos";
+            this.Btn_Insumos.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Insumos.TabIndex = 6;
+            this.Btn_Insumos.Text = "Insumos";
+            this.Btn_Insumos.UseVisualStyleBackColor = true;
             // 
-            // verSintomasToolStripMenuItem
+            // Btn_Empleados
             // 
-            this.verSintomasToolStripMenuItem.Name = "verSintomasToolStripMenuItem";
-            this.verSintomasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verSintomasToolStripMenuItem.Text = "Ver sintomas";
-            this.verSintomasToolStripMenuItem.Click += new System.EventHandler(this.verSintomasToolStripMenuItem_Click);
+            this.Btn_Empleados.Location = new System.Drawing.Point(0, 56);
+            this.Btn_Empleados.Name = "Btn_Empleados";
+            this.Btn_Empleados.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Empleados.TabIndex = 7;
+            this.Btn_Empleados.Text = "Empleados";
+            this.Btn_Empleados.UseVisualStyleBackColor = true;
+            this.Btn_Empleados.Click += new System.EventHandler(this.Btn_Empleados_Click);
             // 
-            // registrarSintomaToolStripMenuItem
+            // Btn_Sintomatologia
             // 
-            this.registrarSintomaToolStripMenuItem.Name = "registrarSintomaToolStripMenuItem";
-            this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.registrarSintomaToolStripMenuItem.Text = "Registrar sintoma";
+            this.Btn_Sintomatologia.Location = new System.Drawing.Point(0, 212);
+            this.Btn_Sintomatologia.Name = "Btn_Sintomatologia";
+            this.Btn_Sintomatologia.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Sintomatologia.TabIndex = 8;
+            this.Btn_Sintomatologia.Text = "Sintomatologia";
+            this.Btn_Sintomatologia.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Animales
+            // 
+            this.Btn_Animales.Location = new System.Drawing.Point(0, 289);
+            this.Btn_Animales.Name = "Btn_Animales";
+            this.Btn_Animales.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Animales.TabIndex = 9;
+            this.Btn_Animales.Text = "Animales";
+            this.Btn_Animales.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Reportes
+            // 
+            this.Btn_Reportes.Location = new System.Drawing.Point(0, 371);
+            this.Btn_Reportes.Name = "Btn_Reportes";
+            this.Btn_Reportes.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Reportes.TabIndex = 10;
+            this.Btn_Reportes.Text = "Reportes";
+            this.Btn_Reportes.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Listados
+            // 
+            this.Btn_Listados.Location = new System.Drawing.Point(0, 447);
+            this.Btn_Listados.Name = "Btn_Listados";
+            this.Btn_Listados.Size = new System.Drawing.Size(146, 56);
+            this.Btn_Listados.TabIndex = 11;
+            this.Btn_Listados.Text = "Listados";
+            this.Btn_Listados.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Menu_Mascotas
+            // 
+            this.Btn_Menu_Mascotas.Location = new System.Drawing.Point(290, 117);
+            this.Btn_Menu_Mascotas.Name = "Btn_Menu_Mascotas";
+            this.Btn_Menu_Mascotas.Size = new System.Drawing.Size(294, 93);
+            this.Btn_Menu_Mascotas.TabIndex = 12;
+            this.Btn_Menu_Mascotas.Text = "Nuestras mascotas ";
+            this.Btn_Menu_Mascotas.UseVisualStyleBackColor = true;
+            this.Btn_Menu_Mascotas.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(290, 252);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(294, 93);
+            this.button7.TabIndex = 13;
+            this.button7.Text = "Nuestros clientes";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(706, 439);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(716, 531);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.Btn_Menu_Mascotas);
+            this.Controls.Add(this.Btn_Listados);
+            this.Controls.Add(this.Btn_Reportes);
+            this.Controls.Add(this.Btn_Animales);
+            this.Controls.Add(this.Btn_Sintomatologia);
+            this.Controls.Add(this.Btn_Empleados);
+            this.Controls.Add(this.Btn_Insumos);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnMP_Salir);
             this.Controls.Add(this.Bienvenido);
             this.Controls.Add(this.menuStrip1);
@@ -335,24 +411,34 @@ namespace WindowsFormsApp1
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
+        private System.Windows.Forms.Label Bienvenido;
+        private System.Windows.Forms.Button BtnMP_Salir;
         private System.Windows.Forms.ToolStripMenuItem mascotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarNuevaMascotaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem verMascotasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laboratorioToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verContactosToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem medicamentoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarMedicamentoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verStockToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem vacunasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarLaboratorioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarVacunaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verStockToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem laboratorioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarLaboratorioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verContactosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem diagnosticosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarDiagnosticoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem verDiagnosticosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem verSintomasToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem registrarSintomaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem especieDeMascotaMasAtendidaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem usoDeMedicamentosToolStripMenuItem;
@@ -360,19 +446,16 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem dueñosYMascotasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem laboratoriosYMedicamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diagnosticosYConsultasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verStockToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verStockToolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem diagnosticosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarDiagnosticoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verDiagnosticosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usuariosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem iniciarSesionToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verUsuariosToolStripMenuItem;
-        private System.Windows.Forms.Label Bienvenido;
-        private System.Windows.Forms.Button BtnMP_Salir;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem verSintomasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem registrarSintomaToolStripMenuItem;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Btn_Insumos;
+        private System.Windows.Forms.Button Btn_Empleados;
+        private System.Windows.Forms.Button Btn_Sintomatologia;
+        private System.Windows.Forms.Button Btn_Animales;
+        private System.Windows.Forms.Button Btn_Reportes;
+        private System.Windows.Forms.Button Btn_Listados;
+        private System.Windows.Forms.Button Btn_Menu_Mascotas;
+        private System.Windows.Forms.Button button7;
     }
 }
 

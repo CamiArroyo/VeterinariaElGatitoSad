@@ -57,11 +57,11 @@ namespace WindowsFormsApp1
             this.dueñosYMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.Bienvenido = new System.Windows.Forms.Label();
-            this.BtnMP_Salir = new System.Windows.Forms.Button();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.verSintomasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarSintomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Bienvenido = new System.Windows.Forms.Label();
+            this.BtnMP_Salir = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -119,12 +119,12 @@ namespace WindowsFormsApp1
             this.vacunasToolStripMenuItem,
             this.laboratorioToolStripMenuItem,
             this.diagnosticosToolStripMenuItem,
+            this.toolStripMenuItem1,
             this.reportesToolStripMenuItem,
-            this.listadosToolStripMenuItem,
-            this.toolStripMenuItem1});
+            this.listadosToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(706, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(682, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -187,14 +187,14 @@ namespace WindowsFormsApp1
             // registrarVacunaToolStripMenuItem
             // 
             this.registrarVacunaToolStripMenuItem.Name = "registrarVacunaToolStripMenuItem";
-            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(161, 22);
+            this.registrarVacunaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarVacunaToolStripMenuItem.Text = "Registrar vacuna";
             this.registrarVacunaToolStripMenuItem.Click += new System.EventHandler(this.registrarVacunaToolStripMenuItem_Click);
             // 
             // verStockToolStripMenuItem1
             // 
             this.verStockToolStripMenuItem1.Name = "verStockToolStripMenuItem1";
-            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(161, 22);
+            this.verStockToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.verStockToolStripMenuItem1.Text = "Ver stock";
             // 
             // diagnosticosToolStripMenuItem
@@ -276,26 +276,6 @@ namespace WindowsFormsApp1
             this.diagnosticosYConsultasToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
             this.diagnosticosYConsultasToolStripMenuItem.Text = "Diagnosticos y consultas";
             // 
-            // Bienvenido
-            // 
-            this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Bienvenido.Location = new System.Drawing.Point(159, 180);
-            this.Bienvenido.Name = "Bienvenido";
-            this.Bienvenido.Size = new System.Drawing.Size(297, 54);
-            this.Bienvenido.TabIndex = 1;
-            this.Bienvenido.Text = "¡¡Bienvenido!!";
-            // 
-            // BtnMP_Salir
-            // 
-            this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnMP_Salir.Location = new System.Drawing.Point(492, 388);
-            this.BtnMP_Salir.Name = "BtnMP_Salir";
-            this.BtnMP_Salir.Size = new System.Drawing.Size(116, 39);
-            this.BtnMP_Salir.TabIndex = 2;
-            this.BtnMP_Salir.Text = "Salir";
-            this.BtnMP_Salir.UseVisualStyleBackColor = false;
-            this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
-            // 
             // toolStripMenuItem1
             // 
             this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -318,12 +298,33 @@ namespace WindowsFormsApp1
             this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarSintomaToolStripMenuItem.Text = "Registrar sintoma";
             // 
+            // Bienvenido
+            // 
+            this.Bienvenido.Font = new System.Drawing.Font("Copperplate Gothic Light", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Bienvenido.Location = new System.Drawing.Point(385, 43);
+            this.Bienvenido.Name = "Bienvenido";
+            this.Bienvenido.Size = new System.Drawing.Size(297, 54);
+            this.Bienvenido.TabIndex = 1;
+            this.Bienvenido.Text = "¡¡Bienvenido!!";
+            this.Bienvenido.Click += new System.EventHandler(this.Bienvenido_Click);
+            // 
+            // BtnMP_Salir
+            // 
+            this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.BtnMP_Salir.Location = new System.Drawing.Point(492, 388);
+            this.BtnMP_Salir.Name = "BtnMP_Salir";
+            this.BtnMP_Salir.Size = new System.Drawing.Size(116, 39);
+            this.BtnMP_Salir.TabIndex = 2;
+            this.BtnMP_Salir.Text = "Salir";
+            this.BtnMP_Salir.UseVisualStyleBackColor = false;
+            this.BtnMP_Salir.Click += new System.EventHandler(this.BtnMP_Salir_Click);
+            // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(706, 439);
+            this.ClientSize = new System.Drawing.Size(682, 439);
             this.Controls.Add(this.BtnMP_Salir);
             this.Controls.Add(this.Bienvenido);
             this.Controls.Add(this.menuStrip1);

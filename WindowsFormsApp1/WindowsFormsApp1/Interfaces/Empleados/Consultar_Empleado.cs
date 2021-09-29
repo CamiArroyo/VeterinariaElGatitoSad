@@ -127,5 +127,12 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             Form menu = new FrmMenu_Principal();
             menu.Show();
         }
+
+        private void Btn_Registrar_Empleado_Click(object sender, EventArgs e)
+        {
+            Form registrar_emp = new Frm_Registrar_Empleado();
+            registrar_emp.Show();
+            Visible = false;
+        }
     }
 }
