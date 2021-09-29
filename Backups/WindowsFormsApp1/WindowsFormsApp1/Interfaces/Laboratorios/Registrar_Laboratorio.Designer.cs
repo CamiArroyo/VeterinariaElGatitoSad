@@ -96,7 +96,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(271, 164);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtRL_Direccion);
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Controls.Add(this.label1);
             this.Name = "Registrar_Laboratorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrar_Laboratorio";
+            this.Text = "Registrar Laboratorio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

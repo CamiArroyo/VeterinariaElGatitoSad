@@ -39,6 +39,9 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
+            Form menu = new Fmr_Menu_Sintomatologia();
+            menu.Show();
+            this.Dispose();
         }
 
         private bool TomarSintoma()

@@ -120,6 +120,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.Controls.Add(this.Txt_Registrar_Nombre);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Name = "Frm_Registrar_Sintoma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Nuevo Sintoma";
             this.Load += new System.EventHandler(this.Registrar_Sintoma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

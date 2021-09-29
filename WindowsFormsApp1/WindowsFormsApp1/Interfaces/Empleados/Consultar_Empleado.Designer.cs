@@ -191,19 +191,20 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // Btn_Registrar_Empleado
             // 
+            this.Btn_Registrar_Empleado.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Registrar_Empleado.Location = new System.Drawing.Point(151, 12);
             this.Btn_Registrar_Empleado.Name = "Btn_Registrar_Empleado";
             this.Btn_Registrar_Empleado.Size = new System.Drawing.Size(113, 23);
             this.Btn_Registrar_Empleado.TabIndex = 6;
             this.Btn_Registrar_Empleado.Text = "Registrar empleado";
-            this.Btn_Registrar_Empleado.UseVisualStyleBackColor = true;
+            this.Btn_Registrar_Empleado.UseVisualStyleBackColor = false;
             this.Btn_Registrar_Empleado.Click += new System.EventHandler(this.Btn_Registrar_Empleado_Click);
             // 
             // Frm_Consultar_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(986, 434);
             this.Controls.Add(this.Btn_Registrar_Empleado);
             this.Controls.Add(this.BtnC_Salir);

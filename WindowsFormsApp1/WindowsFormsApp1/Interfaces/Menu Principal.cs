@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces;
 using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Sintomas;
@@ -73,8 +74,7 @@ namespace WindowsFormsApp1
 
         private void registrarLaboratorioToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form labs = new Registrar_Laboratorio();
-            labs.Show();
+
         }
 
         private void registrarDiagnosticoToolStripMenuItem_Click(object sender, EventArgs e)
@@ -104,15 +104,12 @@ namespace WindowsFormsApp1
 
         private void verContactosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form Clab = new Consultar_Laboratorio();
-            Clab.Show();
-            this.Dispose();
+
         }
 
         private void verSintomasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form consultar_sint = new Frm_Consultar_Sintoma();
-            consultar_sint.Show();
+
         }
 
         private void Bienvenido_Click(object sender, EventArgs e)
@@ -139,7 +136,9 @@ namespace WindowsFormsApp1
 
         private void Btn_Sintomatologia_Click(object sender, EventArgs e)
         {
-
+            Form menu_sint = new Fmr_Menu_Sintomatologia();
+            menu_sint.Show();
+            this.Dispose();
         }
 
         private void toolStripMenuItem1_Click(object sender, EventArgs e)
@@ -149,8 +148,21 @@ namespace WindowsFormsApp1
 
         private void registrarSintomaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form reg_sint = new Frm_Registrar_Sintoma();
-            reg_sint.Show();
+
+        }
+
+        private void Btn_Insumos_Click(object sender, EventArgs e)
+        {
+            Form menu_insumos = new Frm_Menu_Insumos();
+            menu_insumos.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Animales_Click(object sender, EventArgs e)
+        {
+            Form menu_animal = new Frm_Menu_Animales();
+            menu_animal.Show();
+            this.Dispose();
         }
     }
 }

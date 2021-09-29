@@ -74,3 +74,7 @@ D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sa
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.CoreCompileInputs.cache
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Consultar_Sintoma.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Fmr_Menu_Sintomatologia.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Frm_Menu_Insumos.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Frm_Menu_Animales.resources

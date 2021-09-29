@@ -110,11 +110,29 @@
     <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.Designer.cs">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Menu Animales.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Menu Animales.Designer.cs">
+      <DependentUpon>Menu Animales.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Menu Insumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Menu Insumos.Designer.cs">
+      <DependentUpon>Menu Insumos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Menu Principal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\Menu Principal.Designer.cs">
       <DependentUpon>Menu Principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Menu Sintomatologia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Menu Sintomatologia.Designer.cs">
+      <DependentUpon>Menu Sintomatologia.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.cs">
       <SubType>Form</SubType>
@@ -176,8 +194,17 @@
     <EmbeddedResource Include="Interfaces\Laboratorios\Registrar_Laboratorio.resx">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Menu Animales.resx">
+      <DependentUpon>Menu Animales.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Menu Insumos.resx">
+      <DependentUpon>Menu Insumos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu Principal.resx">
       <DependentUpon>Menu Principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Menu Sintomatologia.resx">
+      <DependentUpon>Menu Sintomatologia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Sintomas\Consultar_Sintomas.resx">
       <DependentUpon>Consultar_Sintomas.cs</DependentUpon>

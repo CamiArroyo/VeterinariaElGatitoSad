@@ -31,7 +31,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
 
         private void BtnRL_Cancelar_Click(object sender, EventArgs e)
         {
-            Form menu = new FrmMenu_Principal();
+            Form menu = new Frm_Menu_Insumos();
             menu.Show();
             this.Dispose();
         }

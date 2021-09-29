@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(275, 205);
             this.Controls.Add(this.LblE_Confirmar_Operacion);
             this.Controls.Add(this.BtnE_Cancelar);

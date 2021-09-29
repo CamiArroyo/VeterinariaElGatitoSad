@@ -145,6 +145,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.Controls.Add(this.dataGridView1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Frm_Consultar_Sintoma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sintomas";
             this.Load += new System.EventHandler(this.Frm_Consultar_Sintoma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vacunas)).EndInit();
