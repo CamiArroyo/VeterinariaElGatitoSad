@@ -30,7 +30,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.vacunas = new WindowsFormsApp1.Vacunas();
             this.vACUNASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vACUNASTableAdapter = new WindowsFormsApp1.VacunasTableAdapters.VACUNASTableAdapter();
@@ -79,14 +79,18 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nombreDataGridViewTextBoxColumn,
             this.descripcionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.sINTOMASBindingSource;
+            this.dataGridView1.GridColor = System.Drawing.Color.PaleGreen;
             this.dataGridView1.Location = new System.Drawing.Point(25, 62);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(441, 283);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -101,10 +105,10 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // 
             this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle2.NullValue = null;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.descripcionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.descripcionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.descripcionDataGridViewTextBoxColumn.FillWeight = 400F;
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
             this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 300;

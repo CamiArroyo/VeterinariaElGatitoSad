@@ -20,7 +20,10 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
         private SintomasServicio sint_serv;
         public Frm_Registrar_Sintoma()
         {
+             sint_serv = new SintomasServicio();
             InitializeComponent();
+           
+            
         }
         private bool EsOperacionConfirmada()
         {
@@ -38,6 +41,15 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
         {
         }
 
+        private bool TomarSintoma()
+        {
+            var nombre = Txt_Registrar_Nombre.Text;
+            var descripcion = Txt_Registrar_Descripcion.Text;
+
+            var sintINgresado = new Sintoma(descripcion,nombre);
+            sint = sintINgresado;
+            return true;
+        }
         private void RegistrarSintoma(Sintoma sint)
         {
             if (!sint_serv.RegistrarSintomaSR(sint))
@@ -45,16 +57,21 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
                 MessageBox.Show("Ocurrió un problema al registrar el sintoma", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            MessageBox.Show("El empleado se registró con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Sintoma guardado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
 
         private void Btn_Registrar_Sintoma_Click(object sender, EventArgs e)
         {
 
-            try
+            
+
+             try
             {
                 if (!EsOperacionConfirmada())
+                    return;
+                if (!TomarSintoma())
+                
                     return;
                 RegistrarSintoma(sint);
             }
@@ -67,6 +84,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
                 var mensaje = ex.Message;
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
     }
 }

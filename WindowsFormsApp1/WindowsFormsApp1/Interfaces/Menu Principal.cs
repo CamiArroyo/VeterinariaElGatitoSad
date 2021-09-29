@@ -136,5 +136,21 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void Btn_Sintomatologia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarSintomaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form reg_sint = new Frm_Registrar_Sintoma();
+            reg_sint.Show();
+        }
     }
 }

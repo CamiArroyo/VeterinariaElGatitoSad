@@ -45,6 +45,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Btn_Eliminar_Empleado = new System.Windows.Forms.Button();
             this.BtnC_Deshabilitados = new System.Windows.Forms.Button();
             this.BtnC_Salir = new System.Windows.Forms.Button();
+            this.Btn_Registrar_Empleado = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGrd_Consultar_Empleado)).BeginInit();
             this.SuspendLayout();
             // 
@@ -188,12 +189,23 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.BtnC_Salir.UseVisualStyleBackColor = false;
             this.BtnC_Salir.Click += new System.EventHandler(this.BtnC_Salir_Click);
             // 
+            // Btn_Registrar_Empleado
+            // 
+            this.Btn_Registrar_Empleado.Location = new System.Drawing.Point(151, 12);
+            this.Btn_Registrar_Empleado.Name = "Btn_Registrar_Empleado";
+            this.Btn_Registrar_Empleado.Size = new System.Drawing.Size(113, 23);
+            this.Btn_Registrar_Empleado.TabIndex = 6;
+            this.Btn_Registrar_Empleado.Text = "Registrar empleado";
+            this.Btn_Registrar_Empleado.UseVisualStyleBackColor = true;
+            this.Btn_Registrar_Empleado.Click += new System.EventHandler(this.Btn_Registrar_Empleado_Click);
+            // 
             // Frm_Consultar_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(986, 434);
+            this.Controls.Add(this.Btn_Registrar_Empleado);
             this.Controls.Add(this.BtnC_Salir);
             this.Controls.Add(this.BtnC_Deshabilitados);
             this.Controls.Add(this.Btn_Eliminar_Empleado);
@@ -227,5 +239,6 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
         private System.Windows.Forms.Button BtnC_Deshabilitados;
         private System.Windows.Forms.Button BtnC_Salir;
+        private System.Windows.Forms.Button Btn_Registrar_Empleado;
     }
 }

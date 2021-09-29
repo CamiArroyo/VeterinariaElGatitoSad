@@ -213,19 +213,21 @@ namespace WindowsFormsApp1
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Size = new System.Drawing.Size(68, 20);
             this.toolStripMenuItem1.Text = "Sintomas";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.toolStripMenuItem1_Click);
             // 
             // verSintomasToolStripMenuItem
             // 
             this.verSintomasToolStripMenuItem.Name = "verSintomasToolStripMenuItem";
-            this.verSintomasToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.verSintomasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.verSintomasToolStripMenuItem.Text = "Ver sintomas";
             this.verSintomasToolStripMenuItem.Click += new System.EventHandler(this.verSintomasToolStripMenuItem_Click);
             // 
             // registrarSintomaToolStripMenuItem
             // 
             this.registrarSintomaToolStripMenuItem.Name = "registrarSintomaToolStripMenuItem";
-            this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.registrarSintomaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.registrarSintomaToolStripMenuItem.Text = "Registrar sintoma";
+            this.registrarSintomaToolStripMenuItem.Click += new System.EventHandler(this.registrarSintomaToolStripMenuItem_Click);
             // 
             // reportesToolStripMenuItem
             // 
@@ -338,6 +340,7 @@ namespace WindowsFormsApp1
             this.Btn_Sintomatologia.TabIndex = 8;
             this.Btn_Sintomatologia.Text = "Sintomatologia";
             this.Btn_Sintomatologia.UseVisualStyleBackColor = true;
+            this.Btn_Sintomatologia.Click += new System.EventHandler(this.Btn_Sintomatologia_Click);
             // 
             // Btn_Animales
             // 

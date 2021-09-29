@@ -14,12 +14,11 @@ namespace WindowsFormsApp1.Servicios
     {
 
         private SintomasRepositorio sint_Repositorio;
-        public static Sintoma Sintoma_Actual;
-
-        public SintomasServicio(SintomasRepositorio sint_repo)
+        public SintomasServicio()
         {
-            sint_Repositorio = sint_repo;
+            sint_Repositorio = new SintomasRepositorio();
         }
+
         public bool RegistrarSintomaSR(Sintoma sint)
         {
             if (sint == null)

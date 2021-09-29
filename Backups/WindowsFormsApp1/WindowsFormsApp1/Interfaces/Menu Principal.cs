@@ -119,5 +119,38 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Empleados_Click(object sender, EventArgs e)
+        {
+            Form consultar_emp = new Frm_Consultar_Empleado();
+            consultar_emp.Show();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Sintomatologia_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void registrarSintomaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form reg_sint = new Frm_Registrar_Sintoma();
+            reg_sint.Show();
+        }
     }
 }

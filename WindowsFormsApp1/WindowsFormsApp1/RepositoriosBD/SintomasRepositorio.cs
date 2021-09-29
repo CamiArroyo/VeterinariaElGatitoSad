@@ -12,7 +12,7 @@ namespace WindowsFormsApp1.RepositoriosBD
         public int RegistrarSintomaBD(Sintoma sint)
         {
             var sentenciaSQL = $"INSERT INTO SINTOMAS (nombre, descripcion)" +
-                $" VALUES({sint.nombre},'{sint.descripcion}'";
+                $" VALUES ('{sint.nombre}','{sint.descripcion}')";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
             return filasAfectadas;
         }
