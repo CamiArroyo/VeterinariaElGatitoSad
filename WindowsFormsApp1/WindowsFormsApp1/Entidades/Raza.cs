@@ -12,6 +12,14 @@ namespace WindowsFormsApp1.Entidades
         public string descripcion { get; set; }
         public string peso_medio { get; set; }
         public string altura_media { get; set; }
+
+        public Raza(string descri, string peso, string altura)
+        {
+            descripcion = descri;
+            peso_medio = peso;
+            altura_media = altura;
+
+        }
     }
 
 }

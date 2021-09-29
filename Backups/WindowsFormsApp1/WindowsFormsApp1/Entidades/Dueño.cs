@@ -14,6 +14,18 @@ namespace WindowsFormsApp1.Entidades
             public string apellido { get; set; }
             public string telefono { get; set; }
 
+        public Dueño(string name, string surname, string cellphone)
+        {
+            nombre = name;
+            apellido = surname;
+            telefono = cellphone;
+        }
+
+        public Dueño()
+        {
+
+        }
+
     }
     
 }

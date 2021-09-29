@@ -56,6 +56,8 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+            Form menu = new Frm_Menu_Insumos();
+            menu.Show();
         }
 
         private bool EsOperacionConfirmada()

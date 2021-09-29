@@ -12,7 +12,20 @@ namespace WindowsFormsApp1.Entidades
         public int id_consuylta { get; set; }
         public int id_empleado { get; set; }
 
-        public string fecha_entrada { get; set; }
-        public string fecha_salida { get; set; }
+        public DateTime fecha_entrada { get; set; }
+        public DateTime fecha_salida { get; set; }
+
+
+        public Consulta(DateTime fecha_en, DateTime fecha_sa)
+        {
+            fecha_entrada = fecha_en;
+            fecha_salida = fecha_sa;
+
+        }
+
+        public Consulta()
+        {
+
+        }
     }
 }

@@ -87,6 +87,9 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
                 var mensaje = ex.Message;
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+            Form menuxD = new Fmr_Menu_Sintomatologia();
+            menuxD.Show();
             
         }
     }

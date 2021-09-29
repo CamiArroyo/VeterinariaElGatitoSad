@@ -13,6 +13,17 @@ namespace WindowsFormsApp1.Entidades
         public string descripcion { get; set; }
         public string nombre { get; set; }
 
+        public Diagnostico(string descri, string name)
+
+        {
+            descripcion = descri;
+            nombre = name;
+
+        }
+        public Diagnostico()
+        {
+
+        }
     }
 
 }
