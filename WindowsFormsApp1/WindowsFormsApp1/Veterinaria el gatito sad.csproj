@@ -59,6 +59,7 @@
     <Compile Include="Entidades\Medicamento.cs" />
     <Compile Include="Entidades\MedicinaXConsulta.cs" />
     <Compile Include="Entidades\Raza.cs" />
+    <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
     <Compile Include="Interfaces\Empleados\Consultar_Empleado.cs">
@@ -132,8 +133,10 @@
     <Compile Include="RepositoriosBD\DBHelper.cs" />
     <Compile Include="RepositoriosBD\EmpleadosRepositorio.cs" />
     <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
+    <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="Servicios\EmpleadosServicio.cs" />
     <Compile Include="Servicios\LaboratoriosServicio.cs" />
+    <Compile Include="Servicios\SintomasServicio.cs" />
     <Compile Include="Sintomas.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
