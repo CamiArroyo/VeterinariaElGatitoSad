@@ -38,12 +38,12 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.sINTOMASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sINTOMASTableAdapter = new WindowsFormsApp1.SintomasTableAdapters.SINTOMASTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Btn_Modificar_Sintoma = new System.Windows.Forms.Button();
-            this.Btn_Salir = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.id_sintoma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_Modificar_Sintoma = new System.Windows.Forms.Button();
+            this.Btn_Salir = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.vacunas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sintomas)).BeginInit();
@@ -98,6 +98,33 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
+            // id_sintoma
+            // 
+            this.id_sintoma.DataPropertyName = "id_sintoma";
+            this.id_sintoma.HeaderText = "Id";
+            this.id_sintoma.Name = "id_sintoma";
+            this.id_sintoma.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
+            dataGridViewCellStyle1.NullValue = null;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.descripcionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
+            this.descripcionDataGridViewTextBoxColumn.FillWeight = 400F;
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 300;
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.Width = 300;
+            // 
             // Btn_Modificar_Sintoma
             // 
             this.Btn_Modificar_Sintoma.Location = new System.Drawing.Point(25, 12);
@@ -126,33 +153,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.button1.TabIndex = 3;
             this.button1.Text = "Eliminar Sintoma";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // id_sintoma
-            // 
-            this.id_sintoma.DataPropertyName = "id_sintoma";
-            this.id_sintoma.HeaderText = "Id";
-            this.id_sintoma.Name = "id_sintoma";
-            this.id_sintoma.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopLeft;
-            dataGridViewCellStyle1.NullValue = null;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.descripcionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
-            this.descripcionDataGridViewTextBoxColumn.FillWeight = 400F;
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 300;
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.Width = 300;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Frm_Consultar_Sintoma
             // 

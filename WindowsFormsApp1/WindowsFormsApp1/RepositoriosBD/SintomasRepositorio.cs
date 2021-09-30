@@ -21,7 +21,7 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int ActualizarSintoma(Sintoma sint)
         {
-            var sentenciaSql = $"UPDATE SINTOMAS SET nombre='{sint.nombre}', descripcion='{sint.descripcion}' where id_sintoma={sint.id_sintoma}";
+            var sentenciaSql = $"Update Sintomas Set nombre='{sint.nombre}', descripcion='{sint.descripcion}' where id_sintoma={sint.id_sintoma}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
@@ -42,10 +42,19 @@ namespace WindowsFormsApp1.RepositoriosBD
         {
 
             var sintoma = new Sintoma();
+            sintoma.id_sintoma= Convert.ToInt32(fila["id_sintoma"] is DBNull ? " " : fila["id_sintoma"]);
             sintoma.descripcion = Convert.ToString(fila["descripcion"] is DBNull ? " " : fila["descripcion"]);
             sintoma.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
 
             return sintoma;
+        }
+
+        public int DarBajaSintoma(Sintoma sint)
+        {
+            //completar
+            var sentenciaSql = $"Delete from Sintomas where id_sintoma={sint.id_sintoma}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
         }
     }
 }

@@ -164,6 +164,12 @@
     <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.Designer.cs">
       <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Sintomas\Eliminar_Sintoma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Sintomas\Eliminar_Sintoma.Designer.cs">
+      <DependentUpon>Eliminar_Sintoma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Sintomas\Modificar_Sintoma.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -245,6 +251,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Sintomas\Consultar_Sintomas.resx">
       <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Sintomas\Eliminar_Sintoma.resx">
+      <DependentUpon>Eliminar_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Sintomas\Modificar_Sintoma.resx">
       <DependentUpon>Modificar_Sintoma.cs</DependentUpon>

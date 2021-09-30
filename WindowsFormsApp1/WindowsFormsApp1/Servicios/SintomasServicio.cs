@@ -41,5 +41,12 @@ namespace WindowsFormsApp1.Servicios
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
+
+        public void DarBajaSintoma(Sintoma sint)
+        {
+            var filasAfectadas = sint_Repositorio.DarBajaSintoma(sint);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 }
