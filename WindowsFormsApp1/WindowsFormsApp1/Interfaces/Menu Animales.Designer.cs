@@ -59,6 +59,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registrar_Raza.TabIndex = 17;
             this.Btn_Registrar_Raza.Text = "Registar raza";
             this.Btn_Registrar_Raza.UseVisualStyleBackColor = false;
+            this.Btn_Registrar_Raza.Click += new System.EventHandler(this.Btn_Registrar_Raza_Click);
             // 
             // Btn_Consultar_Especie
             // 
