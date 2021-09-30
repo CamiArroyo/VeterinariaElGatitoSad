@@ -85,6 +85,7 @@ namespace WindowsFormsApp1.RepositoriosBD
 
             return empleado;
         }
+
         public int DarBajaEmpleado(Empleado e)
         {
             //completar

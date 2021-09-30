@@ -28,5 +28,18 @@ namespace WindowsFormsApp1.Servicios
                 return true;
             return false;
         }
+
+        public Sintoma GetSintoma(long id)
+        {
+            var sintoma = sint_Repositorio.GetSintoma(id);
+            return sintoma;
+        }
+
+        public void ActualizarSintoma(Sintoma s)
+        {
+            var filasAfectadas = sint_Repositorio.ActualizarSintoma(s);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
     }
 }
