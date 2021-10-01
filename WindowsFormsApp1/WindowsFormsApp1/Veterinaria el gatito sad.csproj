@@ -122,6 +122,12 @@
     <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.Designer.cs">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Medicamentos\Consultar_Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Medicamentos\Consultar_Medicamentos.Designer.cs">
+      <DependentUpon>Consultar_Medicamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Menu Animales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -188,6 +194,11 @@
     <Compile Include="Interfaces\Vacs\Registrar_Vacuna.Designer.cs">
       <DependentUpon>Registrar_Vacuna.cs</DependentUpon>
     </Compile>
+    <Compile Include="Medicamentos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Medicamentos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoriosBD\DBHelper.cs" />
@@ -242,6 +253,9 @@
     <EmbeddedResource Include="Interfaces\Laboratorios\Registrar_Laboratorio.resx">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Medicamentos\Consultar_Medicamentos.resx">
+      <DependentUpon>Consultar_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu Animales.resx">
       <DependentUpon>Menu Animales.cs</DependentUpon>
     </EmbeddedResource>
@@ -282,6 +296,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Medicamentos.xsc">
+      <DependentUpon>Medicamentos.xsd</DependentUpon>
+    </None>
+    <None Include="Medicamentos.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Medicamentos.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Medicamentos.xss">
+      <DependentUpon>Medicamentos.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -328,7 +353,9 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Recursos\favpng_medicine-health-care-clinic.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Recursos\Sintomas.png" />
   </ItemGroup>

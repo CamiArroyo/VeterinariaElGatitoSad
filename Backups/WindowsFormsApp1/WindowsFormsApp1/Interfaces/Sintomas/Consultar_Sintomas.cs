@@ -7,13 +7,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Entidades;
+using WindowsFormsApp1.Servicios;
 
 namespace WindowsFormsApp1.Interfaces.Sintomas
 {
     public partial class Frm_Consultar_Sintoma : Form
     {
+        private SintomasServicio sintSercive;
+        private Sintoma sint;
         public Frm_Consultar_Sintoma()
         {
+            sint = new Sintoma();
+            sintSercive = new SintomasServicio();
             InitializeComponent();
         }
 
@@ -36,6 +42,32 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             Form menu = new Fmr_Menu_Sintomatologia();
             menu.Show();
             this.Dispose();
+        }
+
+        private void Btn_Modificar_Sintoma_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                //LLamar Modificar
+                var id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id_sintoma"].Value);
+                new Frm_Modificar_Sintoma(id).Show();
+                Visible = false;
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            if (dataGridView1.SelectedRows.Count == 1)
+            {
+                //LLamar Modificar
+                var id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id_sintoma"].Value);
+                new Frm_Eliminar_Sintoma(id).Show();
+                Visible = false;
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
         }
     }
 }

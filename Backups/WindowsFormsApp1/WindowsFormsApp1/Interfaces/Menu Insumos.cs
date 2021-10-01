@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Interfaces.Laboratorios;
+using WindowsFormsApp1.Interfaces.Vacs;
+using WindowsFormsApp1.Interfaces.Medicamentos;
 
 namespace WindowsFormsApp1.Interfaces
 {
@@ -36,6 +38,20 @@ namespace WindowsFormsApp1.Interfaces
         {
             Form Clab = new Consultar_Laboratorio();
             Clab.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Registrar_Vacuna_Click(object sender, EventArgs e)
+        {
+            Form vacs = new Frm_Registrar_Vacuna();
+            vacs.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Consultar_Medicamento_Click(object sender, EventArgs e)
+        {
+            Form Med = new Frm_Consultar_Medicamentos();
+            Med.Show();
             this.Dispose();
         }
     }
