@@ -129,6 +129,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registrar_Vacuna.TabIndex = 11;
             this.Btn_Registrar_Vacuna.Text = "Registrar vacuna";
             this.Btn_Registrar_Vacuna.UseVisualStyleBackColor = false;
+            this.Btn_Registrar_Vacuna.Click += new System.EventHandler(this.Btn_Registrar_Vacuna_Click);
             // 
             // Btn_Consultar_Vacuna
             // 
