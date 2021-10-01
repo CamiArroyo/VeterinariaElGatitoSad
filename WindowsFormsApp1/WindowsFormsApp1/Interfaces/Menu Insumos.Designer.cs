@@ -141,6 +141,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Consultar_Vacuna.TabIndex = 12;
             this.Btn_Consultar_Vacuna.Text = "Consultar vacuna";
             this.Btn_Consultar_Vacuna.UseVisualStyleBackColor = false;
+            this.Btn_Consultar_Vacuna.Click += new System.EventHandler(this.Btn_Consultar_Vacuna_Click);
             // 
             // Btn_Salir
             // 

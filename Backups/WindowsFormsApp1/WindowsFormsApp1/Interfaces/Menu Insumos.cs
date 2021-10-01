@@ -54,5 +54,12 @@ namespace WindowsFormsApp1.Interfaces
             Med.Show();
             this.Dispose();
         }
+
+        private void Btn_Consultar_Vacuna_Click(object sender, EventArgs e)
+        {
+            Form Cvac = new Frm_Consultar_Vacuna();
+            Cvac.Show();
+            this.Dispose();
+        }
     }
 }

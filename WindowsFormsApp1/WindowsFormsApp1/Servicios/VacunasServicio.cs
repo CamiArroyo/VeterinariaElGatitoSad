@@ -27,5 +27,25 @@ namespace WindowsFormsApp1.Servicios
             return false;
         }
 
+        public Vacuna GetVacuna(long id)
+        {
+            var vacuna = vacRepo.GetVacuna(id);
+            return vacuna;
+        }
+
+        public void ActualizarVacuna(Vacuna v)
+        {
+            var filasAfectadas = vacRepo.ActualizarVacuna(v);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
+        public void DarBajaVacuna(Vacuna vac)
+        {
+            var filasAfectadas = vacRepo.DarBajaVacuna(vac);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
+
     }
 }

@@ -188,11 +188,35 @@
     <Compile Include="Interfaces\Sintomas\Registrar_Sintoma.Designer.cs">
       <DependentUpon>Registrar_Sintoma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Vacs\Consultar_Vacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Consultar_Vacuna.Designer.cs">
+      <DependentUpon>Consultar_Vacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Eliminar_Vacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Eliminar_Vacuna.Designer.cs">
+      <DependentUpon>Eliminar_Vacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Modificar_Vacuna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Modificar_Vacuna.Designer.cs">
+      <DependentUpon>Modificar_Vacuna.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Vacs\Registrar_Vacuna.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Interfaces\Vacs\Registrar_Vacuna.Designer.cs">
       <DependentUpon>Registrar_Vacuna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Ver_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Vacs\Ver_Detalle.Designer.cs">
+      <DependentUpon>Ver_Detalle.cs</DependentUpon>
     </Compile>
     <Compile Include="Medicamentos.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -283,8 +307,20 @@
     <EmbeddedResource Include="Interfaces\Sintomas\Registrar_Sintoma.resx">
       <DependentUpon>Registrar_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Vacs\Consultar_Vacuna.resx">
+      <DependentUpon>Consultar_Vacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Vacs\Eliminar_Vacuna.resx">
+      <DependentUpon>Eliminar_Vacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Vacs\Modificar_Vacuna.resx">
+      <DependentUpon>Modificar_Vacuna.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Vacs\Registrar_Vacuna.resx">
       <DependentUpon>Registrar_Vacuna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Vacs\Ver_Detalle.resx">
+      <DependentUpon>Ver_Detalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

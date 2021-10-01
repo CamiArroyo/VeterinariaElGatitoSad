@@ -49,7 +49,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             if (dataGridView1.SelectedRows.Count == 1)
             {
                 //LLamar Modificar
-                var id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id_sintoma"].Value);
+                var id = Convert.ToInt32(dataGridView1.SelectedRows[0].Cells["id_vacuna"].Value);
                 new Frm_Modificar_Sintoma(id).Show();
                 Visible = false;
                 return;

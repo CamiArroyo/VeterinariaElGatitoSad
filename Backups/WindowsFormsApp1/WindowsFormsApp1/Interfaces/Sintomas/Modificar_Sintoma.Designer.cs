@@ -97,6 +97,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(311, 159);
             this.Controls.Add(this.BtnM_Cancelar);
             this.Controls.Add(this.BtnM_Guardar_Cambios);
@@ -105,6 +106,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.Controls.Add(this.Txt_Nombre);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Sintoma";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar sintomas";
             this.Load += new System.EventHandler(this.Frm_Modificar_Sintoma_Load);
             this.ResumeLayout(false);
