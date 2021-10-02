@@ -31,23 +31,13 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private void Btn_Registrar_Click(object sender, EventArgs e)
         {
-            try
-            {
+
                 if (!EsOperacionConfirmada())
                     return;
                 if (!SeRegistraRaza())
                     return;
                 RegistrarRaza(raza);
-            }
-            catch (ApplicationException aex)
-            {
-                MessageBox.Show(aex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            catch (Exception ex)
-            {
-                var mensaje = ex.Message;
-                MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
 
             Form menu = new Frm_Menu_Animales();
             menu.Show();
@@ -63,12 +53,13 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private bool SeRegistraRaza()
         {
+            var id_especie = Cmb_Especie.Text;
             var nombre = Txt_Nombre.Text;
             var descr = Txt_Descripcion.Text;
             var peso = Txt_Peso_Medio.Text;
             var altura = Txt_Altura_Media.Text;
 
-            var raza_ingresada = new Raza(nombre, descr, peso, altura);
+            var raza_ingresada = new Raza(id_especie, nombre, descr, peso, altura);
             raza = raza_ingresada;
             return true;
         }
@@ -89,6 +80,13 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Dispose();
             Form menu = new FrmMenu_Principal();
             menu.Show();
+        }
+
+        private void Frm_Registrar_Raza_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the '_PAV_3K2_2021_12DataSet1.ESPECIES' table. You can move, or remove it, as needed.
+            this.eSPECIESTableAdapter.Fill(this._PAV_3K2_2021_12DataSet1.ESPECIES);
+
         }
     }
 }

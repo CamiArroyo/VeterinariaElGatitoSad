@@ -80,6 +80,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registar_Especie.TabIndex = 15;
             this.Btn_Registar_Especie.Text = "Registrar especie";
             this.Btn_Registar_Especie.UseVisualStyleBackColor = false;
+            this.Btn_Registar_Especie.Click += new System.EventHandler(this.Btn_Registar_Especie_Click);
             // 
             // label1
             // 

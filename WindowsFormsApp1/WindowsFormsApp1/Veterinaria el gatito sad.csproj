@@ -279,6 +279,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12Dueños.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -307,6 +312,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Empleados\Registrar_Empleado.resx">
       <DependentUpon>Registrar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Especies\Registrar_Especie.resx">
+      <DependentUpon>Registrar_Especie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Iniciar sesion.resx">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>
@@ -427,6 +435,17 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12Dueños.xsc">
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>
