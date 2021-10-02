@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnE_Empleado
             // 
             this.BtnE_Empleado.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Empleado.Location = new System.Drawing.Point(12, 156);
+            this.BtnE_Empleado.Location = new System.Drawing.Point(14, 133);
             this.BtnE_Empleado.Name = "BtnE_Empleado";
             this.BtnE_Empleado.Size = new System.Drawing.Size(107, 37);
             this.BtnE_Empleado.TabIndex = 0;
@@ -48,7 +48,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnE_Cancelar
             // 
             this.BtnE_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Cancelar.Location = new System.Drawing.Point(156, 156);
+            this.BtnE_Cancelar.Location = new System.Drawing.Point(158, 133);
             this.BtnE_Cancelar.Name = "BtnE_Cancelar";
             this.BtnE_Cancelar.Size = new System.Drawing.Size(107, 37);
             this.BtnE_Cancelar.TabIndex = 1;
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // LblE_Confirmar_Operacion
             // 
             this.LblE_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(36, 57);
+            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(38, 34);
             this.LblE_Confirmar_Operacion.Name = "LblE_Confirmar_Operacion";
             this.LblE_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblE_Confirmar_Operacion.TabIndex = 2;

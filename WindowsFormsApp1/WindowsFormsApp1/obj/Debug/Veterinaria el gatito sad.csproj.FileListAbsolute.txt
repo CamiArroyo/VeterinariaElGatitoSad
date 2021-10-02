@@ -106,3 +106,7 @@ D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsForm
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Eliminar_Vacuna.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Consultar_Dueños.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Registrar_Dueños.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Modificar_Dueño.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Eliminar_Dueño.resources

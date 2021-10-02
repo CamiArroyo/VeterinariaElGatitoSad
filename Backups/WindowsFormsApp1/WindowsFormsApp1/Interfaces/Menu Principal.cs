@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.Interfaces;
+using WindowsFormsApp1.Interfaces.Dueños;
 using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Sintomas;
@@ -162,6 +163,13 @@ namespace WindowsFormsApp1
         {
             Form menu_animal = new Frm_Menu_Animales();
             menu_animal.Show();
+            this.Dispose();
+        }
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            Form CDueño = new Frm_Consultar_Dueños();
+            CDueño.Show();
             this.Dispose();
         }
     }

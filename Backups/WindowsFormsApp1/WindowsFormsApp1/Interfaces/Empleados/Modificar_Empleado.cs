@@ -57,6 +57,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             emp.apellido = TxtM_Apellido.Text;
             emp.password = password;
             emp.email = TxtM_Email.Text;
+            emp.estado = Cb_Estado_Empleado.Text;
         }
 
         private void ActualizarEmpleado()
@@ -92,6 +93,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             TxtM_Password.Text = emp.password;
             TxtM_Repetir_Password.Text = emp.password;
             TxtM_Email.Text = emp.email;
+            Cb_Estado_Empleado.Text = emp.estado;
         }
 
         private void BtnM_Cancelar_Click(object sender, EventArgs e)

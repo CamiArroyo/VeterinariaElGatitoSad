@@ -51,6 +51,8 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.label1 = new System.Windows.Forms.Label();
             this.TxtM_DNI = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.Cb_Estado_Empleado = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label10
@@ -245,12 +247,34 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.label9.TabIndex = 45;
             this.label9.Text = "Email";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(12, 379);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.TabIndex = 46;
+            this.label11.Text = "Estado";
+            // 
+            // Cb_Estado_Empleado
+            // 
+            this.Cb_Estado_Empleado.FormattingEnabled = true;
+            this.Cb_Estado_Empleado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
+            this.Cb_Estado_Empleado.Location = new System.Drawing.Point(133, 379);
+            this.Cb_Estado_Empleado.Name = "Cb_Estado_Empleado";
+            this.Cb_Estado_Empleado.Size = new System.Drawing.Size(200, 21);
+            this.Cb_Estado_Empleado.TabIndex = 47;
+            // 
             // Modificar_Empleado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MistyRose;
             this.ClientSize = new System.Drawing.Size(351, 450);
+            this.Controls.Add(this.Cb_Estado_Empleado);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.TxtM_DNI);
             this.Controls.Add(this.label10);
@@ -306,5 +330,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TxtM_DNI;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox Cb_Estado_Empleado;
     }
 }
