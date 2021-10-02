@@ -110,3 +110,16 @@ D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsForm
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Registrar_Dueños.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Modificar_Dueño.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Eliminar_Dueño.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Consultar_Dueños.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Eliminar_Dueño.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Modificar_Dueño.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Registrar_Dueños.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Registrar_Especie.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Consultar_Medicamentos.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Eliminar_Sintoma.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Modificar_Sintoma.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Consultar_Vacuna.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Eliminar_Vacuna.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Registrar_Vacuna.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources

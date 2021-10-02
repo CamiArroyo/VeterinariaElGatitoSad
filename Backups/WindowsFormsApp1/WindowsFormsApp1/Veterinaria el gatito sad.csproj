@@ -46,6 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Calendario_Vac.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Calendario_Vac.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Calendario_Vacunacion.cs" />
     <Compile Include="Entidades\Consulta.cs" />
     <Compile Include="Entidades\Detalle_calendario_vac.cs" />
@@ -62,6 +67,12 @@
     <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
+    <Compile Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.Designer.cs">
+      <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Dueños\Consultar_Dueño.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -279,11 +290,19 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12Dueños.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.resx">
+      <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Dueños\Consultar_Dueño.resx">
       <DependentUpon>Consultar_Dueño.cs</DependentUpon>
     </EmbeddedResource>
@@ -307,6 +326,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Empleados\Registrar_Empleado.resx">
       <DependentUpon>Registrar_Empleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Especies\Registrar_Especie.resx">
+      <DependentUpon>Registrar_Especie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Iniciar sesion.resx">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>
@@ -375,6 +397,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="Calendario_Vac.xsc">
+      <DependentUpon>Calendario_Vac.xsd</DependentUpon>
+    </None>
+    <None Include="Calendario_Vac.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Calendario_Vac.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Calendario_Vac.xss">
+      <DependentUpon>Calendario_Vac.xsd</DependentUpon>
+    </None>
     <None Include="Medicamentos.xsc">
       <DependentUpon>Medicamentos.xsd</DependentUpon>
     </None>
@@ -428,6 +461,17 @@
     <None Include="_PAV_3K2_2021_12DataSet.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet.xsd</DependentUpon>
     </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet1.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </None>
     <None Include="_PAV_3K2_2021_12Dueños.xsc">
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>
     </None>
@@ -449,6 +493,11 @@
   <ItemGroup>
     <None Include="Recursos\Sintomas.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Recursos\Vacuna.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Interfaces\Detalle Calendario Vac\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
