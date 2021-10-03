@@ -41,12 +41,12 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Btn_Registrar = new System.Windows.Forms.Button();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Cmb_Especie = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this._PAV_3K2_2021_12DataSet1 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet1();
             this.eSPECIESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12DataSet1 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet1();
+            this.Lbl_Especie = new System.Windows.Forms.Label();
             this.eSPECIESTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet1TableAdapters.ESPECIESTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eSPECIESBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // Txt_Nombre
@@ -116,22 +116,24 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // 
             // Btn_Registrar
             // 
+            this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Registrar.Location = new System.Drawing.Point(49, 219);
             this.Btn_Registrar.Name = "Btn_Registrar";
-            this.Btn_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Registrar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Registrar.TabIndex = 8;
             this.Btn_Registrar.Text = "Registrar";
-            this.Btn_Registrar.UseVisualStyleBackColor = true;
+            this.Btn_Registrar.UseVisualStyleBackColor = false;
             this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // Btn_Cancelar
             // 
-            this.Btn_Cancelar.Location = new System.Drawing.Point(200, 219);
+            this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Cancelar.Location = new System.Drawing.Point(181, 219);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Cancelar.TabIndex = 9;
             this.Btn_Cancelar.Text = "Cancelar";
-            this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.UseVisualStyleBackColor = false;
             this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Cmb_Especie
@@ -145,24 +147,24 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Cmb_Especie.TabIndex = 10;
             this.Cmb_Especie.ValueMember = "id_especie";
             // 
-            // label1
+            // eSPECIESBindingSource
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 30);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(124, 13);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Seleccione una especie:";
+            this.eSPECIESBindingSource.DataMember = "ESPECIES";
+            this.eSPECIESBindingSource.DataSource = this._PAV_3K2_2021_12DataSet1;
             // 
             // _PAV_3K2_2021_12DataSet1
             // 
             this._PAV_3K2_2021_12DataSet1.DataSetName = "_PAV_3K2_2021_12DataSet1";
             this._PAV_3K2_2021_12DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // eSPECIESBindingSource
+            // Lbl_Especie
             // 
-            this.eSPECIESBindingSource.DataMember = "ESPECIES";
-            this.eSPECIESBindingSource.DataSource = this._PAV_3K2_2021_12DataSet1;
+            this.Lbl_Especie.AutoSize = true;
+            this.Lbl_Especie.Location = new System.Drawing.Point(30, 30);
+            this.Lbl_Especie.Name = "Lbl_Especie";
+            this.Lbl_Especie.Size = new System.Drawing.Size(124, 13);
+            this.Lbl_Especie.TabIndex = 11;
+            this.Lbl_Especie.Text = "Seleccione una especie:";
             // 
             // eSPECIESTableAdapter
             // 
@@ -173,8 +175,8 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(353, 262);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(347, 280);
+            this.Controls.Add(this.Lbl_Especie);
             this.Controls.Add(this.Cmb_Especie);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Registrar);
@@ -190,8 +192,8 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar raza";
             this.Load += new System.EventHandler(this.Frm_Registrar_Raza_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eSPECIESBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -210,7 +212,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
         private System.Windows.Forms.Button Btn_Registrar;
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.ComboBox Cmb_Especie;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Lbl_Especie;
         private _PAV_3K2_2021_12DataSet1 _PAV_3K2_2021_12DataSet1;
         private System.Windows.Forms.BindingSource eSPECIESBindingSource;
         private _PAV_3K2_2021_12DataSet1TableAdapters.ESPECIESTableAdapter eSPECIESTableAdapter;

@@ -123,3 +123,10 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Registrar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Eliminar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Modificar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Consultar_Especies.resources

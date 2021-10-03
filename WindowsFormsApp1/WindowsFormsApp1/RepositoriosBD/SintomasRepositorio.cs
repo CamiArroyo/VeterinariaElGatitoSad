@@ -51,7 +51,6 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int DarBajaSintoma(Sintoma sint)
         {
-            //completar
             var sentenciaSql = $"Delete from Sintomas where id_sintoma={sint.id_sintoma}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;

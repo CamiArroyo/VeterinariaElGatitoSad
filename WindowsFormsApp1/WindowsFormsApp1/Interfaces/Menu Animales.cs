@@ -39,5 +39,19 @@ namespace WindowsFormsApp1.Interfaces
             menu_registrar_especie.Show();
             this.Dispose();
         }
+
+        private void Btn_Consultar_Especie_Click(object sender, EventArgs e)
+        {
+            Form menu_registrar_especie = new Frm_Consultar_Especies();
+            menu_registrar_especie.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Consultar_Razas_Click(object sender, EventArgs e)
+        {
+            Form menu_registrar_especie = new Frm_Consultar_Especies();
+            menu_registrar_especie.Show();
+            this.Dispose();
+        }
     }
 }

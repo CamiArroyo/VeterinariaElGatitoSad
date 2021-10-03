@@ -31,5 +31,25 @@ namespace WindowsFormsApp1.Servicios
                 return true;
             return false;
         }
+
+        public Especie GetEspecie(long id)
+        {
+            var dueño = especies_repositorio.GetEspecie(id);
+            return dueño;
+        }
+
+        public void ActualizarEspecie(Especie e)
+        {
+            var filasAfectadas = especies_repositorio.ActualizarEspecie(e);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
+        public void DarBajaEspecie(Especie esp)
+        {
+            var filasAfectadas = especies_repositorio.DarBajaSintoma(esp);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 }

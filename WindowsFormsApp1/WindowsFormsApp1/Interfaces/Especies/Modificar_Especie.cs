@@ -10,29 +10,29 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Entidades;
 using WindowsFormsApp1.Servicios;
 
-namespace WindowsFormsApp1.Interfaces.Dueños
+namespace WindowsFormsApp1.Interfaces.Especies
 {
-    public partial class Frm_Modificar_Dueño : Form
+    public partial class Frm_Modificar_Especie : Form
     {
-        private Dueño due;
-        private DueñosServicio dueService;
+        private Especie esp;
+        private EspeciesServicio esp_servicio;
 
-        public Frm_Modificar_Dueño(int id)
+        public Frm_Modificar_Especie(int id)
         {
-            dueService = new DueñosServicio();
-            due = dueService.GetDueño(id);
+            esp_servicio = new EspeciesServicio();
+            esp = esp_servicio.GetEspecie(id);
             InitializeComponent();
         }
 
-        private void BtnM_Guardar_Cambios_Click(object sender, EventArgs e)
+        private void Btn_Registrar_Click(object sender, EventArgs e)
         {
             try
             {
                 DialogResult resultado = MessageBox.Show("Confirmar operación", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (resultado == DialogResult.Cancel)
                     return;
-                TomarDatosDueño();
-                ActualizarDueño();
+                TomarDatosEspecie();
+                ActualizarEspecie();
                 CerrarFormulario();
             }
             catch (ApplicationException aex)
@@ -44,23 +44,22 @@ namespace WindowsFormsApp1.Interfaces.Dueños
                 MessageBox.Show("Ha ocurrido un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Form RCDueño = new Frm_Consultar_Dueños();
-            RCDueño.Show();
+            Form consultar_especies = new Frm_Consultar_Especies();
+            consultar_especies.Show();
             this.Dispose();
         }
 
-        private void TomarDatosDueño()
+        private void TomarDatosEspecie()
         {
-            due.nombre = Txt_Nombre.Text;
-            due.apellido = Txt_Apellido.Text;
-            due.telefono = Txt_Telefono.Text;
-            due.estado = Cb_Estado_Dueño.Text;
+            esp.nombre = Txt_Nombre.Text;
+            esp.descripcion = Txt_Descripcion.Text;
+            esp.nota_cuidados = Txt_Cuidados.Text;
         }
 
-        private void ActualizarDueño()
+        private void ActualizarEspecie()
         {
-            dueService.ActualizarDueño(due);
-            MessageBox.Show("Se actualizo el dueño con éxito", "Información", MessageBoxButtons.OK);
+            esp_servicio.ActualizarEspecie(esp);
+            MessageBox.Show("¡Se actualizo la especie con éxito!", "Información", MessageBoxButtons.OK);
         }
 
         public void CerrarFormulario()
@@ -70,23 +69,21 @@ namespace WindowsFormsApp1.Interfaces.Dueños
 
         private void CargarDatos()
         {
-            Txt_Nombre.Text = due.nombre;
-            Txt_Apellido.Text = due.apellido;
-            Txt_Telefono.Text = due.telefono;
-            Cb_Estado_Dueño.Text = due.estado;
+            Txt_Nombre.Text = esp.nombre;
+            Txt_Descripcion.Text = esp.descripcion;
+            Txt_Cuidados.Text = esp.nota_cuidados;
         }
 
         private void Frm_Modificar_Dueño_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12Dueños.DUEÑOS' Puede moverla o quitarla según sea necesario.
-            this.dUEÑOSTableAdapter.Fill(this._PAV_3K2_2021_12Dueños.DUEÑOS);
             CargarDatos();
         }
 
-        private void BtnM_Cancelar_Click(object sender, EventArgs e)
+        private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            Form CDueño = new Frm_Consultar_Dueños();
-            CDueño.Show();
+            Form consultar_especie = new Frm_Consultar_Especies();
+            consultar_especie.Show();
             this.Dispose();
         }
     }

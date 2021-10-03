@@ -127,6 +127,18 @@
     <Compile Include="Interfaces\Especies\Consultar_Especie.Designer.cs">
       <DependentUpon>Consultar_Especie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Especies\Eliminar_Especie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Especies\Eliminar_Especie.Designer.cs">
+      <DependentUpon>Eliminar_Especie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Especies\Modificar_Especie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Especies\Modificar_Especie.Designer.cs">
+      <DependentUpon>Modificar_Especie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Especies\Registrar_Especie.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +204,18 @@
     </Compile>
     <Compile Include="Interfaces\Razas\Consultar_Raza.Designer.cs">
       <DependentUpon>Consultar_Raza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Razas\Eliminar_Raza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Razas\Eliminar_Raza.Designer.cs">
+      <DependentUpon>Eliminar_Raza.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Razas\Modificar_Raza.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Razas\Modificar_Raza.Designer.cs">
+      <DependentUpon>Modificar_Raza.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Razas\Registrar_Raza.cs">
       <SubType>Form</SubType>
@@ -295,6 +319,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12Dueños.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -327,6 +356,15 @@
     <EmbeddedResource Include="Interfaces\Empleados\Registrar_Empleado.resx">
       <DependentUpon>Registrar_Empleado.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Especies\Consultar_Especie.resx">
+      <DependentUpon>Consultar_Especie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Especies\Eliminar_Especie.resx">
+      <DependentUpon>Eliminar_Especie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Especies\Modificar_Especie.resx">
+      <DependentUpon>Modificar_Especie.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Especies\Registrar_Especie.resx">
       <DependentUpon>Registrar_Especie.cs</DependentUpon>
     </EmbeddedResource>
@@ -356,6 +394,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu Sintomatologia.resx">
       <DependentUpon>Menu Sintomatologia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Razas\Consultar_Raza.resx">
+      <DependentUpon>Consultar_Raza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Razas\Eliminar_Raza.resx">
+      <DependentUpon>Eliminar_Raza.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Razas\Modificar_Raza.resx">
+      <DependentUpon>Modificar_Raza.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Razas\Registrar_Raza.resx">
       <DependentUpon>Registrar_Raza.cs</DependentUpon>
@@ -471,6 +518,17 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet1.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet2.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet2.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12Dueños.xsc">
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>

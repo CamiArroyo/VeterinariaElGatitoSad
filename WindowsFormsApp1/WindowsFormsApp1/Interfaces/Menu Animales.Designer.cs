@@ -68,8 +68,9 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Consultar_Especie.Name = "Btn_Consultar_Especie";
             this.Btn_Consultar_Especie.Size = new System.Drawing.Size(120, 37);
             this.Btn_Consultar_Especie.TabIndex = 16;
-            this.Btn_Consultar_Especie.Text = "Consultar especie";
+            this.Btn_Consultar_Especie.Text = "Consultar especies";
             this.Btn_Consultar_Especie.UseVisualStyleBackColor = false;
+            this.Btn_Consultar_Especie.Click += new System.EventHandler(this.Btn_Consultar_Especie_Click);
             // 
             // Btn_Registar_Especie
             // 
@@ -117,8 +118,9 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Consultar_Razas.Name = "Btn_Consultar_Razas";
             this.Btn_Consultar_Razas.Size = new System.Drawing.Size(120, 37);
             this.Btn_Consultar_Razas.TabIndex = 20;
-            this.Btn_Consultar_Razas.Text = "Consultar Raza";
+            this.Btn_Consultar_Razas.Text = "Consultar razas";
             this.Btn_Consultar_Razas.UseVisualStyleBackColor = false;
+            this.Btn_Consultar_Razas.Click += new System.EventHandler(this.Btn_Consultar_Razas_Click);
             // 
             // Frm_Menu_Animales
             // 

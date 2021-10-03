@@ -91,22 +91,24 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // 
             // Btn_Registrar
             // 
-            this.Btn_Registrar.Location = new System.Drawing.Point(69, 146);
+            this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Registrar.Location = new System.Drawing.Point(43, 146);
             this.Btn_Registrar.Name = "Btn_Registrar";
-            this.Btn_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Registrar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Registrar.TabIndex = 6;
             this.Btn_Registrar.Text = "Registrar";
-            this.Btn_Registrar.UseVisualStyleBackColor = true;
+            this.Btn_Registrar.UseVisualStyleBackColor = false;
             this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // Btn_Cancelar
             // 
-            this.Btn_Cancelar.Location = new System.Drawing.Point(184, 146);
+            this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Cancelar.Location = new System.Drawing.Point(175, 146);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Cancelar.TabIndex = 7;
             this.Btn_Cancelar.Text = "Cancelar";
-            this.Btn_Cancelar.UseVisualStyleBackColor = true;
+            this.Btn_Cancelar.UseVisualStyleBackColor = false;
             this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Frm_Registrar_Especie
@@ -114,7 +116,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(341, 188);
+            this.ClientSize = new System.Drawing.Size(341, 205);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Registrar);
             this.Controls.Add(this.Txt_Descripcion);

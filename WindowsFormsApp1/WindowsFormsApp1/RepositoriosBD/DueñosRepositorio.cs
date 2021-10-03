@@ -29,9 +29,9 @@ namespace WindowsFormsApp1.RepositoriosBD
             }
             return dueño;
         }
+
         private Dueño MapearDueño(DataRow fila)
         {
-
             var dueño = new Dueño();
             dueño.id_dueño = Convert.ToInt32(fila["id_dueño"] is DBNull ? " " : fila["id_dueño"]);
             dueño.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
@@ -51,7 +51,6 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int DarBajaDueño(Dueño d)
         {
-            //completar
             var sentenciaSql = $"UPDATE DUEÑOS SET estado='Inactivo' WHERE id_dueño={d.id_dueño}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
