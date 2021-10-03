@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces.Diagnosticos;
 using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1.Interfaces
@@ -36,6 +37,20 @@ namespace WindowsFormsApp1.Interfaces
         {
             Form consultar_sint = new Frm_Consultar_Sintoma();
             consultar_sint.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Consultar_Diagnostico_Click(object sender, EventArgs e)
+        {
+            Form menu_diagnosticos = new Frm_Consultar_Diagnosticos();
+            menu_diagnosticos.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Registar_Diagnostico_Click(object sender, EventArgs e)
+        {
+            Form menu_diagnosticos = new Frm_Registrar_Diagnostico();
+            menu_diagnosticos.Show();
             this.Dispose();
         }
     }

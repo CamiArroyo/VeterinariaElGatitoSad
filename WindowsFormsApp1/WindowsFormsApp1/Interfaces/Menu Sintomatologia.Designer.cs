@@ -76,6 +76,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registar_Diagnostico.TabIndex = 3;
             this.Btn_Registar_Diagnostico.Text = "Registrar diagnostico";
             this.Btn_Registar_Diagnostico.UseVisualStyleBackColor = false;
+            this.Btn_Registar_Diagnostico.Click += new System.EventHandler(this.Btn_Registar_Diagnostico_Click);
             // 
             // Btn_Consultar_Diagnostico
             // 
@@ -86,6 +87,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Consultar_Diagnostico.TabIndex = 4;
             this.Btn_Consultar_Diagnostico.Text = "Consultar diagnostico";
             this.Btn_Consultar_Diagnostico.UseVisualStyleBackColor = false;
+            this.Btn_Consultar_Diagnostico.Click += new System.EventHandler(this.Btn_Consultar_Diagnostico_Click);
             // 
             // Btn_Registrar_Sintoma
             // 

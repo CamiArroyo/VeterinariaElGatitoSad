@@ -57,7 +57,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.descripcionDataGridViewTextBoxColumn,
             this.notacuidadosDataGridViewTextBoxColumn});
             this.Dgw_Consultar_Especies.DataSource = this.eSPECIESBindingSource;
-            this.Dgw_Consultar_Especies.Location = new System.Drawing.Point(26, 79);
+            this.Dgw_Consultar_Especies.Location = new System.Drawing.Point(25, 29);
             this.Dgw_Consultar_Especies.Name = "Dgw_Consultar_Especies";
             this.Dgw_Consultar_Especies.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgw_Consultar_Especies.Size = new System.Drawing.Size(441, 283);
@@ -101,7 +101,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Btn_Eliminar
             // 
             this.Btn_Eliminar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(159, 20);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(495, 92);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
             this.Btn_Eliminar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Eliminar.TabIndex = 1;
@@ -112,7 +112,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(352, 379);
+            this.Btn_Salir.Location = new System.Drawing.Point(495, 330);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(115, 44);
             this.Btn_Salir.TabIndex = 2;
@@ -123,7 +123,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Btn_Modificar
             // 
             this.Btn_Modificar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Modificar.Location = new System.Drawing.Point(26, 20);
+            this.Btn_Modificar.Location = new System.Drawing.Point(495, 29);
             this.Btn_Modificar.Name = "Btn_Modificar";
             this.Btn_Modificar.Size = new System.Drawing.Size(115, 44);
             this.Btn_Modificar.TabIndex = 3;
@@ -140,7 +140,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(494, 437);
+            this.ClientSize = new System.Drawing.Size(643, 397);
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Eliminar);

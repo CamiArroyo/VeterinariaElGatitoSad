@@ -10,27 +10,17 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Entidades;
 using WindowsFormsApp1.Servicios;
 
-namespace WindowsFormsApp1.Interfaces.Especies
+namespace WindowsFormsApp1.Interfaces.Diagnosticos
 {
-    public partial class Frm_Registrar_Especie : Form
+    public partial class Frm_Registrar_Diagnostico : Form
     {
-        private Especie especie;
-        private EspeciesServicio especie_servicio;
+        private Diagnostico diag;
+        private DiagnosticosServicio diag_serv;
 
-        public Frm_Registrar_Especie()
+        public Frm_Registrar_Diagnostico()
         {
-            especie_servicio = new EspeciesServicio();
+            diag_serv = new DiagnosticosServicio();
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void Btn_Registrar_Click(object sender, EventArgs e)
@@ -39,9 +29,9 @@ namespace WindowsFormsApp1.Interfaces.Especies
             {
                 if (!EsOperacionConfirmada())
                     return;
-                if (!SeRegistraEspecie())
+                if (!EsDiagnosticoValido())
                     return;
-                RegistrarEspecie(especie);
+                RegistrarDiagnostico(diag);
             }
             catch (ApplicationException aex)
             {
@@ -52,7 +42,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Form menu = new Frm_Menu_Animales();
+            Form menu = new Fmr_Menu_Sintomatologia();
             menu.Show();
         }
 
@@ -64,25 +54,24 @@ namespace WindowsFormsApp1.Interfaces.Especies
             return false;
         }
 
-        private bool SeRegistraEspecie()
+        private bool EsDiagnosticoValido()
         {
             var nombre = Txt_Nombre.Text;
             var descripcion = Txt_Descripcion.Text;
-            var cuidados = Txt_Cuidados.Text;
 
-            var especie_ingresada = new Especie(nombre, descripcion, cuidados);
-            especie = especie_ingresada;
+            var diag_ingresado = new Diagnostico(nombre, descripcion);
+            diag = diag_ingresado;
             return true;
         }
 
-        private void RegistrarEspecie(Especie especie)
+        private void RegistrarDiagnostico(Diagnostico diag)
         {
-            if (!especie_servicio.RegistrarEspecie(especie))
+            if (!diag_serv.RegistrarDiagnostico(diag))
             {
-                MessageBox.Show("Ocurrió un problema al registrar la especie", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ocurrió un problema al registrar el diagnóstico", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            MessageBox.Show("¡La especie se registró con éxito!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("¡El diagnóstico se registró con éxito!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
 
@@ -94,3 +83,4 @@ namespace WindowsFormsApp1.Interfaces.Especies
         }
     }
 }
+

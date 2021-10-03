@@ -94,7 +94,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Registrar.Location = new System.Drawing.Point(43, 146);
             this.Btn_Registrar.Name = "Btn_Registrar";
-            this.Btn_Registrar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Registrar.Size = new System.Drawing.Size(115, 31);
             this.Btn_Registrar.TabIndex = 6;
             this.Btn_Registrar.Text = "Registrar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
@@ -105,7 +105,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Cancelar.Location = new System.Drawing.Point(175, 146);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 31);
             this.Btn_Cancelar.TabIndex = 7;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
