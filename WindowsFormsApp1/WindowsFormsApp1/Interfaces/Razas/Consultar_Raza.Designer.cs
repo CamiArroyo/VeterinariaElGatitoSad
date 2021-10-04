@@ -163,6 +163,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Controls.Add(this.Btn_Eliminar);
             this.Controls.Add(this.Dgv_Consultar_Razas);
             this.Name = "Frm_Consultar_Raza";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar razas";
             this.Load += new System.EventHandler(this.Frm_Consultar_Raza_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Razas)).EndInit();

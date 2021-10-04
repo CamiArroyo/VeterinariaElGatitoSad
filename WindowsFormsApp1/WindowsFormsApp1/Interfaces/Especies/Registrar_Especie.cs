@@ -89,7 +89,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Form menu = new FrmMenu_Principal();
+            Form menu = new Frm_Menu_Animales();
             menu.Show();
         }
     }

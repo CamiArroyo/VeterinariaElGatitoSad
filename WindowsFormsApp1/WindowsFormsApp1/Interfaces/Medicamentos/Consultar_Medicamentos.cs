@@ -33,5 +33,12 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         {
 
         }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Menu_Insumos();
+            menu.Show();
+            this.Dispose();
+        }
     }
 }

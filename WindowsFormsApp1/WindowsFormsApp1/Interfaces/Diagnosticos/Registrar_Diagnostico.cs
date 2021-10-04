@@ -78,7 +78,7 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Form menu = new FrmMenu_Principal();
+            Form menu = new Fmr_Menu_Sintomatologia();
             menu.Show();
         }
     }

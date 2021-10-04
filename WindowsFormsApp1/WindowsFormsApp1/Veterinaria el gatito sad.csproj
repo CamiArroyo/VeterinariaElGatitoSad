@@ -223,6 +223,12 @@
     <Compile Include="Interfaces\Medicamentos\Consultar_Medicamentos.Designer.cs">
       <DependentUpon>Consultar_Medicamentos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Medicamentos\Registrar_Medicamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Medicamentos\Registrar_Medicamento.Designer.cs">
+      <DependentUpon>Registrar_Medicamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Menu Animales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -339,6 +345,7 @@
     <Compile Include="RepositoriosBD\EspeciesRepositorio.cs" />
     <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
     <Compile Include="RepositoriosBD\MascotasRepositorio.cs" />
+    <Compile Include="RepositoriosBD\MedicamentosRepositorio.cs" />
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
@@ -348,6 +355,7 @@
     <Compile Include="Servicios\EspeciesServicio.cs" />
     <Compile Include="Servicios\LaboratoriosServicio.cs" />
     <Compile Include="Servicios\MascotasServicio.cs" />
+    <Compile Include="Servicios\MedicamentosServicio.cs" />
     <Compile Include="Servicios\RazasServicio.cs" />
     <Compile Include="Servicios\SintomasServicio.cs" />
     <Compile Include="Servicios\VacunasServicio.cs" />
@@ -493,6 +501,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Medicamentos\Consultar_Medicamentos.resx">
       <DependentUpon>Consultar_Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Medicamentos\Registrar_Medicamento.resx">
+      <DependentUpon>Registrar_Medicamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Menu Animales.resx">
       <DependentUpon>Menu Animales.cs</DependentUpon>

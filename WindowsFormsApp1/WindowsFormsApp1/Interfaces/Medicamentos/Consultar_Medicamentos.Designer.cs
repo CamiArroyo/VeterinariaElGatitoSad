@@ -51,6 +51,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.ForestGreen;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -64,6 +65,8 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.dataGridView1.DataSource = this.mEDICAMENTOSBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(-2, 47);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(641, 327);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -138,10 +141,11 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Btn_Salir.TabIndex = 2;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = true;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
             // Btn_Registrar_Sintoma
             // 
-            this.Btn_Registrar_Sintoma.Location = new System.Drawing.Point(24, 410);
+            this.Btn_Registrar_Sintoma.Location = new System.Drawing.Point(12, 410);
             this.Btn_Registrar_Sintoma.Name = "Btn_Registrar_Sintoma";
             this.Btn_Registrar_Sintoma.Size = new System.Drawing.Size(124, 45);
             this.Btn_Registrar_Sintoma.TabIndex = 3;
@@ -159,6 +163,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Frm_Consultar_Medicamentos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medicamentos";
             this.Load += new System.EventHandler(this.Frm_Consultar_Medicamentos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

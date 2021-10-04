@@ -87,6 +87,13 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             MessageBox.Show("¡La mascota se registró con éxito!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
+
+        private void Btm_Cerrar_Click(object sender, EventArgs e)
+        {
+            Form menu = new FrmMenu_Principal();
+            menu.Show();
+            this.Dispose();
+        }
     }
     
 }

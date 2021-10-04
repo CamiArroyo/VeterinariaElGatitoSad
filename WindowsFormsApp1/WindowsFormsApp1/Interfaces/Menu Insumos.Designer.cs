@@ -109,6 +109,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registrar_Medicamento.TabIndex = 9;
             this.Btn_Registrar_Medicamento.Text = "Registrar medicamento";
             this.Btn_Registrar_Medicamento.UseVisualStyleBackColor = false;
+            this.Btn_Registrar_Medicamento.Click += new System.EventHandler(this.Btn_Registrar_Medicamento_Click);
             // 
             // Btn_Consultar_Medicamento
             // 

@@ -96,7 +96,24 @@ SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id
               <Mapping SourceColumn="id_dueño" DataSetColumn="id_dueño" />
               <Mapping SourceColumn="estado" DataSetColumn="estado" />
             </Mappings>
-            <Sources />
+            <Sources>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectName="[PAV-3K2-2021-12].dbo.MASCOTAS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="MostrarOff" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="MostrarOff" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="MostrarOff">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM dbo.MASCOTAS where estado='Inactivo'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectName="[PAV-3K2-2021-12].dbo.MASCOTAS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="MostrarOn" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="MostrarOn" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="MostrarOn">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM dbo.MASCOTAS where estado='Activo'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
           </TableAdapter>
         </Tables>
         <Sources />

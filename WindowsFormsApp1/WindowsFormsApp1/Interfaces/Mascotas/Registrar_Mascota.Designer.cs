@@ -184,9 +184,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // 
             // Btm_Registrar
             // 
-            this.Btm_Registrar.Location = new System.Drawing.Point(43, 258);
+            this.Btm_Registrar.Location = new System.Drawing.Point(141, 267);
             this.Btm_Registrar.Name = "Btm_Registrar";
-            this.Btm_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.Btm_Registrar.Size = new System.Drawing.Size(88, 44);
             this.Btm_Registrar.TabIndex = 12;
             this.Btm_Registrar.Text = "Registrar";
             this.Btm_Registrar.UseVisualStyleBackColor = true;
@@ -194,12 +194,13 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // 
             // Btm_Cerrar
             // 
-            this.Btm_Cerrar.Location = new System.Drawing.Point(240, 258);
+            this.Btm_Cerrar.Location = new System.Drawing.Point(253, 267);
             this.Btm_Cerrar.Name = "Btm_Cerrar";
-            this.Btm_Cerrar.Size = new System.Drawing.Size(75, 23);
+            this.Btm_Cerrar.Size = new System.Drawing.Size(88, 44);
             this.Btm_Cerrar.TabIndex = 13;
             this.Btm_Cerrar.Text = "Cerrar";
             this.Btm_Cerrar.UseVisualStyleBackColor = true;
+            this.Btm_Cerrar.Click += new System.EventHandler(this.Btm_Cerrar_Click);
             // 
             // rAZASTableAdapter
             // 
@@ -214,7 +215,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(363, 303);
+            this.ClientSize = new System.Drawing.Size(364, 327);
             this.Controls.Add(this.Btm_Cerrar);
             this.Controls.Add(this.Btm_Registrar);
             this.Controls.Add(this.Dtm_Fecha_Nacimiento);
@@ -230,6 +231,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Registrar_Mascota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar_Mascota";
             this.Load += new System.EventHandler(this.Frm_Registrar_Mascota_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).EndInit();

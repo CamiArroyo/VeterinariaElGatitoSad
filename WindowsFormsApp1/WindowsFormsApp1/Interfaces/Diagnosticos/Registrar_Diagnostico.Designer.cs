@@ -119,6 +119,7 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             this.Controls.Add(this.Txt_Nombre);
             this.Controls.Add(this.Lbl_Nombre);
             this.Name = "Frm_Registrar_Diagnostico";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar diagnóstico";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

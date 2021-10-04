@@ -101,6 +101,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Cmb_Estado
             // 
             this.Cmb_Estado.FormattingEnabled = true;
+            this.Cmb_Estado.Items.AddRange(new object[] {
+            "Activo",
+            "Inactivo"});
             this.Cmb_Estado.Location = new System.Drawing.Point(88, 101);
             this.Cmb_Estado.Name = "Cmb_Estado";
             this.Cmb_Estado.Size = new System.Drawing.Size(121, 21);
@@ -143,6 +146,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Mascota";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar_Mascota";
             this.Load += new System.EventHandler(this.Frm_Modificar_Mascota_Load);
             this.ResumeLayout(false);

@@ -61,5 +61,12 @@ namespace WindowsFormsApp1.Interfaces
             Cvac.Show();
             this.Dispose();
         }
+
+        private void Btn_Registrar_Medicamento_Click(object sender, EventArgs e)
+        {
+            Form Rmedicamento = new Frm_Registrar_Medicamento();
+            Rmedicamento.Show();
+            this.Dispose();
+        }
     }
 }

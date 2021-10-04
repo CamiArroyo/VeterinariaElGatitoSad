@@ -20,9 +20,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private void Frm_Consultar_Mascota_Load(object sender, EventArgs e)
         {
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet7.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter1.Fill(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet6.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter.Fill(this._PAV_3K2_2021_12DataSet6.MASCOTAS);
+            //this.mASCOTASTableAdapter.Fill(this._PAV_3K2_2021_12DataSet6.MASCOTAS);
 
         }
 
@@ -56,6 +56,51 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void mostrarOffToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.mASCOTASTableAdapter1.MostrarOff(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void mostrarOnToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
+
+        private void Btn_Mostrar_On_Click(object sender, EventArgs e)
+        {
+            this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            Btm_Eliminar_Mascota.Visible = true;
+        }
+
+        private void Btn_Mostrar_off_Click(object sender, EventArgs e)
+        {
+            this.mASCOTASTableAdapter1.MostrarOff(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            Btm_Eliminar_Mascota.Visible = false;
+        }
+
+        private void Btn_Salir_Click(object sender, EventArgs e)
+        {
+            Form menu = new FrmMenu_Principal();
+            menu.Show();
+            this.Dispose();
         }
     }
 }
