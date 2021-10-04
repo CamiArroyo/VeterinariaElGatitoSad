@@ -139,7 +139,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // Cmb_Especie
             // 
             this.Cmb_Especie.DataSource = this.eSPECIESBindingSource;
-            this.Cmb_Especie.DisplayMember = "nombre";
+            this.Cmb_Especie.DisplayMember = "id_especie";
             this.Cmb_Especie.FormattingEnabled = true;
             this.Cmb_Especie.Location = new System.Drawing.Point(172, 27);
             this.Cmb_Especie.Name = "Cmb_Especie";

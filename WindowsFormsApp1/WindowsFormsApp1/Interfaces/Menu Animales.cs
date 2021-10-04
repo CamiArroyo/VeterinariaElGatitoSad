@@ -33,6 +33,13 @@ namespace WindowsFormsApp1.Interfaces
             this.Dispose();
         }
 
+        private void Btn_Consultar_Razas_Click(object sender, EventArgs e)
+        {
+            Form menu_registrar_especie = new Frm_Consultar_Raza();
+            menu_registrar_especie.Show();
+            this.Dispose();
+        }
+
         private void Btn_Registar_Especie_Click(object sender, EventArgs e)
         {
             Form menu_registrar_especie = new Frm_Registrar_Especie();
@@ -47,11 +54,5 @@ namespace WindowsFormsApp1.Interfaces
             this.Dispose();
         }
 
-        private void Btn_Consultar_Razas_Click(object sender, EventArgs e)
-        {
-            Form menu_registrar_especie = new Frm_Consultar_Especies();
-            menu_registrar_especie.Show();
-            this.Dispose();
-        }
     }
 }

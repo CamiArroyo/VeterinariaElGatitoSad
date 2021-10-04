@@ -355,6 +355,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12Dueños.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -583,6 +593,28 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet3.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet4.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet4.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet5.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet5.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12Dueños.xsc">
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>

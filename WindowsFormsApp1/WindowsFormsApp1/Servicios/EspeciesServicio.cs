@@ -34,8 +34,8 @@ namespace WindowsFormsApp1.Servicios
 
         public Especie GetEspecie(long id)
         {
-            var dueño = especies_repositorio.GetEspecie(id);
-            return dueño;
+            var especie = especies_repositorio.GetEspecie(id);
+            return especie;
         }
 
         public void ActualizarEspecie(Especie e)
@@ -47,7 +47,7 @@ namespace WindowsFormsApp1.Servicios
 
         public void DarBajaEspecie(Especie esp)
         {
-            var filasAfectadas = especies_repositorio.DarBajaSintoma(esp);
+            var filasAfectadas = especies_repositorio.DarBajaEspecie(esp);
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al eliminar");
         }

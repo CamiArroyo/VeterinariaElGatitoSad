@@ -47,7 +47,7 @@ namespace WindowsFormsApp1.RepositoriosBD
             return filasAfectadas;
         }
 
-        public int DarBajaSintoma(Especie e)
+        public int DarBajaEspecie(Especie e)
         {
             var sentenciaSql = $"Delete from Especies where id_especie={e.id_especie}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);

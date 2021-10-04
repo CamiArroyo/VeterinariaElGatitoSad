@@ -29,6 +29,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Lbl_Especie = new System.Windows.Forms.Label();
             this.Cmb_Especie = new System.Windows.Forms.ComboBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
@@ -41,6 +42,11 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Txt_Descripcion = new System.Windows.Forms.TextBox();
             this.Lbl_Nombre = new System.Windows.Forms.Label();
             this.Txt_Nombre = new System.Windows.Forms.TextBox();
+            this._PAV_3K2_2021_12DataSet5 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet5();
+            this.eSPECIESBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.eSPECIESTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet5TableAdapters.ESPECIESTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eSPECIESBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Especie
@@ -54,6 +60,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // 
             // Cmb_Especie
             // 
+            this.Cmb_Especie.DataSource = this.eSPECIESBindingSource;
             this.Cmb_Especie.DisplayMember = "id_especie";
             this.Cmb_Especie.FormattingEnabled = true;
             this.Cmb_Especie.Location = new System.Drawing.Point(172, 26);
@@ -71,6 +78,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Btn_Cancelar.TabIndex = 21;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Modificar
             // 
@@ -81,6 +89,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Btn_Modificar.TabIndex = 20;
             this.Btn_Modificar.Text = "Modificar";
             this.Btn_Modificar.UseVisualStyleBackColor = false;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Lbl_Altura_Media
             // 
@@ -146,6 +155,20 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Txt_Nombre.Size = new System.Drawing.Size(140, 20);
             this.Txt_Nombre.TabIndex = 12;
             // 
+            // _PAV_3K2_2021_12DataSet5
+            // 
+            this._PAV_3K2_2021_12DataSet5.DataSetName = "_PAV_3K2_2021_12DataSet5";
+            this._PAV_3K2_2021_12DataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // eSPECIESBindingSource
+            // 
+            this.eSPECIESBindingSource.DataMember = "ESPECIES";
+            this.eSPECIESBindingSource.DataSource = this._PAV_3K2_2021_12DataSet5;
+            // 
+            // eSPECIESTableAdapter
+            // 
+            this.eSPECIESTableAdapter.ClearBeforeFill = true;
+            // 
             // Frm_Modificar_Raza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -166,6 +189,9 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Controls.Add(this.Txt_Nombre);
             this.Name = "Frm_Modificar_Raza";
             this.Text = "Modificar raza";
+            this.Load += new System.EventHandler(this.Frm_Modificar_Raza_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eSPECIESBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,5 +211,8 @@ namespace WindowsFormsApp1.Interfaces.Razas
         private System.Windows.Forms.TextBox Txt_Descripcion;
         private System.Windows.Forms.Label Lbl_Nombre;
         private System.Windows.Forms.TextBox Txt_Nombre;
+        private _PAV_3K2_2021_12DataSet5 _PAV_3K2_2021_12DataSet5;
+        private System.Windows.Forms.BindingSource eSPECIESBindingSource;
+        private _PAV_3K2_2021_12DataSet5TableAdapters.ESPECIESTableAdapter eSPECIESTableAdapter;
     }
 }

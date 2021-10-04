@@ -53,13 +53,13 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private bool SeRegistraRaza()
         {
-            var id_especie = Cmb_Especie.Text;
             var nombre = Txt_Nombre.Text;
+            var id_especie = Cmb_Especie.Text;
             var descr = Txt_Descripcion.Text;
             var peso = Txt_Peso_Medio.Text;
             var altura = Txt_Altura_Media.Text;
 
-            var raza_ingresada = new Raza(id_especie, nombre, descr, peso, altura);
+            var raza_ingresada = new Raza(nombre, id_especie, descr, peso, altura);
             raza = raza_ingresada;
             return true;
         }
