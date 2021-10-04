@@ -193,6 +193,30 @@
     <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.Designer.cs">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Mascotas\Consultar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Consultar_Mascota.Designer.cs">
+      <DependentUpon>Consultar_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Eliminar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Eliminar_Mascota.Designer.cs">
+      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Modificar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Modificar_Mascota.Designer.cs">
+      <DependentUpon>Modificar_Mascota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Registrar_Mascota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Registrar_Mascota.Designer.cs">
+      <DependentUpon>Registrar_Mascota.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Medicamentos\Consultar_Medicamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -314,6 +338,7 @@
     <Compile Include="RepositoriosBD\EmpleadosRepositorio.cs" />
     <Compile Include="RepositoriosBD\EspeciesRepositorio.cs" />
     <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
+    <Compile Include="RepositoriosBD\MascotasRepositorio.cs" />
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
@@ -322,6 +347,7 @@
     <Compile Include="Servicios\EmpleadosServicio.cs" />
     <Compile Include="Servicios\EspeciesServicio.cs" />
     <Compile Include="Servicios\LaboratoriosServicio.cs" />
+    <Compile Include="Servicios\MascotasServicio.cs" />
     <Compile Include="Servicios\RazasServicio.cs" />
     <Compile Include="Servicios\SintomasServicio.cs" />
     <Compile Include="Servicios\VacunasServicio.cs" />
@@ -364,6 +390,26 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet9.xsd</DependentUpon>
     </Compile>
     <Compile Include="_PAV_3K2_2021_12Dueños.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -432,6 +478,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Laboratorios\Registrar_Laboratorio.resx">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Mascotas\Consultar_Mascota.resx">
+      <DependentUpon>Consultar_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Mascotas\Eliminar_Mascota.resx">
+      <DependentUpon>Eliminar_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Mascotas\Modificar_Mascota.resx">
+      <DependentUpon>Modificar_Mascota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Mascotas\Registrar_Mascota.resx">
+      <DependentUpon>Registrar_Mascota.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Medicamentos\Consultar_Medicamentos.resx">
       <DependentUpon>Consultar_Medicamentos.cs</DependentUpon>
@@ -615,6 +673,50 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet5.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet8.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet8.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet9.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet9.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet9.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12Dueños.xsc">
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>

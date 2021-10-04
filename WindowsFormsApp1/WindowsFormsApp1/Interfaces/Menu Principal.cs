@@ -11,6 +11,7 @@ using WindowsFormsApp1.Interfaces;
 using WindowsFormsApp1.Interfaces.Dueños;
 using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
+using WindowsFormsApp1.Interfaces.Mascotas;
 using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1
@@ -120,7 +121,9 @@ namespace WindowsFormsApp1
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            Form CMascota = new Frm_Consultar_Mascota();
+            CMascota.Show();
+            this.Dispose();
         }
 
         private void Btn_Empleados_Click(object sender, EventArgs e)
