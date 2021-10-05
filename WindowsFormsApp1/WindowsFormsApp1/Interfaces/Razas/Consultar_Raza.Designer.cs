@@ -34,15 +34,15 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_Eliminar = new System.Windows.Forms.Button();
             this.Dgv_Consultar_Razas = new System.Windows.Forms.DataGridView();
+            this.rAZASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12DataSet4 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4();
+            this.rAZASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4TableAdapters.RAZASTableAdapter();
             this.idrazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idespecieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesomedioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alturamediaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.rAZASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this._PAV_3K2_2021_12DataSet4 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4();
-            this.rAZASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4TableAdapters.RAZASTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Razas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet4)).BeginInit();
@@ -51,9 +51,9 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // Btn_Modificar
             // 
             this.Btn_Modificar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Modificar.Location = new System.Drawing.Point(493, 31);
+            this.Btn_Modificar.Location = new System.Drawing.Point(499, 34);
             this.Btn_Modificar.Name = "Btn_Modificar";
-            this.Btn_Modificar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Modificar.Size = new System.Drawing.Size(145, 40);
             this.Btn_Modificar.TabIndex = 7;
             this.Btn_Modificar.Text = "Modificar raza";
             this.Btn_Modificar.UseVisualStyleBackColor = false;
@@ -62,9 +62,9 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(493, 335);
+            this.Btn_Salir.Location = new System.Drawing.Point(499, 335);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 6;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = false;
@@ -73,9 +73,9 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // Btn_Eliminar
             // 
             this.Btn_Eliminar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar.Location = new System.Drawing.Point(493, 94);
+            this.Btn_Eliminar.Location = new System.Drawing.Point(499, 90);
             this.Btn_Eliminar.Name = "Btn_Eliminar";
-            this.Btn_Eliminar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Eliminar.Size = new System.Drawing.Size(145, 40);
             this.Btn_Eliminar.TabIndex = 5;
             this.Btn_Eliminar.Text = "Eliminar raza";
             this.Btn_Eliminar.UseVisualStyleBackColor = false;
@@ -85,6 +85,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // 
             this.Dgv_Consultar_Razas.AllowUserToAddRows = false;
             this.Dgv_Consultar_Razas.AutoGenerateColumns = false;
+            this.Dgv_Consultar_Razas.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.Dgv_Consultar_Razas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Consultar_Razas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idrazaDataGridViewTextBoxColumn,
@@ -94,49 +95,11 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.pesomedioDataGridViewTextBoxColumn,
             this.alturamediaDataGridViewTextBoxColumn});
             this.Dgv_Consultar_Razas.DataSource = this.rAZASBindingSource;
-            this.Dgv_Consultar_Razas.Location = new System.Drawing.Point(23, 31);
+            this.Dgv_Consultar_Razas.Location = new System.Drawing.Point(23, 34);
             this.Dgv_Consultar_Razas.Name = "Dgv_Consultar_Razas";
             this.Dgv_Consultar_Razas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_Consultar_Razas.Size = new System.Drawing.Size(441, 283);
+            this.Dgv_Consultar_Razas.Size = new System.Drawing.Size(450, 300);
             this.Dgv_Consultar_Razas.TabIndex = 4;
-            // 
-            // idrazaDataGridViewTextBoxColumn
-            // 
-            this.idrazaDataGridViewTextBoxColumn.DataPropertyName = "id_raza";
-            this.idrazaDataGridViewTextBoxColumn.HeaderText = "id_raza";
-            this.idrazaDataGridViewTextBoxColumn.Name = "idrazaDataGridViewTextBoxColumn";
-            this.idrazaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDataGridViewTextBoxColumn
-            // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            // 
-            // idespecieDataGridViewTextBoxColumn
-            // 
-            this.idespecieDataGridViewTextBoxColumn.DataPropertyName = "id_especie";
-            this.idespecieDataGridViewTextBoxColumn.HeaderText = "id_especie";
-            this.idespecieDataGridViewTextBoxColumn.Name = "idespecieDataGridViewTextBoxColumn";
-            // 
-            // descripcionDataGridViewTextBoxColumn
-            // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // pesomedioDataGridViewTextBoxColumn
-            // 
-            this.pesomedioDataGridViewTextBoxColumn.DataPropertyName = "peso_medio";
-            this.pesomedioDataGridViewTextBoxColumn.HeaderText = "peso_medio";
-            this.pesomedioDataGridViewTextBoxColumn.Name = "pesomedioDataGridViewTextBoxColumn";
-            // 
-            // alturamediaDataGridViewTextBoxColumn
-            // 
-            this.alturamediaDataGridViewTextBoxColumn.DataPropertyName = "altura_media";
-            this.alturamediaDataGridViewTextBoxColumn.HeaderText = "altura_media";
-            this.alturamediaDataGridViewTextBoxColumn.Name = "alturamediaDataGridViewTextBoxColumn";
             // 
             // rAZASBindingSource
             // 
@@ -152,12 +115,50 @@ namespace WindowsFormsApp1.Interfaces.Razas
             // 
             this.rAZASTableAdapter.ClearBeforeFill = true;
             // 
+            // idrazaDataGridViewTextBoxColumn
+            // 
+            this.idrazaDataGridViewTextBoxColumn.DataPropertyName = "id_raza";
+            this.idrazaDataGridViewTextBoxColumn.HeaderText = "ID raza";
+            this.idrazaDataGridViewTextBoxColumn.Name = "idrazaDataGridViewTextBoxColumn";
+            this.idrazaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            // 
+            // idespecieDataGridViewTextBoxColumn
+            // 
+            this.idespecieDataGridViewTextBoxColumn.DataPropertyName = "id_especie";
+            this.idespecieDataGridViewTextBoxColumn.HeaderText = "ID especie";
+            this.idespecieDataGridViewTextBoxColumn.Name = "idespecieDataGridViewTextBoxColumn";
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // pesomedioDataGridViewTextBoxColumn
+            // 
+            this.pesomedioDataGridViewTextBoxColumn.DataPropertyName = "peso_medio";
+            this.pesomedioDataGridViewTextBoxColumn.HeaderText = "Peso medio";
+            this.pesomedioDataGridViewTextBoxColumn.Name = "pesomedioDataGridViewTextBoxColumn";
+            // 
+            // alturamediaDataGridViewTextBoxColumn
+            // 
+            this.alturamediaDataGridViewTextBoxColumn.DataPropertyName = "altura_media";
+            this.alturamediaDataGridViewTextBoxColumn.HeaderText = "Altura media";
+            this.alturamediaDataGridViewTextBoxColumn.Name = "alturamediaDataGridViewTextBoxColumn";
+            // 
             // Frm_Consultar_Raza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(634, 398);
+            this.ClientSize = new System.Drawing.Size(672, 398);
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Eliminar);

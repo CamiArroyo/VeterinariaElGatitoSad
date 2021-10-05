@@ -91,5 +91,15 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             menu.Show();
             this.Dispose();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Nombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

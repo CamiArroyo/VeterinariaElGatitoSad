@@ -36,11 +36,6 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Dispose();
         }
 
-        private void btn_Consultar_Laboratorio_Click(object sender, EventArgs e)
-        {
-            ConsultarLaboratorios();
-        }
-
         private void ConsultarLaboratorios()
         {
             var lista_lab = labService.GetLaboratorios();

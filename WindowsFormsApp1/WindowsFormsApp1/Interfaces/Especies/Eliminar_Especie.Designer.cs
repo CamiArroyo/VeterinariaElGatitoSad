@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Lbl_Confirmar
             // 
             this.Lbl_Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Confirmar.Location = new System.Drawing.Point(44, 36);
+            this.Lbl_Confirmar.Location = new System.Drawing.Point(59, 37);
             this.Lbl_Confirmar.Name = "Lbl_Confirmar";
             this.Lbl_Confirmar.Size = new System.Drawing.Size(203, 56);
             this.Lbl_Confirmar.TabIndex = 6;
@@ -47,9 +47,9 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Btn_Confirmar
             // 
             this.Btn_Confirmar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Confirmar.Location = new System.Drawing.Point(18, 126);
+            this.Btn_Confirmar.Location = new System.Drawing.Point(27, 116);
             this.Btn_Confirmar.Name = "Btn_Confirmar";
-            this.Btn_Confirmar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Confirmar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Confirmar.TabIndex = 7;
             this.Btn_Confirmar.Text = "Confirmar";
             this.Btn_Confirmar.UseVisualStyleBackColor = false;
@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Especies
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(145, 126);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(172, 116);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 8;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Interfaces.Especies
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(284, 200);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Confirmar);
             this.Controls.Add(this.Lbl_Confirmar);

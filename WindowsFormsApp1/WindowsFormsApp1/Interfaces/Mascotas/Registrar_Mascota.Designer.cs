@@ -59,74 +59,74 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 31);
+            this.label1.Location = new System.Drawing.Point(27, 31);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(116, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            this.label1.Text = "Nombre de la mascota:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 61);
+            this.label2.Location = new System.Drawing.Point(27, 76);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Fecha de nacimiento";
+            this.label2.Text = "Fecha de nacimiento:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 92);
+            this.label3.Location = new System.Drawing.Point(27, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 13);
+            this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Id raza";
+            this.label3.Text = "ID raza:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 123);
+            this.label4.Location = new System.Drawing.Point(27, 153);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(31, 13);
+            this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Peso";
+            this.label4.Text = "Peso:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 153);
+            this.label5.Location = new System.Drawing.Point(27, 197);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(34, 13);
+            this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Altura";
+            this.label5.Text = "Altura:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 182);
+            this.label6.Location = new System.Drawing.Point(27, 237);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 13);
+            this.label6.Size = new System.Drawing.Size(54, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Id dueño";
+            this.label6.Text = "ID dueño:";
             // 
             // Txt_Nombre
             // 
-            this.Txt_Nombre.Location = new System.Drawing.Point(141, 23);
+            this.Txt_Nombre.Location = new System.Drawing.Point(153, 28);
             this.Txt_Nombre.Name = "Txt_Nombre";
             this.Txt_Nombre.Size = new System.Drawing.Size(200, 20);
             this.Txt_Nombre.TabIndex = 6;
             // 
             // Txt_Peso
             // 
-            this.Txt_Peso.Location = new System.Drawing.Point(141, 116);
+            this.Txt_Peso.Location = new System.Drawing.Point(153, 153);
             this.Txt_Peso.Name = "Txt_Peso";
             this.Txt_Peso.Size = new System.Drawing.Size(200, 20);
             this.Txt_Peso.TabIndex = 7;
             // 
             // Txt_Altura
             // 
-            this.Txt_Altura.Location = new System.Drawing.Point(141, 146);
+            this.Txt_Altura.Location = new System.Drawing.Point(153, 194);
             this.Txt_Altura.Name = "Txt_Altura";
             this.Txt_Altura.Size = new System.Drawing.Size(200, 20);
             this.Txt_Altura.TabIndex = 8;
@@ -137,7 +137,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Cmb_Id_Raza.DataSource = this.rAZASBindingSource;
             this.Cmb_Id_Raza.DisplayMember = "id_raza";
             this.Cmb_Id_Raza.FormattingEnabled = true;
-            this.Cmb_Id_Raza.Location = new System.Drawing.Point(141, 84);
+            this.Cmb_Id_Raza.Location = new System.Drawing.Point(153, 111);
             this.Cmb_Id_Raza.Name = "Cmb_Id_Raza";
             this.Cmb_Id_Raza.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Id_Raza.TabIndex = 9;
@@ -159,7 +159,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Cmb_Id_Dueño.DataSource = this.dUEÑOSBindingSource;
             this.Cmb_Id_Dueño.DisplayMember = "id_dueño";
             this.Cmb_Id_Dueño.FormattingEnabled = true;
-            this.Cmb_Id_Dueño.Location = new System.Drawing.Point(141, 174);
+            this.Cmb_Id_Dueño.Location = new System.Drawing.Point(153, 234);
             this.Cmb_Id_Dueño.Name = "Cmb_Id_Dueño";
             this.Cmb_Id_Dueño.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Id_Dueño.TabIndex = 10;
@@ -177,29 +177,31 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // 
             // Dtm_Fecha_Nacimiento
             // 
-            this.Dtm_Fecha_Nacimiento.Location = new System.Drawing.Point(141, 53);
+            this.Dtm_Fecha_Nacimiento.Location = new System.Drawing.Point(153, 70);
             this.Dtm_Fecha_Nacimiento.Name = "Dtm_Fecha_Nacimiento";
             this.Dtm_Fecha_Nacimiento.Size = new System.Drawing.Size(200, 20);
             this.Dtm_Fecha_Nacimiento.TabIndex = 11;
             // 
             // Btm_Registrar
             // 
-            this.Btm_Registrar.Location = new System.Drawing.Point(141, 267);
+            this.Btm_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btm_Registrar.Location = new System.Drawing.Point(52, 277);
             this.Btm_Registrar.Name = "Btm_Registrar";
-            this.Btm_Registrar.Size = new System.Drawing.Size(88, 44);
+            this.Btm_Registrar.Size = new System.Drawing.Size(125, 40);
             this.Btm_Registrar.TabIndex = 12;
             this.Btm_Registrar.Text = "Registrar";
-            this.Btm_Registrar.UseVisualStyleBackColor = true;
+            this.Btm_Registrar.UseVisualStyleBackColor = false;
             this.Btm_Registrar.Click += new System.EventHandler(this.Btm_Registrar_Click);
             // 
             // Btm_Cerrar
             // 
-            this.Btm_Cerrar.Location = new System.Drawing.Point(253, 267);
+            this.Btm_Cerrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btm_Cerrar.Location = new System.Drawing.Point(211, 277);
             this.Btm_Cerrar.Name = "Btm_Cerrar";
-            this.Btm_Cerrar.Size = new System.Drawing.Size(88, 44);
+            this.Btm_Cerrar.Size = new System.Drawing.Size(125, 40);
             this.Btm_Cerrar.TabIndex = 13;
-            this.Btm_Cerrar.Text = "Cerrar";
-            this.Btm_Cerrar.UseVisualStyleBackColor = true;
+            this.Btm_Cerrar.Text = "Cancelar";
+            this.Btm_Cerrar.UseVisualStyleBackColor = false;
             this.Btm_Cerrar.Click += new System.EventHandler(this.Btm_Cerrar_Click);
             // 
             // rAZASTableAdapter
@@ -215,7 +217,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(364, 327);
+            this.ClientSize = new System.Drawing.Size(384, 341);
             this.Controls.Add(this.Btm_Cerrar);
             this.Controls.Add(this.Btm_Registrar);
             this.Controls.Add(this.Dtm_Fecha_Nacimiento);
@@ -232,7 +234,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Controls.Add(this.label1);
             this.Name = "Frm_Registrar_Mascota";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrar_Mascota";
+            this.Text = "Registrar mascota";
             this.Load += new System.EventHandler(this.Frm_Registrar_Mascota_Load);
             ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet8)).EndInit();

@@ -68,5 +68,10 @@ namespace WindowsFormsApp1.Interfaces
             Rmedicamento.Show();
             this.Dispose();
         }
+
+        private void Lbl_Laboratorio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

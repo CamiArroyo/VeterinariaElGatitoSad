@@ -187,6 +187,12 @@
     <Compile Include="Interfaces\Laboratorios\Eliminar_Laboratorio.Designer.cs">
       <DependentUpon>Eliminar_Laboratorio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Laboratorios\Modificar_Laboratorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Laboratorios\Modificar_Laboratorio.Designer.cs">
+      <DependentUpon>Modificar_Laboratorio.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Laboratorios\Registrar_Laboratorio.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -495,6 +501,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Laboratorios\Eliminar_Laboratorio.resx">
       <DependentUpon>Eliminar_Laboratorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Laboratorios\Modificar_Laboratorio.resx">
+      <DependentUpon>Modificar_Laboratorio.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Laboratorios\Registrar_Laboratorio.resx">
       <DependentUpon>Registrar_Laboratorio.cs</DependentUpon>

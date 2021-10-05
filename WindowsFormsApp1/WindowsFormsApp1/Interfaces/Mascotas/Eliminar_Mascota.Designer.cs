@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Lbl_Confirmar
             // 
             this.Lbl_Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Confirmar.Location = new System.Drawing.Point(35, 25);
+            this.Lbl_Confirmar.Location = new System.Drawing.Point(62, 34);
             this.Lbl_Confirmar.Name = "Lbl_Confirmar";
             this.Lbl_Confirmar.Size = new System.Drawing.Size(203, 56);
             this.Lbl_Confirmar.TabIndex = 9;
@@ -47,22 +47,22 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Si
             // 
             this.Btm_Si.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Si.Location = new System.Drawing.Point(12, 108);
+            this.Btm_Si.Location = new System.Drawing.Point(21, 114);
             this.Btm_Si.Name = "Btm_Si";
-            this.Btm_Si.Size = new System.Drawing.Size(107, 37);
+            this.Btm_Si.Size = new System.Drawing.Size(125, 40);
             this.Btm_Si.TabIndex = 10;
-            this.Btm_Si.Text = "Si";
+            this.Btm_Si.Text = "Confirmar";
             this.Btm_Si.UseVisualStyleBackColor = false;
             this.Btm_Si.Click += new System.EventHandler(this.Btm_Si_Click);
             // 
             // Btm_No
             // 
             this.Btm_No.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_No.Location = new System.Drawing.Point(164, 108);
+            this.Btm_No.Location = new System.Drawing.Point(169, 114);
             this.Btm_No.Name = "Btm_No";
-            this.Btm_No.Size = new System.Drawing.Size(107, 37);
+            this.Btm_No.Size = new System.Drawing.Size(125, 40);
             this.Btm_No.TabIndex = 11;
-            this.Btm_No.Text = "No";
+            this.Btm_No.Text = "Cancelar";
             this.Btm_No.UseVisualStyleBackColor = false;
             this.Btm_No.Click += new System.EventHandler(this.Btm_No_Click);
             // 
@@ -71,13 +71,13 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(283, 157);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.Btm_No);
             this.Controls.Add(this.Btm_Si);
             this.Controls.Add(this.Lbl_Confirmar);
             this.Name = "Frm_Eliminar_Mascota";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar_Mascota";
+            this.Text = "Eliminar mascota";
             this.ResumeLayout(false);
 
         }

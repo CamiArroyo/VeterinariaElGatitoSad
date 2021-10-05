@@ -42,57 +42,57 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 27);
+            this.label1.Location = new System.Drawing.Point(36, 35);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 13);
+            this.label1.Size = new System.Drawing.Size(47, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Nombre";
+            this.label1.Text = "Nombre:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 55);
+            this.label2.Location = new System.Drawing.Point(36, 81);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 13);
+            this.label2.Size = new System.Drawing.Size(47, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Apellido";
+            this.label2.Text = "Apellido:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(30, 82);
+            this.label3.Location = new System.Drawing.Point(36, 127);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 13);
+            this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Telefono";
+            this.label3.Text = "Teléfono:";
             // 
             // Txt_Nombre
             // 
-            this.Txt_Nombre.Location = new System.Drawing.Point(138, 27);
+            this.Txt_Nombre.Location = new System.Drawing.Point(113, 32);
             this.Txt_Nombre.Name = "Txt_Nombre";
-            this.Txt_Nombre.Size = new System.Drawing.Size(210, 20);
+            this.Txt_Nombre.Size = new System.Drawing.Size(196, 20);
             this.Txt_Nombre.TabIndex = 3;
             // 
             // Txt_Apellido
             // 
-            this.Txt_Apellido.Location = new System.Drawing.Point(138, 55);
+            this.Txt_Apellido.Location = new System.Drawing.Point(113, 78);
             this.Txt_Apellido.Name = "Txt_Apellido";
-            this.Txt_Apellido.Size = new System.Drawing.Size(210, 20);
+            this.Txt_Apellido.Size = new System.Drawing.Size(196, 20);
             this.Txt_Apellido.TabIndex = 4;
             // 
             // Txt_Telefono
             // 
-            this.Txt_Telefono.Location = new System.Drawing.Point(138, 82);
+            this.Txt_Telefono.Location = new System.Drawing.Point(113, 124);
             this.Txt_Telefono.Name = "Txt_Telefono";
-            this.Txt_Telefono.Size = new System.Drawing.Size(210, 20);
+            this.Txt_Telefono.Size = new System.Drawing.Size(196, 20);
             this.Txt_Telefono.TabIndex = 5;
             // 
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(273, 160);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(184, 169);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(75, 37);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 6;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
@@ -101,11 +101,11 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             // Btn_Confirmar
             // 
             this.Btn_Confirmar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Confirmar.Location = new System.Drawing.Point(138, 160);
+            this.Btn_Confirmar.Location = new System.Drawing.Point(39, 169);
             this.Btn_Confirmar.Name = "Btn_Confirmar";
-            this.Btn_Confirmar.Size = new System.Drawing.Size(75, 37);
+            this.Btn_Confirmar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Confirmar.TabIndex = 7;
-            this.Btn_Confirmar.Text = "Confirmar";
+            this.Btn_Confirmar.Text = "Registrar";
             this.Btn_Confirmar.UseVisualStyleBackColor = false;
             this.Btn_Confirmar.Click += new System.EventHandler(this.Btn_Confirmar_Click);
             // 
@@ -114,7 +114,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(360, 209);
+            this.ClientSize = new System.Drawing.Size(346, 237);
             this.Controls.Add(this.Btn_Confirmar);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Txt_Telefono);
@@ -125,7 +125,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             this.Controls.Add(this.label1);
             this.Name = "Frm_Registrar_Dueños";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrar dueños";
+            this.Text = "Registrar dueño";
             this.ResumeLayout(false);
             this.PerformLayout();
 

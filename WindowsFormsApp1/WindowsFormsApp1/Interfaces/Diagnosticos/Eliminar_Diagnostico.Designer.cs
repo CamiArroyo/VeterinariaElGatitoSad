@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             // Lbl_Confirmar
             // 
             this.Lbl_Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Confirmar.Location = new System.Drawing.Point(43, 34);
+            this.Lbl_Confirmar.Location = new System.Drawing.Point(61, 32);
             this.Lbl_Confirmar.Name = "Lbl_Confirmar";
             this.Lbl_Confirmar.Size = new System.Drawing.Size(203, 56);
             this.Lbl_Confirmar.TabIndex = 8;
@@ -47,9 +47,9 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(155, 122);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(172, 111);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 7;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             // Btn_Confirmar
             // 
             this.Btn_Confirmar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Confirmar.Location = new System.Drawing.Point(19, 122);
+            this.Btn_Confirmar.Location = new System.Drawing.Point(24, 111);
             this.Btn_Confirmar.Name = "Btn_Confirmar";
-            this.Btn_Confirmar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Confirmar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Confirmar.TabIndex = 6;
             this.Btn_Confirmar.Text = "Confirmar";
             this.Btn_Confirmar.UseVisualStyleBackColor = false;
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(291, 186);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.Lbl_Confirmar);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Confirmar);

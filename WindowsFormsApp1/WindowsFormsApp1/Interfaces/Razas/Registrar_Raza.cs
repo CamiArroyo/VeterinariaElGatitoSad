@@ -88,5 +88,15 @@ namespace WindowsFormsApp1.Interfaces.Razas
             this.eSPECIESTableAdapter.Fill(this._PAV_3K2_2021_12DataSet1.ESPECIES);
 
         }
+
+        private void Lbl_Altura_Media_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Altura_Media_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

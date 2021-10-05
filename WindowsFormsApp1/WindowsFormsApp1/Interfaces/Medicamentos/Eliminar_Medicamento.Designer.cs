@@ -37,9 +37,9 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(147, 117);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(173, 115);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 11;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
@@ -48,9 +48,9 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // Btn_Confirmar
             // 
             this.Btn_Confirmar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Confirmar.Location = new System.Drawing.Point(20, 117);
+            this.Btn_Confirmar.Location = new System.Drawing.Point(25, 115);
             this.Btn_Confirmar.Name = "Btn_Confirmar";
-            this.Btn_Confirmar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Confirmar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Confirmar.TabIndex = 10;
             this.Btn_Confirmar.Text = "Confirmar";
             this.Btn_Confirmar.UseVisualStyleBackColor = false;
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // Lbl_Confirmar
             // 
             this.Lbl_Confirmar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Confirmar.Location = new System.Drawing.Point(46, 27);
+            this.Lbl_Confirmar.Location = new System.Drawing.Point(62, 36);
             this.Lbl_Confirmar.Name = "Lbl_Confirmar";
             this.Lbl_Confirmar.Size = new System.Drawing.Size(203, 56);
             this.Lbl_Confirmar.TabIndex = 9;
@@ -71,13 +71,13 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(286, 182);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Confirmar);
             this.Controls.Add(this.Lbl_Confirmar);
             this.Name = "Frm_Eliminar_Medicamento";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar_Medicamento";
+            this.Text = "Eliminar medicamento";
             this.ResumeLayout(false);
 
         }

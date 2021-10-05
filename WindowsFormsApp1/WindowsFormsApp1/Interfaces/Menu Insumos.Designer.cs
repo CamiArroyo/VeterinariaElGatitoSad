@@ -45,7 +45,7 @@ namespace WindowsFormsApp1.Interfaces
             // Lbl_Seleccion
             // 
             this.Lbl_Seleccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Seleccion.Location = new System.Drawing.Point(257, 11);
+            this.Lbl_Seleccion.Location = new System.Drawing.Point(230, 28);
             this.Lbl_Seleccion.Name = "Lbl_Seleccion";
             this.Lbl_Seleccion.Size = new System.Drawing.Size(257, 44);
             this.Lbl_Seleccion.TabIndex = 3;
@@ -54,25 +54,26 @@ namespace WindowsFormsApp1.Interfaces
             // Lbl_Laboratorio
             // 
             this.Lbl_Laboratorio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Laboratorio.Location = new System.Drawing.Point(62, 101);
+            this.Lbl_Laboratorio.Location = new System.Drawing.Point(87, 101);
             this.Lbl_Laboratorio.Name = "Lbl_Laboratorio";
-            this.Lbl_Laboratorio.Size = new System.Drawing.Size(107, 32);
+            this.Lbl_Laboratorio.Size = new System.Drawing.Size(124, 32);
             this.Lbl_Laboratorio.TabIndex = 4;
-            this.Lbl_Laboratorio.Text = "Laboratorio";
+            this.Lbl_Laboratorio.Text = "Laboratorios";
+            this.Lbl_Laboratorio.Click += new System.EventHandler(this.Lbl_Laboratorio_Click);
             // 
             // Lbl_Medicamentos
             // 
             this.Lbl_Medicamentos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Medicamentos.Location = new System.Drawing.Point(309, 101);
+            this.Lbl_Medicamentos.Location = new System.Drawing.Point(293, 101);
             this.Lbl_Medicamentos.Name = "Lbl_Medicamentos";
-            this.Lbl_Medicamentos.Size = new System.Drawing.Size(116, 32);
+            this.Lbl_Medicamentos.Size = new System.Drawing.Size(131, 32);
             this.Lbl_Medicamentos.TabIndex = 5;
             this.Lbl_Medicamentos.Text = "Medicamentos";
             // 
             // Lbl_Vacunas
             // 
             this.Lbl_Vacunas.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Vacunas.Location = new System.Drawing.Point(588, 101);
+            this.Lbl_Vacunas.Location = new System.Drawing.Point(526, 101);
             this.Lbl_Vacunas.Name = "Lbl_Vacunas";
             this.Lbl_Vacunas.Size = new System.Drawing.Size(85, 32);
             this.Lbl_Vacunas.TabIndex = 6;
@@ -83,7 +84,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registrar_Laboratorio.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Registrar_Laboratorio.Location = new System.Drawing.Point(66, 149);
             this.Btn_Registrar_Laboratorio.Name = "Btn_Registrar_Laboratorio";
-            this.Btn_Registrar_Laboratorio.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Registrar_Laboratorio.Size = new System.Drawing.Size(145, 40);
             this.Btn_Registrar_Laboratorio.TabIndex = 7;
             this.Btn_Registrar_Laboratorio.Text = "Registrar laboratorio";
             this.Btn_Registrar_Laboratorio.UseVisualStyleBackColor = false;
@@ -92,20 +93,20 @@ namespace WindowsFormsApp1.Interfaces
             // Btn_Consultar_Laboratorio
             // 
             this.Btn_Consultar_Laboratorio.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Consultar_Laboratorio.Location = new System.Drawing.Point(66, 225);
+            this.Btn_Consultar_Laboratorio.Location = new System.Drawing.Point(66, 216);
             this.Btn_Consultar_Laboratorio.Name = "Btn_Consultar_Laboratorio";
-            this.Btn_Consultar_Laboratorio.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Consultar_Laboratorio.Size = new System.Drawing.Size(145, 40);
             this.Btn_Consultar_Laboratorio.TabIndex = 8;
-            this.Btn_Consultar_Laboratorio.Text = "Consultar laboratorio";
+            this.Btn_Consultar_Laboratorio.Text = "Consultar laboratorios";
             this.Btn_Consultar_Laboratorio.UseVisualStyleBackColor = false;
             this.Btn_Consultar_Laboratorio.Click += new System.EventHandler(this.Btn_Consultar_Laboratorio_Click);
             // 
             // Btn_Registrar_Medicamento
             // 
             this.Btn_Registrar_Medicamento.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar_Medicamento.Location = new System.Drawing.Point(313, 149);
+            this.Btn_Registrar_Medicamento.Location = new System.Drawing.Point(279, 149);
             this.Btn_Registrar_Medicamento.Name = "Btn_Registrar_Medicamento";
-            this.Btn_Registrar_Medicamento.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Registrar_Medicamento.Size = new System.Drawing.Size(145, 40);
             this.Btn_Registrar_Medicamento.TabIndex = 9;
             this.Btn_Registrar_Medicamento.Text = "Registrar medicamento";
             this.Btn_Registrar_Medicamento.UseVisualStyleBackColor = false;
@@ -114,20 +115,20 @@ namespace WindowsFormsApp1.Interfaces
             // Btn_Consultar_Medicamento
             // 
             this.Btn_Consultar_Medicamento.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Consultar_Medicamento.Location = new System.Drawing.Point(313, 225);
+            this.Btn_Consultar_Medicamento.Location = new System.Drawing.Point(279, 216);
             this.Btn_Consultar_Medicamento.Name = "Btn_Consultar_Medicamento";
-            this.Btn_Consultar_Medicamento.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Consultar_Medicamento.Size = new System.Drawing.Size(145, 40);
             this.Btn_Consultar_Medicamento.TabIndex = 10;
-            this.Btn_Consultar_Medicamento.Text = "Consultar medicamento";
+            this.Btn_Consultar_Medicamento.Text = "Consultar medicamentos";
             this.Btn_Consultar_Medicamento.UseVisualStyleBackColor = false;
             this.Btn_Consultar_Medicamento.Click += new System.EventHandler(this.Btn_Consultar_Medicamento_Click);
             // 
             // Btn_Registrar_Vacuna
             // 
             this.Btn_Registrar_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar_Vacuna.Location = new System.Drawing.Point(592, 149);
+            this.Btn_Registrar_Vacuna.Location = new System.Drawing.Point(497, 149);
             this.Btn_Registrar_Vacuna.Name = "Btn_Registrar_Vacuna";
-            this.Btn_Registrar_Vacuna.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Registrar_Vacuna.Size = new System.Drawing.Size(145, 40);
             this.Btn_Registrar_Vacuna.TabIndex = 11;
             this.Btn_Registrar_Vacuna.Text = "Registrar vacuna";
             this.Btn_Registrar_Vacuna.UseVisualStyleBackColor = false;
@@ -136,20 +137,20 @@ namespace WindowsFormsApp1.Interfaces
             // Btn_Consultar_Vacuna
             // 
             this.Btn_Consultar_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Consultar_Vacuna.Location = new System.Drawing.Point(592, 225);
+            this.Btn_Consultar_Vacuna.Location = new System.Drawing.Point(497, 216);
             this.Btn_Consultar_Vacuna.Name = "Btn_Consultar_Vacuna";
-            this.Btn_Consultar_Vacuna.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Consultar_Vacuna.Size = new System.Drawing.Size(145, 40);
             this.Btn_Consultar_Vacuna.TabIndex = 12;
-            this.Btn_Consultar_Vacuna.Text = "Consultar vacuna";
+            this.Btn_Consultar_Vacuna.Text = "Consultar vacunas";
             this.Btn_Consultar_Vacuna.UseVisualStyleBackColor = false;
             this.Btn_Consultar_Vacuna.Click += new System.EventHandler(this.Btn_Consultar_Vacuna_Click);
             // 
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(313, 328);
+            this.Btn_Salir.Location = new System.Drawing.Point(279, 308);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(129, 37);
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 13;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = false;
@@ -160,7 +161,7 @@ namespace WindowsFormsApp1.Interfaces
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(800, 395);
+            this.ClientSize = new System.Drawing.Size(726, 377);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Consultar_Vacuna);
             this.Controls.Add(this.Btn_Registrar_Vacuna);
@@ -174,7 +175,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Controls.Add(this.Lbl_Seleccion);
             this.Name = "Frm_Menu_Insumos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu Insumos";
+            this.Text = "Menu insumos";
             this.ResumeLayout(false);
 
         }

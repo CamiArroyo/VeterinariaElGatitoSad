@@ -93,5 +93,15 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             MessageBox.Show("El medicamento se registró con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Nombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

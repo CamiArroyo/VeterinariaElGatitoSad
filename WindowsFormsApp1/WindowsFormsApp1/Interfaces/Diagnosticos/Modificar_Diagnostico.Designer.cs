@@ -52,15 +52,15 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             this.Lbl_Descripcion.AutoSize = true;
             this.Lbl_Descripcion.Location = new System.Drawing.Point(233, 34);
             this.Lbl_Descripcion.Name = "Lbl_Descripcion";
-            this.Lbl_Descripcion.Size = new System.Drawing.Size(66, 13);
+            this.Lbl_Descripcion.Size = new System.Drawing.Size(140, 13);
             this.Lbl_Descripcion.TabIndex = 7;
-            this.Lbl_Descripcion.Text = "Descripción:";
+            this.Lbl_Descripcion.Text = "Descripción del diagnóstico:";
             // 
             // Txt_Nombre
             // 
             this.Txt_Nombre.Location = new System.Drawing.Point(32, 61);
             this.Txt_Nombre.Name = "Txt_Nombre";
-            this.Txt_Nombre.Size = new System.Drawing.Size(138, 20);
+            this.Txt_Nombre.Size = new System.Drawing.Size(160, 20);
             this.Txt_Nombre.TabIndex = 6;
             // 
             // Lbl_Nombre
@@ -76,9 +76,9 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Cancelar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(516, 333);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(525, 333);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
-            this.Btn_Cancelar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 10;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
@@ -87,11 +87,11 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             // Btn_Registrar
             // 
             this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar.Location = new System.Drawing.Point(386, 333);
+            this.Btn_Registrar.Location = new System.Drawing.Point(373, 333);
             this.Btn_Registrar.Name = "Btn_Registrar";
-            this.Btn_Registrar.Size = new System.Drawing.Size(115, 44);
+            this.Btn_Registrar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Registrar.TabIndex = 9;
-            this.Btn_Registrar.Text = "Registrar";
+            this.Btn_Registrar.Text = "Modificar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
             this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
@@ -110,7 +110,7 @@ namespace WindowsFormsApp1.Interfaces.Diagnosticos
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(684, 399);
+            this.ClientSize = new System.Drawing.Size(684, 391);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Registrar);
