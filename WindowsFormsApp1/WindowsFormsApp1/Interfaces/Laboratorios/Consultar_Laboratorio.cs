@@ -36,33 +36,16 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Dispose();
         }
 
-        private void ConsultarLaboratorios()
-        {
-            var lista_lab = labService.GetLaboratorios();
-            dataGrd_Consultar_Laboratorio.Rows.Clear();
-            foreach (var lab in lista_lab)
-            {
-                {
-                    var fila = new String[]
-                    {
-                    lab.id_laboratorio.ToString(),
-                    lab.razon_social,
-                    lab.direccion
-                    };
-                    dataGrd_Consultar_Laboratorio.Rows.Add(fila);
-                }
-            }
-        }
+        
 
         private void Btn_Eliminar_Laboratorio_Click(object sender, EventArgs e)
         {
             if (dataGrd_Consultar_Laboratorio.SelectedRows.Count == 1)
             {
                 //LLamar Modificar
-                var id = Convert.ToInt32(dataGrd_Consultar_Laboratorio.SelectedRows[0].Cells["Id"].Value);
+                var id = Convert.ToInt32(dataGrd_Consultar_Laboratorio.SelectedRows[0].Cells["idlaboratorioDataGridViewTextBoxColumn"].Value);
                 new Eliminar_Laboratorio(id).Show();
                 Visible = false;
-                ConsultarLaboratorios();
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
@@ -71,6 +54,19 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
         private void dataGrd_Consultar_Laboratorio_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Btn_Modificar_Laboratorio_Click(object sender, EventArgs e)
+        {
+            if (dataGrd_Consultar_Laboratorio.SelectedRows.Count == 1)
+            {
+                //LLamar Modificar
+                var id = Convert.ToInt32(dataGrd_Consultar_Laboratorio.SelectedRows[0].Cells["idlaboratorioDataGridViewTextBoxColumn"].Value);
+                new Modificar_Laboratorio(id).Show();
+                Visible = false;
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
         }
     }
 }

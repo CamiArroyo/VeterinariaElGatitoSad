@@ -17,20 +17,13 @@ namespace WindowsFormsApp1.RepositoriosBD
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
             return filasAfectadas;
         }
-
-        public List<Laboratorio> GetLaboratorioBD()
+        public int ActualizarLaboratorio(Laboratorio lab)
         {
-            var lista_Laboratorios = new List<Laboratorio>();
-            var sentenciaSql = $"SELECT * FROM LABORATORIOS";
-            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
-
-            foreach (DataRow fila in tablaResultado.Rows)
-            {
-                var lab = MapearLaboratorio(fila);
-                lista_Laboratorios.Add(lab);
-            }
-            return lista_Laboratorios;
+            var sentenciaSql = $"UPDATE LABORATORIOS SET razon_social='{lab.razon_social}',direccion='{lab.direccion}' where id_laboratorio={lab.id_laboratorio}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
         }
+        
 
         public Laboratorio GetLaboratorio(long id)
         {
@@ -56,10 +49,12 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int DarBajaLaboratorio(Laboratorio lab)
         {
-            //completar
-            var sentenciaSql = $"Delete Laboratorios where id_laboratorio={lab.id_laboratorio}";
+            var sentenciaSql = $"Delete from Laboratorios where id_laboratorio={lab.id_laboratorio}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
     }
 }
+
+        
+

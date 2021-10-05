@@ -212,3 +212,5 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources

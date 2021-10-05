@@ -26,7 +26,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
 
         public void CargarMenu()
         {
-            Form menu = new FrmMenu_Principal();
+            Form menu = new Consultar_Laboratorio();
             menu.Show();
         }
 

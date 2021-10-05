@@ -69,6 +69,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Btn_Cancelar.TabIndex = 8;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Modificar
             // 
@@ -79,6 +80,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Btn_Modificar.TabIndex = 7;
             this.Btn_Modificar.Text = "Modificar";
             this.Btn_Modificar.UseVisualStyleBackColor = false;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Lbl_Razon_Social
             // 

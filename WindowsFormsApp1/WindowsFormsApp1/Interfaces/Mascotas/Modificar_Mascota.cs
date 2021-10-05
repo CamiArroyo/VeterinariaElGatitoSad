@@ -27,6 +27,10 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
 
         private void Frm_Modificar_Mascota_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12Dueños.DUEÑOS' Puede moverla o quitarla según sea necesario.
+            this.dUEÑOSTableAdapter.Fill(this._PAV_3K2_2021_12Dueños.DUEÑOS);
+            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet4.RAZAS' Puede moverla o quitarla según sea necesario.
+            this.rAZASTableAdapter.Fill(this._PAV_3K2_2021_12DataSet4.RAZAS);
             CargarDatos();
         }
 
@@ -57,7 +61,10 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private void TomarDatosMascota()
         {
             mas.nombre = Txt_Nombre.Text;
+            mas.fecha_nacimiento = Dtm_Fecha_Nacimiento.Value;
+            mas.id_raza = Cmb_Id_Raza.Text;
             mas.peso = Txt_Peso.Text;
+            mas.id_dueño = Cmb_Id_Dueño.Text;
             mas.altura = Txt_Altura.Text;
             mas.estado = Cmb_Estado.Text;
         }
@@ -77,6 +84,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private void CargarDatos()
         {
             Txt_Nombre.Text = mas.nombre;
+            Dtm_Fecha_Nacimiento.Value = mas.fecha_nacimiento;
+            Cmb_Id_Dueño.Text = mas.id_dueño;
+            Cmb_Id_Raza.Text = mas.id_raza;
             Txt_Peso.Text = mas.peso;
             Txt_Altura.Text = mas.altura;
             Cmb_Estado.Text = mas.estado;

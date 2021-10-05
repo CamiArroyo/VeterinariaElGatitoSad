@@ -20,7 +20,7 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int ActualizarMascota(Mascota mas)
         {
-            var sentenciaSql = $"UPDATE MASCOTAS SET nombre='{mas.nombre}', peso='{mas.peso}', altura='{mas.altura}', estado='{mas.estado}' where nro_historia_clinica={mas.nro_historia_clinica}";
+            var sentenciaSql = $"UPDATE MASCOTAS SET nombre='{mas.nombre}',fecha_nacimiento='{mas.fecha_nacimiento}',id_raza='{mas.id_raza}',peso='{mas.peso}', altura='{mas.altura}',id_dueño='{mas.id_dueño}', estado='{mas.estado}' where nro_historia_clinica={mas.nro_historia_clinica}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
