@@ -203,3 +203,5 @@ D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsForm
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Modificar_Mascota.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Registrar_Mascota.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources

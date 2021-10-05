@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,47 @@ namespace WindowsFormsApp1.RepositoriosBD
     {
         public int RegistrarMedicamento(Medicamento med)
         {
-            var sentenciaSQL = $"INSERT INTO MEDICAMENTOS(nombre, descripcion, id_laboratorio, fecha_ultima_compra, cantidad_en_stock)" +
-                $" VALUES('{med.nombre}', '{med.descripcion}', '{med.id_laboratorio}', '{med.fecha_ultima_compra}', '{med.cantidad_en_stock}')";
+            var sentenciaSQL = $"INSERT INTO MEDICAMENTOS(nombre, descripcion, id_laboratorio, fecha_ultima_compra, cantidad_en_stock) VALUES('{med.nombre}', '{med.descripcion}', '{med.id_laboratorio}', '{med.fecha_ultima_compra}', '{med.cantidad_en_stock}')";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
+            return filasAfectadas;
+        }
+        public int ActualizarMedicamento(Medicamento med)
+        {
+            var sentenciaSql = $"UPDATE MEDICAMENTOS SET nombre='{med.nombre}', descripcion='{med.descripcion}', id_laboratorio='{med.id_laboratorio}', fecha_ultima_compra='{med.fecha_ultima_compra}', cantidad_en_stock='{med.cantidad_en_stock}' where id_medicamento={med.id_medicamentos}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
+
+        public Medicamento GetMedicamento(long id)
+        {
+            var medicamento = new Medicamento();
+            var sentenciaSql = $"Select * from MEDICAMENTO where id_medicamento={id}";
+            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
+            foreach (DataRow fila in tablaResultado.Rows)
+            {
+                medicamento = MapearMedicamento(fila);
+            }
+            return medicamento;
+        }
+
+        private Medicamento MapearMedicamento(DataRow fila)
+        {
+            var date1 = new DateTime(2022, 01, 01, 01, 01, 01);
+            var medicamento = new Medicamento();
+            medicamento.id_medicamentos= Convert.ToInt32(fila["id_medicamento"] is DBNull ? " " : fila["id_medicamento"]);
+            medicamento.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
+            medicamento.descripcion = Convert.ToString(fila["descripcion"] is DBNull ? " " : fila["descripcion"]);
+            medicamento.id_laboratorio= Convert.ToString(fila["id_laboratorio"] is DBNull ? " " : fila["id_laboratorio"]);
+            medicamento.fecha_ultima_compra= Convert.ToDateTime(fila["fecha_ultima_compra"] is DBNull ? date1 : fila["fecha_ultima_compra"]);
+            medicamento.cantidad_en_stock = Convert.ToString(fila["cantidad_en_stock"] is DBNull ? date1 : fila["cantidad_en_stock"]);
+
+            return medicamento;
+        }
+
+        public int DarBajaMedicamento(Medicamento med)
+        {
+            var sentenciaSql = $"Delete from Medicamentos where id_medicamento={med.id_medicamentos}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
     }

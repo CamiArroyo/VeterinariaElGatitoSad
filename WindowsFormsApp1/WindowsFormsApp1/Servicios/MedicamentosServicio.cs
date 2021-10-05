@@ -12,7 +12,10 @@ namespace WindowsFormsApp1.Servicios
     class MedicamentosServicio
     {
         private MedicamentosRepositorio medRepo;
-
+        public MedicamentosServicio(MedicamentosRepositorio mediRepo)
+        {
+            medRepo = mediRepo;
+        }
         public MedicamentosServicio()
         {
             medRepo = new MedicamentosRepositorio();
@@ -26,5 +29,26 @@ namespace WindowsFormsApp1.Servicios
                 return true;
             return false;
         }
+
+        public Medicamento GetMedicamento(long id)
+        {
+            var medicamento = medRepo.GetMedicamento(id);
+            return medicamento;
+        }
+
+        public void ActualizarMedicamento(Medicamento med)
+        {
+            var filasAfectadas = medRepo.ActualizarMedicamento(med);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
+        public void DarBajaMedicamento(Medicamento med)
+        {
+            var filasAfectadas = medRepo.DarBajaMedicamento(med);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 }
+
