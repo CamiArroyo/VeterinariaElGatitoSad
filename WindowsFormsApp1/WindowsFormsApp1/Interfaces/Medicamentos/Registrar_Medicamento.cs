@@ -39,13 +39,14 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
 
         private void Btm_Registrar_Click(object sender, EventArgs e)
         {
-            
+            try
+            {
                 if (!EsOperacionConfirmada())
                     return;
                 if (!TomarDatosMedicamento())
                     return;
                 RegistrarMedicamento(med);
-            /*}
+            }
             catch (ApplicationException aex)
             {
                 MessageBox.Show(aex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -55,7 +56,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
                 var mensaje = ex.Message;
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            */
+            
             Form menuInsumos = new Frm_Menu_Insumos();
             menuInsumos.Show();
             this.Dispose();

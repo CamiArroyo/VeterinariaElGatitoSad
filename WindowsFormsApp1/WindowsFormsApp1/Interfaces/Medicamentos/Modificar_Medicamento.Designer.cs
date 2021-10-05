@@ -40,13 +40,13 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Txt_Cantidad_Stock = new System.Windows.Forms.TextBox();
             this.Dtp_Fecha = new System.Windows.Forms.DateTimePicker();
             this.Cmb_Id_Lab = new System.Windows.Forms.ComboBox();
+            this.lABORATORIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12DataSet = new WindowsFormsApp1._PAV_3K2_2021_12DataSet();
             this.Btm_Guardar_Cambios = new System.Windows.Forms.Button();
             this.Btm_Cancelar = new System.Windows.Forms.Button();
-            this._PAV_3K2_2021_12DataSet = new WindowsFormsApp1._PAV_3K2_2021_12DataSet();
-            this.lABORATORIOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.lABORATORIOSTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSetTableAdapters.LABORATORIOSTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.lABORATORIOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,6 +134,16 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Cmb_Id_Lab.TabIndex = 9;
             this.Cmb_Id_Lab.ValueMember = "id_laboratorio";
             // 
+            // lABORATORIOSBindingSource
+            // 
+            this.lABORATORIOSBindingSource.DataMember = "LABORATORIOS";
+            this.lABORATORIOSBindingSource.DataSource = this._PAV_3K2_2021_12DataSet;
+            // 
+            // _PAV_3K2_2021_12DataSet
+            // 
+            this._PAV_3K2_2021_12DataSet.DataSetName = "_PAV_3K2_2021_12DataSet";
+            this._PAV_3K2_2021_12DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Btm_Guardar_Cambios
             // 
             this.Btm_Guardar_Cambios.Location = new System.Drawing.Point(16, 198);
@@ -153,16 +163,6 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Btm_Cancelar.Text = "Cancelar";
             this.Btm_Cancelar.UseVisualStyleBackColor = true;
             this.Btm_Cancelar.Click += new System.EventHandler(this.Btm_Cancelar_Click);
-            // 
-            // _PAV_3K2_2021_12DataSet
-            // 
-            this._PAV_3K2_2021_12DataSet.DataSetName = "_PAV_3K2_2021_12DataSet";
-            this._PAV_3K2_2021_12DataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // lABORATORIOSBindingSource
-            // 
-            this.lABORATORIOSBindingSource.DataMember = "LABORATORIOS";
-            this.lABORATORIOSBindingSource.DataSource = this._PAV_3K2_2021_12DataSet;
             // 
             // lABORATORIOSTableAdapter
             // 
@@ -187,10 +187,11 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Frm_Modificar_Medicamento";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar_Medicamento";
             this.Load += new System.EventHandler(this.Frm_Modificar_Medicamento_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.lABORATORIOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

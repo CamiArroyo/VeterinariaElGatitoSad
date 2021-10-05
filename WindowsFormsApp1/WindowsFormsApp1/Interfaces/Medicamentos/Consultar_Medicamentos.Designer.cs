@@ -30,7 +30,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.Dgv_Consultar_Medicamentos = new System.Windows.Forms.DataGridView();
             this.idmedicamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -40,36 +40,35 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.mEDICAMENTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.medicamentos = new WindowsFormsApp1.Medicamentos();
             this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1.MedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_Registrar_Sintoma = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.Frm_Eliminar_Medicamento = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Medicamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // Dgv_Consultar_Medicamentos
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.ForestGreen;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Dgv_Consultar_Medicamentos.AllowUserToAddRows = false;
+            this.Dgv_Consultar_Medicamentos.AutoGenerateColumns = false;
+            this.Dgv_Consultar_Medicamentos.BackgroundColor = System.Drawing.Color.ForestGreen;
+            this.Dgv_Consultar_Medicamentos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Dgv_Consultar_Medicamentos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idmedicamentoDataGridViewTextBoxColumn,
             this.nombreDataGridViewTextBoxColumn,
             this.descripcionDataGridViewTextBoxColumn,
             this.idlaboratorioDataGridViewTextBoxColumn,
             this.fechaultimacompraDataGridViewTextBoxColumn,
             this.cantidadenstockDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mEDICAMENTOSBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(-2, 47);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(641, 327);
-            this.dataGridView1.TabIndex = 0;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.Dgv_Consultar_Medicamentos.DataSource = this.mEDICAMENTOSBindingSource;
+            this.Dgv_Consultar_Medicamentos.Location = new System.Drawing.Point(15, 48);
+            this.Dgv_Consultar_Medicamentos.Name = "Dgv_Consultar_Medicamentos";
+            this.Dgv_Consultar_Medicamentos.ReadOnly = true;
+            this.Dgv_Consultar_Medicamentos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Dgv_Consultar_Medicamentos.Size = new System.Drawing.Size(588, 265);
+            this.Dgv_Consultar_Medicamentos.TabIndex = 0;
+            this.Dgv_Consultar_Medicamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // idmedicamentoDataGridViewTextBoxColumn
             // 
@@ -83,30 +82,35 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
             this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
             this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idlaboratorioDataGridViewTextBoxColumn
             // 
             this.idlaboratorioDataGridViewTextBoxColumn.DataPropertyName = "id_laboratorio";
             this.idlaboratorioDataGridViewTextBoxColumn.HeaderText = "id_laboratorio";
             this.idlaboratorioDataGridViewTextBoxColumn.Name = "idlaboratorioDataGridViewTextBoxColumn";
+            this.idlaboratorioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // fechaultimacompraDataGridViewTextBoxColumn
             // 
             this.fechaultimacompraDataGridViewTextBoxColumn.DataPropertyName = "fecha_ultima_compra";
             this.fechaultimacompraDataGridViewTextBoxColumn.HeaderText = "fecha_ultima_compra";
             this.fechaultimacompraDataGridViewTextBoxColumn.Name = "fechaultimacompraDataGridViewTextBoxColumn";
+            this.fechaultimacompraDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // cantidadenstockDataGridViewTextBoxColumn
             // 
             this.cantidadenstockDataGridViewTextBoxColumn.DataPropertyName = "cantidad_en_stock";
             this.cantidadenstockDataGridViewTextBoxColumn.HeaderText = "cantidad_en_stock";
             this.cantidadenstockDataGridViewTextBoxColumn.Name = "cantidadenstockDataGridViewTextBoxColumn";
+            this.cantidadenstockDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // mEDICAMENTOSBindingSource
             // 
@@ -122,22 +126,11 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // 
             this.mEDICAMENTOSTableAdapter.ClearBeforeFill = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.PaleVioletRed;
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.favpng_medicine_health_care_clinic;
-            this.pictureBox1.Location = new System.Drawing.Point(-2, 371);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(641, 114);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
             // Btn_Salir
             // 
-            this.Btn_Salir.Location = new System.Drawing.Point(495, 410);
+            this.Btn_Salir.Location = new System.Drawing.Point(621, 323);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(108, 45);
+            this.Btn_Salir.Size = new System.Drawing.Size(124, 45);
             this.Btn_Salir.TabIndex = 2;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = true;
@@ -145,38 +138,48 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             // 
             // Btn_Registrar_Sintoma
             // 
-            this.Btn_Registrar_Sintoma.Location = new System.Drawing.Point(12, 410);
+            this.Btn_Registrar_Sintoma.Location = new System.Drawing.Point(621, 48);
             this.Btn_Registrar_Sintoma.Name = "Btn_Registrar_Sintoma";
             this.Btn_Registrar_Sintoma.Size = new System.Drawing.Size(124, 45);
             this.Btn_Registrar_Sintoma.TabIndex = 3;
-            this.Btn_Registrar_Sintoma.Text = "Nuevo Medicamento";
+            this.Btn_Registrar_Sintoma.Text = "Modificar medicamento";
             this.Btn_Registrar_Sintoma.UseVisualStyleBackColor = true;
+            this.Btn_Registrar_Sintoma.Click += new System.EventHandler(this.Btn_Registrar_Sintoma_Click);
+            // 
+            // Frm_Eliminar_Medicamento
+            // 
+            this.Frm_Eliminar_Medicamento.Location = new System.Drawing.Point(621, 110);
+            this.Frm_Eliminar_Medicamento.Name = "Frm_Eliminar_Medicamento";
+            this.Frm_Eliminar_Medicamento.Size = new System.Drawing.Size(124, 45);
+            this.Frm_Eliminar_Medicamento.TabIndex = 4;
+            this.Frm_Eliminar_Medicamento.Text = "Eliminar medicamento";
+            this.Frm_Eliminar_Medicamento.UseVisualStyleBackColor = true;
+            this.Frm_Eliminar_Medicamento.Click += new System.EventHandler(this.Frm_Eliminar_Medicamento_Click);
             // 
             // Frm_Consultar_Medicamentos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(641, 482);
+            this.ClientSize = new System.Drawing.Size(757, 379);
+            this.Controls.Add(this.Frm_Eliminar_Medicamento);
             this.Controls.Add(this.Btn_Registrar_Sintoma);
             this.Controls.Add(this.Btn_Salir);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.Dgv_Consultar_Medicamentos);
             this.Name = "Frm_Consultar_Medicamentos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medicamentos";
             this.Load += new System.EventHandler(this.Frm_Consultar_Medicamentos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Medicamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView Dgv_Consultar_Medicamentos;
         private WindowsFormsApp1.Medicamentos medicamentos;
         private System.Windows.Forms.BindingSource mEDICAMENTOSBindingSource;
         private MedicamentosTableAdapters.MEDICAMENTOSTableAdapter mEDICAMENTOSTableAdapter;
@@ -186,8 +189,8 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         private System.Windows.Forms.DataGridViewTextBoxColumn idlaboratorioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaultimacompraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadenstockDataGridViewTextBoxColumn;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.Button Btn_Registrar_Sintoma;
+        private System.Windows.Forms.Button Frm_Eliminar_Medicamento;
     }
 }

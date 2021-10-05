@@ -26,7 +26,7 @@ namespace WindowsFormsApp1.RepositoriosBD
         public Medicamento GetMedicamento(long id)
         {
             var medicamento = new Medicamento();
-            var sentenciaSql = $"Select * from MEDICAMENTO where id_medicamento={id}";
+            var sentenciaSql = $"Select * from MEDICAMENTOS where id_medicamento={id}";
             var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
             foreach (DataRow fila in tablaResultado.Rows)
             {

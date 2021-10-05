@@ -51,10 +51,11 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
                 MessageBox.Show("Ha ocurrido un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Form MenuMedicamentos = new Frm_Menu_Insumos();
+            Form MenuMedicamentos = new Frm_Consultar_Medicamentos();
             MenuMedicamentos.Show();
             this.Dispose();
         }
+
         private void TomarDatosMedicamento()
         {
             med.nombre = Txt_Nombre.Text;
@@ -62,7 +63,6 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             med.id_laboratorio = Cmb_Id_Lab.Text;
             med.fecha_ultima_compra = Dtp_Fecha.Value;
             med.cantidad_en_stock = Txt_Cantidad_Stock.Text;
-            
         }
 
         private void ActualizarMedicamento()
@@ -87,7 +87,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
 
         private void Btm_Cancelar_Click(object sender, EventArgs e)
         {
-            Form menu = new Frm_Menu_Insumos();
+            Form menu = new Frm_Consultar_Medicamentos();
             menu.Show();
             this.Dispose();
         }
