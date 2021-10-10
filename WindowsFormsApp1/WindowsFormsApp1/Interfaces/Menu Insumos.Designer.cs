@@ -40,6 +40,8 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Registrar_Vacuna = new System.Windows.Forms.Button();
             this.Btn_Consultar_Vacuna = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
+            this.Btn_Stock_Med = new System.Windows.Forms.Button();
+            this.Btn_Stock_Vac = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // Lbl_Seleccion
@@ -148,7 +150,7 @@ namespace WindowsFormsApp1.Interfaces
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(279, 308);
+            this.Btn_Salir.Location = new System.Drawing.Point(279, 379);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 13;
@@ -156,12 +158,35 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Salir.UseVisualStyleBackColor = false;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
+            // Btn_Stock_Med
+            // 
+            this.Btn_Stock_Med.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Stock_Med.Location = new System.Drawing.Point(279, 288);
+            this.Btn_Stock_Med.Name = "Btn_Stock_Med";
+            this.Btn_Stock_Med.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Stock_Med.TabIndex = 14;
+            this.Btn_Stock_Med.Text = "Stock Medicamentos";
+            this.Btn_Stock_Med.UseVisualStyleBackColor = false;
+            this.Btn_Stock_Med.Click += new System.EventHandler(this.Btn_Stock_Med_Click);
+            // 
+            // Btn_Stock_Vac
+            // 
+            this.Btn_Stock_Vac.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Stock_Vac.Location = new System.Drawing.Point(497, 288);
+            this.Btn_Stock_Vac.Name = "Btn_Stock_Vac";
+            this.Btn_Stock_Vac.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Stock_Vac.TabIndex = 15;
+            this.Btn_Stock_Vac.Text = "Stock Vacunas";
+            this.Btn_Stock_Vac.UseVisualStyleBackColor = false;
+            // 
             // Frm_Menu_Insumos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(726, 377);
+            this.ClientSize = new System.Drawing.Size(726, 475);
+            this.Controls.Add(this.Btn_Stock_Vac);
+            this.Controls.Add(this.Btn_Stock_Med);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Consultar_Vacuna);
             this.Controls.Add(this.Btn_Registrar_Vacuna);
@@ -193,5 +218,7 @@ namespace WindowsFormsApp1.Interfaces
         private System.Windows.Forms.Button Btn_Registrar_Vacuna;
         private System.Windows.Forms.Button Btn_Consultar_Vacuna;
         private System.Windows.Forms.Button Btn_Salir;
+        private System.Windows.Forms.Button Btn_Stock_Med;
+        private System.Windows.Forms.Button Btn_Stock_Vac;
     }
 }

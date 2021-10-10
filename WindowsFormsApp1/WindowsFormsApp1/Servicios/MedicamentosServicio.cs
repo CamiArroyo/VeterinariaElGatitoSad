@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 using WindowsFormsApp1.Entidades;
 using WindowsFormsApp1.RepositoriosBD;
 
@@ -35,6 +36,11 @@ namespace WindowsFormsApp1.Servicios
             var medicamento = medRepo.GetMedicamento(id);
             return medicamento;
         }
+        public DataSet GetBuscquedaMedicamento(string name)
+        {
+            var medicamento = medRepo.GetBusquedaMedicamentoBD(name);
+            return medicamento;
+        }
 
         public void ActualizarMedicamento(Medicamento med)
         {
@@ -48,6 +54,8 @@ namespace WindowsFormsApp1.Servicios
             var filasAfectadas = medRepo.DarBajaMedicamento(med);
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al eliminar");
+
+
         }
     }
 }

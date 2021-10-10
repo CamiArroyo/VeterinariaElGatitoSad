@@ -319,6 +319,12 @@
     <Compile Include="Interfaces\Sintomas\Registrar_Sintoma.Designer.cs">
       <DependentUpon>Registrar_Sintoma.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Stock\Stock Medicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Stock\Stock Medicamentos.Designer.cs">
+      <DependentUpon>Stock Medicamentos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Vacs\Consultar_Vacuna.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -396,6 +402,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet10.xsd</DependentUpon>
     </Compile>
     <Compile Include="_PAV_3K2_2021_12DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -568,6 +579,9 @@
     <EmbeddedResource Include="Interfaces\Sintomas\Registrar_Sintoma.resx">
       <DependentUpon>Registrar_Sintoma.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Stock\Stock Medicamentos.resx">
+      <DependentUpon>Stock Medicamentos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Vacs\Consultar_Vacuna.resx">
       <DependentUpon>Consultar_Vacuna.cs</DependentUpon>
     </EmbeddedResource>
@@ -667,6 +681,17 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet1.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet10.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet10.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet10.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12DataSet2.xsc">
       <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>
