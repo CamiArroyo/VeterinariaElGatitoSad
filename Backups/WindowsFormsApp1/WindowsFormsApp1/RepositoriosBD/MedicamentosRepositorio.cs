@@ -24,7 +24,7 @@ namespace WindowsFormsApp1.RepositoriosBD
         }
         public int ActualizarStockMed(Medicamento med)
         {
-            var sentenciaSql = $"UPDATE MEDICAMENTOS SET , cantidad_en_stock='{med.cantidad_en_stock}' where id_medicamento={med.id_medicamentos}";
+            var sentenciaSql = $"UPDATE MEDICAMENTOS SET  cantidad_en_stock='{med.cantidad_en_stock}' where id_medicamento={med.id_medicamentos}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
@@ -76,18 +76,6 @@ namespace WindowsFormsApp1.RepositoriosBD
             return filasAfectadas;
         }
 
-        //public List<Medicamento> GetBusquedaMedicamentoBD(string name)
-        //{
-        //    var medicamento = new List<Medicamento>();
-        //    var sentenciaSql = $"Select * from MEDICAMENTOS a where nombre LIKE '%{name}%'";
-        //    var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
-
-        //    foreach (DataRow fila in tablaResultado.Rows)
-        //    {
-        //        var medica = MapearMedicamento(fila);
-        //        medicamento.Add(medica);
-        //    }
-        //    return medicamento;
-        //}
+       
     }
 }
