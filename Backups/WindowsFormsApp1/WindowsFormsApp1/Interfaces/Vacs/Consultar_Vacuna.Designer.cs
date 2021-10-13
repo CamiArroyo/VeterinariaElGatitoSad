@@ -31,9 +31,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
         {
             this.components = new System.ComponentModel.Container();
             this.Dgw_Consultar_Vacuna = new System.Windows.Forms.DataGridView();
-            this.vacunas = new WindowsFormsApp1.Vacunas();
-            this.vacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.vACUNASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vacunas = new WindowsFormsApp1.Vacunas();
             this.vACUNASTableAdapter = new WindowsFormsApp1.VacunasTableAdapters.VACUNASTableAdapter();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.Btn_Consultar_Detalle = new System.Windows.Forms.Button();
@@ -44,15 +44,16 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idlaboratorioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dgw_Consultar_Vacuna)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunas)).BeginInit();
             this.SuspendLayout();
             // 
             // Dgw_Consultar_Vacuna
             // 
-            this.Dgw_Consultar_Vacuna.AllowUserToDeleteRows = false;
+            this.Dgw_Consultar_Vacuna.AllowUserToAddRows = false;
             this.Dgw_Consultar_Vacuna.AutoGenerateColumns = false;
+            this.Dgw_Consultar_Vacuna.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.Dgw_Consultar_Vacuna.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgw_Consultar_Vacuna.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.idvacunaDataGridViewTextBoxColumn,
@@ -60,27 +61,26 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.descripcionDataGridViewTextBoxColumn,
             this.idlaboratorioDataGridViewTextBoxColumn});
             this.Dgw_Consultar_Vacuna.DataSource = this.vACUNASBindingSource1;
-            this.Dgw_Consultar_Vacuna.Location = new System.Drawing.Point(12, 5);
+            this.Dgw_Consultar_Vacuna.Location = new System.Drawing.Point(27, 33);
             this.Dgw_Consultar_Vacuna.Name = "Dgw_Consultar_Vacuna";
-            this.Dgw_Consultar_Vacuna.ReadOnly = true;
             this.Dgw_Consultar_Vacuna.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgw_Consultar_Vacuna.Size = new System.Drawing.Size(563, 427);
+            this.Dgw_Consultar_Vacuna.Size = new System.Drawing.Size(450, 300);
             this.Dgw_Consultar_Vacuna.TabIndex = 0;
             // 
-            // vacunas
+            // vACUNASBindingSource1
             // 
-            this.vacunas.DataSetName = "Vacunas";
-            this.vacunas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.vACUNASBindingSource1.DataMember = "VACUNAS";
+            this.vACUNASBindingSource1.DataSource = this.vacunasBindingSource;
             // 
             // vacunasBindingSource
             // 
             this.vacunasBindingSource.DataSource = this.vacunas;
             this.vacunasBindingSource.Position = 0;
             // 
-            // vACUNASBindingSource1
+            // vacunas
             // 
-            this.vACUNASBindingSource1.DataMember = "VACUNAS";
-            this.vACUNASBindingSource1.DataSource = this.vacunasBindingSource;
+            this.vacunas.DataSetName = "Vacunas";
+            this.vacunas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // vACUNASTableAdapter
             // 
@@ -90,9 +90,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.Btn_Salir.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Btn_Salir.Location = new System.Drawing.Point(617, 388);
+            this.Btn_Salir.Location = new System.Drawing.Point(500, 331);
             this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(88, 44);
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 1;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = false;
@@ -101,40 +101,40 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // Btn_Consultar_Detalle
             // 
             this.Btn_Consultar_Detalle.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Consultar_Detalle.Location = new System.Drawing.Point(617, 24);
+            this.Btn_Consultar_Detalle.Location = new System.Drawing.Point(500, 33);
             this.Btn_Consultar_Detalle.Name = "Btn_Consultar_Detalle";
-            this.Btn_Consultar_Detalle.Size = new System.Drawing.Size(88, 44);
+            this.Btn_Consultar_Detalle.Size = new System.Drawing.Size(145, 40);
             this.Btn_Consultar_Detalle.TabIndex = 2;
-            this.Btn_Consultar_Detalle.Text = "Ver Detalle";
+            this.Btn_Consultar_Detalle.Text = "Ver detalle";
             this.Btn_Consultar_Detalle.UseVisualStyleBackColor = false;
             this.Btn_Consultar_Detalle.Click += new System.EventHandler(this.Btn_Consultar_Detalle_Click);
             // 
             // Btn_Editar_Vacuna
             // 
             this.Btn_Editar_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Editar_Vacuna.Location = new System.Drawing.Point(617, 74);
+            this.Btn_Editar_Vacuna.Location = new System.Drawing.Point(500, 88);
             this.Btn_Editar_Vacuna.Name = "Btn_Editar_Vacuna";
-            this.Btn_Editar_Vacuna.Size = new System.Drawing.Size(88, 44);
+            this.Btn_Editar_Vacuna.Size = new System.Drawing.Size(145, 40);
             this.Btn_Editar_Vacuna.TabIndex = 3;
-            this.Btn_Editar_Vacuna.Text = "Editar vacuna";
+            this.Btn_Editar_Vacuna.Text = "Modificar vacuna";
             this.Btn_Editar_Vacuna.UseVisualStyleBackColor = false;
             this.Btn_Editar_Vacuna.Click += new System.EventHandler(this.Btn_Editar_Vacuna_Click);
             // 
             // Btn_Eliminar_Vacuna
             // 
             this.Btn_Eliminar_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar_Vacuna.Location = new System.Drawing.Point(617, 124);
+            this.Btn_Eliminar_Vacuna.Location = new System.Drawing.Point(500, 145);
             this.Btn_Eliminar_Vacuna.Name = "Btn_Eliminar_Vacuna";
-            this.Btn_Eliminar_Vacuna.Size = new System.Drawing.Size(88, 44);
+            this.Btn_Eliminar_Vacuna.Size = new System.Drawing.Size(145, 40);
             this.Btn_Eliminar_Vacuna.TabIndex = 4;
-            this.Btn_Eliminar_Vacuna.Text = "Eliminar Vacuna";
+            this.Btn_Eliminar_Vacuna.Text = "Eliminar vacuna";
             this.Btn_Eliminar_Vacuna.UseVisualStyleBackColor = false;
             this.Btn_Eliminar_Vacuna.Click += new System.EventHandler(this.Btn_Eliminar_Vacuna_Click);
             // 
             // idvacunaDataGridViewTextBoxColumn
             // 
             this.idvacunaDataGridViewTextBoxColumn.DataPropertyName = "id_vacuna";
-            this.idvacunaDataGridViewTextBoxColumn.HeaderText = "id_vacuna";
+            this.idvacunaDataGridViewTextBoxColumn.HeaderText = "ID vacuna";
             this.idvacunaDataGridViewTextBoxColumn.Name = "idvacunaDataGridViewTextBoxColumn";
             this.idvacunaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
@@ -142,31 +142,28 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // 
             this.nombreDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // descripcionDataGridViewTextBoxColumn
             // 
             this.descripcionDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // idlaboratorioDataGridViewTextBoxColumn
             // 
             this.idlaboratorioDataGridViewTextBoxColumn.DataPropertyName = "id_laboratorio";
-            this.idlaboratorioDataGridViewTextBoxColumn.HeaderText = "id_laboratorio";
+            this.idlaboratorioDataGridViewTextBoxColumn.HeaderText = "ID laboratorio";
             this.idlaboratorioDataGridViewTextBoxColumn.Name = "idlaboratorioDataGridViewTextBoxColumn";
-            this.idlaboratorioDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Frm_Consultar_Vacuna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(717, 444);
+            this.ClientSize = new System.Drawing.Size(670, 391);
             this.Controls.Add(this.Btn_Eliminar_Vacuna);
             this.Controls.Add(this.Btn_Editar_Vacuna);
             this.Controls.Add(this.Btn_Consultar_Detalle);
@@ -174,12 +171,12 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.Controls.Add(this.Dgw_Consultar_Vacuna);
             this.Name = "Frm_Consultar_Vacuna";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Consultar vacuna";
+            this.Text = "Consultar vacunas";
             this.Load += new System.EventHandler(this.Frm_Consultar_Vacuna_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgw_Consultar_Vacuna)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vacunas)).EndInit();
             this.ResumeLayout(false);
 
         }

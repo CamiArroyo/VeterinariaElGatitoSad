@@ -38,12 +38,12 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.sINTOMASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.sINTOMASTableAdapter = new WindowsFormsApp1.SintomasTableAdapters.SINTOMASTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id_sintoma = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Btn_Modificar_Sintoma = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.id_sintoma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.vacunas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sintomas)).BeginInit();
@@ -91,24 +91,57 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.descripcionDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.sINTOMASBindingSource;
             this.dataGridView1.GridColor = System.Drawing.Color.PaleGreen;
-            this.dataGridView1.Location = new System.Drawing.Point(25, 73);
+            this.dataGridView1.Location = new System.Drawing.Point(25, 34);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(441, 283);
+            this.dataGridView1.Size = new System.Drawing.Size(450, 300);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // Btn_Modificar_Sintoma
+            // 
+            this.Btn_Modificar_Sintoma.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Modificar_Sintoma.Location = new System.Drawing.Point(505, 34);
+            this.Btn_Modificar_Sintoma.Name = "Btn_Modificar_Sintoma";
+            this.Btn_Modificar_Sintoma.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Modificar_Sintoma.TabIndex = 1;
+            this.Btn_Modificar_Sintoma.Text = "Modificar síntoma";
+            this.Btn_Modificar_Sintoma.UseVisualStyleBackColor = false;
+            this.Btn_Modificar_Sintoma.Click += new System.EventHandler(this.Btn_Modificar_Sintoma_Click);
+            // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Salir.Location = new System.Drawing.Point(505, 332);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Salir.TabIndex = 2;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.button1.Location = new System.Drawing.Point(505, 91);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(145, 40);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Eliminar síntoma";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // id_sintoma
             // 
             this.id_sintoma.DataPropertyName = "id_sintoma";
-            this.id_sintoma.HeaderText = "Id";
+            this.id_sintoma.HeaderText = "ID síntoma";
             this.id_sintoma.Name = "id_sintoma";
             this.id_sintoma.ReadOnly = true;
             // 
             // nombreDataGridViewTextBoxColumn
             // 
             this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
             this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
             // 
             // descripcionDataGridViewTextBoxColumn
@@ -120,47 +153,17 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.descripcionDataGridViewTextBoxColumn.DefaultCellStyle = dataGridViewCellStyle1;
             this.descripcionDataGridViewTextBoxColumn.FillWeight = 400F;
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
             this.descripcionDataGridViewTextBoxColumn.MinimumWidth = 300;
             this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
             this.descripcionDataGridViewTextBoxColumn.Width = 300;
-            // 
-            // Btn_Modificar_Sintoma
-            // 
-            this.Btn_Modificar_Sintoma.Location = new System.Drawing.Point(25, 12);
-            this.Btn_Modificar_Sintoma.Name = "Btn_Modificar_Sintoma";
-            this.Btn_Modificar_Sintoma.Size = new System.Drawing.Size(121, 42);
-            this.Btn_Modificar_Sintoma.TabIndex = 1;
-            this.Btn_Modificar_Sintoma.Text = "Editar Sintoma";
-            this.Btn_Modificar_Sintoma.UseVisualStyleBackColor = true;
-            this.Btn_Modificar_Sintoma.Click += new System.EventHandler(this.Btn_Modificar_Sintoma_Click);
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.Location = new System.Drawing.Point(345, 373);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(121, 39);
-            this.Btn_Salir.TabIndex = 2;
-            this.Btn_Salir.Text = "Salir";
-            this.Btn_Salir.UseVisualStyleBackColor = true;
-            this.Btn_Salir.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(25, 373);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(121, 42);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Eliminar Sintoma";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // Frm_Consultar_Sintoma
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(497, 453);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(674, 387);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.Btn_Modificar_Sintoma);
@@ -168,7 +171,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Frm_Consultar_Sintoma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Sintomas";
+            this.Text = "Consultar síntomas";
             this.Load += new System.EventHandler(this.Frm_Consultar_Sintoma_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vacunas)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).EndInit();

@@ -58,15 +58,15 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(12, 309);
+            this.label10.Location = new System.Drawing.Point(25, 322);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(95, 13);
+            this.label10.Size = new System.Drawing.Size(100, 13);
             this.label10.TabIndex = 43;
-            this.label10.Text = "Repita Contraseña";
+            this.label10.Text = "Repetir contraseña:";
             // 
             // TxtM_Repetir_Password
             // 
-            this.TxtM_Repetir_Password.Location = new System.Drawing.Point(133, 309);
+            this.TxtM_Repetir_Password.Location = new System.Drawing.Point(146, 319);
             this.TxtM_Repetir_Password.MaxLength = 50;
             this.TxtM_Repetir_Password.Name = "TxtM_Repetir_Password";
             this.TxtM_Repetir_Password.PasswordChar = '*';
@@ -76,9 +76,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnM_Cancelar
             // 
             this.BtnM_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnM_Cancelar.Location = new System.Drawing.Point(258, 415);
+            this.BtnM_Cancelar.Location = new System.Drawing.Point(194, 440);
             this.BtnM_Cancelar.Name = "BtnM_Cancelar";
-            this.BtnM_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnM_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.BtnM_Cancelar.TabIndex = 41;
             this.BtnM_Cancelar.Text = "Cancelar";
             this.BtnM_Cancelar.UseVisualStyleBackColor = false;
@@ -87,17 +87,17 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnM_Guardar_Cambios
             // 
             this.BtnM_Guardar_Cambios.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnM_Guardar_Cambios.Location = new System.Drawing.Point(133, 415);
+            this.BtnM_Guardar_Cambios.Location = new System.Drawing.Point(42, 440);
             this.BtnM_Guardar_Cambios.Name = "BtnM_Guardar_Cambios";
-            this.BtnM_Guardar_Cambios.Size = new System.Drawing.Size(120, 23);
+            this.BtnM_Guardar_Cambios.Size = new System.Drawing.Size(125, 40);
             this.BtnM_Guardar_Cambios.TabIndex = 40;
-            this.BtnM_Guardar_Cambios.Text = "Guardar cambios";
+            this.BtnM_Guardar_Cambios.Text = "Modificar";
             this.BtnM_Guardar_Cambios.UseVisualStyleBackColor = false;
             this.BtnM_Guardar_Cambios.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // TxtM_Email
             // 
-            this.TxtM_Email.Location = new System.Drawing.Point(133, 348);
+            this.TxtM_Email.Location = new System.Drawing.Point(146, 358);
             this.TxtM_Email.MaxLength = 50;
             this.TxtM_Email.Name = "TxtM_Email";
             this.TxtM_Email.Size = new System.Drawing.Size(200, 20);
@@ -105,7 +105,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // DatePM_Fecha_Ingreso
             // 
-            this.DatePM_Fecha_Ingreso.Location = new System.Drawing.Point(133, 155);
+            this.DatePM_Fecha_Ingreso.Location = new System.Drawing.Point(146, 168);
             this.DatePM_Fecha_Ingreso.Name = "DatePM_Fecha_Ingreso";
             this.DatePM_Fecha_Ingreso.Size = new System.Drawing.Size(200, 20);
             this.DatePM_Fecha_Ingreso.TabIndex = 38;
@@ -113,24 +113,24 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(12, 155);
+            this.label8.Location = new System.Drawing.Point(25, 174);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(89, 13);
+            this.label8.Size = new System.Drawing.Size(92, 13);
             this.label8.TabIndex = 37;
-            this.label8.Text = "Fecha de ingreso";
+            this.label8.Text = "Fecha de ingreso:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(12, 194);
+            this.label7.Location = new System.Drawing.Point(25, 210);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 13);
+            this.label7.Size = new System.Drawing.Size(55, 13);
             this.label7.TabIndex = 36;
-            this.label7.Text = "Matrícula";
+            this.label7.Text = "Matrícula:";
             // 
             // TxtM_Matricula
             // 
-            this.TxtM_Matricula.Location = new System.Drawing.Point(133, 194);
+            this.TxtM_Matricula.Location = new System.Drawing.Point(146, 207);
             this.TxtM_Matricula.MaxLength = 50;
             this.TxtM_Matricula.Name = "TxtM_Matricula";
             this.TxtM_Matricula.Size = new System.Drawing.Size(200, 20);
@@ -139,15 +139,15 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 266);
+            this.label6.Location = new System.Drawing.Point(25, 284);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(61, 13);
+            this.label6.Size = new System.Drawing.Size(64, 13);
             this.label6.TabIndex = 34;
-            this.label6.Text = "Contraseña";
+            this.label6.Text = "Contraseña:";
             // 
             // TxtM_Password
             // 
-            this.TxtM_Password.Location = new System.Drawing.Point(133, 266);
+            this.TxtM_Password.Location = new System.Drawing.Point(146, 281);
             this.TxtM_Password.MaxLength = 50;
             this.TxtM_Password.Name = "TxtM_Password";
             this.TxtM_Password.PasswordChar = '*';
@@ -157,15 +157,15 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 233);
+            this.label5.Location = new System.Drawing.Point(25, 246);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 13);
+            this.label5.Size = new System.Drawing.Size(46, 13);
             this.label5.TabIndex = 32;
-            this.label5.Text = "Usuario";
+            this.label5.Text = "Usuario:";
             // 
             // TxtM_Usuario
             // 
-            this.TxtM_Usuario.Location = new System.Drawing.Point(133, 230);
+            this.TxtM_Usuario.Location = new System.Drawing.Point(146, 243);
             this.TxtM_Usuario.MaxLength = 50;
             this.TxtM_Usuario.Name = "TxtM_Usuario";
             this.TxtM_Usuario.Size = new System.Drawing.Size(200, 20);
@@ -174,15 +174,15 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 82);
+            this.label4.Location = new System.Drawing.Point(25, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(44, 13);
+            this.label4.Size = new System.Drawing.Size(47, 13);
             this.label4.TabIndex = 30;
-            this.label4.Text = "Apellido";
+            this.label4.Text = "Apellido:";
             // 
             // TxtM_Apellido
             // 
-            this.TxtM_Apellido.Location = new System.Drawing.Point(133, 82);
+            this.TxtM_Apellido.Location = new System.Drawing.Point(146, 95);
             this.TxtM_Apellido.MaxLength = 50;
             this.TxtM_Apellido.Name = "TxtM_Apellido";
             this.TxtM_Apellido.Size = new System.Drawing.Size(200, 20);
@@ -191,15 +191,15 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 47);
+            this.label3.Location = new System.Drawing.Point(25, 63);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(47, 13);
             this.label3.TabIndex = 28;
-            this.label3.Text = "Nombre";
+            this.label3.Text = "Nombre:";
             // 
             // TxtM_Nombre
             // 
-            this.TxtM_Nombre.Location = new System.Drawing.Point(133, 47);
+            this.TxtM_Nombre.Location = new System.Drawing.Point(146, 60);
             this.TxtM_Nombre.MaxLength = 50;
             this.TxtM_Nombre.Name = "TxtM_Nombre";
             this.TxtM_Nombre.Size = new System.Drawing.Size(200, 20);
@@ -207,7 +207,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             // DatePM_Fecha_Nacimiento
             // 
-            this.DatePM_Fecha_Nacimiento.Location = new System.Drawing.Point(133, 119);
+            this.DatePM_Fecha_Nacimiento.Location = new System.Drawing.Point(146, 132);
             this.DatePM_Fecha_Nacimiento.Name = "DatePM_Fecha_Nacimiento";
             this.DatePM_Fecha_Nacimiento.Size = new System.Drawing.Size(200, 20);
             this.DatePM_Fecha_Nacimiento.TabIndex = 26;
@@ -215,24 +215,24 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 119);
+            this.label2.Location = new System.Drawing.Point(25, 138);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
+            this.label2.Size = new System.Drawing.Size(109, 13);
             this.label2.TabIndex = 25;
-            this.label2.Text = "Fecha de nacimiento";
+            this.label2.Text = "Fecha de nacimiento:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(25, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(115, 13);
+            this.label1.Size = new System.Drawing.Size(118, 13);
             this.label1.TabIndex = 24;
-            this.label1.Text = "Número de documento";
+            this.label1.Text = "Número de documento:";
             // 
             // TxtM_DNI
             // 
-            this.TxtM_DNI.Location = new System.Drawing.Point(133, 12);
+            this.TxtM_DNI.Location = new System.Drawing.Point(146, 25);
             this.TxtM_DNI.MaxLength = 50;
             this.TxtM_DNI.Name = "TxtM_DNI";
             this.TxtM_DNI.Size = new System.Drawing.Size(200, 20);
@@ -241,20 +241,20 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(12, 348);
+            this.label9.Location = new System.Drawing.Point(25, 361);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 13);
+            this.label9.Size = new System.Drawing.Size(35, 13);
             this.label9.TabIndex = 45;
-            this.label9.Text = "Email";
+            this.label9.Text = "Email:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(12, 379);
+            this.label11.Location = new System.Drawing.Point(25, 399);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(40, 13);
+            this.label11.Size = new System.Drawing.Size(43, 13);
             this.label11.TabIndex = 46;
-            this.label11.Text = "Estado";
+            this.label11.Text = "Estado:";
             // 
             // Cb_Estado_Empleado
             // 
@@ -262,7 +262,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Cb_Estado_Empleado.Items.AddRange(new object[] {
             "Activo",
             "Inactivo"});
-            this.Cb_Estado_Empleado.Location = new System.Drawing.Point(133, 379);
+            this.Cb_Estado_Empleado.Location = new System.Drawing.Point(146, 396);
             this.Cb_Estado_Empleado.Name = "Cb_Estado_Empleado";
             this.Cb_Estado_Empleado.Size = new System.Drawing.Size(200, 21);
             this.Cb_Estado_Empleado.TabIndex = 47;
@@ -271,8 +271,8 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(351, 450);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(374, 499);
             this.Controls.Add(this.Cb_Estado_Empleado);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label9);
@@ -299,7 +299,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.Controls.Add(this.label1);
             this.Name = "Modificar_Empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Modificar_Empleado";
+            this.Text = "Modificar empleado";
             this.Load += new System.EventHandler(this.Modificar_Empleado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

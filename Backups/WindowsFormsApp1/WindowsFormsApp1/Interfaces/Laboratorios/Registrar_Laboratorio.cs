@@ -82,7 +82,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
         {
             if (!labService.RegistrarLaboratorio(lab))
             {
-                MessageBox.Show("Ocurrió un problema al registrar el empleado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ocurrió un problema al registrar el laboratorio", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             MessageBox.Show("El laboratorio se registró con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);

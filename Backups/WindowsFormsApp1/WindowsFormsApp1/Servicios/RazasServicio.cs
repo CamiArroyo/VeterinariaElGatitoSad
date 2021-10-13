@@ -31,6 +31,26 @@ namespace WindowsFormsApp1.Servicios
                 return true;
             return false;
         }
+
+        public Raza GetRaza(long id)
+        {
+            var raza = razas_repositorio.GetRaza(id);
+            return raza;
+        }
+
+        public void ActualizarRaza(Raza raza)
+        {
+            var filasAfectadas = razas_repositorio.ActualizarRaza(raza);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
+        public void DarBajaRaza(Raza raza)
+        {
+            var filasAfectadas = razas_repositorio.DarBajaRaza(raza);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 }
 

@@ -123,3 +123,123 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Registrar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Eliminar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Modificar_Raza.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Consultar_Especies.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Registrar_Diagnostico.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Registrar_Diagnostico.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Consultar_Especies.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Registrar_Especie.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Eliminar_Raza.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Modificar_Raza.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.AssemblyReference.cache
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Registrar_Diagnostico.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Consultar_Dueños.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Eliminar_Dueño.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Modificar_Dueño.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Registrar_Dueños.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Frm_Consultar_Empleado.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Eliminar_Empleado.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Modificar_Empleado.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Empleados.Frm_Registrar_Empleado.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Consultar_Especies.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Registrar_Especie.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.FrmIniciar_sesion.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Consultar_Laboratorio.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Eliminar_Laboratorio.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Registrar_Laboratorio.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Consultar_Medicamentos.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Frm_Menu_Animales.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Frm_Menu_Insumos.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FrmMenu_Principal.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Fmr_Menu_Sintomatologia.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Eliminar_Raza.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Modificar_Raza.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Registrar_Raza.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Consultar_Sintoma.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Eliminar_Sintoma.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Modificar_Sintoma.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Sintomas.Frm_Registrar_Sintoma.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Consultar_Vacuna.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Eliminar_Vacuna.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Registrar_Vacuna.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.GenerateResource.cache
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Veterinaria el gatito sad.csproj.CoreCompileInputs.cache
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Consultar_Mascota.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Registrar_Mascota.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Modificar_Mascota.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Eliminar_Mascota.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Consultar_Mascota.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Eliminar_Mascota.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Modificar_Mascota.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Registrar_Mascota.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Consultar_Mascota.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Eliminar_Mascota.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Modificar_Mascota.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Registrar_Mascota.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Registrar_Diagnostico.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Consultar_Dueños.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Eliminar_Dueño.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Modificar_Dueño.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Dueños.Frm_Registrar_Dueños.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Consultar_Especies.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Registrar_Especie.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Consultar_Mascota.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Eliminar_Mascota.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Modificar_Mascota.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Mascotas.Frm_Registrar_Mascota.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Eliminar_Raza.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Modificar_Raza.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Consultar_Vacuna.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Eliminar_Vacuna.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources

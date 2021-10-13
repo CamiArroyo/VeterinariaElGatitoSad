@@ -53,13 +53,13 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private bool SeRegistraRaza()
         {
-            var id_especie = Cmb_Especie.Text;
             var nombre = Txt_Nombre.Text;
+            var id_especie = Cmb_Especie.Text;
             var descr = Txt_Descripcion.Text;
             var peso = Txt_Peso_Medio.Text;
             var altura = Txt_Altura_Media.Text;
 
-            var raza_ingresada = new Raza(id_especie, nombre, descr, peso, altura);
+            var raza_ingresada = new Raza(nombre, id_especie, descr, peso, altura);
             raza = raza_ingresada;
             return true;
         }
@@ -78,7 +78,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
             this.Dispose();
-            Form menu = new FrmMenu_Principal();
+            Form menu = new Frm_Menu_Animales();
             menu.Show();
         }
 
@@ -86,6 +86,16 @@ namespace WindowsFormsApp1.Interfaces.Razas
         {
             // TODO: This line of code loads data into the '_PAV_3K2_2021_12DataSet1.ESPECIES' table. You can move, or remove it, as needed.
             this.eSPECIESTableAdapter.Fill(this._PAV_3K2_2021_12DataSet1.ESPECIES);
+
+        }
+
+        private void Lbl_Altura_Media_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Altura_Media_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // LblE_Confirmar_Operacion
             // 
             this.LblE_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(36, 34);
+            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(58, 37);
             this.LblE_Confirmar_Operacion.Name = "LblE_Confirmar_Operacion";
             this.LblE_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblE_Confirmar_Operacion.TabIndex = 8;
@@ -47,9 +47,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // BtnE_Cancelar_Vacuna
             // 
             this.BtnE_Cancelar_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Cancelar_Vacuna.Location = new System.Drawing.Point(156, 133);
+            this.BtnE_Cancelar_Vacuna.Location = new System.Drawing.Point(173, 115);
             this.BtnE_Cancelar_Vacuna.Name = "BtnE_Cancelar_Vacuna";
-            this.BtnE_Cancelar_Vacuna.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Cancelar_Vacuna.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Cancelar_Vacuna.TabIndex = 7;
             this.BtnE_Cancelar_Vacuna.Text = "Cancelar";
             this.BtnE_Cancelar_Vacuna.UseVisualStyleBackColor = false;
@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             // BtnE_Vacuna
             // 
             this.BtnE_Vacuna.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Vacuna.Location = new System.Drawing.Point(12, 133);
+            this.BtnE_Vacuna.Location = new System.Drawing.Point(23, 115);
             this.BtnE_Vacuna.Name = "BtnE_Vacuna";
-            this.BtnE_Vacuna.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Vacuna.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Vacuna.TabIndex = 6;
             this.BtnE_Vacuna.Text = "Confirmar";
             this.BtnE_Vacuna.UseVisualStyleBackColor = false;
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(275, 205);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.LblE_Confirmar_Operacion);
             this.Controls.Add(this.BtnE_Cancelar_Vacuna);
             this.Controls.Add(this.BtnE_Vacuna);

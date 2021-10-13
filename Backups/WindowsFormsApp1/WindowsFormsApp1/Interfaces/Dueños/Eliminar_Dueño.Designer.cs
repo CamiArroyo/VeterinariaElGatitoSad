@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             // LblE_Confirmar_Operacion
             // 
             this.LblE_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(36, 34);
+            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(61, 35);
             this.LblE_Confirmar_Operacion.Name = "LblE_Confirmar_Operacion";
             this.LblE_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblE_Confirmar_Operacion.TabIndex = 5;
@@ -47,9 +47,9 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             // BtnE_Dueño
             // 
             this.BtnE_Dueño.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Dueño.Location = new System.Drawing.Point(12, 133);
+            this.BtnE_Dueño.Location = new System.Drawing.Point(28, 112);
             this.BtnE_Dueño.Name = "BtnE_Dueño";
-            this.BtnE_Dueño.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Dueño.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Dueño.TabIndex = 3;
             this.BtnE_Dueño.Text = "Confirmar";
             this.BtnE_Dueño.UseVisualStyleBackColor = false;
@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             // BtnE_Cancelar
             // 
             this.BtnE_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Cancelar.Location = new System.Drawing.Point(156, 133);
+            this.BtnE_Cancelar.Location = new System.Drawing.Point(175, 112);
             this.BtnE_Cancelar.Name = "BtnE_Cancelar";
-            this.BtnE_Cancelar.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Cancelar.TabIndex = 4;
             this.BtnE_Cancelar.Text = "Cancelar";
             this.BtnE_Cancelar.UseVisualStyleBackColor = false;
@@ -71,7 +71,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(275, 205);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.LblE_Confirmar_Operacion);
             this.Controls.Add(this.BtnE_Cancelar);
             this.Controls.Add(this.BtnE_Dueño);

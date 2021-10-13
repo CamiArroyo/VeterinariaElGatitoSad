@@ -39,7 +39,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             {
                 MessageBox.Show(aex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 MessageBox.Show("Ha ocurrido un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -62,6 +62,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
             dueService.ActualizarDueño(due);
             MessageBox.Show("Se actualizo el dueño con éxito", "Información", MessageBoxButtons.OK);
         }
+
         public void CerrarFormulario()
         {
             this.Dispose();

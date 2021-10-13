@@ -39,7 +39,6 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         private Vacuna MapearVacuna(DataRow fila)
         {
-
             var vacuna = new Vacuna();
             vacuna.id_vacuna = Convert.ToInt32(fila["id_vacuna"] is DBNull ? " " : fila["id_vacuna"]);
             vacuna.nombre = Convert.ToString(fila["nombre"] is DBNull ? " " : fila["nombre"]);
@@ -51,7 +50,6 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int DarBajaVacuna(Vacuna vac)
         {
-            //completar
             var sentenciaSql = $"Delete from VACUNAS where id_vacuna={vac.id_vacuna}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;

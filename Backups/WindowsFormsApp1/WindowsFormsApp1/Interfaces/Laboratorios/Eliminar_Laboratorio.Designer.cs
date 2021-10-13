@@ -38,7 +38,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             this.LblL_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblL_Confirmar_Operacion.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.LblL_Confirmar_Operacion.Location = new System.Drawing.Point(36, 34);
+            this.LblL_Confirmar_Operacion.Location = new System.Drawing.Point(56, 38);
             this.LblL_Confirmar_Operacion.Name = "LblL_Confirmar_Operacion";
             this.LblL_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblL_Confirmar_Operacion.TabIndex = 5;
@@ -49,9 +49,9 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             this.BtnEL_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnEL_Cancelar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnEL_Cancelar.Location = new System.Drawing.Point(156, 133);
+            this.BtnEL_Cancelar.Location = new System.Drawing.Point(171, 117);
             this.BtnEL_Cancelar.Name = "BtnEL_Cancelar";
-            this.BtnEL_Cancelar.Size = new System.Drawing.Size(107, 37);
+            this.BtnEL_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.BtnEL_Cancelar.TabIndex = 4;
             this.BtnEL_Cancelar.Text = "Cancelar";
             this.BtnEL_Cancelar.UseVisualStyleBackColor = false;
@@ -61,9 +61,9 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             this.BtnE_Laboratorio.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BtnE_Laboratorio.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.BtnE_Laboratorio.Location = new System.Drawing.Point(12, 133);
+            this.BtnE_Laboratorio.Location = new System.Drawing.Point(25, 117);
             this.BtnE_Laboratorio.Name = "BtnE_Laboratorio";
-            this.BtnE_Laboratorio.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Laboratorio.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Laboratorio.TabIndex = 3;
             this.BtnE_Laboratorio.Text = "Confirmar";
             this.BtnE_Laboratorio.UseVisualStyleBackColor = false;
@@ -73,15 +73,15 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.MistyRose;
-            this.ClientSize = new System.Drawing.Size(275, 205);
+            this.BackColor = System.Drawing.Color.PaleGreen;
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.LblL_Confirmar_Operacion);
             this.Controls.Add(this.BtnEL_Cancelar);
             this.Controls.Add(this.BtnE_Laboratorio);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Name = "Eliminar_Laboratorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar";
+            this.Text = "Eliminar laboratorio";
             this.ResumeLayout(false);
 
         }

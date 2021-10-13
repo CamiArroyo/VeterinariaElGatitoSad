@@ -37,9 +37,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnE_Empleado
             // 
             this.BtnE_Empleado.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Empleado.Location = new System.Drawing.Point(14, 133);
+            this.BtnE_Empleado.Location = new System.Drawing.Point(23, 117);
             this.BtnE_Empleado.Name = "BtnE_Empleado";
-            this.BtnE_Empleado.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Empleado.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Empleado.TabIndex = 0;
             this.BtnE_Empleado.Text = "Confirmar";
             this.BtnE_Empleado.UseVisualStyleBackColor = false;
@@ -48,9 +48,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // BtnE_Cancelar
             // 
             this.BtnE_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Cancelar.Location = new System.Drawing.Point(158, 133);
+            this.BtnE_Cancelar.Location = new System.Drawing.Point(174, 117);
             this.BtnE_Cancelar.Name = "BtnE_Cancelar";
-            this.BtnE_Cancelar.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Cancelar.TabIndex = 1;
             this.BtnE_Cancelar.Text = "Cancelar";
             this.BtnE_Cancelar.UseVisualStyleBackColor = false;
@@ -59,7 +59,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             // LblE_Confirmar_Operacion
             // 
             this.LblE_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(38, 34);
+            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(62, 36);
             this.LblE_Confirmar_Operacion.Name = "LblE_Confirmar_Operacion";
             this.LblE_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblE_Confirmar_Operacion.TabIndex = 2;
@@ -72,13 +72,13 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(275, 205);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.LblE_Confirmar_Operacion);
             this.Controls.Add(this.BtnE_Cancelar);
             this.Controls.Add(this.BtnE_Empleado);
             this.Name = "Eliminar_Empleado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar";
+            this.Text = "Eliminar empleado";
             this.Load += new System.EventHandler(this.Eliminar_Empleado_Load);
             this.ResumeLayout(false);
 

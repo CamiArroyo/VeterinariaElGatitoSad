@@ -40,18 +40,18 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 36);
+            this.label1.Location = new System.Drawing.Point(52, 54);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.Size = new System.Drawing.Size(71, 13);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Razon Social";
+            this.label1.Text = "Razón social:";
             // 
             // BtnRL_Registrar
             // 
             this.BtnRL_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnRL_Registrar.Location = new System.Drawing.Point(77, 131);
+            this.BtnRL_Registrar.Location = new System.Drawing.Point(55, 152);
             this.BtnRL_Registrar.Name = "BtnRL_Registrar";
-            this.BtnRL_Registrar.Size = new System.Drawing.Size(75, 23);
+            this.BtnRL_Registrar.Size = new System.Drawing.Size(125, 40);
             this.BtnRL_Registrar.TabIndex = 1;
             this.BtnRL_Registrar.Text = "Registrar";
             this.BtnRL_Registrar.UseVisualStyleBackColor = false;
@@ -60,9 +60,9 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // BtnRL_Cancelar
             // 
             this.BtnRL_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnRL_Cancelar.Location = new System.Drawing.Point(184, 131);
+            this.BtnRL_Cancelar.Location = new System.Drawing.Point(210, 152);
             this.BtnRL_Cancelar.Name = "BtnRL_Cancelar";
-            this.BtnRL_Cancelar.Size = new System.Drawing.Size(75, 23);
+            this.BtnRL_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.BtnRL_Cancelar.TabIndex = 2;
             this.BtnRL_Cancelar.Text = "Cancelar";
             this.BtnRL_Cancelar.UseVisualStyleBackColor = false;
@@ -70,26 +70,26 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             // 
             // TxtRL_Razon_Social
             // 
-            this.TxtRL_Razon_Social.Location = new System.Drawing.Point(103, 36);
+            this.TxtRL_Razon_Social.Location = new System.Drawing.Point(157, 51);
             this.TxtRL_Razon_Social.Name = "TxtRL_Razon_Social";
-            this.TxtRL_Razon_Social.Size = new System.Drawing.Size(153, 20);
+            this.TxtRL_Razon_Social.Size = new System.Drawing.Size(178, 20);
             this.TxtRL_Razon_Social.TabIndex = 3;
             // 
             // TxtRL_Direccion
             // 
-            this.TxtRL_Direccion.Location = new System.Drawing.Point(103, 77);
+            this.TxtRL_Direccion.Location = new System.Drawing.Point(157, 95);
             this.TxtRL_Direccion.Name = "TxtRL_Direccion";
-            this.TxtRL_Direccion.Size = new System.Drawing.Size(153, 20);
+            this.TxtRL_Direccion.Size = new System.Drawing.Size(178, 20);
             this.TxtRL_Direccion.TabIndex = 4;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 77);
+            this.label2.Location = new System.Drawing.Point(52, 98);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 5;
-            this.label2.Text = "Dirección";
+            this.label2.Text = "Dirección:";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Registrar_Laboratorio
@@ -97,7 +97,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(271, 164);
+            this.ClientSize = new System.Drawing.Size(391, 236);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.TxtRL_Direccion);
             this.Controls.Add(this.TxtRL_Razon_Social);
@@ -106,7 +106,7 @@ namespace WindowsFormsApp1.Interfaces.Laboratorios
             this.Controls.Add(this.label1);
             this.Name = "Registrar_Laboratorio";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Registrar Laboratorio";
+            this.Text = "Registrar laboratorio";
             this.ResumeLayout(false);
             this.PerformLayout();
 

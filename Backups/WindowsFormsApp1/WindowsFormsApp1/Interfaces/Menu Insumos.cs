@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Vacs;
 using WindowsFormsApp1.Interfaces.Medicamentos;
+using WindowsFormsApp1.Interfaces.Stock;
 
 namespace WindowsFormsApp1.Interfaces
 {
@@ -60,6 +61,26 @@ namespace WindowsFormsApp1.Interfaces
             Form Cvac = new Frm_Consultar_Vacuna();
             Cvac.Show();
             this.Dispose();
+        }
+
+        private void Btn_Registrar_Medicamento_Click(object sender, EventArgs e)
+        {
+            Form Rmedicamento = new Frm_Registrar_Medicamento();
+            Rmedicamento.Show();
+            this.Dispose();
+        }
+
+        private void Lbl_Laboratorio_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Btn_Stock_Med_Click(object sender, EventArgs e)
+        {
+            Form stock_med = new Frm_Stock_Medicamentos();
+            stock_med.Show();
+            this.Dispose();
+
         }
     }
 }

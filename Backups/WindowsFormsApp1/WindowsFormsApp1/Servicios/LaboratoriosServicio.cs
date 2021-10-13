@@ -12,16 +12,16 @@ namespace WindowsFormsApp1.Servicios
     {
         private LaboratoriosRepositorio labRepo;
 
+        public LaboratoriosServicio(LaboratoriosRepositorio laboRepo)
+        {
+            labRepo = laboRepo;
+        }
         public LaboratoriosServicio() 
         {
             labRepo = new LaboratoriosRepositorio();
         }
 
-        public List<Laboratorio> GetLaboratorios()
-        {
-            return labRepo.GetLaboratorioBD();
-        }
-
+        
         public bool RegistrarLaboratorio(Laboratorio lab)
         {
             if (lab == null)
@@ -37,7 +37,12 @@ namespace WindowsFormsApp1.Servicios
             var laboratorio = labRepo.GetLaboratorio(id);
             return laboratorio;
         }
-
+        public void ActualizarLaboratorio(Laboratorio lab)
+        {
+            var filasAfectadas = labRepo.ActualizarLaboratorio(lab);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
         public void DarBajaLaboratorio(Laboratorio lab)
         {
             var filasAfectadas = labRepo.DarBajaLaboratorio(lab);

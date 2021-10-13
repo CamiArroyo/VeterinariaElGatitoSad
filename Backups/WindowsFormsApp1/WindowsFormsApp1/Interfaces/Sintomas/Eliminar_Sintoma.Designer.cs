@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // LblE_Confirmar_Operacion
             // 
             this.LblE_Confirmar_Operacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(36, 28);
+            this.LblE_Confirmar_Operacion.Location = new System.Drawing.Point(63, 37);
             this.LblE_Confirmar_Operacion.Name = "LblE_Confirmar_Operacion";
             this.LblE_Confirmar_Operacion.Size = new System.Drawing.Size(203, 56);
             this.LblE_Confirmar_Operacion.TabIndex = 5;
@@ -47,9 +47,9 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // BtnE_Cancelar_Sintoma
             // 
             this.BtnE_Cancelar_Sintoma.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Cancelar_Sintoma.Location = new System.Drawing.Point(156, 127);
+            this.BtnE_Cancelar_Sintoma.Location = new System.Drawing.Point(171, 115);
             this.BtnE_Cancelar_Sintoma.Name = "BtnE_Cancelar_Sintoma";
-            this.BtnE_Cancelar_Sintoma.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Cancelar_Sintoma.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Cancelar_Sintoma.TabIndex = 4;
             this.BtnE_Cancelar_Sintoma.Text = "Cancelar";
             this.BtnE_Cancelar_Sintoma.UseVisualStyleBackColor = false;
@@ -58,9 +58,9 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             // BtnE_Sintoma
             // 
             this.BtnE_Sintoma.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnE_Sintoma.Location = new System.Drawing.Point(12, 127);
+            this.BtnE_Sintoma.Location = new System.Drawing.Point(25, 115);
             this.BtnE_Sintoma.Name = "BtnE_Sintoma";
-            this.BtnE_Sintoma.Size = new System.Drawing.Size(107, 37);
+            this.BtnE_Sintoma.Size = new System.Drawing.Size(125, 40);
             this.BtnE_Sintoma.TabIndex = 3;
             this.BtnE_Sintoma.Text = "Confirmar";
             this.BtnE_Sintoma.UseVisualStyleBackColor = false;
@@ -71,13 +71,13 @@ namespace WindowsFormsApp1.Interfaces.Sintomas
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(275, 205);
+            this.ClientSize = new System.Drawing.Size(324, 186);
             this.Controls.Add(this.LblE_Confirmar_Operacion);
             this.Controls.Add(this.BtnE_Cancelar_Sintoma);
             this.Controls.Add(this.BtnE_Sintoma);
             this.Name = "Frm_Eliminar_Sintoma";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Eliminar Sintoma";
+            this.Text = "Eliminar síntoma";
             this.Load += new System.EventHandler(this.Frm_Eliminar_Sintoma_Load);
             this.ResumeLayout(false);
 

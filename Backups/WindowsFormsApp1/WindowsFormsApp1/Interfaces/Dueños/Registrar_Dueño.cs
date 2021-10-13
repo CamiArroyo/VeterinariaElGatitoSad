@@ -79,7 +79,7 @@ namespace WindowsFormsApp1.Interfaces.Dueños
         {
             if (!dueService.RegistrarDueño(due))
             {
-                MessageBox.Show("Ocurrió un problema al registrar La vacuna", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Ocurrió un problema al registrar La dueño", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
             MessageBox.Show("El dueño se registró con éxito", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
