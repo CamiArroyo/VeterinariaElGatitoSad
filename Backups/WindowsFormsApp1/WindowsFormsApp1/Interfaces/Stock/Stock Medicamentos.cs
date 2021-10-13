@@ -17,6 +17,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
     {
         private Medicamento med;
         private MedicamentosServicio med_serv;
+        private string ultima_busqueda;
 
         public Frm_Stock_Medicamentos()
         {
@@ -83,39 +84,24 @@ namespace WindowsFormsApp1.Interfaces.Stock
         {
 
             var busqueda = Txt_Buscar_Medicamento.Text;
+            ultima_busqueda = busqueda;
             DataGrd_Stock_med.Rows.Clear();
+            BusquedaStock(busqueda);
+                
 
-                var ds = med_serv.GetBuscquedaMedicamento(busqueda);
+        }
 
+        private void BusquedaStock(string txt)
+        {
+            var ds = med_serv.GetBuscquedaMedicamento(txt);
 
+            DataGrd_Stock_med.Rows.Clear();
             foreach (DataRow row in ds.Tables[0].Rows)
             {
                 DataGrd_Stock_med.Rows.Add(row["id_medicamento"], row["nombre"], row["descripcion"], row["razon_social"], row["fecha_ultima_compra"], row["cantidad_en_stock"]);
 
-                //DataGrd_Stock_med.Rows.Add(row["nombre"]);
-                //DataGrd_Stock_med.Rows.Add(row["descripcion"]);
-                //DataGrd_Stock_med.Rows.Add(row["razon_social"]);
-                //DataGrd_Stock_med.Rows.Add(row["fecha_ultima_compra"]);
-                //DataGrd_Stock_med.Rows.Add(row["cantidad_en_stock"]);
-
-
-                //var fila = new String[]
-                //     {
-                //    med.id_medicamentos.ToString(),
-                //    med.nombre,
-                //    med.descripcion,
-                //    med.id_laboratorio.ToString(),
-                //    med.fecha_ultima_compra.ToString(),
-                //    med.cantidad_en_stock.ToString()
-
-                //     };
-
-                //DataGrd_Stock_med.Rows.Add(fila);
-
             }
-
         }
-
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
@@ -148,6 +134,11 @@ namespace WindowsFormsApp1.Interfaces.Stock
 
                 med.cantidad_en_stock = Convert.ToString(stock);
                 med_serv.ActualizarStock(med);
+                MessageBox.Show("Se actualizo el stock exitosamente", "Información", MessageBoxButtons.OK);
+                Txt_Añadir.Clear();
+                Txt_Quitar.Clear();
+                BusquedaStock(ultima_busqueda);
+
 
                 return;
             }
@@ -169,10 +160,15 @@ namespace WindowsFormsApp1.Interfaces.Stock
                 {
                     med.cantidad_en_stock = Convert.ToString(stock);
                     med_serv.ActualizarStock(med);
+                    MessageBox.Show("Se actualizo el stock exitosamente", "Información", MessageBoxButtons.OK);
+                    Txt_Añadir.Clear();
+                    Txt_Quitar.Clear();
+                    BusquedaStock(ultima_busqueda);
+
                 }
                 else
                 {
-                    MessageBox.Show("Quitando mas de lo que hay, ingrese nuevamente", "Información", MessageBoxButtons.OK);
+                    MessageBox.Show("Esta quitando mas de lo que hay, ingrese nuevamente", "Información", MessageBoxButtons.OK);
 
                 }
 
@@ -180,6 +176,11 @@ namespace WindowsFormsApp1.Interfaces.Stock
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
