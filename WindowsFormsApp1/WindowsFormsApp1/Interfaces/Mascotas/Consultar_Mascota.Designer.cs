@@ -30,52 +30,42 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this._PAV_3K2_2021_12DataSet6 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet6();
-            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mASCOTASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet6TableAdapters.MASCOTASTableAdapter();
             this.Btm_Modificar_Mascota = new System.Windows.Forms.Button();
             this.Btm_Eliminar_Mascota = new System.Windows.Forms.Button();
             this.Btm_Registrar_Mascota = new System.Windows.Forms.Button();
             this.Dgv_Consultar_Mascotas = new System.Windows.Forms.DataGridView();
-            this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this._PAV_3K2_2021_12DataSet7 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet7();
+            this.consultarMascotasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.test1Datos1 = new WindowsFormsApp1.Interfaces.Mascotas.Test1Datos();
             this.Btn_Salir = new System.Windows.Forms.Button();
-            this.mASCOTASTableAdapter1 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet7TableAdapters.MASCOTASTableAdapter();
             this.Btn_Mostrar_off = new System.Windows.Forms.Button();
             this.Btn_Mostrar_On = new System.Windows.Forms.Button();
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechanacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.idrazaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mASCOTASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.consultarMascotasBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.test1Datos = new WindowsFormsApp1.Interfaces.Mascotas.Test1Datos();
+            this.consultarMascotasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.consultar_MascotasTableAdapter = new WindowsFormsApp1.Interfaces.Mascotas.Test1DatosTableAdapters.Consultar_MascotasTableAdapter();
+            this.mascotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDeNacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.alturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iddueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Mascotas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test1Datos1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test1Datos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // _PAV_3K2_2021_12DataSet6
-            // 
-            this._PAV_3K2_2021_12DataSet6.DataSetName = "_PAV_3K2_2021_12DataSet6";
-            this._PAV_3K2_2021_12DataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mASCOTASBindingSource
-            // 
-            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
-            this.mASCOTASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet6;
-            // 
-            // mASCOTASTableAdapter
-            // 
-            this.mASCOTASTableAdapter.ClearBeforeFill = true;
             // 
             // Btm_Modificar_Mascota
             // 
             this.Btm_Modificar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Modificar_Mascota.Location = new System.Drawing.Point(660, 86);
+            this.Btm_Modificar_Mascota.Location = new System.Drawing.Point(787, 79);
             this.Btm_Modificar_Mascota.Name = "Btm_Modificar_Mascota";
             this.Btm_Modificar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Modificar_Mascota.TabIndex = 1;
@@ -86,7 +76,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Eliminar_Mascota
             // 
             this.Btm_Eliminar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Eliminar_Mascota.Location = new System.Drawing.Point(660, 143);
+            this.Btm_Eliminar_Mascota.Location = new System.Drawing.Point(787, 136);
             this.Btm_Eliminar_Mascota.Name = "Btm_Eliminar_Mascota";
             this.Btm_Eliminar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Eliminar_Mascota.TabIndex = 2;
@@ -97,7 +87,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Registrar_Mascota
             // 
             this.Btm_Registrar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Registrar_Mascota.Location = new System.Drawing.Point(660, 28);
+            this.Btm_Registrar_Mascota.Location = new System.Drawing.Point(787, 21);
             this.Btm_Registrar_Mascota.Name = "Btm_Registrar_Mascota";
             this.Btm_Registrar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Registrar_Mascota.TabIndex = 3;
@@ -112,36 +102,37 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Dgv_Consultar_Mascotas.BackgroundColor = System.Drawing.SystemColors.ActiveBorder;
             this.Dgv_Consultar_Mascotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Dgv_Consultar_Mascotas.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn,
-            this.nombreDataGridViewTextBoxColumn,
-            this.fechanacimientoDataGridViewTextBoxColumn,
-            this.idrazaDataGridViewTextBoxColumn,
+            this.mascotaDataGridViewTextBoxColumn,
+            this.especieDataGridViewTextBoxColumn,
+            this.razaDataGridViewTextBoxColumn,
+            this.fechaDeNacimientoDataGridViewTextBoxColumn,
             this.pesoDataGridViewTextBoxColumn,
             this.alturaDataGridViewTextBoxColumn,
-            this.iddueñoDataGridViewTextBoxColumn,
-            this.estadoDataGridViewTextBoxColumn});
-            this.Dgv_Consultar_Mascotas.DataSource = this.mASCOTASBindingSource1;
+            this.dueñoDataGridViewTextBoxColumn,
+            this.estadoDataGridViewTextBoxColumn,
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn});
+            this.Dgv_Consultar_Mascotas.DataSource = this.consultarMascotasBindingSource2;
             this.Dgv_Consultar_Mascotas.Location = new System.Drawing.Point(26, 28);
             this.Dgv_Consultar_Mascotas.Name = "Dgv_Consultar_Mascotas";
             this.Dgv_Consultar_Mascotas.ReadOnly = true;
             this.Dgv_Consultar_Mascotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_Consultar_Mascotas.Size = new System.Drawing.Size(600, 360);
+            this.Dgv_Consultar_Mascotas.Size = new System.Drawing.Size(731, 392);
             this.Dgv_Consultar_Mascotas.TabIndex = 4;
             // 
-            // mASCOTASBindingSource1
+            // consultarMascotasBindingSource2
             // 
-            this.mASCOTASBindingSource1.DataMember = "MASCOTAS";
-            this.mASCOTASBindingSource1.DataSource = this._PAV_3K2_2021_12DataSet7;
+            this.consultarMascotasBindingSource2.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource2.DataSource = this.test1Datos1;
             // 
-            // _PAV_3K2_2021_12DataSet7
+            // test1Datos1
             // 
-            this._PAV_3K2_2021_12DataSet7.DataSetName = "_PAV_3K2_2021_12DataSet7";
-            this._PAV_3K2_2021_12DataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.test1Datos1.DataSetName = "Test1Datos";
+            this.test1Datos1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(660, 387);
+            this.Btn_Salir.Location = new System.Drawing.Point(787, 380);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 5;
@@ -149,14 +140,10 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Btn_Salir.UseVisualStyleBackColor = false;
             this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
             // 
-            // mASCOTASTableAdapter1
-            // 
-            this.mASCOTASTableAdapter1.ClearBeforeFill = true;
-            // 
             // Btn_Mostrar_off
             // 
             this.Btn_Mostrar_off.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Mostrar_off.Location = new System.Drawing.Point(660, 256);
+            this.Btn_Mostrar_off.Location = new System.Drawing.Point(787, 249);
             this.Btn_Mostrar_off.Name = "Btn_Mostrar_off";
             this.Btn_Mostrar_off.Size = new System.Drawing.Size(145, 40);
             this.Btn_Mostrar_off.TabIndex = 6;
@@ -167,7 +154,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btn_Mostrar_On
             // 
             this.Btn_Mostrar_On.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Mostrar_On.Location = new System.Drawing.Point(660, 200);
+            this.Btn_Mostrar_On.Location = new System.Drawing.Point(787, 193);
             this.Btn_Mostrar_On.Name = "Btn_Mostrar_On";
             this.Btn_Mostrar_On.Size = new System.Drawing.Size(145, 40);
             this.Btn_Mostrar_On.TabIndex = 7;
@@ -175,68 +162,96 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Btn_Mostrar_On.UseVisualStyleBackColor = false;
             this.Btn_Mostrar_On.Click += new System.EventHandler(this.Btn_Mostrar_On_Click);
             // 
-            // nrohistoriaclinicaDataGridViewTextBoxColumn
+            // consultarMascotasBindingSource1
             // 
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn.DataPropertyName = "nro_historia_clinica";
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn.HeaderText = "Nro de historia clínica";
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn.Name = "nrohistoriaclinicaDataGridViewTextBoxColumn";
-            this.nrohistoriaclinicaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.consultarMascotasBindingSource1.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource1.DataSource = this.test1Datos;
             // 
-            // nombreDataGridViewTextBoxColumn
+            // test1Datos
             // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.test1Datos.DataSetName = "Test1Datos";
+            this.test1Datos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // fechanacimientoDataGridViewTextBoxColumn
+            // consultarMascotasBindingSource
             // 
-            this.fechanacimientoDataGridViewTextBoxColumn.DataPropertyName = "fecha_nacimiento";
-            this.fechanacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha de nacimiento";
-            this.fechanacimientoDataGridViewTextBoxColumn.Name = "fechanacimientoDataGridViewTextBoxColumn";
-            this.fechanacimientoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.consultarMascotasBindingSource.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource.DataSource = this.test1Datos;
             // 
-            // idrazaDataGridViewTextBoxColumn
+            // consultar_MascotasTableAdapter
             // 
-            this.idrazaDataGridViewTextBoxColumn.DataPropertyName = "id_raza";
-            this.idrazaDataGridViewTextBoxColumn.HeaderText = "ID raza";
-            this.idrazaDataGridViewTextBoxColumn.Name = "idrazaDataGridViewTextBoxColumn";
-            this.idrazaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.consultar_MascotasTableAdapter.ClearBeforeFill = true;
+            // 
+            // mascotaDataGridViewTextBoxColumn
+            // 
+            this.mascotaDataGridViewTextBoxColumn.DataPropertyName = "Mascota";
+            this.mascotaDataGridViewTextBoxColumn.HeaderText = "Mascota";
+            this.mascotaDataGridViewTextBoxColumn.Name = "mascotaDataGridViewTextBoxColumn";
+            this.mascotaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // especieDataGridViewTextBoxColumn
+            // 
+            this.especieDataGridViewTextBoxColumn.DataPropertyName = "Especie";
+            this.especieDataGridViewTextBoxColumn.HeaderText = "Especie";
+            this.especieDataGridViewTextBoxColumn.Name = "especieDataGridViewTextBoxColumn";
+            this.especieDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // razaDataGridViewTextBoxColumn
+            // 
+            this.razaDataGridViewTextBoxColumn.DataPropertyName = "Raza";
+            this.razaDataGridViewTextBoxColumn.HeaderText = "Raza";
+            this.razaDataGridViewTextBoxColumn.Name = "razaDataGridViewTextBoxColumn";
+            this.razaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDeNacimientoDataGridViewTextBoxColumn
+            // 
+            this.fechaDeNacimientoDataGridViewTextBoxColumn.DataPropertyName = "Fecha de nacimiento";
+            this.fechaDeNacimientoDataGridViewTextBoxColumn.HeaderText = "Fecha de nacimiento";
+            this.fechaDeNacimientoDataGridViewTextBoxColumn.Name = "fechaDeNacimientoDataGridViewTextBoxColumn";
+            this.fechaDeNacimientoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // pesoDataGridViewTextBoxColumn
             // 
-            this.pesoDataGridViewTextBoxColumn.DataPropertyName = "peso";
+            this.pesoDataGridViewTextBoxColumn.DataPropertyName = "Peso";
             this.pesoDataGridViewTextBoxColumn.HeaderText = "Peso";
             this.pesoDataGridViewTextBoxColumn.Name = "pesoDataGridViewTextBoxColumn";
             this.pesoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // alturaDataGridViewTextBoxColumn
             // 
-            this.alturaDataGridViewTextBoxColumn.DataPropertyName = "altura";
+            this.alturaDataGridViewTextBoxColumn.DataPropertyName = "Altura";
             this.alturaDataGridViewTextBoxColumn.HeaderText = "Altura";
             this.alturaDataGridViewTextBoxColumn.Name = "alturaDataGridViewTextBoxColumn";
             this.alturaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
-            // iddueñoDataGridViewTextBoxColumn
+            // dueñoDataGridViewTextBoxColumn
             // 
-            this.iddueñoDataGridViewTextBoxColumn.DataPropertyName = "id_dueño";
-            this.iddueñoDataGridViewTextBoxColumn.HeaderText = "ID dueño";
-            this.iddueñoDataGridViewTextBoxColumn.Name = "iddueñoDataGridViewTextBoxColumn";
-            this.iddueñoDataGridViewTextBoxColumn.ReadOnly = true;
+            this.dueñoDataGridViewTextBoxColumn.DataPropertyName = "Dueño";
+            this.dueñoDataGridViewTextBoxColumn.HeaderText = "Dueño";
+            this.dueñoDataGridViewTextBoxColumn.Name = "dueñoDataGridViewTextBoxColumn";
+            this.dueñoDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // estadoDataGridViewTextBoxColumn
             // 
-            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "estado";
+            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "Estado";
             this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
             this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
             this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // númeroHistoriaClinicaDataGridViewTextBoxColumn
+            // 
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.DataPropertyName = "Número_Historia_Clinica";
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.HeaderText = "Número_Historia_Clinica";
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.Name = "númeroHistoriaClinicaDataGridViewTextBoxColumn";
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.ReadOnly = true;
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn.Width = 147;
             // 
             // Frm_Consultar_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(834, 441);
+            this.ClientSize = new System.Drawing.Size(944, 447);
             this.Controls.Add(this.Btn_Mostrar_On);
             this.Controls.Add(this.Btn_Mostrar_off);
             this.Controls.Add(this.Btn_Salir);
@@ -248,36 +263,40 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Consultar_Mascota";
             this.Load += new System.EventHandler(this.Frm_Consultar_Mascota_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Mascotas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test1Datos1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.test1Datos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private _PAV_3K2_2021_12DataSet6 _PAV_3K2_2021_12DataSet6;
-        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
-        private _PAV_3K2_2021_12DataSet6TableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
         private System.Windows.Forms.Button Btm_Modificar_Mascota;
         private System.Windows.Forms.Button Btm_Eliminar_Mascota;
         private System.Windows.Forms.Button Btm_Registrar_Mascota;
         private System.Windows.Forms.DataGridView Dgv_Consultar_Mascotas;
-        private _PAV_3K2_2021_12DataSet7 _PAV_3K2_2021_12DataSet7;
-        private System.Windows.Forms.BindingSource mASCOTASBindingSource1;
-        private _PAV_3K2_2021_12DataSet7TableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter1;
         private System.Windows.Forms.Button Btn_Salir;
         private System.Windows.Forms.Button Btn_Mostrar_off;
         private System.Windows.Forms.Button Btn_Mostrar_On;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nrohistoriaclinicaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nombreDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn fechanacimientoDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idrazaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource1;
+        private Test1Datos test1Datos;
+        private System.Windows.Forms.BindingSource consultarMascotasBindingSource;
+        private Test1DatosTableAdapters.Consultar_MascotasTableAdapter consultar_MascotasTableAdapter;
+        private System.Windows.Forms.BindingSource consultarMascotasBindingSource1;
+        private Test1Datos test1Datos1;
+        private System.Windows.Forms.BindingSource consultarMascotasBindingSource2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mascotaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn especieDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn razaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fechaDeNacimientoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pesoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn alturaDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iddueñoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dueñoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn númeroHistoriaClinicaDataGridViewTextBoxColumn;
     }
 }
