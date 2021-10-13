@@ -31,18 +31,18 @@ namespace WindowsFormsApp1.Interfaces.Stock
         {
             this.components = new System.ComponentModel.Container();
             this.DataGrd_Stock_med = new System.Windows.Forms.DataGridView();
-            this._PAV_3K2_2021_12DataSet10 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet10();
-            this.mEDICAMENTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet10TableAdapters.MEDICAMENTOSTableAdapter();
-            this.Txt_Buscar_Medicamento = new System.Windows.Forms.TextBox();
-            this.btn_Busqueda_Medicamento = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.id_medicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_laboratorio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fecha_ultima_compra = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad_en_stock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this._PAV_3K2_2021_12DataSet10 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet10();
+            this.mEDICAMENTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet10TableAdapters.MEDICAMENTOSTableAdapter();
+            this.Txt_Buscar_Medicamento = new System.Windows.Forms.TextBox();
+            this.btn_Busqueda_Medicamento = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.Btn_Añadir = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -70,9 +70,40 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.DataGrd_Stock_med.Location = new System.Drawing.Point(-2, 87);
             this.DataGrd_Stock_med.MultiSelect = false;
             this.DataGrd_Stock_med.Name = "DataGrd_Stock_med";
+            this.DataGrd_Stock_med.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrd_Stock_med.Size = new System.Drawing.Size(644, 264);
             this.DataGrd_Stock_med.TabIndex = 0;
             this.DataGrd_Stock_med.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // id_medicamento
+            // 
+            this.id_medicamento.HeaderText = "ID medicamento";
+            this.id_medicamento.Name = "id_medicamento";
+            // 
+            // nombre
+            // 
+            this.nombre.HeaderText = "nombre";
+            this.nombre.Name = "nombre";
+            // 
+            // descripcion
+            // 
+            this.descripcion.HeaderText = "descripcion";
+            this.descripcion.Name = "descripcion";
+            // 
+            // id_laboratorio
+            // 
+            this.id_laboratorio.HeaderText = "Laboratorio";
+            this.id_laboratorio.Name = "id_laboratorio";
+            // 
+            // fecha_ultima_compra
+            // 
+            this.fecha_ultima_compra.HeaderText = "Fecha Ultima Compra";
+            this.fecha_ultima_compra.Name = "fecha_ultima_compra";
+            // 
+            // cantidad_en_stock
+            // 
+            this.cantidad_en_stock.HeaderText = "stock";
+            this.cantidad_en_stock.Name = "cantidad_en_stock";
             // 
             // _PAV_3K2_2021_12DataSet10
             // 
@@ -115,36 +146,6 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.label1.Text = "Buscar por nombre";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // id_medicamento
-            // 
-            this.id_medicamento.HeaderText = "ID medicamento";
-            this.id_medicamento.Name = "id_medicamento";
-            // 
-            // nombre
-            // 
-            this.nombre.HeaderText = "nombre";
-            this.nombre.Name = "nombre";
-            // 
-            // descripcion
-            // 
-            this.descripcion.HeaderText = "descripcion";
-            this.descripcion.Name = "descripcion";
-            // 
-            // id_laboratorio
-            // 
-            this.id_laboratorio.HeaderText = "Laboratorio";
-            this.id_laboratorio.Name = "id_laboratorio";
-            // 
-            // fecha_ultima_compra
-            // 
-            this.fecha_ultima_compra.HeaderText = "Fecha Ultima Compra";
-            this.fecha_ultima_compra.Name = "fecha_ultima_compra";
-            // 
-            // cantidad_en_stock
-            // 
-            this.cantidad_en_stock.HeaderText = "stock";
-            this.cantidad_en_stock.Name = "cantidad_en_stock";
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.ForestGreen;
@@ -163,6 +164,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.Btn_Añadir.TabIndex = 5;
             this.Btn_Añadir.Text = "Añadir al Stock";
             this.Btn_Añadir.UseVisualStyleBackColor = true;
+            this.Btn_Añadir.Click += new System.EventHandler(this.Btn_Añadir_Click);
             // 
             // pictureBox2
             // 
@@ -185,6 +187,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.Btn_Quitar.TabIndex = 7;
             this.Btn_Quitar.Text = "Quitar del Stock";
             this.Btn_Quitar.UseVisualStyleBackColor = true;
+            this.Btn_Quitar.Click += new System.EventHandler(this.Btn_Quitar_Click);
             // 
             // Txt_Añadir
             // 

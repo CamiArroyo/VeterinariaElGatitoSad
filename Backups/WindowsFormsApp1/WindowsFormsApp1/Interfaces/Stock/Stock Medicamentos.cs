@@ -116,6 +116,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
 
         }
 
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -131,6 +132,54 @@ namespace WindowsFormsApp1.Interfaces.Stock
             Form menu = new Frm_Menu_Insumos();
             menu.Show();
             this.Dispose();
+        }
+
+        private void Btn_Añadir_Click(object sender, EventArgs e)
+        {
+            
+            if (DataGrd_Stock_med.SelectedRows.Count == 1)
+            {
+                var cantidad = Convert.ToInt32(Txt_Añadir.Text);
+                
+                var id = Convert.ToInt32(DataGrd_Stock_med.SelectedRows[0].Cells["id_medicamento"].Value);
+                var stock = Convert.ToInt32(DataGrd_Stock_med.SelectedRows[0].Cells["cantidad_en_stock"].Value);
+                stock = cantidad + stock;
+                med.id_medicamentos = id;
+
+                med.cantidad_en_stock = Convert.ToString(stock);
+                med_serv.ActualizarStock(med);
+
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
+        }
+
+        private void Btn_Quitar_Click(object sender, EventArgs e)
+        {
+            if (DataGrd_Stock_med.SelectedRows.Count == 1)
+            {
+                var cantidad = Convert.ToInt32(Txt_Quitar.Text);
+
+                var id = Convert.ToInt32(DataGrd_Stock_med.SelectedRows[0].Cells["id_medicamento"].Value);
+                var stock = Convert.ToInt32(DataGrd_Stock_med.SelectedRows[0].Cells["cantidad_en_stock"].Value);
+                stock = stock - cantidad;
+                med.id_medicamentos = id;
+
+                if (stock >= 0)
+                {
+                    med.cantidad_en_stock = Convert.ToString(stock);
+                    med_serv.ActualizarStock(med);
+                }
+                else
+                {
+                    MessageBox.Show("Quitando mas de lo que hay, ingrese nuevamente", "Información", MessageBoxButtons.OK);
+
+                }
+
+
+                return;
+            }
+            MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
         }
     }
 }

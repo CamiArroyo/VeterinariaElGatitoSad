@@ -49,6 +49,14 @@ namespace WindowsFormsApp1.Servicios
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
 
+        public void ActualizarStock(Medicamento med)
+        {
+            var filasAfectadas = medRepo.ActualizarStockMed(med);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
+
+
         public void DarBajaMedicamento(Medicamento med)
         {
             var filasAfectadas = medRepo.DarBajaMedicamento(med);
