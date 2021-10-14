@@ -67,11 +67,29 @@
     <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
-    <Compile Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.cs">
+    <Compile Include="Interfaces\Calendarios_Vac\Consultar_Calendarios_Vac.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.Designer.cs">
-      <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
+    <Compile Include="Interfaces\Calendarios_Vac\Consultar_Calendarios_Vac.Designer.cs">
+      <DependentUpon>Consultar_Calendarios_Vac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Eliminar_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Eliminar_Calendario_Vac.Designer.cs">
+      <DependentUpon>Eliminar_Calendario_Vac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Modificar_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Modificar_Calendario_Vac.Designer.cs">
+      <DependentUpon>Modificar_Calendario_Vac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Registrar_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Registrar_Calendario_Vac.Designer.cs">
+      <DependentUpon>Registrar_Calendario_Vac.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Consultas\Consultar.cs">
       <SubType>Form</SubType>
@@ -376,6 +394,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoriosBD\CalendariosVacRepositorio.cs" />
     <Compile Include="RepositoriosBD\ConsultasRepositorio.cs" />
     <Compile Include="RepositoriosBD\DBHelper.cs" />
     <Compile Include="RepositoriosBD\DiagnosticosRepositorio.cs" />
@@ -388,6 +407,7 @@
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
+    <Compile Include="Servicios\CalendariosVacServicio.cs" />
     <Compile Include="Servicios\ConsultasServicio.cs" />
     <Compile Include="Servicios\DiagnosticosServicio.cs" />
     <Compile Include="Servicios\DueñosServicio.cs" />
@@ -459,8 +479,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.resx">
-      <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Consultar_Calendarios_Vac.resx">
+      <DependentUpon>Consultar_Calendarios_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Eliminar_Calendario_Vac.resx">
+      <DependentUpon>Eliminar_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Modificar_Calendario_Vac.resx">
+      <DependentUpon>Modificar_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Registrar_Calendario_Vac.resx">
+      <DependentUpon>Registrar_Calendario_Vac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Consultas\Consultar.resx">
       <DependentUpon>Consultar.cs</DependentUpon>
@@ -803,9 +832,7 @@
   <ItemGroup>
     <None Include="Recursos\Vacuna.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interfaces\Detalle Calendario Vac\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Recursos\Pets_Multicolor.png" />
   </ItemGroup>
