@@ -73,6 +73,12 @@
     <Compile Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.Designer.cs">
       <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Consultas\Consultar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Consultar.Designer.cs">
+      <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +229,14 @@
     <Compile Include="Interfaces\Mascotas\Registrar_Mascota.Designer.cs">
       <DependentUpon>Registrar_Mascota.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Mascotas\Test1Datos.cs">
+      <DependentUpon>Test1Datos.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Mascotas\Test1Datos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Test1Datos.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Medicamentos\Consultar_Medicamentos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -362,6 +376,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoriosBD\ConsultasRepositorio.cs" />
     <Compile Include="RepositoriosBD\DBHelper.cs" />
     <Compile Include="RepositoriosBD\DiagnosticosRepositorio.cs" />
     <Compile Include="RepositoriosBD\DueñosRepositorio.cs" />
@@ -373,6 +388,7 @@
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
+    <Compile Include="Servicios\ConsultasServicio.cs" />
     <Compile Include="Servicios\DiagnosticosServicio.cs" />
     <Compile Include="Servicios\DueñosServicio.cs" />
     <Compile Include="Servicios\EmpleadosServicio.cs" />
@@ -428,16 +444,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
     </Compile>
-    <Compile Include="_PAV_3K2_2021_12DataSet6.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="_PAV_3K2_2021_12DataSet7.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
-    </Compile>
     <Compile Include="_PAV_3K2_2021_12DataSet8.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -455,6 +461,9 @@
     </Compile>
     <EmbeddedResource Include="Interfaces\Calendario_Vac\Consultar_Calendario_Vac.resx">
       <DependentUpon>Consultar_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Consultas\Consultar.resx">
+      <DependentUpon>Consultar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.resx">
       <DependentUpon>Consultar_Diagnosticos.cs</DependentUpon>
@@ -618,6 +627,17 @@
     <None Include="Calendario_Vac.xss">
       <DependentUpon>Calendario_Vac.xsd</DependentUpon>
     </None>
+    <None Include="Interfaces\Mascotas\Test1Datos.xsc">
+      <DependentUpon>Test1Datos.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Mascotas\Test1Datos.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Test1Datos.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Interfaces\Mascotas\Test1Datos.xss">
+      <DependentUpon>Test1Datos.xsd</DependentUpon>
+    </None>
     <None Include="Medicamentos.xsc">
       <DependentUpon>Medicamentos.xsd</DependentUpon>
     </None>
@@ -737,28 +757,6 @@
     <None Include="_PAV_3K2_2021_12DataSet5.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
     </None>
-    <None Include="_PAV_3K2_2021_12DataSet6.xsc">
-      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="_PAV_3K2_2021_12DataSet6.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_PAV_3K2_2021_12DataSet6.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_PAV_3K2_2021_12DataSet6.xss">
-      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
-    </None>
-    <None Include="_PAV_3K2_2021_12DataSet7.xsc">
-      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
-    </None>
-    <None Include="_PAV_3K2_2021_12DataSet7.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_PAV_3K2_2021_12DataSet7.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_PAV_3K2_2021_12DataSet7.xss">
-      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
-    </None>
     <None Include="_PAV_3K2_2021_12DataSet8.xsc">
       <DependentUpon>_PAV_3K2_2021_12DataSet8.xsd</DependentUpon>
     </None>
@@ -807,6 +805,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\Detalle Calendario Vac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Pets_Multicolor.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

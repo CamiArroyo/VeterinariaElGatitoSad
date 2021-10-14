@@ -34,6 +34,15 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Btm_Eliminar_Mascota = new System.Windows.Forms.Button();
             this.Btm_Registrar_Mascota = new System.Windows.Forms.Button();
             this.Dgv_Consultar_Mascotas = new System.Windows.Forms.DataGridView();
+            this.mascotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.especieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.razaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDeNacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.númeroHistoriaClinicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.consultarMascotasBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
             this.test1Datos1 = new WindowsFormsApp1.Interfaces.Mascotas.Test1Datos();
             this.Btn_Salir = new System.Windows.Forms.Button();
@@ -44,15 +53,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.test1Datos = new WindowsFormsApp1.Interfaces.Mascotas.Test1Datos();
             this.consultarMascotasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consultar_MascotasTableAdapter = new WindowsFormsApp1.Interfaces.Mascotas.Test1DatosTableAdapters.Consultar_MascotasTableAdapter();
-            this.mascotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.especieDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.razaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDeNacimientoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pesoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alturaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.númeroHistoriaClinicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_Consultas = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Mascotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.test1Datos1)).BeginInit();
@@ -65,7 +66,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Modificar_Mascota
             // 
             this.Btm_Modificar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Modificar_Mascota.Location = new System.Drawing.Point(787, 79);
+            this.Btm_Modificar_Mascota.Location = new System.Drawing.Point(941, 74);
             this.Btm_Modificar_Mascota.Name = "Btm_Modificar_Mascota";
             this.Btm_Modificar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Modificar_Mascota.TabIndex = 1;
@@ -76,7 +77,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Eliminar_Mascota
             // 
             this.Btm_Eliminar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Eliminar_Mascota.Location = new System.Drawing.Point(787, 136);
+            this.Btm_Eliminar_Mascota.Location = new System.Drawing.Point(941, 120);
             this.Btm_Eliminar_Mascota.Name = "Btm_Eliminar_Mascota";
             this.Btm_Eliminar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Eliminar_Mascota.TabIndex = 2;
@@ -87,7 +88,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btm_Registrar_Mascota
             // 
             this.Btm_Registrar_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btm_Registrar_Mascota.Location = new System.Drawing.Point(787, 21);
+            this.Btm_Registrar_Mascota.Location = new System.Drawing.Point(941, 28);
             this.Btm_Registrar_Mascota.Name = "Btm_Registrar_Mascota";
             this.Btm_Registrar_Mascota.Size = new System.Drawing.Size(145, 40);
             this.Btm_Registrar_Mascota.TabIndex = 3;
@@ -116,70 +117,8 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Dgv_Consultar_Mascotas.Name = "Dgv_Consultar_Mascotas";
             this.Dgv_Consultar_Mascotas.ReadOnly = true;
             this.Dgv_Consultar_Mascotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_Consultar_Mascotas.Size = new System.Drawing.Size(731, 392);
+            this.Dgv_Consultar_Mascotas.Size = new System.Drawing.Size(846, 392);
             this.Dgv_Consultar_Mascotas.TabIndex = 4;
-            // 
-            // consultarMascotasBindingSource2
-            // 
-            this.consultarMascotasBindingSource2.DataMember = "Consultar_Mascotas";
-            this.consultarMascotasBindingSource2.DataSource = this.test1Datos1;
-            // 
-            // test1Datos1
-            // 
-            this.test1Datos1.DataSetName = "Test1Datos";
-            this.test1Datos1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(787, 380);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Salir.TabIndex = 5;
-            this.Btn_Salir.Text = "Salir";
-            this.Btn_Salir.UseVisualStyleBackColor = false;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
-            // 
-            // Btn_Mostrar_off
-            // 
-            this.Btn_Mostrar_off.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Mostrar_off.Location = new System.Drawing.Point(787, 249);
-            this.Btn_Mostrar_off.Name = "Btn_Mostrar_off";
-            this.Btn_Mostrar_off.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Mostrar_off.TabIndex = 6;
-            this.Btn_Mostrar_off.Text = "Mostrar off";
-            this.Btn_Mostrar_off.UseVisualStyleBackColor = false;
-            this.Btn_Mostrar_off.Click += new System.EventHandler(this.Btn_Mostrar_off_Click);
-            // 
-            // Btn_Mostrar_On
-            // 
-            this.Btn_Mostrar_On.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Mostrar_On.Location = new System.Drawing.Point(787, 193);
-            this.Btn_Mostrar_On.Name = "Btn_Mostrar_On";
-            this.Btn_Mostrar_On.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Mostrar_On.TabIndex = 7;
-            this.Btn_Mostrar_On.Text = "Mostrar on";
-            this.Btn_Mostrar_On.UseVisualStyleBackColor = false;
-            this.Btn_Mostrar_On.Click += new System.EventHandler(this.Btn_Mostrar_On_Click);
-            // 
-            // consultarMascotasBindingSource1
-            // 
-            this.consultarMascotasBindingSource1.DataMember = "Consultar_Mascotas";
-            this.consultarMascotasBindingSource1.DataSource = this.test1Datos;
-            // 
-            // test1Datos
-            // 
-            this.test1Datos.DataSetName = "Test1Datos";
-            this.test1Datos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // consultarMascotasBindingSource
-            // 
-            this.consultarMascotasBindingSource.DataMember = "Consultar_Mascotas";
-            this.consultarMascotasBindingSource.DataSource = this.test1Datos;
-            // 
-            // consultar_MascotasTableAdapter
-            // 
-            this.consultar_MascotasTableAdapter.ClearBeforeFill = true;
             // 
             // mascotaDataGridViewTextBoxColumn
             // 
@@ -246,12 +185,86 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.númeroHistoriaClinicaDataGridViewTextBoxColumn.ReadOnly = true;
             this.númeroHistoriaClinicaDataGridViewTextBoxColumn.Width = 147;
             // 
+            // consultarMascotasBindingSource2
+            // 
+            this.consultarMascotasBindingSource2.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource2.DataSource = this.test1Datos1;
+            // 
+            // test1Datos1
+            // 
+            this.test1Datos1.DataSetName = "Test1Datos";
+            this.test1Datos1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Salir.Location = new System.Drawing.Point(941, 380);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Salir.TabIndex = 5;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            // 
+            // Btn_Mostrar_off
+            // 
+            this.Btn_Mostrar_off.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Mostrar_off.Location = new System.Drawing.Point(941, 212);
+            this.Btn_Mostrar_off.Name = "Btn_Mostrar_off";
+            this.Btn_Mostrar_off.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Mostrar_off.TabIndex = 6;
+            this.Btn_Mostrar_off.Text = "Mostrar off";
+            this.Btn_Mostrar_off.UseVisualStyleBackColor = false;
+            this.Btn_Mostrar_off.Click += new System.EventHandler(this.Btn_Mostrar_off_Click);
+            // 
+            // Btn_Mostrar_On
+            // 
+            this.Btn_Mostrar_On.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Mostrar_On.Location = new System.Drawing.Point(941, 166);
+            this.Btn_Mostrar_On.Name = "Btn_Mostrar_On";
+            this.Btn_Mostrar_On.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Mostrar_On.TabIndex = 7;
+            this.Btn_Mostrar_On.Text = "Mostrar on";
+            this.Btn_Mostrar_On.UseVisualStyleBackColor = false;
+            this.Btn_Mostrar_On.Click += new System.EventHandler(this.Btn_Mostrar_On_Click);
+            // 
+            // consultarMascotasBindingSource1
+            // 
+            this.consultarMascotasBindingSource1.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource1.DataSource = this.test1Datos;
+            // 
+            // test1Datos
+            // 
+            this.test1Datos.DataSetName = "Test1Datos";
+            this.test1Datos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // consultarMascotasBindingSource
+            // 
+            this.consultarMascotasBindingSource.DataMember = "Consultar_Mascotas";
+            this.consultarMascotasBindingSource.DataSource = this.test1Datos;
+            // 
+            // consultar_MascotasTableAdapter
+            // 
+            this.consultar_MascotasTableAdapter.ClearBeforeFill = true;
+            // 
+            // Btn_Consultas
+            // 
+            this.Btn_Consultas.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Consultas.Location = new System.Drawing.Point(941, 258);
+            this.Btn_Consultas.Name = "Btn_Consultas";
+            this.Btn_Consultas.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Consultas.TabIndex = 8;
+            this.Btn_Consultas.Text = "Consultas";
+            this.Btn_Consultas.UseVisualStyleBackColor = false;
+            this.Btn_Consultas.Click += new System.EventHandler(this.Btn_Consultas_Click);
+            // 
             // Frm_Consultar_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(944, 447);
+            this.ClientSize = new System.Drawing.Size(1098, 447);
+            this.Controls.Add(this.Btn_Consultas);
             this.Controls.Add(this.Btn_Mostrar_On);
             this.Controls.Add(this.Btn_Mostrar_off);
             this.Controls.Add(this.Btn_Salir);
@@ -298,5 +311,6 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private System.Windows.Forms.DataGridViewTextBoxColumn dueñoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn númeroHistoriaClinicaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button Btn_Consultas;
     }
 }

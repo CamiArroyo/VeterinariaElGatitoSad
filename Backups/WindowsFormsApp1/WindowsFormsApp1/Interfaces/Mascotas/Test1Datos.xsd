@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Test1Datos" targetNamespace="http://tempuri.org/Test1Datos.xsd" xmlns:mstns="http://tempuri.org/Test1Datos.xsd" xmlns="http://tempuri.org/Test1Datos.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PAV_3K2_2021_12ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PAV_3K2_2021_12ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.PAV_3K2_2021_12ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="Consultar_MascotasTableAdapter" GeneratorDataComponentClassName="Consultar_MascotasTableAdapter" Name="Consultar_Mascotas" UserDataComponentName="Consultar_MascotasTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="DataSet_Test1_Consultar_Mascotas" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="DataSet_Test1_Consultar_Mascotas" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="DataSet_Test1_Consultar_Mascotas">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        M.nro_historia_clinica AS Número_Historia_Clinica, M.nombre AS Mascota, E.nombre AS Especie, R.nombre AS Raza, M.fecha_nacimiento AS [Fecha de nacimiento], M.peso AS Peso, M.altura AS Altura, D.nombre AS Dueño, 
+                         M.estado AS Estado
+FROM            MASCOTAS AS M INNER JOIN
+                         RAZAS AS R ON M.id_raza = R.id_raza INNER JOIN
+                         ESPECIES AS E ON R.id_especie = E.id_especie INNER JOIN
+                         DUEÑOS AS D ON M.id_dueño = D.id_dueño
+WHERE        (M.estado = 'Activo')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mascota" DataSetColumn="Mascota" />
+              <Mapping SourceColumn="Especie" DataSetColumn="Especie" />
+              <Mapping SourceColumn="Raza" DataSetColumn="Raza" />
+              <Mapping SourceColumn="Fecha de nacimiento" DataSetColumn="Fecha de nacimiento" />
+              <Mapping SourceColumn="Peso" DataSetColumn="Peso" />
+              <Mapping SourceColumn="Altura" DataSetColumn="Altura" />
+              <Mapping SourceColumn="Dueño" DataSetColumn="Dueño" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+              <Mapping SourceColumn="Número_Historia_Clinica" DataSetColumn="Número_Historia_Clinica" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy2" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        M.nro_historia_clinica AS Número_Historia_Clinica, M.nombre AS Mascota, E.nombre AS Especie, R.nombre AS Raza, M.fecha_nacimiento AS [Fecha de nacimiento], M.peso AS Peso, M.altura AS Altura, D.nombre AS Dueño, 
+                         M.estado AS Estado
+FROM            MASCOTAS AS M INNER JOIN
+                         RAZAS AS R ON M.id_raza = R.id_raza INNER JOIN
+                         ESPECIES AS E ON R.id_especie = E.id_especie INNER JOIN
+                         DUEÑOS AS D ON M.id_dueño = D.id_dueño
+WHERE        (M.estado = 'Activo')</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillBy1" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy1" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy3" UserSourceName="FillBy1">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT        M.nro_historia_clinica as Número_Historia_Clinica, M.nombre AS Mascota, E.nombre AS Especie, R.nombre AS Raza, M.fecha_nacimiento AS [Fecha de nacimiento], M.peso AS Peso, M.altura AS Altura, D.nombre AS Dueño, M.estado AS Estado
+FROM            MASCOTAS AS M INNER JOIN
+                         RAZAS AS R ON M.id_raza = R.id_raza INNER JOIN
+                         ESPECIES AS E ON R.id_especie = E.id_especie INNER JOIN
+                         DUEÑOS AS D ON M.id_dueño = D.id_dueño where M.estado = 'Inactivo'</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Test1Datos" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Test1Datos" msprop:Generator_UserDSName="Test1Datos">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Consultar_Mascotas" msprop:Generator_TableClassName="Consultar_MascotasDataTable" msprop:Generator_TableVarName="tableConsultar_Mascotas" msprop:Generator_TablePropName="Consultar_Mascotas" msprop:Generator_RowDeletingName="Consultar_MascotasRowDeleting" msprop:Generator_RowChangingName="Consultar_MascotasRowChanging" msprop:Generator_RowEvHandlerName="Consultar_MascotasRowChangeEventHandler" msprop:Generator_RowDeletedName="Consultar_MascotasRowDeleted" msprop:Generator_UserTableName="Consultar_Mascotas" msprop:Generator_RowChangedName="Consultar_MascotasRowChanged" msprop:Generator_RowEvArgName="Consultar_MascotasRowChangeEvent" msprop:Generator_RowClassName="Consultar_MascotasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mascota" msprop:Generator_ColumnVarNameInTable="columnMascota" msprop:Generator_ColumnPropNameInRow="Mascota" msprop:Generator_ColumnPropNameInTable="MascotaColumn" msprop:Generator_UserColumnName="Mascota" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Especie" msprop:Generator_ColumnVarNameInTable="columnEspecie" msprop:Generator_ColumnPropNameInRow="Especie" msprop:Generator_ColumnPropNameInTable="EspecieColumn" msprop:Generator_UserColumnName="Especie" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Raza" msprop:Generator_ColumnVarNameInTable="columnRaza" msprop:Generator_ColumnPropNameInRow="Raza" msprop:Generator_ColumnPropNameInTable="RazaColumn" msprop:Generator_UserColumnName="Raza" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_x0020_de_x0020_nacimiento" msprop:Generator_ColumnVarNameInTable="columnFecha_de_nacimiento" msprop:Generator_ColumnPropNameInRow="Fecha_de_nacimiento" msprop:Generator_ColumnPropNameInTable="Fecha_de_nacimientoColumn" msprop:Generator_UserColumnName="Fecha de nacimiento" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Peso" msprop:Generator_ColumnVarNameInTable="columnPeso" msprop:Generator_ColumnPropNameInRow="Peso" msprop:Generator_ColumnPropNameInTable="PesoColumn" msprop:Generator_UserColumnName="Peso" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Altura" msprop:Generator_ColumnVarNameInTable="columnAltura" msprop:Generator_ColumnPropNameInRow="Altura" msprop:Generator_ColumnPropNameInTable="AlturaColumn" msprop:Generator_UserColumnName="Altura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Dueño" msprop:Generator_ColumnVarNameInTable="columnDueño" msprop:Generator_ColumnPropNameInRow="Dueño" msprop:Generator_ColumnPropNameInTable="DueñoColumn" msprop:Generator_UserColumnName="Dueño" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Número_Historia_Clinica" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnNúmero_Historia_Clinica" msprop:Generator_ColumnPropNameInRow="Número_Historia_Clinica" msprop:Generator_ColumnPropNameInTable="Número_Historia_ClinicaColumn" msprop:Generator_UserColumnName="Número_Historia_Clinica" type="xs:int" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Consultar_Mascotas" />
+      <xs:field xpath="mstns:Número_Historia_Clinica" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
