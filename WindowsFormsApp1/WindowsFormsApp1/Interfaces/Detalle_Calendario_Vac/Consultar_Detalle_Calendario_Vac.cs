@@ -40,9 +40,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             Dgv_Consultar_Detalle_Calendario_Vac.Rows.Clear();
             foreach (DataRow row in ds.Tables[0].Rows)
             {
-                Dgv_Consultar_Detalle_Calendario_Vac.Rows.Add(row["Nro_Detalle"], row["Nombre_Vacuna"], row["Dosis_Vacuna"], row["Fecha_Prevista"], row["Temperatura"], row["Fecha_Real"],
-                    row["Nombre_Empleado"]);
-
+                Dgv_Consultar_Detalle_Calendario_Vac.Rows.Add(row["Nro_Detalle"], row["Nombre_Vacuna"], row["Dosis_Vacuna"], row["Fecha_Prevista"], row["Fecha_Real"], row["Nombre_Empleado"]);
             }
         }
 
