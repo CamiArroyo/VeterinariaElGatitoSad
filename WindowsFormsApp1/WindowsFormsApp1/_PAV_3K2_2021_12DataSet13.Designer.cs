@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
+namespace WindowsFormsApp1 {
     
     
     /// <summary>
@@ -20,17 +20,17 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("CalendariosVac")]
+    [global::System.Xml.Serialization.XmlRootAttribute("_PAV_3K2_2021_12DataSet13")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class CalendariosVac : global::System.Data.DataSet {
+    public partial class _PAV_3K2_2021_12DataSet13 : global::System.Data.DataSet {
         
-        private DataTable1DataTable tableDataTable1;
+        private MASCOTASDataTable tableMASCOTAS;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public CalendariosVac() {
+        public _PAV_3K2_2021_12DataSet13() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        protected CalendariosVac(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected _PAV_3K2_2021_12DataSet13(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -54,8 +54,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["MASCOTAS"] != null)) {
+                    base.Tables.Add(new MASCOTASDataTable(ds.Tables["MASCOTAS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -79,9 +79,9 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public DataTable1DataTable DataTable1 {
+        public MASCOTASDataTable MASCOTAS {
             get {
-                return this.tableDataTable1;
+                return this.tableMASCOTAS;
             }
         }
         
@@ -127,7 +127,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            CalendariosVac cln = ((CalendariosVac)(base.Clone()));
+            _PAV_3K2_2021_12DataSet13 cln = ((_PAV_3K2_2021_12DataSet13)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -152,8 +152,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["DataTable1"] != null)) {
-                    base.Tables.Add(new DataTable1DataTable(ds.Tables["DataTable1"]));
+                if ((ds.Tables["MASCOTAS"] != null)) {
+                    base.Tables.Add(new MASCOTASDataTable(ds.Tables["MASCOTAS"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -188,10 +188,10 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableDataTable1 = ((DataTable1DataTable)(base.Tables["DataTable1"]));
+            this.tableMASCOTAS = ((MASCOTASDataTable)(base.Tables["MASCOTAS"]));
             if ((initTable == true)) {
-                if ((this.tableDataTable1 != null)) {
-                    this.tableDataTable1.InitVars();
+                if ((this.tableMASCOTAS != null)) {
+                    this.tableMASCOTAS.InitVars();
                 }
             }
         }
@@ -199,18 +199,18 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "CalendariosVac";
+            this.DataSetName = "_PAV_3K2_2021_12DataSet13";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/CalendariosVac.xsd";
+            this.Namespace = "http://tempuri.org/_PAV_3K2_2021_12DataSet13.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableDataTable1 = new DataTable1DataTable();
-            base.Tables.Add(this.tableDataTable1);
+            this.tableMASCOTAS = new MASCOTASDataTable();
+            base.Tables.Add(this.tableMASCOTAS);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private bool ShouldSerializeDataTable1() {
+        private bool ShouldSerializeMASCOTAS() {
             return false;
         }
         
@@ -225,7 +225,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            CalendariosVac ds = new CalendariosVac();
+            _PAV_3K2_2021_12DataSet13 ds = new _PAV_3K2_2021_12DataSet13();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -270,33 +270,35 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public delegate void DataTable1RowChangeEventHandler(object sender, DataTable1RowChangeEvent e);
+        public delegate void MASCOTASRowChangeEventHandler(object sender, MASCOTASRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class DataTable1DataTable : global::System.Data.TypedTableBase<DataTable1Row> {
+        public partial class MASCOTASDataTable : global::System.Data.TypedTableBase<MASCOTASRow> {
             
-            private global::System.Data.DataColumn _columnN__de_calendario;
+            private global::System.Data.DataColumn columnnro_historia_clinica;
             
-            private global::System.Data.DataColumn _columnN__de_historia_clínica;
+            private global::System.Data.DataColumn columnnombre;
             
-            private global::System.Data.DataColumn columnNombre_de_la_mascota;
+            private global::System.Data.DataColumn columnfecha_nacimiento;
             
-            private global::System.Data.DataColumn columnNombre_del_dueño;
+            private global::System.Data.DataColumn columnid_raza;
             
-            private global::System.Data.DataColumn columnFecha_de_inicio;
+            private global::System.Data.DataColumn columnpeso;
             
-            private global::System.Data.DataColumn columnObservaciones;
+            private global::System.Data.DataColumn columnaltura;
             
-            private global::System.Data.DataColumn columnEstado;
+            private global::System.Data.DataColumn columnid_dueño;
+            
+            private global::System.Data.DataColumn columnestado;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1DataTable() {
-                this.TableName = "DataTable1";
+            public MASCOTASDataTable() {
+                this.TableName = "MASCOTAS";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -304,7 +306,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1DataTable(global::System.Data.DataTable table) {
+            internal MASCOTASDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -321,64 +323,72 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            protected DataTable1DataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected MASCOTASDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _N__de_calendarioColumn {
+            public global::System.Data.DataColumn nro_historia_clinicaColumn {
                 get {
-                    return this._columnN__de_calendario;
+                    return this.columnnro_historia_clinica;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn _N__de_historia_clínicaColumn {
+            public global::System.Data.DataColumn nombreColumn {
                 get {
-                    return this._columnN__de_historia_clínica;
+                    return this.columnnombre;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nombre_de_la_mascotaColumn {
+            public global::System.Data.DataColumn fecha_nacimientoColumn {
                 get {
-                    return this.columnNombre_de_la_mascota;
+                    return this.columnfecha_nacimiento;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Nombre_del_dueñoColumn {
+            public global::System.Data.DataColumn id_razaColumn {
                 get {
-                    return this.columnNombre_del_dueño;
+                    return this.columnid_raza;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Fecha_de_inicioColumn {
+            public global::System.Data.DataColumn pesoColumn {
                 get {
-                    return this.columnFecha_de_inicio;
+                    return this.columnpeso;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn ObservacionesColumn {
+            public global::System.Data.DataColumn alturaColumn {
                 get {
-                    return this.columnObservaciones;
+                    return this.columnaltura;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn EstadoColumn {
+            public global::System.Data.DataColumn id_dueñoColumn {
                 get {
-                    return this.columnEstado;
+                    return this.columnid_dueño;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn estadoColumn {
+                get {
+                    return this.columnestado;
                 }
             }
             
@@ -393,59 +403,59 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row this[int index] {
+            public MASCOTASRow this[int index] {
                 get {
-                    return ((DataTable1Row)(this.Rows[index]));
+                    return ((MASCOTASRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanging;
+            public event MASCOTASRowChangeEventHandler MASCOTASRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowChanged;
+            public event MASCOTASRowChangeEventHandler MASCOTASRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleting;
+            public event MASCOTASRowChangeEventHandler MASCOTASRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public event DataTable1RowChangeEventHandler DataTable1RowDeleted;
+            public event MASCOTASRowChangeEventHandler MASCOTASRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void AddDataTable1Row(DataTable1Row row) {
+            public void AddMASCOTASRow(MASCOTASRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row AddDataTable1Row(int _N__de_historia_clínica, string Nombre_de_la_mascota, string Nombre_del_dueño, System.DateTime Fecha_de_inicio, string Observaciones, string Estado) {
-                DataTable1Row rowDataTable1Row = ((DataTable1Row)(this.NewRow()));
+            public MASCOTASRow AddMASCOTASRow(string nombre, string fecha_nacimiento, int id_raza, string peso, string altura, int id_dueño, string estado) {
+                MASCOTASRow rowMASCOTASRow = ((MASCOTASRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        _N__de_historia_clínica,
-                        Nombre_de_la_mascota,
-                        Nombre_del_dueño,
-                        Fecha_de_inicio,
-                        Observaciones,
-                        Estado};
-                rowDataTable1Row.ItemArray = columnValuesArray;
-                this.Rows.Add(rowDataTable1Row);
-                return rowDataTable1Row;
+                        nombre,
+                        fecha_nacimiento,
+                        id_raza,
+                        peso,
+                        altura,
+                        id_dueño,
+                        estado};
+                rowMASCOTASRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowMASCOTASRow);
+                return rowMASCOTASRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row FindBy_N__de_calendario_N__de_historia_clínica(int _N__de_calendario, int _N__de_historia_clínica) {
-                return ((DataTable1Row)(this.Rows.Find(new object[] {
-                            _N__de_calendario,
-                            _N__de_historia_clínica})));
+            public MASCOTASRow FindBynro_historia_clinica(int nro_historia_clinica) {
+                return ((MASCOTASRow)(this.Rows.Find(new object[] {
+                            nro_historia_clinica})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                DataTable1DataTable cln = ((DataTable1DataTable)(base.Clone()));
+                MASCOTASDataTable cln = ((MASCOTASDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -453,82 +463,80 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new DataTable1DataTable();
+                return new MASCOTASDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this._columnN__de_calendario = base.Columns["N° de calendario"];
-                this._columnN__de_historia_clínica = base.Columns["N° de historia clínica"];
-                this.columnNombre_de_la_mascota = base.Columns["Nombre de la mascota"];
-                this.columnNombre_del_dueño = base.Columns["Nombre del dueño"];
-                this.columnFecha_de_inicio = base.Columns["Fecha de inicio"];
-                this.columnObservaciones = base.Columns["Observaciones"];
-                this.columnEstado = base.Columns["Estado"];
+                this.columnnro_historia_clinica = base.Columns["nro_historia_clinica"];
+                this.columnnombre = base.Columns["nombre"];
+                this.columnfecha_nacimiento = base.Columns["fecha_nacimiento"];
+                this.columnid_raza = base.Columns["id_raza"];
+                this.columnpeso = base.Columns["peso"];
+                this.columnaltura = base.Columns["altura"];
+                this.columnid_dueño = base.Columns["id_dueño"];
+                this.columnestado = base.Columns["estado"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this._columnN__de_calendario = new global::System.Data.DataColumn("N° de calendario", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnN__de_calendario.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnN__de_calendario");
-                this._columnN__de_calendario.ExtendedProperties.Add("Generator_UserColumnName", "N° de calendario");
-                base.Columns.Add(this._columnN__de_calendario);
-                this._columnN__de_historia_clínica = new global::System.Data.DataColumn("N° de historia clínica", typeof(int), null, global::System.Data.MappingType.Element);
-                this._columnN__de_historia_clínica.ExtendedProperties.Add("Generator_ColumnVarNameInTable", "_columnN__de_historia_clínica");
-                this._columnN__de_historia_clínica.ExtendedProperties.Add("Generator_UserColumnName", "N° de historia clínica");
-                base.Columns.Add(this._columnN__de_historia_clínica);
-                this.columnNombre_de_la_mascota = new global::System.Data.DataColumn("Nombre de la mascota", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre_de_la_mascota);
-                this.columnNombre_del_dueño = new global::System.Data.DataColumn("Nombre del dueño", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNombre_del_dueño);
-                this.columnFecha_de_inicio = new global::System.Data.DataColumn("Fecha de inicio", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnFecha_de_inicio);
-                this.columnObservaciones = new global::System.Data.DataColumn("Observaciones", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnObservaciones);
-                this.columnEstado = new global::System.Data.DataColumn("Estado", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEstado);
+                this.columnnro_historia_clinica = new global::System.Data.DataColumn("nro_historia_clinica", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnro_historia_clinica);
+                this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnnombre);
+                this.columnfecha_nacimiento = new global::System.Data.DataColumn("fecha_nacimiento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnfecha_nacimiento);
+                this.columnid_raza = new global::System.Data.DataColumn("id_raza", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_raza);
+                this.columnpeso = new global::System.Data.DataColumn("peso", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnpeso);
+                this.columnaltura = new global::System.Data.DataColumn("altura", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnaltura);
+                this.columnid_dueño = new global::System.Data.DataColumn("id_dueño", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnid_dueño);
+                this.columnestado = new global::System.Data.DataColumn("estado", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnestado);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
-                                this._columnN__de_calendario,
-                                this._columnN__de_historia_clínica}, true));
-                this._columnN__de_calendario.AutoIncrement = true;
-                this._columnN__de_calendario.AutoIncrementSeed = -1;
-                this._columnN__de_calendario.AutoIncrementStep = -1;
-                this._columnN__de_calendario.AllowDBNull = false;
-                this._columnN__de_calendario.ReadOnly = true;
-                this._columnN__de_historia_clínica.AllowDBNull = false;
-                this.columnNombre_de_la_mascota.MaxLength = 50;
-                this.columnNombre_del_dueño.ReadOnly = true;
-                this.columnNombre_del_dueño.MaxLength = 101;
-                this.columnObservaciones.MaxLength = 250;
-                this.columnEstado.MaxLength = 50;
+                                this.columnnro_historia_clinica}, true));
+                this.columnnro_historia_clinica.AutoIncrement = true;
+                this.columnnro_historia_clinica.AutoIncrementSeed = -1;
+                this.columnnro_historia_clinica.AutoIncrementStep = -1;
+                this.columnnro_historia_clinica.AllowDBNull = false;
+                this.columnnro_historia_clinica.ReadOnly = true;
+                this.columnnro_historia_clinica.Unique = true;
+                this.columnnombre.MaxLength = 50;
+                this.columnfecha_nacimiento.MaxLength = 50;
+                this.columnpeso.MaxLength = 50;
+                this.columnaltura.MaxLength = 50;
+                this.columnestado.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row NewDataTable1Row() {
-                return ((DataTable1Row)(this.NewRow()));
+            public MASCOTASRow NewMASCOTASRow() {
+                return ((MASCOTASRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new DataTable1Row(builder);
+                return new MASCOTASRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(DataTable1Row);
+                return typeof(MASCOTASRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.DataTable1RowChanged != null)) {
-                    this.DataTable1RowChanged(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.MASCOTASRowChanged != null)) {
+                    this.MASCOTASRowChanged(this, new MASCOTASRowChangeEvent(((MASCOTASRow)(e.Row)), e.Action));
                 }
             }
             
@@ -536,8 +544,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.DataTable1RowChanging != null)) {
-                    this.DataTable1RowChanging(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.MASCOTASRowChanging != null)) {
+                    this.MASCOTASRowChanging(this, new MASCOTASRowChangeEvent(((MASCOTASRow)(e.Row)), e.Action));
                 }
             }
             
@@ -545,8 +553,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.DataTable1RowDeleted != null)) {
-                    this.DataTable1RowDeleted(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.MASCOTASRowDeleted != null)) {
+                    this.MASCOTASRowDeleted(this, new MASCOTASRowChangeEvent(((MASCOTASRow)(e.Row)), e.Action));
                 }
             }
             
@@ -554,14 +562,14 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.DataTable1RowDeleting != null)) {
-                    this.DataTable1RowDeleting(this, new DataTable1RowChangeEvent(((DataTable1Row)(e.Row)), e.Action));
+                if ((this.MASCOTASRowDeleting != null)) {
+                    this.MASCOTASRowDeleting(this, new MASCOTASRowChangeEvent(((MASCOTASRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void RemoveDataTable1Row(DataTable1Row row) {
+            public void RemoveMASCOTASRow(MASCOTASRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -570,7 +578,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                CalendariosVac ds = new CalendariosVac();
+                _PAV_3K2_2021_12DataSet13 ds = new _PAV_3K2_2021_12DataSet13();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -588,7 +596,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "DataTable1DataTable";
+                attribute2.FixedValue = "MASCOTASDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -632,177 +640,222 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class DataTable1Row : global::System.Data.DataRow {
+        public partial class MASCOTASRow : global::System.Data.DataRow {
             
-            private DataTable1DataTable tableDataTable1;
+            private MASCOTASDataTable tableMASCOTAS;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            internal DataTable1Row(global::System.Data.DataRowBuilder rb) : 
+            internal MASCOTASRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableDataTable1 = ((DataTable1DataTable)(this.Table));
+                this.tableMASCOTAS = ((MASCOTASDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _N__de_calendario {
+            public int nro_historia_clinica {
                 get {
-                    return ((int)(this[this.tableDataTable1._N__de_calendarioColumn]));
+                    return ((int)(this[this.tableMASCOTAS.nro_historia_clinicaColumn]));
                 }
                 set {
-                    this[this.tableDataTable1._N__de_calendarioColumn] = value;
+                    this[this.tableMASCOTAS.nro_historia_clinicaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int _N__de_historia_clínica {
-                get {
-                    return ((int)(this[this.tableDataTable1._N__de_historia_clínicaColumn]));
-                }
-                set {
-                    this[this.tableDataTable1._N__de_historia_clínicaColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre_de_la_mascota {
+            public string nombre {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.Nombre_de_la_mascotaColumn]));
+                        return ((string)(this[this.tableMASCOTAS.nombreColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Nombre de la mascota\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'nombre\' in table \'MASCOTAS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.Nombre_de_la_mascotaColumn] = value;
+                    this[this.tableMASCOTAS.nombreColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Nombre_del_dueño {
+            public string fecha_nacimiento {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.Nombre_del_dueñoColumn]));
+                        return ((string)(this[this.tableMASCOTAS.fecha_nacimientoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Nombre del dueño\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'fecha_nacimiento\' in table \'MASCOTAS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.Nombre_del_dueñoColumn] = value;
+                    this[this.tableMASCOTAS.fecha_nacimientoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime Fecha_de_inicio {
+            public int id_raza {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableDataTable1.Fecha_de_inicioColumn]));
+                        return ((int)(this[this.tableMASCOTAS.id_razaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Fecha de inicio\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'id_raza\' in table \'MASCOTAS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.Fecha_de_inicioColumn] = value;
+                    this[this.tableMASCOTAS.id_razaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Observaciones {
+            public string peso {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.ObservacionesColumn]));
+                        return ((string)(this[this.tableMASCOTAS.pesoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Observaciones\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'peso\' in table \'MASCOTAS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.ObservacionesColumn] = value;
+                    this[this.tableMASCOTAS.pesoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Estado {
+            public string altura {
                 get {
                     try {
-                        return ((string)(this[this.tableDataTable1.EstadoColumn]));
+                        return ((string)(this[this.tableMASCOTAS.alturaColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Estado\' in table \'DataTable1\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'altura\' in table \'MASCOTAS\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDataTable1.EstadoColumn] = value;
+                    this[this.tableMASCOTAS.alturaColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombre_de_la_mascotaNull() {
-                return this.IsNull(this.tableDataTable1.Nombre_de_la_mascotaColumn);
+            public int id_dueño {
+                get {
+                    try {
+                        return ((int)(this[this.tableMASCOTAS.id_dueñoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'id_dueño\' in table \'MASCOTAS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMASCOTAS.id_dueñoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombre_de_la_mascotaNull() {
-                this[this.tableDataTable1.Nombre_de_la_mascotaColumn] = global::System.Convert.DBNull;
+            public string estado {
+                get {
+                    try {
+                        return ((string)(this[this.tableMASCOTAS.estadoColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'estado\' in table \'MASCOTAS\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMASCOTAS.estadoColumn] = value;
+                }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNombre_del_dueñoNull() {
-                return this.IsNull(this.tableDataTable1.Nombre_del_dueñoColumn);
+            public bool IsnombreNull() {
+                return this.IsNull(this.tableMASCOTAS.nombreColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNombre_del_dueñoNull() {
-                this[this.tableDataTable1.Nombre_del_dueñoColumn] = global::System.Convert.DBNull;
+            public void SetnombreNull() {
+                this[this.tableMASCOTAS.nombreColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsFecha_de_inicioNull() {
-                return this.IsNull(this.tableDataTable1.Fecha_de_inicioColumn);
+            public bool Isfecha_nacimientoNull() {
+                return this.IsNull(this.tableMASCOTAS.fecha_nacimientoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetFecha_de_inicioNull() {
-                this[this.tableDataTable1.Fecha_de_inicioColumn] = global::System.Convert.DBNull;
+            public void Setfecha_nacimientoNull() {
+                this[this.tableMASCOTAS.fecha_nacimientoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsObservacionesNull() {
-                return this.IsNull(this.tableDataTable1.ObservacionesColumn);
+            public bool Isid_razaNull() {
+                return this.IsNull(this.tableMASCOTAS.id_razaColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetObservacionesNull() {
-                this[this.tableDataTable1.ObservacionesColumn] = global::System.Convert.DBNull;
+            public void Setid_razaNull() {
+                this[this.tableMASCOTAS.id_razaColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsEstadoNull() {
-                return this.IsNull(this.tableDataTable1.EstadoColumn);
+            public bool IspesoNull() {
+                return this.IsNull(this.tableMASCOTAS.pesoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetEstadoNull() {
-                this[this.tableDataTable1.EstadoColumn] = global::System.Convert.DBNull;
+            public void SetpesoNull() {
+                this[this.tableMASCOTAS.pesoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsalturaNull() {
+                return this.IsNull(this.tableMASCOTAS.alturaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetalturaNull() {
+                this[this.tableMASCOTAS.alturaColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool Isid_dueñoNull() {
+                return this.IsNull(this.tableMASCOTAS.id_dueñoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void Setid_dueñoNull() {
+                this[this.tableMASCOTAS.id_dueñoColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsestadoNull() {
+                return this.IsNull(this.tableMASCOTAS.estadoColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetestadoNull() {
+                this[this.tableMASCOTAS.estadoColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -810,22 +863,22 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public class DataTable1RowChangeEvent : global::System.EventArgs {
+        public class MASCOTASRowChangeEvent : global::System.EventArgs {
             
-            private DataTable1Row eventRow;
+            private MASCOTASRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1RowChangeEvent(DataTable1Row row, global::System.Data.DataRowAction action) {
+            public MASCOTASRowChangeEvent(MASCOTASRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DataTable1Row Row {
+            public MASCOTASRow Row {
                 get {
                     return this.eventRow;
                 }
@@ -841,7 +894,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac {
         }
     }
 }
-namespace WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapters {
+namespace WindowsFormsApp1._PAV_3K2_2021_12DataSet13TableAdapters {
     
     
     /// <summary>
@@ -853,7 +906,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapter
     [global::System.ComponentModel.DesignerAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterDesigner, Microsoft.VSDesigner" +
         ", Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-    public partial class DataTable1TableAdapter : global::System.ComponentModel.Component {
+    public partial class MASCOTASTableAdapter : global::System.ComponentModel.Component {
         
         private global::System.Data.SqlClient.SqlDataAdapter _adapter;
         
@@ -867,7 +920,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapter
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public DataTable1TableAdapter() {
+        public MASCOTASTableAdapter() {
             this.ClearBeforeFill = true;
         }
         
@@ -964,15 +1017,75 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapter
             this._adapter = new global::System.Data.SqlClient.SqlDataAdapter();
             global::System.Data.Common.DataTableMapping tableMapping = new global::System.Data.Common.DataTableMapping();
             tableMapping.SourceTable = "Table";
-            tableMapping.DataSetTable = "DataTable1";
-            tableMapping.ColumnMappings.Add("N° de calendario", "N° de calendario");
-            tableMapping.ColumnMappings.Add("N° de historia clínica", "N° de historia clínica");
-            tableMapping.ColumnMappings.Add("Nombre de la mascota", "Nombre de la mascota");
-            tableMapping.ColumnMappings.Add("Nombre del dueño", "Nombre del dueño");
-            tableMapping.ColumnMappings.Add("Fecha de inicio", "Fecha de inicio");
-            tableMapping.ColumnMappings.Add("Observaciones", "Observaciones");
-            tableMapping.ColumnMappings.Add("Estado", "Estado");
+            tableMapping.DataSetTable = "MASCOTAS";
+            tableMapping.ColumnMappings.Add("nro_historia_clinica", "nro_historia_clinica");
+            tableMapping.ColumnMappings.Add("nombre", "nombre");
+            tableMapping.ColumnMappings.Add("fecha_nacimiento", "fecha_nacimiento");
+            tableMapping.ColumnMappings.Add("id_raza", "id_raza");
+            tableMapping.ColumnMappings.Add("peso", "peso");
+            tableMapping.ColumnMappings.Add("altura", "altura");
+            tableMapping.ColumnMappings.Add("id_dueño", "id_dueño");
+            tableMapping.ColumnMappings.Add("estado", "estado");
             this._adapter.TableMappings.Add(tableMapping);
+            this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.DeleteCommand.Connection = this.Connection;
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[MASCOTAS] WHERE (([nro_historia_clinica] = @Original_nro_historia_clinica) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_fecha_nacimiento = 1 AND [fecha_nacimiento] IS NULL) OR ([fecha_nacimiento] = @Original_fecha_nacimiento)) AND ((@IsNull_id_raza = 1 AND [id_raza] IS NULL) OR ([id_raza] = @Original_id_raza)) AND ((@IsNull_peso = 1 AND [peso] IS NULL) OR ([peso] = @Original_peso)) AND ((@IsNull_altura = 1 AND [altura] IS NULL) OR ([altura] = @Original_altura)) AND ((@IsNull_id_dueño = 1 AND [id_dueño] IS NULL) OR ([id_dueño] = @Original_id_dueño)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)))";
+            this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nro_historia_clinica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nro_historia_clinica", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nombre", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nombre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fecha_nacimiento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fecha_nacimiento", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_peso", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_peso", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_altura", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_altura", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.InsertCommand.Connection = this.Connection;
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[MASCOTAS] ([nombre], [fecha_nacimiento], [id_raza], [peso], [altura], [id_dueño], [estado]) VALUES (@nombre, @fecha_nacimiento, @id_raza, @peso, @altura, @id_dueño, @estado);
+SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM MASCOTAS WHERE (nro_historia_clinica = SCOPE_IDENTITY())";
+            this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha_nacimiento", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@peso", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@altura", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
+            this._adapter.UpdateCommand.Connection = this.Connection;
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[MASCOTAS] SET [nombre] = @nombre, [fecha_nacimiento] = @fecha_nacimiento, [id_raza] = @id_raza, [peso] = @peso, [altura] = @altura, [id_dueño] = @id_dueño, [estado] = @estado WHERE (([nro_historia_clinica] = @Original_nro_historia_clinica) AND ((@IsNull_nombre = 1 AND [nombre] IS NULL) OR ([nombre] = @Original_nombre)) AND ((@IsNull_fecha_nacimiento = 1 AND [fecha_nacimiento] IS NULL) OR ([fecha_nacimiento] = @Original_fecha_nacimiento)) AND ((@IsNull_id_raza = 1 AND [id_raza] IS NULL) OR ([id_raza] = @Original_id_raza)) AND ((@IsNull_peso = 1 AND [peso] IS NULL) OR ([peso] = @Original_peso)) AND ((@IsNull_altura = 1 AND [altura] IS NULL) OR ([altura] = @Original_altura)) AND ((@IsNull_id_dueño = 1 AND [id_dueño] IS NULL) OR ([id_dueño] = @Original_id_dueño)) AND ((@IsNull_estado = 1 AND [estado] IS NULL) OR ([estado] = @Original_estado)));
+SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM MASCOTAS WHERE (nro_historia_clinica = @nro_historia_clinica)";
+            this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nombre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@fecha_nacimiento", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@peso", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@altura", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nro_historia_clinica", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nro_historia_clinica", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_nombre", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_nombre", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "nombre", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_fecha_nacimiento", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_fecha_nacimiento", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "fecha_nacimiento", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_raza", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_raza", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_peso", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_peso", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "peso", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_altura", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_altura", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "altura", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_id_dueño", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "id_dueño", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_estado", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_estado", global::System.Data.SqlDbType.VarChar, 0, global::System.Data.ParameterDirection.Input, 0, 0, "estado", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@nro_historia_clinica", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "nro_historia_clinica", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -988,11 +1101,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapter
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = @"SELECT        CALENDARIO_VAC.nro_calendario_vac AS [N° de calendario], CALENDARIO_VAC.nro_historia_clinica AS [N° de historia clínica], MASCOTAS.nombre AS [Nombre de la mascota], 
-                         DUEÑOS.nombre + ' ' + DUEÑOS.apellido AS [Nombre del dueño], CALENDARIO_VAC.fecha_inicio AS [Fecha de inicio], CALENDARIO_VAC.observaciones AS Observaciones, CALENDARIO_VAC.estado AS Estado
-FROM            CALENDARIO_VAC INNER JOIN
-                         MASCOTAS ON CALENDARIO_VAC.nro_historia_clinica = MASCOTAS.nro_historia_clinica INNER JOIN
-                         DUEÑOS ON MASCOTAS.id_dueño = DUEÑOS.id_dueño";
+            this._commandCollection[0].CommandText = "SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_" +
+                "dueño, estado FROM dbo.MASCOTAS";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -1000,7 +1110,7 @@ FROM            CALENDARIO_VAC INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(CalendariosVac.DataTable1DataTable dataTable) {
+        public virtual int Fill(_PAV_3K2_2021_12DataSet13.MASCOTASDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -1013,11 +1123,326 @@ FROM            CALENDARIO_VAC INNER JOIN
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual CalendariosVac.DataTable1DataTable GetData() {
+        public virtual _PAV_3K2_2021_12DataSet13.MASCOTASDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            CalendariosVac.DataTable1DataTable dataTable = new CalendariosVac.DataTable1DataTable();
+            _PAV_3K2_2021_12DataSet13.MASCOTASDataTable dataTable = new _PAV_3K2_2021_12DataSet13.MASCOTASDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(_PAV_3K2_2021_12DataSet13.MASCOTASDataTable dataTable) {
+            return this.Adapter.Update(dataTable);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(_PAV_3K2_2021_12DataSet13 dataSet) {
+            return this.Adapter.Update(dataSet, "MASCOTAS");
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow dataRow) {
+            return this.Adapter.Update(new global::System.Data.DataRow[] {
+                        dataRow});
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        public virtual int Update(global::System.Data.DataRow[] dataRows) {
+            return this.Adapter.Update(dataRows);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
+        public virtual int Delete(int Original_nro_historia_clinica, string Original_nombre, string Original_fecha_nacimiento, global::System.Nullable<int> Original_id_raza, string Original_peso, string Original_altura, global::System.Nullable<int> Original_id_dueño, string Original_estado) {
+            this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_nro_historia_clinica));
+            if ((Original_nombre == null)) {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_nombre));
+            }
+            if ((Original_fecha_nacimiento == null)) {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_fecha_nacimiento));
+            }
+            if ((Original_id_raza.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((int)(Original_id_raza.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            if ((Original_peso == null)) {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_peso));
+            }
+            if ((Original_altura == null)) {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[10].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((string)(Original_altura));
+            }
+            if ((Original_id_dueño.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[12].Value = ((int)(Original_id_dueño.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
+            }
+            if ((Original_estado == null)) {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[14].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((string)(Original_estado));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
+            if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.DeleteCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.DeleteCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.DeleteCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
+        public virtual int Insert(string nombre, string fecha_nacimiento, global::System.Nullable<int> id_raza, string peso, string altura, global::System.Nullable<int> id_dueño, string estado) {
+            if ((nombre == null)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(nombre));
+            }
+            if ((fecha_nacimiento == null)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(fecha_nacimiento));
+            }
+            if ((id_raza.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((int)(id_raza.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((peso == null)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(peso));
+            }
+            if ((altura == null)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((string)(altura));
+            }
+            if ((id_dueño.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(id_dueño.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((estado == null)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((string)(estado));
+            }
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
+            if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.InsertCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.InsertCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.InsertCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(
+                    string nombre, 
+                    string fecha_nacimiento, 
+                    global::System.Nullable<int> id_raza, 
+                    string peso, 
+                    string altura, 
+                    global::System.Nullable<int> id_dueño, 
+                    string estado, 
+                    int Original_nro_historia_clinica, 
+                    string Original_nombre, 
+                    string Original_fecha_nacimiento, 
+                    global::System.Nullable<int> Original_id_raza, 
+                    string Original_peso, 
+                    string Original_altura, 
+                    global::System.Nullable<int> Original_id_dueño, 
+                    string Original_estado, 
+                    int nro_historia_clinica) {
+            if ((nombre == null)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(nombre));
+            }
+            if ((fecha_nacimiento == null)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(fecha_nacimiento));
+            }
+            if ((id_raza.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((int)(id_raza.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
+            }
+            if ((peso == null)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(peso));
+            }
+            if ((altura == null)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((string)(altura));
+            }
+            if ((id_dueño.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(id_dueño.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            if ((estado == null)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(estado));
+            }
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((int)(Original_nro_historia_clinica));
+            if ((Original_nombre == null)) {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((string)(Original_nombre));
+            }
+            if ((Original_fecha_nacimiento == null)) {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((string)(Original_fecha_nacimiento));
+            }
+            if ((Original_id_raza.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_id_raza.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
+            }
+            if ((Original_peso == null)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((string)(Original_peso));
+            }
+            if ((Original_altura == null)) {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[17].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[16].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[17].Value = ((string)(Original_altura));
+            }
+            if ((Original_id_dueño.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[19].Value = ((int)(Original_id_dueño.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[19].Value = global::System.DBNull.Value;
+            }
+            if ((Original_estado == null)) {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[21].Value = global::System.DBNull.Value;
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[21].Value = ((string)(Original_estado));
+            }
+            this.Adapter.UpdateCommand.Parameters[22].Value = ((int)(nro_historia_clinica));
+            global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
+            if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
+                        != global::System.Data.ConnectionState.Open)) {
+                this.Adapter.UpdateCommand.Connection.Open();
+            }
+            try {
+                int returnValue = this.Adapter.UpdateCommand.ExecuteNonQuery();
+                return returnValue;
+            }
+            finally {
+                if ((previousConnectionState == global::System.Data.ConnectionState.Closed)) {
+                    this.Adapter.UpdateCommand.Connection.Close();
+                }
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
+        [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
+        public virtual int Update(string nombre, string fecha_nacimiento, global::System.Nullable<int> id_raza, string peso, string altura, global::System.Nullable<int> id_dueño, string estado, int Original_nro_historia_clinica, string Original_nombre, string Original_fecha_nacimiento, global::System.Nullable<int> Original_id_raza, string Original_peso, string Original_altura, global::System.Nullable<int> Original_id_dueño, string Original_estado) {
+            return this.Update(nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado, Original_nro_historia_clinica, Original_nombre, Original_fecha_nacimiento, Original_id_raza, Original_peso, Original_altura, Original_id_dueño, Original_estado, Original_nro_historia_clinica);
         }
     }
     
@@ -1033,6 +1458,8 @@ FROM            CALENDARIO_VAC INNER JOIN
         
         private UpdateOrderOption _updateOrder;
         
+        private MASCOTASTableAdapter _mASCOTASTableAdapter;
+        
         private bool _backupDataSetBeforeUpdate;
         
         private global::System.Data.IDbConnection _connection;
@@ -1045,6 +1472,20 @@ FROM            CALENDARIO_VAC INNER JOIN
             }
             set {
                 this._updateOrder = value;
+            }
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.EditorAttribute("Microsoft.VSDesigner.DataSource.Design.TableAdapterManagerPropertyEditor, Microso" +
+            "ft.VSDesigner, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3" +
+            "a", "System.Drawing.Design.UITypeEditor")]
+        public MASCOTASTableAdapter MASCOTASTableAdapter {
+            get {
+                return this._mASCOTASTableAdapter;
+            }
+            set {
+                this._mASCOTASTableAdapter = value;
             }
         }
         
@@ -1067,6 +1508,10 @@ FROM            CALENDARIO_VAC INNER JOIN
                 if ((this._connection != null)) {
                     return this._connection;
                 }
+                if (((this._mASCOTASTableAdapter != null) 
+                            && (this._mASCOTASTableAdapter.Connection != null))) {
+                    return this._mASCOTASTableAdapter.Connection;
+                }
                 return null;
             }
             set {
@@ -1080,6 +1525,9 @@ FROM            CALENDARIO_VAC INNER JOIN
         public int TableAdapterInstanceCount {
             get {
                 int count = 0;
+                if ((this._mASCOTASTableAdapter != null)) {
+                    count = (count + 1);
+                }
                 return count;
             }
         }
@@ -1089,8 +1537,17 @@ FROM            CALENDARIO_VAC INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateUpdatedRows(CalendariosVac dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(_PAV_3K2_2021_12DataSet13 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._mASCOTASTableAdapter != null)) {
+                global::System.Data.DataRow[] updatedRows = dataSet.MASCOTAS.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
+                updatedRows = this.GetRealUpdatedRows(updatedRows, allAddedRows);
+                if (((updatedRows != null) 
+                            && (0 < updatedRows.Length))) {
+                    result = (result + this._mASCOTASTableAdapter.Update(updatedRows));
+                    allChangedRows.AddRange(updatedRows);
+                }
+            }
             return result;
         }
         
@@ -1099,8 +1556,16 @@ FROM            CALENDARIO_VAC INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateInsertedRows(CalendariosVac dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(_PAV_3K2_2021_12DataSet13 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
+            if ((this._mASCOTASTableAdapter != null)) {
+                global::System.Data.DataRow[] addedRows = dataSet.MASCOTAS.Select(null, null, global::System.Data.DataViewRowState.Added);
+                if (((addedRows != null) 
+                            && (0 < addedRows.Length))) {
+                    result = (result + this._mASCOTASTableAdapter.Update(addedRows));
+                    allAddedRows.AddRange(addedRows);
+                }
+            }
             return result;
         }
         
@@ -1109,8 +1574,16 @@ FROM            CALENDARIO_VAC INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        private int UpdateDeletedRows(CalendariosVac dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(_PAV_3K2_2021_12DataSet13 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
+            if ((this._mASCOTASTableAdapter != null)) {
+                global::System.Data.DataRow[] deletedRows = dataSet.MASCOTAS.Select(null, null, global::System.Data.DataViewRowState.Deleted);
+                if (((deletedRows != null) 
+                            && (0 < deletedRows.Length))) {
+                    result = (result + this._mASCOTASTableAdapter.Update(deletedRows));
+                    allChangedRows.AddRange(deletedRows);
+                }
+            }
             return result;
         }
         
@@ -1143,12 +1616,17 @@ FROM            CALENDARIO_VAC INNER JOIN
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-        public virtual int UpdateAll(CalendariosVac dataSet) {
+        public virtual int UpdateAll(_PAV_3K2_2021_12DataSet13 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }
             if ((dataSet.HasChanges() == false)) {
                 return 0;
+            }
+            if (((this._mASCOTASTableAdapter != null) 
+                        && (this.MatchTableAdapterConnection(this._mASCOTASTableAdapter.Connection) == false))) {
+                throw new global::System.ArgumentException("All TableAdapters managed by a TableAdapterManager must use the same connection s" +
+                        "tring.");
             }
             global::System.Data.IDbConnection workConnection = this.Connection;
             if ((workConnection == null)) {
@@ -1182,6 +1660,15 @@ FROM            CALENDARIO_VAC INNER JOIN
             try {
                 // ---- Prepare for update -----------
                 //
+                if ((this._mASCOTASTableAdapter != null)) {
+                    revertConnections.Add(this._mASCOTASTableAdapter, this._mASCOTASTableAdapter.Connection);
+                    this._mASCOTASTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(workConnection));
+                    this._mASCOTASTableAdapter.Transaction = ((global::System.Data.SqlClient.SqlTransaction)(workTransaction));
+                    if (this._mASCOTASTableAdapter.Adapter.AcceptChangesDuringUpdate) {
+                        this._mASCOTASTableAdapter.Adapter.AcceptChangesDuringUpdate = false;
+                        adaptersWithAcceptChangesDuringUpdate.Add(this._mASCOTASTableAdapter.Adapter);
+                    }
+                }
                 // 
                 //---- Perform updates -----------
                 //
@@ -1239,6 +1726,10 @@ FROM            CALENDARIO_VAC INNER JOIN
             finally {
                 if (workConnOpened) {
                     workConnection.Close();
+                }
+                if ((this._mASCOTASTableAdapter != null)) {
+                    this._mASCOTASTableAdapter.Connection = ((global::System.Data.SqlClient.SqlConnection)(revertConnections[this._mASCOTASTableAdapter]));
+                    this._mASCOTASTableAdapter.Transaction = null;
                 }
                 if ((0 < adaptersWithAcceptChangesDuringUpdate.Count)) {
                     global::System.Data.Common.DataAdapter[] adapters = new System.Data.Common.DataAdapter[adaptersWithAcceptChangesDuringUpdate.Count];

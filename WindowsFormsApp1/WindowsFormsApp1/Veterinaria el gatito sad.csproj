@@ -67,6 +67,9 @@
     <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
+    <Compile Include="Interfaces\Calendarios_Vac\CalendariosVac.cs">
+      <DependentUpon>CalendariosVac.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Calendarios_Vac\CalendariosVac.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -467,6 +470,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet12.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet13.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet13.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -810,6 +818,17 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet12.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet13.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet13.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet13.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet13.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet13.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12DataSet2.xsc">
       <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>

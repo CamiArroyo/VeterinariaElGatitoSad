@@ -9,11 +9,11 @@
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
             <MainSource>
-              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
                     <CommandText>SELECT        CALENDARIO_VAC.nro_calendario_vac AS [N° de calendario], CALENDARIO_VAC.nro_historia_clinica AS [N° de historia clínica], MASCOTAS.nombre AS [Nombre de la mascota], 
-                         DUEÑOS.nombre + ' ' + DUEÑOS.apellido AS [Nombre del dueño], CALENDARIO_VAC.fecha_inicio AS [Fecha de inicio], CALENDARIO_VAC.observaciones AS Observaciones
+                         DUEÑOS.nombre + ' ' + DUEÑOS.apellido AS [Nombre del dueño], CALENDARIO_VAC.fecha_inicio AS [Fecha de inicio], CALENDARIO_VAC.observaciones AS Observaciones, CALENDARIO_VAC.estado AS Estado
 FROM            CALENDARIO_VAC INNER JOIN
                          MASCOTAS ON CALENDARIO_VAC.nro_historia_clinica = MASCOTAS.nro_historia_clinica INNER JOIN
                          DUEÑOS ON MASCOTAS.id_dueño = DUEÑOS.id_dueño</CommandText>
@@ -29,6 +29,7 @@ FROM            CALENDARIO_VAC INNER JOIN
               <Mapping SourceColumn="Nombre del dueño" DataSetColumn="Nombre del dueño" />
               <Mapping SourceColumn="Fecha de inicio" DataSetColumn="Fecha de inicio" />
               <Mapping SourceColumn="Observaciones" DataSetColumn="Observaciones" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -40,7 +41,7 @@ FROM            CALENDARIO_VAC INNER JOIN
   <xs:element name="CalendariosVac" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CalendariosVac" msprop:Generator_UserDSName="CalendariosVac">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent" msprop:Generator_RowClassName="DataTable1Row">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="N_x00B0__x0020_de_x0020_calendario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_columnN__de_calendario" msprop:Generator_ColumnPropNameInRow="_N__de_calendario" msprop:Generator_ColumnPropNameInTable="_N__de_calendarioColumn" msprop:Generator_UserColumnName="N° de calendario" type="xs:int" />
@@ -64,6 +65,13 @@ FROM            CALENDARIO_VAC INNER JOIN
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>

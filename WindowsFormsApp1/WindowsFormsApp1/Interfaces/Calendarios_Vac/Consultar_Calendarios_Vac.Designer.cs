@@ -31,6 +31,15 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         {
             this.components = new System.ComponentModel.Container();
             this.Dgv_Consultar_Calendario_Vac = new System.Windows.Forms.DataGridView();
+            this.nDeCalendarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nDeHistoriaClínicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDeLaMascotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nombreDelDueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fechaDeInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.observacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.estadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.calendariosVac = new WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVac();
             this.cALENDARIOVACBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._PAV_3K2_2021_12DataSet7 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet7();
             this.Btn_Agregar_Calendario = new System.Windows.Forms.Button();
@@ -44,24 +53,16 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.cALENDARIO_VACTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet7TableAdapters.CALENDARIO_VACTableAdapter();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.calendariosVac = new WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVac();
-            this.dataTable1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataTable1TableAdapter = new WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapters.DataTable1TableAdapter();
-            this.nDeCalendarioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nDeHistoriaClínicaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDeLaMascotaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nombreDelDueñoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.fechaDeInicioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.observacionesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Calendario_Vac)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendariosVac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cALENDARIOVACBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dIAGNOSTICOSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calendariosVac)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Dgv_Consultar_Calendario_Vac
@@ -76,14 +77,74 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.nombreDeLaMascotaDataGridViewTextBoxColumn,
             this.nombreDelDueñoDataGridViewTextBoxColumn,
             this.fechaDeInicioDataGridViewTextBoxColumn,
-            this.observacionesDataGridViewTextBoxColumn});
+            this.observacionesDataGridViewTextBoxColumn,
+            this.estadoDataGridViewTextBoxColumn});
             this.Dgv_Consultar_Calendario_Vac.DataSource = this.dataTable1BindingSource;
-            this.Dgv_Consultar_Calendario_Vac.Location = new System.Drawing.Point(22, 31);
+            this.Dgv_Consultar_Calendario_Vac.Location = new System.Drawing.Point(11, 28);
             this.Dgv_Consultar_Calendario_Vac.Name = "Dgv_Consultar_Calendario_Vac";
             this.Dgv_Consultar_Calendario_Vac.ReadOnly = true;
             this.Dgv_Consultar_Calendario_Vac.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_Consultar_Calendario_Vac.Size = new System.Drawing.Size(695, 350);
+            this.Dgv_Consultar_Calendario_Vac.Size = new System.Drawing.Size(743, 350);
             this.Dgv_Consultar_Calendario_Vac.TabIndex = 5;
+            // 
+            // nDeCalendarioDataGridViewTextBoxColumn
+            // 
+            this.nDeCalendarioDataGridViewTextBoxColumn.DataPropertyName = "N° de calendario";
+            this.nDeCalendarioDataGridViewTextBoxColumn.HeaderText = "N° de calendario";
+            this.nDeCalendarioDataGridViewTextBoxColumn.Name = "nDeCalendarioDataGridViewTextBoxColumn";
+            this.nDeCalendarioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nDeHistoriaClínicaDataGridViewTextBoxColumn
+            // 
+            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.DataPropertyName = "N° de historia clínica";
+            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.HeaderText = "N° de historia clínica";
+            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.Name = "nDeHistoriaClínicaDataGridViewTextBoxColumn";
+            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDeLaMascotaDataGridViewTextBoxColumn
+            // 
+            this.nombreDeLaMascotaDataGridViewTextBoxColumn.DataPropertyName = "Nombre de la mascota";
+            this.nombreDeLaMascotaDataGridViewTextBoxColumn.HeaderText = "Nombre de la mascota";
+            this.nombreDeLaMascotaDataGridViewTextBoxColumn.Name = "nombreDeLaMascotaDataGridViewTextBoxColumn";
+            this.nombreDeLaMascotaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDelDueñoDataGridViewTextBoxColumn
+            // 
+            this.nombreDelDueñoDataGridViewTextBoxColumn.DataPropertyName = "Nombre del dueño";
+            this.nombreDelDueñoDataGridViewTextBoxColumn.HeaderText = "Nombre del dueño";
+            this.nombreDelDueñoDataGridViewTextBoxColumn.Name = "nombreDelDueñoDataGridViewTextBoxColumn";
+            this.nombreDelDueñoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaDeInicioDataGridViewTextBoxColumn
+            // 
+            this.fechaDeInicioDataGridViewTextBoxColumn.DataPropertyName = "Fecha de inicio";
+            this.fechaDeInicioDataGridViewTextBoxColumn.HeaderText = "Fecha de inicio";
+            this.fechaDeInicioDataGridViewTextBoxColumn.Name = "fechaDeInicioDataGridViewTextBoxColumn";
+            this.fechaDeInicioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // observacionesDataGridViewTextBoxColumn
+            // 
+            this.observacionesDataGridViewTextBoxColumn.DataPropertyName = "Observaciones";
+            this.observacionesDataGridViewTextBoxColumn.HeaderText = "Observaciones";
+            this.observacionesDataGridViewTextBoxColumn.Name = "observacionesDataGridViewTextBoxColumn";
+            this.observacionesDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // estadoDataGridViewTextBoxColumn
+            // 
+            this.estadoDataGridViewTextBoxColumn.DataPropertyName = "Estado";
+            this.estadoDataGridViewTextBoxColumn.HeaderText = "Estado";
+            this.estadoDataGridViewTextBoxColumn.Name = "estadoDataGridViewTextBoxColumn";
+            this.estadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dataTable1BindingSource
+            // 
+            this.dataTable1BindingSource.DataMember = "DataTable1";
+            this.dataTable1BindingSource.DataSource = this.calendariosVac;
+            // 
+            // calendariosVac
+            // 
+            this.calendariosVac.DataSetName = "CalendariosVac";
+            this.calendariosVac.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // cALENDARIOVACBindingSource
             // 
@@ -104,6 +165,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Agregar_Calendario.TabIndex = 9;
             this.Btn_Agregar_Calendario.Text = "Agregar calendario";
             this.Btn_Agregar_Calendario.UseVisualStyleBackColor = false;
+            this.Btn_Agregar_Calendario.Click += new System.EventHandler(this.Btn_Agregar_Calendario_Click);
             // 
             // Btn_Eliminar_Calendario
             // 
@@ -184,61 +246,9 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // calendariosVac
-            // 
-            this.calendariosVac.DataSetName = "CalendariosVac";
-            this.calendariosVac.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dataTable1BindingSource
-            // 
-            this.dataTable1BindingSource.DataMember = "DataTable1";
-            this.dataTable1BindingSource.DataSource = this.calendariosVac;
-            // 
             // dataTable1TableAdapter
             // 
             this.dataTable1TableAdapter.ClearBeforeFill = true;
-            // 
-            // nDeCalendarioDataGridViewTextBoxColumn
-            // 
-            this.nDeCalendarioDataGridViewTextBoxColumn.DataPropertyName = "N° de calendario";
-            this.nDeCalendarioDataGridViewTextBoxColumn.HeaderText = "N° de calendario";
-            this.nDeCalendarioDataGridViewTextBoxColumn.Name = "nDeCalendarioDataGridViewTextBoxColumn";
-            this.nDeCalendarioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nDeHistoriaClínicaDataGridViewTextBoxColumn
-            // 
-            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.DataPropertyName = "N° de historia clínica";
-            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.HeaderText = "N° de historia clínica";
-            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.Name = "nDeHistoriaClínicaDataGridViewTextBoxColumn";
-            this.nDeHistoriaClínicaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDeLaMascotaDataGridViewTextBoxColumn
-            // 
-            this.nombreDeLaMascotaDataGridViewTextBoxColumn.DataPropertyName = "Nombre de la mascota";
-            this.nombreDeLaMascotaDataGridViewTextBoxColumn.HeaderText = "Nombre de la mascota";
-            this.nombreDeLaMascotaDataGridViewTextBoxColumn.Name = "nombreDeLaMascotaDataGridViewTextBoxColumn";
-            this.nombreDeLaMascotaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nombreDelDueñoDataGridViewTextBoxColumn
-            // 
-            this.nombreDelDueñoDataGridViewTextBoxColumn.DataPropertyName = "Nombre del dueño";
-            this.nombreDelDueñoDataGridViewTextBoxColumn.HeaderText = "Nombre del dueño";
-            this.nombreDelDueñoDataGridViewTextBoxColumn.Name = "nombreDelDueñoDataGridViewTextBoxColumn";
-            this.nombreDelDueñoDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaDeInicioDataGridViewTextBoxColumn
-            // 
-            this.fechaDeInicioDataGridViewTextBoxColumn.DataPropertyName = "Fecha de inicio";
-            this.fechaDeInicioDataGridViewTextBoxColumn.HeaderText = "Fecha de inicio";
-            this.fechaDeInicioDataGridViewTextBoxColumn.Name = "fechaDeInicioDataGridViewTextBoxColumn";
-            this.fechaDeInicioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // observacionesDataGridViewTextBoxColumn
-            // 
-            this.observacionesDataGridViewTextBoxColumn.DataPropertyName = "Observaciones";
-            this.observacionesDataGridViewTextBoxColumn.HeaderText = "Observaciones";
-            this.observacionesDataGridViewTextBoxColumn.Name = "observacionesDataGridViewTextBoxColumn";
-            this.observacionesDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Frm_Consultar_Calendarios_Vac
             // 
@@ -259,14 +269,14 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Text = "Consultar calendarios de vacunación";
             this.Load += new System.EventHandler(this.Frm_Consultar_Calendarios_Vac_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Calendario_Vac)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.calendariosVac)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cALENDARIOVACBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dIAGNOSTICOSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.calendariosVac)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -296,5 +306,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private System.Windows.Forms.DataGridViewTextBoxColumn nombreDelDueñoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDeInicioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacionesDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
     }
 }

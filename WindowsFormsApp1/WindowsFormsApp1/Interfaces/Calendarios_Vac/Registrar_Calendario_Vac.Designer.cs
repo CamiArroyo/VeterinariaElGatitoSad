@@ -29,6 +29,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Lbl_Nro_Historia_Clinica = new System.Windows.Forms.Label();
             this.Lbl_Fecha_Inicio = new System.Windows.Forms.Label();
             this.Lbl_Observaciones = new System.Windows.Forms.Label();
@@ -38,6 +39,11 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Registrar = new System.Windows.Forms.Button();
+            this._PAV_3K2_2021_12DataSet13 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet13();
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.mASCOTASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet13TableAdapters.MASCOTASTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Nro_Historia_Clinica
@@ -69,11 +75,15 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             // 
             // Cmb_Nro_Historia_Clinica
             // 
+            this.Cmb_Nro_Historia_Clinica.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.mASCOTASBindingSource, "nro_historia_clinica", true));
+            this.Cmb_Nro_Historia_Clinica.DataSource = this.mASCOTASBindingSource;
+            this.Cmb_Nro_Historia_Clinica.DisplayMember = "nro_historia_clinica";
             this.Cmb_Nro_Historia_Clinica.FormattingEnabled = true;
             this.Cmb_Nro_Historia_Clinica.Location = new System.Drawing.Point(208, 24);
             this.Cmb_Nro_Historia_Clinica.Name = "Cmb_Nro_Historia_Clinica";
             this.Cmb_Nro_Historia_Clinica.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Nro_Historia_Clinica.TabIndex = 4;
+            this.Cmb_Nro_Historia_Clinica.ValueMember = "nro_historia_clinica";
             // 
             // Dtp_Fecha_Inicio
             // 
@@ -109,6 +119,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Cancelar.TabIndex = 56;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Registrar
             // 
@@ -119,6 +130,21 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Registrar.TabIndex = 55;
             this.Btn_Registrar.Text = "Registrar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
+            this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
+            // 
+            // _PAV_3K2_2021_12DataSet13
+            // 
+            this._PAV_3K2_2021_12DataSet13.DataSetName = "_PAV_3K2_2021_12DataSet13";
+            this._PAV_3K2_2021_12DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mASCOTASBindingSource
+            // 
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet13;
+            // 
+            // mASCOTASTableAdapter
+            // 
+            this.mASCOTASTableAdapter.ClearBeforeFill = true;
             // 
             // Frm_Registrar_Calendario_Vac
             // 
@@ -138,6 +164,9 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Name = "Frm_Registrar_Calendario_Vac";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar calendario de vacunación";
+            this.Load += new System.EventHandler(this.Frm_Registrar_Calendario_Vac_Load);
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -154,5 +183,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private System.Windows.Forms.TextBox Txt_Observaciones;
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.Button Btn_Registrar;
+        private _PAV_3K2_2021_12DataSet13 _PAV_3K2_2021_12DataSet13;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
+        private _PAV_3K2_2021_12DataSet13TableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
     }
 }

@@ -59,5 +59,12 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             menu.Show();
             this.Dispose();
         }
+
+        private void Btn_Agregar_Calendario_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Registrar_Calendario_Vac();
+            menu.Show();
+            this.Dispose();
+        }
     }
 }
