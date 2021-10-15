@@ -54,6 +54,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.consultarMascotasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.consultar_MascotasTableAdapter = new WindowsFormsApp1.Interfaces.Mascotas.Test1DatosTableAdapters.Consultar_MascotasTableAdapter();
             this.Btn_Consultas = new System.Windows.Forms.Button();
+            this.Btn_Ver_Calendarios_Vac = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Mascotas)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.consultarMascotasBindingSource2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.test1Datos1)).BeginInit();
@@ -119,6 +120,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Dgv_Consultar_Mascotas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_Consultar_Mascotas.Size = new System.Drawing.Size(846, 392);
             this.Dgv_Consultar_Mascotas.TabIndex = 4;
+            this.Dgv_Consultar_Mascotas.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dgv_Consultar_Mascotas_CellContentClick);
             // 
             // mascotaDataGridViewTextBoxColumn
             // 
@@ -198,7 +200,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(941, 380);
+            this.Btn_Salir.Location = new System.Drawing.Point(941, 470);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 5;
@@ -258,12 +260,24 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Btn_Consultas.UseVisualStyleBackColor = false;
             this.Btn_Consultas.Click += new System.EventHandler(this.Btn_Consultas_Click);
             // 
+            // Btn_Ver_Calendarios_Vac
+            // 
+            this.Btn_Ver_Calendarios_Vac.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Ver_Calendarios_Vac.Location = new System.Drawing.Point(941, 406);
+            this.Btn_Ver_Calendarios_Vac.Name = "Btn_Ver_Calendarios_Vac";
+            this.Btn_Ver_Calendarios_Vac.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_Calendarios_Vac.TabIndex = 9;
+            this.Btn_Ver_Calendarios_Vac.Text = "Ver calendarios de vacunación";
+            this.Btn_Ver_Calendarios_Vac.UseVisualStyleBackColor = false;
+            this.Btn_Ver_Calendarios_Vac.Click += new System.EventHandler(this.Btn_Ver_Calendarios_Vac_Click);
+            // 
             // Frm_Consultar_Mascota
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(1098, 447);
+            this.ClientSize = new System.Drawing.Size(1098, 522);
+            this.Controls.Add(this.Btn_Ver_Calendarios_Vac);
             this.Controls.Add(this.Btn_Consultas);
             this.Controls.Add(this.Btn_Mostrar_On);
             this.Controls.Add(this.Btn_Mostrar_off);
@@ -312,5 +326,6 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn númeroHistoriaClinicaDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button Btn_Consultas;
+        private System.Windows.Forms.Button Btn_Ver_Calendarios_Vac;
     }
 }

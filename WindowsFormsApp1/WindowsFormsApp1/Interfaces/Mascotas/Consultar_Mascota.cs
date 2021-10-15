@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces.Calendarios_Vac;
 using WindowsFormsApp1.Interfaces.Consultas;
 
 namespace WindowsFormsApp1.Interfaces.Mascotas
@@ -122,6 +123,18 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
                 this.Dispose();
             }
             else { MessageBox.Show("No selecciono ninguna mascota.", "Error", MessageBoxButtons.OK); }
+        }
+
+        private void Btn_Ver_Calendarios_Vac_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Consultar_Calendarios_Vac();
+            menu.Show();
+            this.Dispose();
+        }
+
+        private void Dgv_Consultar_Mascotas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -67,6 +67,11 @@
     <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
+    <Compile Include="Interfaces\Calendarios_Vac\CalendariosVac.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CalendariosVac.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Calendarios_Vac\Consultar_Calendarios_Vac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +101,12 @@
     </Compile>
     <Compile Include="Interfaces\Consultas\Consultar.Designer.cs">
       <DependentUpon>Consultar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Consultar_Detalle_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Consultar_Detalle_Calendario_Vac.Designer.cs">
+      <DependentUpon>Consultar_Detalle_Calendario_Vac.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.cs">
       <SubType>Form</SubType>
@@ -397,6 +408,7 @@
     <Compile Include="RepositoriosBD\CalendariosVacRepositorio.cs" />
     <Compile Include="RepositoriosBD\ConsultasRepositorio.cs" />
     <Compile Include="RepositoriosBD\DBHelper.cs" />
+    <Compile Include="RepositoriosBD\DetalleCalendarioVacRepositorio.cs" />
     <Compile Include="RepositoriosBD\DiagnosticosRepositorio.cs" />
     <Compile Include="RepositoriosBD\DueñosRepositorio.cs" />
     <Compile Include="RepositoriosBD\EmpleadosRepositorio.cs" />
@@ -409,6 +421,7 @@
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
     <Compile Include="Servicios\CalendariosVacServicio.cs" />
     <Compile Include="Servicios\ConsultasServicio.cs" />
+    <Compile Include="Servicios\DetalleCalendarioVacServicio.cs" />
     <Compile Include="Servicios\DiagnosticosServicio.cs" />
     <Compile Include="Servicios\DueñosServicio.cs" />
     <Compile Include="Servicios\EmpleadosServicio.cs" />
@@ -444,6 +457,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet10.xsd</DependentUpon>
     </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet12.xsd</DependentUpon>
+    </Compile>
     <Compile Include="_PAV_3K2_2021_12DataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -463,6 +486,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="_PAV_3K2_2021_12DataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
     </Compile>
     <Compile Include="_PAV_3K2_2021_12DataSet8.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -493,6 +526,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Consultas\Consultar.resx">
       <DependentUpon>Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Detalle_Calendario_Vac\Consultar_Detalle_Calendario_Vac.resx">
+      <DependentUpon>Consultar_Detalle_Calendario_Vac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.resx">
       <DependentUpon>Consultar_Diagnosticos.cs</DependentUpon>
@@ -656,6 +692,17 @@
     <None Include="Calendario_Vac.xss">
       <DependentUpon>Calendario_Vac.xsd</DependentUpon>
     </None>
+    <None Include="Interfaces\Calendarios_Vac\CalendariosVac.xsc">
+      <DependentUpon>CalendariosVac.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Calendarios_Vac\CalendariosVac.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CalendariosVac.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Interfaces\Calendarios_Vac\CalendariosVac.xss">
+      <DependentUpon>CalendariosVac.xsd</DependentUpon>
+    </None>
     <None Include="Interfaces\Mascotas\Test1Datos.xsc">
       <DependentUpon>Test1Datos.xsd</DependentUpon>
     </None>
@@ -742,6 +789,28 @@
     <None Include="_PAV_3K2_2021_12DataSet10.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet10.xsd</DependentUpon>
     </None>
+    <None Include="_PAV_3K2_2021_12DataSet11.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet11.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet12.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet12.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet12.xsd</DependentUpon>
+    </None>
     <None Include="_PAV_3K2_2021_12DataSet2.xsc">
       <DependentUpon>_PAV_3K2_2021_12DataSet2.xsd</DependentUpon>
     </None>
@@ -785,6 +854,28 @@
     </None>
     <None Include="_PAV_3K2_2021_12DataSet5.xss">
       <DependentUpon>_PAV_3K2_2021_12DataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet6.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xsc">
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_PAV_3K2_2021_12DataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_PAV_3K2_2021_12DataSet7.xss">
+      <DependentUpon>_PAV_3K2_2021_12DataSet7.xsd</DependentUpon>
     </None>
     <None Include="_PAV_3K2_2021_12DataSet8.xsc">
       <DependentUpon>_PAV_3K2_2021_12DataSet8.xsd</DependentUpon>
