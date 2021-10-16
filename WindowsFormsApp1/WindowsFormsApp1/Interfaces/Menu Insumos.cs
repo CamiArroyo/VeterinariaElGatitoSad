@@ -82,5 +82,12 @@ namespace WindowsFormsApp1.Interfaces
             this.Dispose();
 
         }
+
+        private void Btn_Stock_Vac_Click(object sender, EventArgs e)
+        {
+            Form stock_vac= new Stock_Vacunas();
+            stock_vac.Show();
+            this.Dispose();
+        }
     }
 }

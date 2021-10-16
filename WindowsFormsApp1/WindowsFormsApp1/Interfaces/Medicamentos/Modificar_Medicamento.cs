@@ -50,7 +50,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             {
                 MessageBox.Show("Ha ocurrido un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            
             Form MenuMedicamentos = new Frm_Consultar_Medicamentos();
             MenuMedicamentos.Show();
             this.Dispose();

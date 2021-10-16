@@ -42,6 +42,8 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.lABORATORIOSTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSetTableAdapters.LABORATORIOSTableAdapter();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.Txt_Descripcion = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.Txt_Cantidad_Stock = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.lABORATORIOSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet)).BeginInit();
             this.SuspendLayout();
@@ -140,12 +142,30 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.Txt_Descripcion.Size = new System.Drawing.Size(572, 115);
             this.Txt_Descripcion.TabIndex = 59;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(23, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 60;
+            this.label1.Text = "Cantidad en stock:";
+            // 
+            // Txt_Cantidad_Stock
+            // 
+            this.Txt_Cantidad_Stock.Location = new System.Drawing.Point(150, 18);
+            this.Txt_Cantidad_Stock.Name = "Txt_Cantidad_Stock";
+            this.Txt_Cantidad_Stock.Size = new System.Drawing.Size(165, 20);
+            this.Txt_Cantidad_Stock.TabIndex = 61;
+            // 
             // Frm_Registrar_Vacuna
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(631, 339);
+            this.Controls.Add(this.Txt_Cantidad_Stock);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Txt_Descripcion);
             this.Controls.Add(this.Cb_id_lab);
             this.Controls.Add(this.Txt_Nombre);
@@ -179,5 +199,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
         private _PAV_3K2_2021_12DataSetTableAdapters.LABORATORIOSTableAdapter lABORATORIOSTableAdapter;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.TextBox Txt_Descripcion;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox Txt_Cantidad_Stock;
     }
 }

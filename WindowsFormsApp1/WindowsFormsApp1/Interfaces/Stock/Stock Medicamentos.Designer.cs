@@ -125,6 +125,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.Txt_Buscar_Medicamento.Name = "Txt_Buscar_Medicamento";
             this.Txt_Buscar_Medicamento.Size = new System.Drawing.Size(100, 20);
             this.Txt_Buscar_Medicamento.TabIndex = 1;
+            this.Txt_Buscar_Medicamento.TextChanged += new System.EventHandler(this.Txt_Buscar_Medicamento_TextChanged);
             // 
             // btn_Busqueda_Medicamento
             // 
@@ -195,6 +196,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.Txt_Añadir.Name = "Txt_Añadir";
             this.Txt_Añadir.Size = new System.Drawing.Size(100, 20);
             this.Txt_Añadir.TabIndex = 8;
+            this.Txt_Añadir.TextChanged += new System.EventHandler(this.Txt_Añadir_TextChanged);
             // 
             // Txt_Quitar
             // 

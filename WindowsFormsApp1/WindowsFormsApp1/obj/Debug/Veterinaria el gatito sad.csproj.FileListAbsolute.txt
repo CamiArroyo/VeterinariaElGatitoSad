@@ -247,3 +247,5 @@ D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsForm
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
+C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Stock_Vacunas.resources
