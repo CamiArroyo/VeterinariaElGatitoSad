@@ -81,6 +81,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.DataGrd_Consultas_Mascota.Location = new System.Drawing.Point(12, 12);
             this.DataGrd_Consultas_Mascota.Name = "DataGrd_Consultas_Mascota";
             this.DataGrd_Consultas_Mascota.ReadOnly = true;
+            this.DataGrd_Consultas_Mascota.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrd_Consultas_Mascota.Size = new System.Drawing.Size(788, 329);
             this.DataGrd_Consultas_Mascota.TabIndex = 1;
             this.DataGrd_Consultas_Mascota.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrd_Consultas_Mascota_CellContentClick);

@@ -63,7 +63,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             
             if (DataGrd_Consultas_Mascota.SelectedRows.Count == 1)
             {
-                id_mascota = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_Historia_ClinicaDataGridViewTextBoxColumn"].Value);
+                id_mascota = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_Historia_Clinica"].Value);
                
             }
             else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
@@ -76,7 +76,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
             if (DataGrd_Consultas_Mascota.SelectedRows.Count == 1)
             {
-                nro_historia_clinica = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_ConsultaDataGridViewTextBoxColumn"].Value);
+                nro_historia_clinica = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_Consulta"].Value);
             }
             else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
             return nro_historia_clinica;
@@ -103,7 +103,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             }
             if (id_m != 0 && n_con !=0)
             {
-                MessageBox.Show("Good", "Información", MessageBoxButtons.OK);
+                Form medxcon = new Frm_MedicamentosXConsultas(id_m,n_con);
+                medxcon.Show();
                 return;
             }
         }
