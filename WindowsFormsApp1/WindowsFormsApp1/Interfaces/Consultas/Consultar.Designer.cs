@@ -42,10 +42,11 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Dueño = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Número_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_Registrar_Consulta_Mascota = new System.Windows.Forms.Button();
+            this.Btn_Ver_MedicamentosXConsulta = new System.Windows.Forms.Button();
+            this.Btn_Ver_DiagnosticosXConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrd_Consultas_Mascota)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
@@ -150,16 +151,6 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Empleado.Name = "Empleado";
             this.Empleado.ReadOnly = true;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::WindowsFormsApp1.Properties.Resources.Pets_Multicolor;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 347);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(788, 133);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.ForestGreen;
@@ -169,13 +160,46 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // Btn_Registrar_Consulta_Mascota
+            // 
+            this.Btn_Registrar_Consulta_Mascota.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Registrar_Consulta_Mascota.Location = new System.Drawing.Point(839, 65);
+            this.Btn_Registrar_Consulta_Mascota.Name = "Btn_Registrar_Consulta_Mascota";
+            this.Btn_Registrar_Consulta_Mascota.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Registrar_Consulta_Mascota.TabIndex = 4;
+            this.Btn_Registrar_Consulta_Mascota.Text = "Agregar Consulta";
+            this.Btn_Registrar_Consulta_Mascota.UseVisualStyleBackColor = false;
+            // 
+            // Btn_Ver_MedicamentosXConsulta
+            // 
+            this.Btn_Ver_MedicamentosXConsulta.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Ver_MedicamentosXConsulta.Location = new System.Drawing.Point(839, 128);
+            this.Btn_Ver_MedicamentosXConsulta.Name = "Btn_Ver_MedicamentosXConsulta";
+            this.Btn_Ver_MedicamentosXConsulta.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_MedicamentosXConsulta.TabIndex = 5;
+            this.Btn_Ver_MedicamentosXConsulta.Text = "Ver Medicamentos";
+            this.Btn_Ver_MedicamentosXConsulta.UseVisualStyleBackColor = false;
+            this.Btn_Ver_MedicamentosXConsulta.Click += new System.EventHandler(this.Btn_Ver_MedicamentosXConsulta_Click);
+            // 
+            // Btn_Ver_DiagnosticosXConsulta
+            // 
+            this.Btn_Ver_DiagnosticosXConsulta.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Ver_DiagnosticosXConsulta.Location = new System.Drawing.Point(839, 191);
+            this.Btn_Ver_DiagnosticosXConsulta.Name = "Btn_Ver_DiagnosticosXConsulta";
+            this.Btn_Ver_DiagnosticosXConsulta.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_DiagnosticosXConsulta.TabIndex = 6;
+            this.Btn_Ver_DiagnosticosXConsulta.Text = "Ver Diagnosticos";
+            this.Btn_Ver_DiagnosticosXConsulta.UseVisualStyleBackColor = false;
+            // 
             // Frm_Consultas_Mascota_Select
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1006, 482);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.Btn_Ver_DiagnosticosXConsulta);
+            this.Controls.Add(this.Btn_Ver_MedicamentosXConsulta);
+            this.Controls.Add(this.Btn_Registrar_Consulta_Mascota);
             this.Controls.Add(this.DataGrd_Consultas_Mascota);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.pictureBox2);
@@ -184,7 +208,6 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Text = "Consultas";
             this.Load += new System.EventHandler(this.Frm_Consultas_Mascota_Select_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DataGrd_Consultas_Mascota)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
@@ -205,7 +228,9 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         private System.Windows.Forms.DataGridViewTextBoxColumn Dueño;
         private System.Windows.Forms.DataGridViewTextBoxColumn Número_Empleado;
         private System.Windows.Forms.DataGridViewTextBoxColumn Empleado;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Btn_Registrar_Consulta_Mascota;
+        private System.Windows.Forms.Button Btn_Ver_MedicamentosXConsulta;
+        private System.Windows.Forms.Button Btn_Ver_DiagnosticosXConsulta;
     }
 }

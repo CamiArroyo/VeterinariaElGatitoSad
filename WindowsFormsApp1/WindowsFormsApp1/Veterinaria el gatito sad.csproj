@@ -97,6 +97,24 @@
     <Compile Include="Interfaces\Consultas\Consultar.Designer.cs">
       <DependentUpon>Consultar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Consultas\Consultar_DiagnosticoXConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Consultar_DiagnosticoXConsulta.Designer.cs">
+      <DependentUpon>Consultar_DiagnosticoXConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\MedicamentosXConsultas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\MedicamentosXConsultas.Designer.cs">
+      <DependentUpon>MedicamentosXConsultas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Registrar_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Registrar_Consulta.Designer.cs">
+      <DependentUpon>Registrar_Consulta.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -493,6 +511,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Consultas\Consultar.resx">
       <DependentUpon>Consultar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Consultas\Consultar_DiagnosticoXConsulta.resx">
+      <DependentUpon>Consultar_DiagnosticoXConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Consultas\MedicamentosXConsultas.resx">
+      <DependentUpon>MedicamentosXConsultas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.resx">
       <DependentUpon>Consultar_Diagnosticos.cs</DependentUpon>
