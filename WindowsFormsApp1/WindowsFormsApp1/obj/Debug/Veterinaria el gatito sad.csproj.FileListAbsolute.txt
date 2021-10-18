@@ -123,7 +123,6 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Registrar_Vacuna.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
-C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Eliminar_Especie.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Especies.Frm_Modificar_Especie.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Razas.Frm_Consultar_Raza.resources
@@ -134,6 +133,7 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Registrar_Diagnostico.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
@@ -213,6 +213,7 @@ C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\ob
 C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Registrar_Medicamento.resources
 C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
 C:\aaaaaaaa\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
+D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendario_Vac.Consultar_Calendario_Vac.resources
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Consultar_Diagnosticos.resources
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Eliminar_Diagnostico.resources
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Diagnosticos.Frm_Modificar_Diagnostico.resources
@@ -246,16 +247,11 @@ D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsForm
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
 D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Frm_Consultas_Mascota_Select.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Consultar_Calendarios_Vac.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Eliminar_Calendario_Vac.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Modificar_Calendario_Vac.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Registrar_Calendario_Vac.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Frm_Consultas_Mascota_Select.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Consultar_DiagnosticoXConsulta.resources
-D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.MedicamentosXConsultas.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Consultar_Calendarios_Vac.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Eliminar_Calendario_Vac.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Modificar_Calendario_Vac.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Registrar_Calendario_Vac.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Consultar_DiagnosticoXConsulta.resources
-D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Frm_MedicamentosXConsultas.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Consultar_Calendarios_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Eliminar_Calendario_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Modificar_Calendario_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Calendarios_Vac.Frm_Registrar_Calendario_Vac.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Frm_Consultas_Mascota_Select.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
+C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac.Frm_Consultar_Detalle_Calendario_Vac.resources

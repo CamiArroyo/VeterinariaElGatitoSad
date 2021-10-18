@@ -15,9 +15,9 @@ namespace WindowsFormsApp1.Servicios
         {
             consul_repo = new ConsultasRepositorio();
         }
-        public DataSet GetConsultasMascotas(int id)
+        public DataSet GetBuscquedaMedicamento(int id)
         {
-            var consulta = consul_repo.GetConsultasMascotasBD(id);
+            var consulta = consul_repo.GetBusquedaMedicamentoBD(id);
             return consulta;
         }
     }

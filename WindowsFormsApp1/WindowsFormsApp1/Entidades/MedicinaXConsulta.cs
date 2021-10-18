@@ -15,4 +15,6 @@ namespace WindowsFormsApp1.Entidades
         public string periodicidad { get; set; }
 
     }
+  
+
 }
