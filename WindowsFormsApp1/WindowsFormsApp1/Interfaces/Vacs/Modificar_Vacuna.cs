@@ -33,15 +33,15 @@ namespace WindowsFormsApp1.Interfaces.Vacs
 
         private void BtnM_Guardar_Cambios_Click(object sender, EventArgs e)
         {
-            try
-            {
+            /*try
+            {*/
                 DialogResult resultado = MessageBox.Show("Confirmar operación", "Confirmación", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
                 if (resultado == DialogResult.Cancel)
                     return;
                 TomarDatosVacuna();
                 ActualizarVacuna();
                 CerrarFormulario();
-            }
+            /*}
             catch (ApplicationException aex)
             {
                 MessageBox.Show(aex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -50,7 +50,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             {
                 MessageBox.Show("Ha ocurrido un problema", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
+            */
             Form menu = new Frm_Consultar_Vacuna();
             menu.Show();
             this.Dispose();
@@ -61,12 +61,13 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             vac.nombre = Txt_Nombre.Text;
             vac.descripcion = Txt_Descripcion.Text;
             vac.id_laboratorio = Cb_Id_Laboratorio.Text;
+            vac.cantidad_en_stock = Txt_Cantidad_Stock.Text;
         }
 
         private void ActualizarVacuna()
         {
             vacService.ActualizarVacuna(vac);
-            MessageBox.Show("Se actualizo el empleado con éxito", "Información", MessageBoxButtons.OK);
+            MessageBox.Show("Se actualizo la vacuna con éxito", "Información", MessageBoxButtons.OK);
         }
 
         public void CerrarFormulario()

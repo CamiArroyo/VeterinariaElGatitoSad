@@ -182,5 +182,15 @@ namespace WindowsFormsApp1.Interfaces.Stock
         {
 
         }
+
+        private void Txt_Buscar_Medicamento_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Txt_Añadir_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

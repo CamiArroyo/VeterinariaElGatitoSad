@@ -204,6 +204,7 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             this.TxtM_Nombre.Name = "TxtM_Nombre";
             this.TxtM_Nombre.Size = new System.Drawing.Size(200, 20);
             this.TxtM_Nombre.TabIndex = 27;
+            this.TxtM_Nombre.TextChanged += new System.EventHandler(this.TxtM_Nombre_TextChanged);
             // 
             // DatePM_Fecha_Nacimiento
             // 
