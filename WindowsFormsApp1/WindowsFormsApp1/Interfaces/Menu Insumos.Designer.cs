@@ -178,7 +178,6 @@ namespace WindowsFormsApp1.Interfaces
             this.Btn_Stock_Vac.TabIndex = 15;
             this.Btn_Stock_Vac.Text = "Stock Vacunas";
             this.Btn_Stock_Vac.UseVisualStyleBackColor = false;
-            this.Btn_Stock_Vac.Click += new System.EventHandler(this.Btn_Stock_Vac_Click);
             // 
             // Frm_Menu_Insumos
             // 

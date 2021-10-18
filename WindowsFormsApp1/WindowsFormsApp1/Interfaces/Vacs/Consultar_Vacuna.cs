@@ -24,7 +24,12 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             InitializeComponent();
         }
 
-        
+        private void Frm_Consultar_Vacuna_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'vacunas.VACUNAS' Puede moverla o quitarla según sea necesario.
+            this.vACUNASTableAdapter.Fill(this.vacunas.VACUNAS);
+
+        }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
@@ -64,18 +69,6 @@ namespace WindowsFormsApp1.Interfaces.Vacs
                 return;
             }
             MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK);
-        }
-
-        private void Dgw_Consultar_Vacuna_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void Frm_Consultar_Vacuna_Load(object sender, EventArgs e)
-        {
-            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet11.VACUNAS' Puede moverla o quitarla según sea necesario.
-            this.vACUNASTableAdapter3.Fill(this._PAV_3K2_2021_12DataSet11.VACUNAS);
-
         }
     }
 }

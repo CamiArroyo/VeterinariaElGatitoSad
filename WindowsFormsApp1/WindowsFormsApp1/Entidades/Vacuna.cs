@@ -12,15 +12,13 @@ namespace WindowsFormsApp1.Entidades
         public string descripcion { get; set; }
         public string nombre { get; set; }
         public string id_laboratorio { get; set; }
-        public string cantidad_en_stock { get; set; }
-
-        public Vacuna(string descri, string name, string id, string canti)
+       
+        public Vacuna(string descri, string name, string id)
 
         {
             descripcion = descri;
             nombre = name;
             id_laboratorio = id;
-            cantidad_en_stock = canti;
  
 
         }

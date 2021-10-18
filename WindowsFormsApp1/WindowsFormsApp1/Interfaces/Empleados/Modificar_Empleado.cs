@@ -102,10 +102,5 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             Form menu = new Frm_Consultar_Empleado();
             menu.Show();
         }
-
-        private void TxtM_Nombre_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }
