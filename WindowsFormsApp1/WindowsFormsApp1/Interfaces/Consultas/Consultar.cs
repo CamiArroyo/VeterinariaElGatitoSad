@@ -47,7 +47,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
         private void ConsultaMascota(int id)
         {
-            var ds = consul_service.GetBuscquedaMedicamento(id);
+            var ds = consul_service.GetConsultasMascotas(id);
 
             DataGrd_Consultas_Mascota.Rows.Clear();
             foreach (DataRow row in ds.Tables[0].Rows)
@@ -57,10 +57,56 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
             }
         }
+        public int tomarMascota_id()
+        {
+            var id_mascota = 0;
+            
+            if (DataGrd_Consultas_Mascota.SelectedRows.Count == 1)
+            {
+                id_mascota = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_Historia_Clinica"].Value);
+               
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return id_mascota ;
 
+        }
+        public  int tomarConsulta_nro()
+        {
+            var nro_historia_clinica = 0;
+
+            if (DataGrd_Consultas_Mascota.SelectedRows.Count == 1)
+            {
+                nro_historia_clinica = Convert.ToInt32(DataGrd_Consultas_Mascota.SelectedRows[0].Cells["Número_Consulta"].Value);
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return nro_historia_clinica;
+
+        }
         private void DataGrd_Consultas_Mascota_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Btn_Ver_MedicamentosXConsulta_Click(object sender, EventArgs e)
+        {
+            var id_m = tomarMascota_id();
+            var n_con = tomarConsulta_nro();
+            if (id_m == 0) 
+            {
+                MessageBox.Show("Error en el id mascota", "Información", MessageBoxButtons.OK);
+                return;
+            }
+            if (n_con == 0)
+            {
+                MessageBox.Show("Error en el nro consulta", "Información", MessageBoxButtons.OK);
+                return;
+            }
+            if (id_m != 0 && n_con !=0)
+            {
+                Form medxcon = new Frm_MedicamentosXConsultas(id_m,n_con);
+                medxcon.Show();
+                return;
+            }
         }
     }
 }
