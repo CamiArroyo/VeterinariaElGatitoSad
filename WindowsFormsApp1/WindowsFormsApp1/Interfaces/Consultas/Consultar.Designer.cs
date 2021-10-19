@@ -44,6 +44,9 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Btn_Agregar_Consulta = new System.Windows.Forms.Button();
+            this.Btn_Ver_Medicamento = new System.Windows.Forms.Button();
+            this.Btn_Ver_DiagnosticosXConsulta = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrd_Consultas_Mascota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -80,6 +83,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.DataGrd_Consultas_Mascota.Location = new System.Drawing.Point(12, 12);
             this.DataGrd_Consultas_Mascota.Name = "DataGrd_Consultas_Mascota";
             this.DataGrd_Consultas_Mascota.ReadOnly = true;
+            this.DataGrd_Consultas_Mascota.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrd_Consultas_Mascota.Size = new System.Drawing.Size(788, 329);
             this.DataGrd_Consultas_Mascota.TabIndex = 1;
             this.DataGrd_Consultas_Mascota.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrd_Consultas_Mascota_CellContentClick);
@@ -169,12 +173,43 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
+            // Btn_Agregar_Consulta
+            // 
+            this.Btn_Agregar_Consulta.Location = new System.Drawing.Point(849, 22);
+            this.Btn_Agregar_Consulta.Name = "Btn_Agregar_Consulta";
+            this.Btn_Agregar_Consulta.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Agregar_Consulta.TabIndex = 4;
+            this.Btn_Agregar_Consulta.Text = "Agregar Consulta";
+            this.Btn_Agregar_Consulta.UseVisualStyleBackColor = true;
+            // 
+            // Btn_Ver_Medicamento
+            // 
+            this.Btn_Ver_Medicamento.Location = new System.Drawing.Point(849, 68);
+            this.Btn_Ver_Medicamento.Name = "Btn_Ver_Medicamento";
+            this.Btn_Ver_Medicamento.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_Medicamento.TabIndex = 5;
+            this.Btn_Ver_Medicamento.Text = "Ver Medicamento";
+            this.Btn_Ver_Medicamento.UseVisualStyleBackColor = true;
+            this.Btn_Ver_Medicamento.Click += new System.EventHandler(this.Btn_Ver_Medicamento_Click);
+            // 
+            // Btn_Ver_DiagnosticosXConsulta
+            // 
+            this.Btn_Ver_DiagnosticosXConsulta.Location = new System.Drawing.Point(849, 114);
+            this.Btn_Ver_DiagnosticosXConsulta.Name = "Btn_Ver_DiagnosticosXConsulta";
+            this.Btn_Ver_DiagnosticosXConsulta.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_DiagnosticosXConsulta.TabIndex = 6;
+            this.Btn_Ver_DiagnosticosXConsulta.Text = "Ver Diagnostico por consulta";
+            this.Btn_Ver_DiagnosticosXConsulta.UseVisualStyleBackColor = true;
+            // 
             // Frm_Consultas_Mascota_Select
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1006, 482);
+            this.Controls.Add(this.Btn_Ver_DiagnosticosXConsulta);
+            this.Controls.Add(this.Btn_Ver_Medicamento);
+            this.Controls.Add(this.Btn_Agregar_Consulta);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DataGrd_Consultas_Mascota);
             this.Controls.Add(this.Btn_Salir);
@@ -207,5 +242,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         private System.Windows.Forms.DataGridViewTextBoxColumn Empleado;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button Btn_Agregar_Consulta;
+        private System.Windows.Forms.Button Btn_Ver_Medicamento;
+        private System.Windows.Forms.Button Btn_Ver_DiagnosticosXConsulta;
     }
 }

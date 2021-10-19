@@ -62,6 +62,7 @@
     <Compile Include="Entidades\Laboratorio.cs" />
     <Compile Include="Entidades\Mascota.cs" />
     <Compile Include="Entidades\Medicamento.cs" />
+    <Compile Include="Entidades\MedicamentoXConsulta.cs" />
     <Compile Include="Entidades\MedicinaXConsulta.cs" />
     <Compile Include="Entidades\Raza.cs" />
     <Compile Include="Entidades\Sintoma.cs" />
@@ -437,6 +438,7 @@
     <Compile Include="RepositoriosBD\LaboratoriosRepositorio.cs" />
     <Compile Include="RepositoriosBD\MascotasRepositorio.cs" />
     <Compile Include="RepositoriosBD\MedicamentosRepositorio.cs" />
+    <Compile Include="RepositoriosBD\MedicamentoXConsultaRepositorio.cs" />
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
@@ -450,6 +452,7 @@
     <Compile Include="Servicios\LaboratoriosServicio.cs" />
     <Compile Include="Servicios\MascotasServicio.cs" />
     <Compile Include="Servicios\MedicamentosServicio.cs" />
+    <Compile Include="Servicios\MedicamentosXConsultasServicio.cs" />
     <Compile Include="Servicios\RazasServicio.cs" />
     <Compile Include="Servicios\SintomasServicio.cs" />
     <Compile Include="Servicios\VacunasServicio.cs" />

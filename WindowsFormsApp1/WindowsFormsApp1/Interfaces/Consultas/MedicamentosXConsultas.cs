@@ -14,8 +14,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 {
     public partial class Frm_MedicamentosXConsultas : Form
     {
-        //private MedicamentoXConsulta medxcon;
-        //private MedicamentoXConsultaServicio medxcon_serv;
+        private MedicamentoXConsulta medxcon;
+        private MedicamentosXConsultasServicio medxcon_serv;
         private int nro_historia_clinica;
         private int id_consulta;
 
@@ -23,8 +23,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         {
             this.nro_historia_clinica = nro_historia_clinica;
             this.id_consulta = id_consulta;
-            //medxcon = new MedicamentoXConsulta();
-            //medxcon_serv = new MedicamentoXConsultaServicio();
+            medxcon = new MedicamentoXConsulta();
+            medxcon_serv = new MedicamentosXConsultasServicio();
             InitializeComponent();
         }
 
@@ -41,12 +41,12 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
         private void CargarData(int nro_historia_clinica, int id_consulta)
         {
-            //var ds = medxcon_serv.GetBuscquedaMedicamentoXConsulta(nro_historia_clinica, id_consulta);
+            var ds = medxcon_serv.GetBuscquedaMedicamentoXConsulta(nro_historia_clinica, id_consulta);
 
             Dtg_Medicamento_x_Consulta.Rows.Clear();
-            //foreach (DataRow row in ds.Tables[0].Rows)
+            foreach (DataRow row in ds.Tables[0].Rows)
             {
-                //Dtg_Medicamento_x_Consulta.Rows.Add(row["Número_Consulta"], row["Nombre"], row["Medicamento"], row["Dosis"], row["Periodicidad"]);
+                Dtg_Medicamento_x_Consulta.Rows.Add(row["Número_Consulta"], row["Nombre"], row["Medicamento"], row["Dosis"], row["Periodicidad"]);
             }
         }
 

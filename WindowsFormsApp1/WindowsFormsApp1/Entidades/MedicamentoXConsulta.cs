@@ -14,7 +14,7 @@ namespace WindowsFormsApp1.Entidades
         public string dosis { get; set; }
         public string periodicidad { get; set; }
 
-        public MedicamentoXConsulta(int nro_consulta, int id_consulta, int id_medicamento, string dosis, string periodicidad) 
+        public MedicamentoXConsulta(int nro_consulta, int id_consulta, int id_medicamento, string dosis, string periodicidad)
         {
             this.nro_consulta = nro_consulta;
             this.id_consulta = id_consulta;
@@ -23,8 +23,8 @@ namespace WindowsFormsApp1.Entidades
             this.periodicidad = periodicidad;
         }
 
-        public MedicamentoXConsulta() 
-        { 
+        public MedicamentoXConsulta()
+        {
         }
     }
 }
