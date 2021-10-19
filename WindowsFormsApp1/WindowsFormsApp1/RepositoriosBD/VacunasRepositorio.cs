@@ -42,15 +42,27 @@ namespace WindowsFormsApp1.RepositoriosBD
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
+
         public DataSet GetBusquedaVacunaBD(string name)
         {
             var data_vac = new DataSet();
-            var sentenciaSql = $"Select *, b.razon_social from VACUNAS a, LABORATORIOS b where a.id_laboratorio = b.id_laboratorio and a.nombre LIKE '%{name}%'";
+            var sentenciaSql = $"Select *, b.id_laboratorio from VACUNAS a, LABORATORIOS b where a.id_laboratorio = b.id_laboratorio and a.nombre LIKE '%{name}%'";
             var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
 
             data_vac.Tables.Add(tablaResultado);
 
             return data_vac;
+
+        }
+        public DataSet GetBusquedaMedicamentoBD(string name)
+        {
+            var data_med = new DataSet();
+            var sentenciaSql = $"Select *, b.razon_social from MEDICAMENTOS a, LABORATORIOS b where a.id_laboratorio = b.id_laboratorio and a.nombre LIKE '%{name}%'";
+            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
+
+            data_med.Tables.Add(tablaResultado);
+
+            return data_med;
 
         }
         private Vacuna MapearVacuna(DataRow fila)

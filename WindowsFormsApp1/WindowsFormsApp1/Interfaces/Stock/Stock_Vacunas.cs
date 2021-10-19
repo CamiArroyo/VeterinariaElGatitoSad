@@ -53,7 +53,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             //DataGrd_Stock_Vac.Rows.Clear();
             foreach (DataRow row in ds.Tables[0].Rows)
             {
-                DataGrd_Stock_Vac.Rows.Add(row["id_vacuna"], row["nombre"], row["descripcion"], row["id_laboratorio"], row["cantidad_en_stock"]);
+                DataGrd_Stock_Vac.Rows.Add(row["id_vacuna"], row["nombre"], row["descripcion"], row["razon_social"], row["cantidad_en_stock"]);
 
             }
         }
@@ -130,6 +130,18 @@ namespace WindowsFormsApp1.Interfaces.Stock
             ultima_busqueda = busqueda;
             DataGrd_Stock_Vac.Rows.Clear();
             BusquedaStock(busqueda);
+
+        }
+
+        private void Btn_Salir_Click_1(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Menu_Insumos();
+            menu.Show();
+            this.Dispose();
+        }
+
+        private void DataGrd_Stock_Vac_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
 
         }
     }

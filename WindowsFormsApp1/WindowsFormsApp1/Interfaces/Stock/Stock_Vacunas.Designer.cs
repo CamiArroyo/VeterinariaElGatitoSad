@@ -61,6 +61,7 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.Btn_Salir.TabIndex = 18;
             this.Btn_Salir.Text = "Salir";
             this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click_1);
             // 
             // Txt_Añadir
             // 
@@ -139,8 +140,10 @@ namespace WindowsFormsApp1.Interfaces.Stock
             this.DataGrd_Stock_Vac.Location = new System.Drawing.Point(13, 91);
             this.DataGrd_Stock_Vac.Name = "DataGrd_Stock_Vac";
             this.DataGrd_Stock_Vac.ReadOnly = true;
+            this.DataGrd_Stock_Vac.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DataGrd_Stock_Vac.Size = new System.Drawing.Size(543, 330);
             this.DataGrd_Stock_Vac.TabIndex = 19;
+            this.DataGrd_Stock_Vac.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGrd_Stock_Vac_CellContentClick);
             // 
             // id_vacuna
             // 
