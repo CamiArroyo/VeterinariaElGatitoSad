@@ -8,15 +8,19 @@ namespace WindowsFormsApp1.Entidades
 {
     class Calendario_Vacunacion
     {
-        public int nro_historia_clinica { get; set; }
-        public int nro_calendario_vac { get; set; }
-        public DateTime fecha_inicio { get; set; }
-        public string descripcion { get; set; }
+        public string nro_historia_clinica { get; set; } //PK y FK
+        public int nro_calendario_vac { get; set; } //PK
 
-        public Calendario_Vacunacion(DateTime date, string descri)
+        public DateTime fecha_inicio { get; set; }
+        public string observaciones { get; set; }
+        public string estado { get; set; }
+
+        public Calendario_Vacunacion(string nro_hist, DateTime date, string obs, string est)
         {
-            fecha_inicio = date;
-            descripcion = descri;
+            this.nro_historia_clinica = nro_hist;
+            this.fecha_inicio = date;
+            this.observaciones = obs;
+            this.estado = est;
         }
 
         public Calendario_Vacunacion()

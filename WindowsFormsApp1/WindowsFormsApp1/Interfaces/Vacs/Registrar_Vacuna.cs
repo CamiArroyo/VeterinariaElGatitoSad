@@ -60,7 +60,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
                 var mensaje = ex.Message;
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            
+
             Form menuC = new Frm_Menu_Insumos();
             menuC.Show();
             this.Dispose();
@@ -80,9 +80,8 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             var nombre = Txt_Nombre.Text;
             var descripcion = Txt_Descripcion.Text;
             var id_lab = Cb_id_lab.Text;
-            var cantidadStock = Txt_Cantidad_Stock.Text;
-             
-            var vacs = new Vacuna(descripcion, nombre, id_lab,cantidadStock);
+
+            var vacs = new Vacuna(descripcion, nombre, id_lab);
             vac = vacs;
             return true;
         }

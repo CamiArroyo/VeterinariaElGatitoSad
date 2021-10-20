@@ -98,5 +98,10 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             consultar_mascota.Show();
             this.Dispose();
         }
+
+        private void Cmb_Id_Raza_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

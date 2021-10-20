@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CalendariosVac" targetNamespace="http://tempuri.org/CalendariosVac.xsd" xmlns:mstns="http://tempuri.org/CalendariosVac.xsd" xmlns="http://tempuri.org/CalendariosVac.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="PAV_3K2_2021_12ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="PAV_3K2_2021_12ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.PAV_3K2_2021_12ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DataTable1TableAdapter" GeneratorDataComponentClassName="DataTable1TableAdapter" Name="DataTable1" UserDataComponentName="DataTable1TableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        CALENDARIO_VAC.nro_calendario_vac AS [N° de calendario], CALENDARIO_VAC.nro_historia_clinica AS [N° de historia clínica], MASCOTAS.nombre AS [Nombre de la mascota], 
+                         DUEÑOS.nombre + ' ' + DUEÑOS.apellido AS [Nombre del dueño], CALENDARIO_VAC.fecha_inicio AS [Fecha de inicio], CALENDARIO_VAC.observaciones AS Observaciones, CALENDARIO_VAC.estado AS Estado
+FROM            CALENDARIO_VAC INNER JOIN
+                         MASCOTAS ON CALENDARIO_VAC.nro_historia_clinica = MASCOTAS.nro_historia_clinica INNER JOIN
+                         DUEÑOS ON MASCOTAS.id_dueño = DUEÑOS.id_dueño</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="N° de calendario" DataSetColumn="N° de calendario" />
+              <Mapping SourceColumn="N° de historia clínica" DataSetColumn="N° de historia clínica" />
+              <Mapping SourceColumn="Nombre de la mascota" DataSetColumn="Nombre de la mascota" />
+              <Mapping SourceColumn="Nombre del dueño" DataSetColumn="Nombre del dueño" />
+              <Mapping SourceColumn="Fecha de inicio" DataSetColumn="Fecha de inicio" />
+              <Mapping SourceColumn="Observaciones" DataSetColumn="Observaciones" />
+              <Mapping SourceColumn="Estado" DataSetColumn="Estado" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CalendariosVac" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CalendariosVac" msprop:Generator_UserDSName="CalendariosVac">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTable1" msprop:Generator_TableClassName="DataTable1DataTable" msprop:Generator_TableVarName="tableDataTable1" msprop:Generator_RowChangedName="DataTable1RowChanged" msprop:Generator_TablePropName="DataTable1" msprop:Generator_RowDeletingName="DataTable1RowDeleting" msprop:Generator_RowChangingName="DataTable1RowChanging" msprop:Generator_RowEvHandlerName="DataTable1RowChangeEventHandler" msprop:Generator_RowDeletedName="DataTable1RowDeleted" msprop:Generator_RowClassName="DataTable1Row" msprop:Generator_UserTableName="DataTable1" msprop:Generator_RowEvArgName="DataTable1RowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="N_x00B0__x0020_de_x0020_calendario" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="_columnN__de_calendario" msprop:Generator_ColumnPropNameInRow="_N__de_calendario" msprop:Generator_ColumnPropNameInTable="_N__de_calendarioColumn" msprop:Generator_UserColumnName="N° de calendario" type="xs:int" />
+              <xs:element name="N_x00B0__x0020_de_x0020_historia_x0020_clínica" msprop:Generator_ColumnVarNameInTable="_columnN__de_historia_clínica" msprop:Generator_ColumnPropNameInRow="_N__de_historia_clínica" msprop:Generator_ColumnPropNameInTable="_N__de_historia_clínicaColumn" msprop:Generator_UserColumnName="N° de historia clínica" type="xs:int" />
+              <xs:element name="Nombre_x0020_de_x0020_la_x0020_mascota" msprop:Generator_ColumnVarNameInTable="columnNombre_de_la_mascota" msprop:Generator_ColumnPropNameInRow="Nombre_de_la_mascota" msprop:Generator_ColumnPropNameInTable="Nombre_de_la_mascotaColumn" msprop:Generator_UserColumnName="Nombre de la mascota" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Nombre_x0020_del_x0020_dueño" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnNombre_del_dueño" msprop:Generator_ColumnPropNameInRow="Nombre_del_dueño" msprop:Generator_ColumnPropNameInTable="Nombre_del_dueñoColumn" msprop:Generator_UserColumnName="Nombre del dueño" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Fecha_x0020_de_x0020_inicio" msprop:Generator_ColumnVarNameInTable="columnFecha_de_inicio" msprop:Generator_ColumnPropNameInRow="Fecha_de_inicio" msprop:Generator_ColumnPropNameInTable="Fecha_de_inicioColumn" msprop:Generator_UserColumnName="Fecha de inicio" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Observaciones" msprop:Generator_ColumnVarNameInTable="columnObservaciones" msprop:Generator_ColumnPropNameInRow="Observaciones" msprop:Generator_ColumnPropNameInTable="ObservacionesColumn" msprop:Generator_UserColumnName="Observaciones" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Estado" msprop:Generator_ColumnVarNameInTable="columnEstado" msprop:Generator_ColumnPropNameInRow="Estado" msprop:Generator_ColumnPropNameInTable="EstadoColumn" msprop:Generator_UserColumnName="Estado" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:DataTable1" />
+      <xs:field xpath="mstns:N_x00B0__x0020_de_x0020_calendario" />
+      <xs:field xpath="mstns:N_x00B0__x0020_de_x0020_historia_x0020_clínica" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

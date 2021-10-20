@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="_PAV_3K2_2021_12DataSet7" targetNamespace="http://tempuri.org/_PAV_3K2_2021_12DataSet7.xsd" xmlns:mstns="http://tempuri.org/_PAV_3K2_2021_12DataSet7.xsd" xmlns="http://tempuri.org/_PAV_3K2_2021_12DataSet7.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="_PAV_3K2_2021_12DataSet13" targetNamespace="http://tempuri.org/_PAV_3K2_2021_12DataSet13.xsd" xmlns:mstns="http://tempuri.org/_PAV_3K2_2021_12DataSet13.xsd" xmlns="http://tempuri.org/_PAV_3K2_2021_12DataSet13.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -96,31 +96,14 @@ SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id
               <Mapping SourceColumn="id_dueño" DataSetColumn="id_dueño" />
               <Mapping SourceColumn="estado" DataSetColumn="estado" />
             </Mappings>
-            <Sources>
-              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectName="[PAV-3K2-2021-12].dbo.MASCOTAS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="MostrarOff" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="MostrarOff" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="MostrarOff">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM dbo.MASCOTAS where estado='Inactivo'</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-              <DbSource ConnectionRef="PAV_3K2_2021_12ConnectionString (Settings)" DbObjectName="[PAV-3K2-2021-12].dbo.MASCOTAS" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="MostrarOn" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="MostrarOn" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy1" UserSourceName="MostrarOn">
-                <SelectCommand>
-                  <DbCommand CommandType="Text" ModifiedByUser="false">
-                    <CommandText>SELECT nro_historia_clinica, nombre, fecha_nacimiento, id_raza, peso, altura, id_dueño, estado FROM dbo.MASCOTAS where estado='Activo'</CommandText>
-                    <Parameters />
-                  </DbCommand>
-                </SelectCommand>
-              </DbSource>
-            </Sources>
+            <Sources />
           </TableAdapter>
         </Tables>
         <Sources />
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="_PAV_3K2_2021_12DataSet7" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_PAV_3K2_2021_12DataSet7" msprop:Generator_UserDSName="_PAV_3K2_2021_12DataSet7">
+  <xs:element name="_PAV_3K2_2021_12DataSet13" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="_PAV_3K2_2021_12DataSet13" msprop:Generator_UserDSName="_PAV_3K2_2021_12DataSet13">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="MASCOTAS" msprop:Generator_TableClassName="MASCOTASDataTable" msprop:Generator_TableVarName="tableMASCOTAS" msprop:Generator_TablePropName="MASCOTAS" msprop:Generator_RowDeletingName="MASCOTASRowDeleting" msprop:Generator_RowChangingName="MASCOTASRowChanging" msprop:Generator_RowEvHandlerName="MASCOTASRowChangeEventHandler" msprop:Generator_RowDeletedName="MASCOTASRowDeleted" msprop:Generator_UserTableName="MASCOTAS" msprop:Generator_RowChangedName="MASCOTASRowChanged" msprop:Generator_RowEvArgName="MASCOTASRowChangeEvent" msprop:Generator_RowClassName="MASCOTASRow">

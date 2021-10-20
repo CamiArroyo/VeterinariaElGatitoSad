@@ -243,3 +243,8 @@ D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sa
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Eliminar_Vacuna.resources
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Modificar_Vacuna.resources
 D:\UTN\Programacion de aplicaciones visuales I __PAV1__\Veterinaria el gatito sad\PAVI_Veterinaria-el-gatito-sad 2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Vacs.Frm_Ver_Detalle.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Laboratorios.Modificar_Laboratorio.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Eliminar_Medicamento.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Medicamentos.Frm_Modificar_Medicamento.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Stock.Frm_Stock_Medicamentos.resources
+D:\Documentos\GitHub\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Interfaces.Consultas.Frm_Consultas_Mascota_Select.resources

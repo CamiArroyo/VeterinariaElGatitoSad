@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces.Calendarios_Vac;
+using WindowsFormsApp1.Interfaces.Consultas;
 
 namespace WindowsFormsApp1.Interfaces.Mascotas
 {
@@ -96,6 +98,43 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             Form menu = new FrmMenu_Principal();
             menu.Show();
             this.Dispose();
+        }
+
+        public int tomarMascota() 
+        {
+            var id_mascota = 0;
+            if (Dgv_Consultar_Mascotas.SelectedRows.Count == 1)
+            {
+                id_mascota = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["númeroHistoriaClinicaDataGridViewTextBoxColumn"].Value);
+                return id_mascota;
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return id_mascota;
+
+        }
+
+        private void Btn_Consultas_Click(object sender, EventArgs e)
+        {
+            var id_mascota = tomarMascota();
+            if (id_mascota != 0)
+            {
+                Form consultas = new Frm_Consultas_Mascota_Select(id_mascota);
+                consultas.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No selecciono ninguna mascota.", "Error", MessageBoxButtons.OK); }
+        }
+
+        private void Btn_Ver_Calendarios_Vac_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Consultar_Calendarios_Vac();
+            menu.Show();
+            this.Dispose();
+        }
+
+        private void Dgv_Consultar_Mascotas_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

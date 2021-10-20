@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApp1.Interfaces.Consultas;
 
 namespace WindowsFormsApp1.Interfaces.Mascotas
 {
@@ -19,11 +20,8 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
 
         private void Frm_Consultar_Mascota_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet7.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
-            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet6.MASCOTAS' Puede moverla o quitarla según sea necesario.
-            //this.mASCOTASTableAdapter.Fill(this._PAV_3K2_2021_12DataSet6.MASCOTAS);
-
+            // TODO: esta línea de código carga datos en la tabla 'test1Datos1.Consultar_Mascotas' Puede moverla o quitarla según sea necesario.
+            this.consultar_MascotasTableAdapter.DataSet_Test1_Consultar_Mascotas(this.test1Datos1.Consultar_Mascotas);
         }
 
         private void Btm_Registrar_Mascota_Click(object sender, EventArgs e)
@@ -37,7 +35,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             if (Dgv_Consultar_Mascotas.SelectedRows.Count == 1)
             {
-                var ndh = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["nrohistoriaclinicaDataGridViewTextBoxColumn"].Value);
+                var ndh = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["númeroHistoriaClinicaDataGridViewTextBoxColumn"].Value);
                 new Frm_Modificar_Mascota(ndh).Show();
                 Visible = false;
                 return;
@@ -50,7 +48,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             if (Dgv_Consultar_Mascotas.SelectedRows.Count == 1)
             {
                 //LLamar Modificar
-                var ndh = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["nrohistoriaclinicaDataGridViewTextBoxColumn"].Value);
+                var ndh = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["númeroHistoriaClinicaDataGridViewTextBoxColumn"].Value);
                 new Frm_Eliminar_Mascota(ndh).Show();
                 Visible = false;
                 return;
@@ -62,7 +60,6 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             try
             {
-                this.mASCOTASTableAdapter1.MostrarOff(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
             }
             catch (System.Exception ex)
             {
@@ -75,7 +72,6 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             try
             {
-                this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
             }
             catch (System.Exception ex)
             {
@@ -86,13 +82,13 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
 
         private void Btn_Mostrar_On_Click(object sender, EventArgs e)
         {
-            this.mASCOTASTableAdapter1.MostrarOn(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            this.consultar_MascotasTableAdapter.FillBy(this.test1Datos1.Consultar_Mascotas);
             Btm_Eliminar_Mascota.Visible = true;
         }
 
         private void Btn_Mostrar_off_Click(object sender, EventArgs e)
         {
-            this.mASCOTASTableAdapter1.MostrarOff(this._PAV_3K2_2021_12DataSet7.MASCOTAS);
+            this.consultar_MascotasTableAdapter.FillBy1(this.test1Datos1.Consultar_Mascotas);
             Btm_Eliminar_Mascota.Visible = false;
         }
 
@@ -101,6 +97,31 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             Form menu = new FrmMenu_Principal();
             menu.Show();
             this.Dispose();
+        }
+
+        public int tomarMascota() 
+        {
+            var id_mascota = 0;
+            if (Dgv_Consultar_Mascotas.SelectedRows.Count == 1)
+            {
+                id_mascota = Convert.ToInt32(Dgv_Consultar_Mascotas.SelectedRows[0].Cells["númeroHistoriaClinicaDataGridViewTextBoxColumn"].Value);
+                return id_mascota;
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return id_mascota;
+
+        }
+
+        private void Btn_Consultas_Click(object sender, EventArgs e)
+        {
+            var id_mascota = tomarMascota();
+            if (id_mascota != 0)
+            {
+                Form consultas = new Frm_Consultas_Mascota_Select(id_mascota);
+                consultas.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No selecciono ninguna mascota.", "Error", MessageBoxButtons.OK); }
         }
     }
 }

@@ -43,19 +43,21 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Dtm_Fecha_Nacimiento = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.Cmb_Id_Dueño = new System.Windows.Forms.ComboBox();
+            this.dUEÑOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12Dueños = new WindowsFormsApp1._PAV_3K2_2021_12Dueños();
             this.Cmb_Id_Raza = new System.Windows.Forms.ComboBox();
+            this.rAZASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12DataSet4 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this._PAV_3K2_2021_12DataSet4 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4();
-            this.rAZASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.rAZASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet4TableAdapters.RAZASTableAdapter();
-            this._PAV_3K2_2021_12Dueños = new WindowsFormsApp1._PAV_3K2_2021_12Dueños();
-            this.dUEÑOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dUEÑOSTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DueñosTableAdapters.DUEÑOSTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12Dueños)).BeginInit();
+            this.rAZASBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dUEÑOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12Dueños)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -176,6 +178,16 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Cmb_Id_Dueño.TabIndex = 17;
             this.Cmb_Id_Dueño.ValueMember = "id_dueño";
             // 
+            // dUEÑOSBindingSource
+            // 
+            this.dUEÑOSBindingSource.DataMember = "DUEÑOS";
+            this.dUEÑOSBindingSource.DataSource = this._PAV_3K2_2021_12Dueños;
+            // 
+            // _PAV_3K2_2021_12Dueños
+            // 
+            this._PAV_3K2_2021_12Dueños.DataSetName = "_PAV_3K2_2021_12Dueños";
+            this._PAV_3K2_2021_12Dueños.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Cmb_Id_Raza
             // 
             this.Cmb_Id_Raza.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.rAZASBindingSource, "id_raza", true));
@@ -187,6 +199,17 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Cmb_Id_Raza.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Id_Raza.TabIndex = 16;
             this.Cmb_Id_Raza.ValueMember = "id_raza";
+            this.Cmb_Id_Raza.SelectedIndexChanged += new System.EventHandler(this.Cmb_Id_Raza_SelectedIndexChanged);
+            // 
+            // rAZASBindingSource
+            // 
+            this.rAZASBindingSource.DataMember = "RAZAS";
+            this.rAZASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet4;
+            // 
+            // _PAV_3K2_2021_12DataSet4
+            // 
+            this._PAV_3K2_2021_12DataSet4.DataSetName = "_PAV_3K2_2021_12DataSet4";
+            this._PAV_3K2_2021_12DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // label6
             // 
@@ -206,29 +229,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.label7.TabIndex = 14;
             this.label7.Text = "ID raza:";
             // 
-            // _PAV_3K2_2021_12DataSet4
-            // 
-            this._PAV_3K2_2021_12DataSet4.DataSetName = "_PAV_3K2_2021_12DataSet4";
-            this._PAV_3K2_2021_12DataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // rAZASBindingSource
-            // 
-            this.rAZASBindingSource.DataMember = "RAZAS";
-            this.rAZASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet4;
-            // 
             // rAZASTableAdapter
             // 
             this.rAZASTableAdapter.ClearBeforeFill = true;
-            // 
-            // _PAV_3K2_2021_12Dueños
-            // 
-            this._PAV_3K2_2021_12Dueños.DataSetName = "_PAV_3K2_2021_12Dueños";
-            this._PAV_3K2_2021_12Dueños.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dUEÑOSBindingSource
-            // 
-            this.dUEÑOSBindingSource.DataMember = "DUEÑOS";
-            this.dUEÑOSBindingSource.DataSource = this._PAV_3K2_2021_12Dueños;
             // 
             // dUEÑOSTableAdapter
             // 
@@ -260,10 +263,11 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar mascota";
             this.Load += new System.EventHandler(this.Frm_Modificar_Mascota_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12Dueños)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dUEÑOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12Dueños)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.rAZASBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -293,5 +297,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         private _PAV_3K2_2021_12Dueños _PAV_3K2_2021_12Dueños;
         private System.Windows.Forms.BindingSource dUEÑOSBindingSource;
         private _PAV_3K2_2021_12DueñosTableAdapters.DUEÑOSTableAdapter dUEÑOSTableAdapter;
+        private System.Windows.Forms.BindingSource rAZASBindingSource1;
+
     }
 }
