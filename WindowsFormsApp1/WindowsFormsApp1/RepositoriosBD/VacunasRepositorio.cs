@@ -36,7 +36,27 @@ namespace WindowsFormsApp1.RepositoriosBD
             }
             return vacuna;
         }
+<<<<<<< HEAD
 
+=======
+        public int ActualizarStockVac(Vacuna vac)
+        {
+            var sentenciaSql = $"UPDATE VACUNAS SET  cantidad_en_stock='{vac.cantidad_en_stock}' where id_vacuna={vac.id_vacuna}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
+        public DataSet GetBusquedaVacunaBD(string name)
+        {
+            var data_vac = new DataSet();
+            var sentenciaSql = $"Select *, b.razon_social from VACUNAS a, LABORATORIOS b where a.id_laboratorio = b.id_laboratorio and a.nombre LIKE '%{name}%'";
+            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
+
+            data_vac.Tables.Add(tablaResultado);
+
+            return data_vac;
+
+        }
+>>>>>>> parent of 5508f95 (vacunas ok)
         private Vacuna MapearVacuna(DataRow fila)
         {
             var vacuna = new Vacuna();
