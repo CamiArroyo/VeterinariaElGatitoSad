@@ -51,6 +51,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Calendario_Vac.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Empleados.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Empleados.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Entidades\Calendario_Vacunacion.cs" />
     <Compile Include="Entidades\Consulta.cs" />
     <Compile Include="Entidades\Detalle_calendario_vac.cs" />
@@ -99,6 +104,12 @@
     </Compile>
     <Compile Include="Interfaces\Calendarios_Vac\Registrar_Calendario_Vac.Designer.cs">
       <DependentUpon>Registrar_Calendario_Vac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Agregar_Consulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Consultas\Agregar_Consulta.Designer.cs">
+      <DependentUpon>Agregar_Consulta.cs</DependentUpon>
     </Compile>
     <Compile Include="Interfaces\Consultas\Consultar.cs">
       <SubType>Form</SubType>
@@ -553,6 +564,9 @@
     <EmbeddedResource Include="Interfaces\Calendarios_Vac\Registrar_Calendario_Vac.resx">
       <DependentUpon>Registrar_Calendario_Vac.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Consultas\Agregar_Consulta.resx">
+      <DependentUpon>Agregar_Consulta.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Consultas\Consultar.resx">
       <DependentUpon>Consultar.cs</DependentUpon>
     </EmbeddedResource>
@@ -726,6 +740,17 @@
     </None>
     <None Include="Calendario_Vac.xss">
       <DependentUpon>Calendario_Vac.xsd</DependentUpon>
+    </None>
+    <None Include="Empleados.xsc">
+      <DependentUpon>Empleados.xsd</DependentUpon>
+    </None>
+    <None Include="Empleados.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Empleados.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Empleados.xss">
+      <DependentUpon>Empleados.xsd</DependentUpon>
     </None>
     <None Include="Interfaces\Calendarios_Vac\CalendariosVac.xsc">
       <DependentUpon>CalendariosVac.xsd</DependentUpon>

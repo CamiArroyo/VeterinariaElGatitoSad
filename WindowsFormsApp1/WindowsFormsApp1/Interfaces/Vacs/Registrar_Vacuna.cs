@@ -80,8 +80,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             var nombre = Txt_Nombre.Text;
             var descripcion = Txt_Descripcion.Text;
             var id_lab = Cb_id_lab.Text;
+            var canti = "0";
 
-            var vacs = new Vacuna(descripcion, nombre, id_lab);
+            var vacs = new Vacuna(descripcion, nombre, id_lab, canti);
             vac = vacs;
             return true;
         }

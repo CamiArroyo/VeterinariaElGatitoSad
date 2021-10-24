@@ -109,5 +109,12 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             return nro_historia_clinica;
 
         }
+
+        private void Btn_Agregar_Consulta_Click(object sender, EventArgs e)
+        {
+            Form nueva_consulta = new Frm_Agregar_Consulta();
+            nueva_consulta.Show();
+            this.Dispose();
+        }
     }
 }

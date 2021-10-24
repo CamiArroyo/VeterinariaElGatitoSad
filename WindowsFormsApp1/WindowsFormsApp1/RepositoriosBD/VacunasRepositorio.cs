@@ -36,9 +36,6 @@ namespace WindowsFormsApp1.RepositoriosBD
             }
             return vacuna;
         }
-<<<<<<< HEAD
-
-=======
         public int ActualizarStockVac(Vacuna vac)
         {
             var sentenciaSql = $"UPDATE VACUNAS SET  cantidad_en_stock='{vac.cantidad_en_stock}' where id_vacuna={vac.id_vacuna}";
@@ -56,7 +53,7 @@ namespace WindowsFormsApp1.RepositoriosBD
             return data_vac;
 
         }
->>>>>>> parent of 5508f95 (vacunas ok)
+
         private Vacuna MapearVacuna(DataRow fila)
         {
             var vacuna = new Vacuna();

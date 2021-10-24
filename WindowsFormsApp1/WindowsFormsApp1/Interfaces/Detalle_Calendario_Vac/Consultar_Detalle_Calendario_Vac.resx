@@ -135,7 +135,6 @@
   <metadata name="Nombre_Empleado.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-<<<<<<< HEAD:WindowsFormsApp1/WindowsFormsApp1/Interfaces/Detalle_Calendario_Vac/Consultar_Detalle_Calendario_Vac.resx
   <metadata name="dETALLECALENDARIOVACBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>228, 17</value>
   </metadata>
@@ -144,7 +143,8 @@
   </metadata>
   <metadata name="dETALLE_CALENDARIO_VACTableAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>501, 17</value>
-=======
+  </metadata>
+
   <metadata name="id_vacuna.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
@@ -159,6 +159,5 @@
   </metadata>
   <metadata name="cantidad_en_stock.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
->>>>>>> parent of 5508f95 (vacunas ok):WindowsFormsApp1/WindowsFormsApp1/Interfaces/Stock/Stock_Vacunas.resx
   </metadata>
 </root>

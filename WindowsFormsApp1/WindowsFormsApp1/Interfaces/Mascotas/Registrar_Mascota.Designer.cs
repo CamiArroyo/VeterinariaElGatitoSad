@@ -142,6 +142,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.Cmb_Id_Raza.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Id_Raza.TabIndex = 9;
             this.Cmb_Id_Raza.ValueMember = "id_raza";
+            this.Cmb_Id_Raza.SelectedIndexChanged += new System.EventHandler(this.Cmb_Id_Raza_SelectedIndexChanged);
             // 
             // rAZASBindingSource
             // 

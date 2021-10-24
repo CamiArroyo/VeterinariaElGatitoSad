@@ -181,6 +181,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Btn_Agregar_Consulta.TabIndex = 4;
             this.Btn_Agregar_Consulta.Text = "Agregar Consulta";
             this.Btn_Agregar_Consulta.UseVisualStyleBackColor = true;
+            this.Btn_Agregar_Consulta.Click += new System.EventHandler(this.Btn_Agregar_Consulta_Click);
             // 
             // Btn_Ver_Medicamento
             // 
