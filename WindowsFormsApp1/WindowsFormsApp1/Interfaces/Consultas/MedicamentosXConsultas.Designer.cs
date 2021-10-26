@@ -36,6 +36,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.medicamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dosis = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.periodicidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Btn_Agregar_Medicamento = new System.Windows.Forms.Button();
+            this.Btn_Cargar_Datos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dtg_Medicamento_x_Consulta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,6 +69,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Dtg_Medicamento_x_Consulta.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dtg_Medicamento_x_Consulta.Size = new System.Drawing.Size(544, 426);
             this.Dtg_Medicamento_x_Consulta.TabIndex = 1;
+            this.Dtg_Medicamento_x_Consulta.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Dtg_Medicamento_x_Consulta_CellContentClick);
             // 
             // nroconsulta
             // 
@@ -98,12 +101,36 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.periodicidad.Name = "periodicidad";
             this.periodicidad.ReadOnly = true;
             // 
+            // Btn_Agregar_Medicamento
+            // 
+            this.Btn_Agregar_Medicamento.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Agregar_Medicamento.Location = new System.Drawing.Point(643, 12);
+            this.Btn_Agregar_Medicamento.Name = "Btn_Agregar_Medicamento";
+            this.Btn_Agregar_Medicamento.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Agregar_Medicamento.TabIndex = 2;
+            this.Btn_Agregar_Medicamento.Text = "Agregar medicamentos";
+            this.Btn_Agregar_Medicamento.UseVisualStyleBackColor = false;
+            this.Btn_Agregar_Medicamento.Click += new System.EventHandler(this.Btn_Agregar_Medicamento_Click);
+            // 
+            // Btn_Cargar_Datos
+            // 
+            this.Btn_Cargar_Datos.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Cargar_Datos.Location = new System.Drawing.Point(643, 58);
+            this.Btn_Cargar_Datos.Name = "Btn_Cargar_Datos";
+            this.Btn_Cargar_Datos.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Cargar_Datos.TabIndex = 3;
+            this.Btn_Cargar_Datos.Text = "Cargar datos";
+            this.Btn_Cargar_Datos.UseVisualStyleBackColor = false;
+            this.Btn_Cargar_Datos.Click += new System.EventHandler(this.Btn_Cargar_Datos_Click);
+            // 
             // Frm_MedicamentosXConsultas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Btn_Cargar_Datos);
+            this.Controls.Add(this.Btn_Agregar_Medicamento);
             this.Controls.Add(this.Dtg_Medicamento_x_Consulta);
             this.Controls.Add(this.Btn_Salir);
             this.Name = "Frm_MedicamentosXConsultas";
@@ -124,5 +151,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         private System.Windows.Forms.DataGridViewTextBoxColumn medicamento;
         private System.Windows.Forms.DataGridViewTextBoxColumn dosis;
         private System.Windows.Forms.DataGridViewTextBoxColumn periodicidad;
+        private System.Windows.Forms.Button Btn_Agregar_Medicamento;
+        private System.Windows.Forms.Button Btn_Cargar_Datos;
     }
 }

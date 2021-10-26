@@ -4,11 +4,13 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Entidades;
 
 namespace WindowsFormsApp1.RepositoriosBD
 {
     class MedicamentoXConsultaRepositorio
     {
+        private MedicamentoXConsulta medxcon;
         public DataSet GetBusquedaMedicamentoXConsultaBD(int nro_historia_clinica, int id_consulta)
         {
             var data_med = new DataSet();
@@ -20,5 +22,13 @@ namespace WindowsFormsApp1.RepositoriosBD
             return data_med;
 
         }
+
+        public int RegistrarMedicamentoXConsulta(MedicamentoXConsulta medxcon)
+        {
+            var sentenciaSQL = $"INSERT INTO MEDICAMxCONSULTA(nro_historia_clinica, id_consulta, id_medicamento, dosis, periodicidad) values({medxcon.nro_consulta}, {medxcon.id_consulta}, {medxcon.id_medicamento}, '{medxcon.dosis}', '{medxcon.periodicidad}')";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
+            return filasAfectadas;
+        }
+
     }
 }

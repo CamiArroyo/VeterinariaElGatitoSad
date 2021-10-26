@@ -50,5 +50,20 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             }
         }
 
+        private void Btn_Agregar_Medicamento_Click(object sender, EventArgs e)
+        {
+            Form agregar_medicamentos = new Frm_Agregar_Medicamento(nro_historia_clinica, id_consulta);
+            agregar_medicamentos.Show();
+        }
+
+        private void Dtg_Medicamento_x_Consulta_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Btn_Cargar_Datos_Click(object sender, EventArgs e)
+        {
+            CargarData(nro_historia_clinica, id_consulta);
+        }
     }
 }
