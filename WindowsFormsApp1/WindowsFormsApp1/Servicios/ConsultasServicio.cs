@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Entidades;
 using WindowsFormsApp1.RepositoriosBD;
 
 namespace WindowsFormsApp1.Servicios
@@ -19,6 +20,16 @@ namespace WindowsFormsApp1.Servicios
         {
             var consulta = consul_repo.GetBusquedaMedicamentoBD(id);
             return consulta;
+        }
+
+        public bool RegistrarConsulta(Consulta cons)
+        {
+            if (cons == null)
+                throw new ApplicationException("Ingrese su consulta.");
+            var filasAfectadas = consul_repo.RegistrarConsulta(cons);
+            if (filasAfectadas == 1)
+                return true;
+            return false;
         }
     }
 }

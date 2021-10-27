@@ -21,5 +21,12 @@ namespace WindowsFormsApp1.RepositoriosBD
             return data_med;
 
         }
+
+        public int RegistrarConsulta(Consulta cons)
+        {
+            var sentenciaSQL = $"INSERT INTO CONSULTAS(nro_historia_clinica, fecha_entrada, fecha_salida, id_empleado, temperatura, observaciones, tratamiento) VALUES({cons.nro_historia_clinica}, '{cons.fecha_entrada}', '{cons.fecha_salida}',{cons.id_empleado}, '{cons.temperatura}', '{cons.observaciones}', '{cons.tratamiento}')";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
+            return filasAfectadas;
+        }
     }
 }

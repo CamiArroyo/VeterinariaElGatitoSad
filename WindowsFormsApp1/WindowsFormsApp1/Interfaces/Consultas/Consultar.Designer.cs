@@ -47,6 +47,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Btn_Agregar_Consulta = new System.Windows.Forms.Button();
             this.Btn_Ver_Medicamento = new System.Windows.Forms.Button();
             this.Btn_Ver_DiagnosticosXConsulta = new System.Windows.Forms.Button();
+            this.Btn_Cargar_Datos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DataGrd_Consultas_Mascota)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -202,12 +203,23 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Btn_Ver_DiagnosticosXConsulta.Text = "Ver Diagnostico por consulta";
             this.Btn_Ver_DiagnosticosXConsulta.UseVisualStyleBackColor = true;
             // 
+            // Btn_Cargar_Datos
+            // 
+            this.Btn_Cargar_Datos.Location = new System.Drawing.Point(849, 160);
+            this.Btn_Cargar_Datos.Name = "Btn_Cargar_Datos";
+            this.Btn_Cargar_Datos.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Cargar_Datos.TabIndex = 7;
+            this.Btn_Cargar_Datos.Text = "Cargar Datos";
+            this.Btn_Cargar_Datos.UseVisualStyleBackColor = true;
+            this.Btn_Cargar_Datos.Click += new System.EventHandler(this.Btn_Cargar_Datos_Click);
+            // 
             // Frm_Consultas_Mascota_Select
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(1006, 482);
+            this.Controls.Add(this.Btn_Cargar_Datos);
             this.Controls.Add(this.Btn_Ver_DiagnosticosXConsulta);
             this.Controls.Add(this.Btn_Ver_Medicamento);
             this.Controls.Add(this.Btn_Agregar_Consulta);
@@ -246,5 +258,6 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         private System.Windows.Forms.Button Btn_Agregar_Consulta;
         private System.Windows.Forms.Button Btn_Ver_Medicamento;
         private System.Windows.Forms.Button Btn_Ver_DiagnosticosXConsulta;
+        private System.Windows.Forms.Button Btn_Cargar_Datos;
     }
 }

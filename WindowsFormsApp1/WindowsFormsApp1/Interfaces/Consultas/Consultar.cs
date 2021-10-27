@@ -112,9 +112,13 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
         private void Btn_Agregar_Consulta_Click(object sender, EventArgs e)
         {
-            Form nueva_consulta = new Frm_Agregar_Consulta();
+            Form nueva_consulta = new Frm_Agregar_Consulta(id_mascota_select);
             nueva_consulta.Show();
-            this.Dispose();
+        }
+
+        private void Btn_Cargar_Datos_Click(object sender, EventArgs e)
+        {
+            ConsultaMascota(id_mascota_select);
         }
     }
 }

@@ -19,10 +19,9 @@ namespace WindowsFormsApp1.Entidades
         public string tratamiento { get; set; }
 
 
-        public Consulta(int nro, int id_con, int id_emp, DateTime fecha_en, DateTime fecha_sa, string temp, string obs, string trat)
+        public Consulta(int nro, int id_emp, DateTime fecha_en, DateTime fecha_sa, string temp, string obs, string trat)
         {
             nro_historia_clinica = nro;
-            id_consulta = id_con;
             id_empleado = id_emp;
             fecha_entrada = fecha_en;
             fecha_salida = fecha_sa;
