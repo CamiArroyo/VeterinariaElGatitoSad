@@ -50,6 +50,7 @@ namespace WindowsFormsApp1
             this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -176,7 +177,8 @@ namespace WindowsFormsApp1
             this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem,
             this.especieDeMascotaMasAtendidaToolStripMenuItem,
-            this.usoDeMedicamentosToolStripMenuItem});
+            this.usoDeMedicamentosToolStripMenuItem,
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -240,6 +242,13 @@ namespace WindowsFormsApp1
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
+            // cantidadEnStockDeMedicamentosToolStripMenuItem
+            // 
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Name = "cantidadEnStockDeMedicamentosToolStripMenuItem";
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Text = "Cantidad en stock de medicamentos";
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Click += new System.EventHandler(this.cantidadEnStockDeMedicamentosToolStripMenuItem_Click);
+            // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -292,6 +301,7 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.ToolStripMenuItem laboratoriosYMedicamentosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem diagnosticosYConsultasToolStripMenuItem;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem cantidadEnStockDeMedicamentosToolStripMenuItem;
     }
 }
 

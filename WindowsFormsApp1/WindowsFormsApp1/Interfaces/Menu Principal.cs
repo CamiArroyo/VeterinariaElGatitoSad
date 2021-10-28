@@ -12,6 +12,7 @@ using WindowsFormsApp1.Interfaces.Dueños;
 using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Mascotas;
+using WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento;
 using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1
@@ -174,6 +175,12 @@ namespace WindowsFormsApp1
             Form CDueño = new Frm_Consultar_Dueños();
             CDueño.Show();
             this.Dispose();
+        }
+
+        private void cantidadEnStockDeMedicamentosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new FrmCantidadPorMedicamento();
+            f.ShowDialog();
         }
     }
 }
