@@ -413,6 +413,17 @@
     <Compile Include="Interfaces\Reportes\CantidadPorMedicamento\FrmCantidadPorMedicamento.Designer.cs">
       <DependentUpon>FrmCantidadPorMedicamento.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSConsultasPorEmpleado.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEmpleado\FrmConsultasPorEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEmpleado\FrmConsultasPorEmpleado.Designer.cs">
+      <DependentUpon>FrmConsultasPorEmpleado.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -500,6 +511,7 @@
     <Compile Include="RepositoriosBD\MedicamentoXConsultaRepositorio.cs" />
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\ReporteCantXMedRepositorio.cs" />
+    <Compile Include="RepositoriosBD\ReporteConsXEmpRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
     <Compile Include="Servicios\CalendariosVacServicio.cs" />
@@ -752,6 +764,10 @@
       <DependentUpon>FrmCantidadPorMedicamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Reportes\CantidadPorMedicamento\ReporteCantidadPorMedicamento.rdlc" />
+    <EmbeddedResource Include="Interfaces\Reportes\ConsultasPorEmpleado\FrmConsultasPorEmpleado.resx">
+      <DependentUpon>FrmConsultasPorEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Reportes\ConsultasPorEmpleado\ReporteConsultasPorEmpleado.rdlc" />
     <EmbeddedResource Include="Interfaces\Sintomas\Consultar_Sintomas.resx">
       <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
@@ -849,6 +865,17 @@
     </None>
     <None Include="Interfaces\Reportes\CantidadPorMedicamento\DSCantidadPorMedicamento.xss">
       <DependentUpon>DSCantidadPorMedicamento.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.xsc">
+      <DependentUpon>DSConsultasPorEmpleado.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSConsultasPorEmpleado.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.xss">
+      <DependentUpon>DSConsultasPorEmpleado.xsd</DependentUpon>
     </None>
     <None Include="Medicamentos.xsc">
       <DependentUpon>Medicamentos.xsd</DependentUpon>

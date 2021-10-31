@@ -13,6 +13,7 @@ using WindowsFormsApp1.Interfaces.Empleados;
 using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Mascotas;
 using WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento;
+using WindowsFormsApp1.Interfaces.Reportes.ConsultasPorEmpleado;
 using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1
@@ -87,7 +88,8 @@ namespace WindowsFormsApp1
 
         private void cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var f = new FrmConsultasPorEmpleado();
+            f.ShowDialog();
         }
 
         private void Form1_Load(object sender, EventArgs e)
