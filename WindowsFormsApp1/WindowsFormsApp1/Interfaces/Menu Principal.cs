@@ -14,6 +14,7 @@ using WindowsFormsApp1.Interfaces.Laboratorios;
 using WindowsFormsApp1.Interfaces.Mascotas;
 using WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento;
 using WindowsFormsApp1.Interfaces.Reportes.ConsultasPorEmpleado;
+using WindowsFormsApp1.Interfaces.Reportes.ConsultasPorEspecie;
 using WindowsFormsApp1.Interfaces.Sintomas;
 
 namespace WindowsFormsApp1
@@ -182,6 +183,12 @@ namespace WindowsFormsApp1
         private void cantidadEnStockDeMedicamentosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var f = new FrmCantidadPorMedicamento();
+            f.ShowDialog();
+        }
+
+        private void especieDeMascotaMasAtendidaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var f = new FrmConsultasPorEspecie();
             f.ShowDialog();
         }
     }

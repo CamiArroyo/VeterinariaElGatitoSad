@@ -50,7 +50,7 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.RwCantidadPorMedicamento);
             this.Name = "FrmCantidadPorMedicamento";
-            this.Text = "FrmCantidadPorMedicamento";
+            this.Text = "Cantidad de medicamentos en stock";
             this.Load += new System.EventHandler(this.FrmCantidadPorMedicamento_Load);
             this.ResumeLayout(false);
 

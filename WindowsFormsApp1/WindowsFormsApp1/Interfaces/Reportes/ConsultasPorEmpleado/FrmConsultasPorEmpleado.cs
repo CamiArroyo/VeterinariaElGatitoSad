@@ -39,7 +39,7 @@ namespace WindowsFormsApp1.Interfaces.Reportes.ConsultasPorEmpleado
             this.RwConsultasPorEmpleado.LocalReport.DataSources.Add(ds);
             //agregamos al reporte el valor del parámetro
             var parametros = new List<ReportParameter>();
-            var fechaHoy = DateTime.Today.ToString("dd/MM/yyyy hh:mm");
+            var fechaHoy = DateTime.Now.ToString("dd/MM/yyyy hh:mm");
             var paramFechaHoy = new ReportParameter("ParamFechaHoy", fechaHoy);
             parametros.Add(paramFechaHoy);
             this.RwConsultasPorEmpleado.LocalReport.SetParameters(parametros);

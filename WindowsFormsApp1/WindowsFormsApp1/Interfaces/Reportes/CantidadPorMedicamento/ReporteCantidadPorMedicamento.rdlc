@@ -491,21 +491,58 @@
                 <Paragraph>
                   <TextRuns>
                     <TextRun>
-                      <Value>2021</Value>
-                      <Style>
-                        <FontFamily>Californian FB</FontFamily>
-                        <FontSize>12pt</FontSize>
-                      </Style>
+                      <Value>="Página " &amp; Globals!PageNumber</Value>
+                      <Style />
                     </TextRun>
                   </TextRuns>
                   <Style />
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox2</rd:DefaultName>
-              <Top>1.39912cm</Top>
-              <Left>14.54891cm</Left>
+              <Top>0.95312cm</Top>
+              <Left>12.96078cm</Left>
               <Height>0.6cm</Height>
-              <Width>1.20354cm</Width>
+              <Width>2.5cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+            <Textbox Name="Textbox3">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>Veterinaria "El Gatito Sad</Value>
+                      <Style>
+                        <FontFamily>Californian FB</FontFamily>
+                        <FontSize>12pt</FontSize>
+                      </Style>
+                    </TextRun>
+                    <TextRun>
+                      <Value>"</Value>
+                      <Style>
+                        <FontFamily>Californian FB</FontFamily>
+                        <FontSize>16pt</FontSize>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style />
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.74145cm</Top>
+              <Left>0.57891cm</Left>
+              <Height>0.81167cm</Height>
+              <Width>4.61667cm</Width>
+              <ZIndex>1</ZIndex>
               <Style>
                 <Border>
                   <Style>None</Style>

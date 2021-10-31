@@ -10,42 +10,41 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using WindowsFormsApp1.RepositoriosBD;
 
-namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento
+namespace WindowsFormsApp1.Interfaces.Reportes.ConsultasPorEspecie
 {
-    public partial class FrmCantidadPorMedicamento : Form
+    public partial class FrmConsultasPorEspecie : Form
     {
-        private ReporteCantXMedRepositorio reporteRepo;
+        private ReporteConsXEspRepositorio reporteRepo;
 
-        public FrmCantidadPorMedicamento()
+        public FrmConsultasPorEspecie()
         {
-            reporteRepo = new ReporteCantXMedRepositorio();
+            reporteRepo = new ReporteConsXEspRepositorio();
             InitializeComponent();
         }
 
-        private void FrmCantidadPorMedicamento_Load(object sender, EventArgs e)
+        private void FrmConsultasPorEspecie_Load(object sender, EventArgs e)
         {
             this.CargarReporte();
-            this.RwCantidadPorMedicamento.RefreshReport();
         }
 
         private void CargarReporte()
         {
             //obtenemos los datos desde la BD
-            var datos = reporteRepo.ObtenerCantidadPorMedicamento();
+            var datos = reporteRepo.ObtenerConsultasPorEspecie();
             //limpiamos los datos cargados en el Datasource
-            this.RwCantidadPorMedicamento.LocalReport.DataSources.Clear();
+            this.RwConsultasPorEspecie.LocalReport.DataSources.Clear();
             //asociamos los datos al Datasource que acabamos de limpiar
-            var ds = new ReportDataSource("DTCantidadXMedicamento", datos);
+            var ds = new ReportDataSource("DTConsultasXEspecie", datos);
             //asociamos el Datasource al reporte
-            this.RwCantidadPorMedicamento.LocalReport.DataSources.Add(ds);
+            this.RwConsultasPorEspecie.LocalReport.DataSources.Add(ds);
             //agregamos al reporte el valor del parámetro
             var parametros = new List<ReportParameter>();
             var fechaHoy = DateTime.Now.ToString("dd/MM/yyyy hh:mm");
             var paramFechaHoy = new ReportParameter("ParamFechaHoy", fechaHoy);
             parametros.Add(paramFechaHoy);
-            this.RwCantidadPorMedicamento.LocalReport.SetParameters(parametros);
+            this.RwConsultasPorEspecie.LocalReport.SetParameters(parametros);
             //cargamos el reporte
-            this.RwCantidadPorMedicamento.RefreshReport();
+            this.RwConsultasPorEspecie.RefreshReport();
         }
     }
 }

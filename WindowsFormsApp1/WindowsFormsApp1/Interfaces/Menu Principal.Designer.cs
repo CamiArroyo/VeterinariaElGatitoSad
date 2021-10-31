@@ -45,12 +45,12 @@ namespace WindowsFormsApp1
             this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.especieDeMascotaMasAtendidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usoDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.listadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dueñosYMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -195,12 +195,20 @@ namespace WindowsFormsApp1
             this.especieDeMascotaMasAtendidaToolStripMenuItem.Name = "especieDeMascotaMasAtendidaToolStripMenuItem";
             this.especieDeMascotaMasAtendidaToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.especieDeMascotaMasAtendidaToolStripMenuItem.Text = "Especies de mascotas mas atendidas";
+            this.especieDeMascotaMasAtendidaToolStripMenuItem.Click += new System.EventHandler(this.especieDeMascotaMasAtendidaToolStripMenuItem_Click);
             // 
             // usoDeMedicamentosToolStripMenuItem
             // 
             this.usoDeMedicamentosToolStripMenuItem.Name = "usoDeMedicamentosToolStripMenuItem";
             this.usoDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
             this.usoDeMedicamentosToolStripMenuItem.Text = "Frecuencia de uso de medicamentos";
+            // 
+            // cantidadEnStockDeMedicamentosToolStripMenuItem
+            // 
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Name = "cantidadEnStockDeMedicamentosToolStripMenuItem";
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Text = "Cantidad en stock de medicamentos";
+            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Click += new System.EventHandler(this.cantidadEnStockDeMedicamentosToolStripMenuItem_Click);
             // 
             // listadosToolStripMenuItem
             // 
@@ -241,13 +249,6 @@ namespace WindowsFormsApp1
             this.menuStrip1.Size = new System.Drawing.Size(716, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // cantidadEnStockDeMedicamentosToolStripMenuItem
-            // 
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Name = "cantidadEnStockDeMedicamentosToolStripMenuItem";
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Text = "Cantidad en stock de medicamentos";
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Click += new System.EventHandler(this.cantidadEnStockDeMedicamentosToolStripMenuItem_Click);
             // 
             // FrmMenu_Principal
             // 

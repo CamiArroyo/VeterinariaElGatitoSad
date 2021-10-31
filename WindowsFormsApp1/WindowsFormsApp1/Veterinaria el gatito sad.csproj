@@ -424,6 +424,17 @@
     <Compile Include="Interfaces\Reportes\ConsultasPorEmpleado\FrmConsultasPorEmpleado.Designer.cs">
       <DependentUpon>FrmConsultasPorEmpleado.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEspecie\DSConsultasPorEspecie.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSConsultasPorEspecie.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEspecie\FrmConsultasPorEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Reportes\ConsultasPorEspecie\FrmConsultasPorEspecie.Designer.cs">
+      <DependentUpon>FrmConsultasPorEspecie.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Sintomas\Consultar_Sintomas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -512,6 +523,7 @@
     <Compile Include="RepositoriosBD\RazasRepositorio.cs" />
     <Compile Include="RepositoriosBD\ReporteCantXMedRepositorio.cs" />
     <Compile Include="RepositoriosBD\ReporteConsXEmpRepositorio.cs" />
+    <Compile Include="RepositoriosBD\ReporteConsXEspRepositorio.cs" />
     <Compile Include="RepositoriosBD\SintomasRepositorio.cs" />
     <Compile Include="RepositoriosBD\VacunasRepositorio.cs" />
     <Compile Include="Servicios\CalendariosVacServicio.cs" />
@@ -768,6 +780,10 @@
       <DependentUpon>FrmConsultasPorEmpleado.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Reportes\ConsultasPorEmpleado\ReporteConsultasPorEmpleado.rdlc" />
+    <EmbeddedResource Include="Interfaces\Reportes\ConsultasPorEspecie\FrmConsultasPorEspecie.resx">
+      <DependentUpon>FrmConsultasPorEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Reportes\ConsultasPorEspecie\ReporteConsultasPorEspecie.rdlc" />
     <EmbeddedResource Include="Interfaces\Sintomas\Consultar_Sintomas.resx">
       <DependentUpon>Consultar_Sintomas.cs</DependentUpon>
     </EmbeddedResource>
@@ -876,6 +892,17 @@
     </None>
     <None Include="Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.xss">
       <DependentUpon>DSConsultasPorEmpleado.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEspecie\DSConsultasPorEspecie.xsc">
+      <DependentUpon>DSConsultasPorEspecie.xsd</DependentUpon>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEspecie\DSConsultasPorEspecie.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSConsultasPorEspecie.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Interfaces\Reportes\ConsultasPorEspecie\DSConsultasPorEspecie.xss">
+      <DependentUpon>DSConsultasPorEspecie.xsd</DependentUpon>
     </None>
     <None Include="Medicamentos.xsc">
       <DependentUpon>Medicamentos.xsd</DependentUpon>

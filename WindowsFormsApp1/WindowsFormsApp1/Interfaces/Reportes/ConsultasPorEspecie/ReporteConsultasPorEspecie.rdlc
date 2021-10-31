@@ -2,18 +2,18 @@
 <Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
-    <DataSource Name="DSConsultasPorEmpleado">
+    <DataSource Name="DSConsultasPorEspecie">
       <ConnectionProperties>
         <DataProvider>System.Data.DataSet</DataProvider>
         <ConnectString>/* Local Connection */</ConnectString>
       </ConnectionProperties>
-      <rd:DataSourceID>fa5a03ab-4806-49ad-aced-f51220f042cd</rd:DataSourceID>
+      <rd:DataSourceID>9387a71b-4c10-4677-8fe6-8ad0b70d4711</rd:DataSourceID>
     </DataSource>
   </DataSources>
   <DataSets>
-    <DataSet Name="DTConsultasXEmpleado">
+    <DataSet Name="DTConsultasXEspecie">
       <Query>
-        <DataSourceName>DSConsultasPorEmpleado</DataSourceName>
+        <DataSourceName>DSConsultasPorEspecie</DataSourceName>
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
@@ -21,15 +21,15 @@
           <DataField>Cantidad</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="Empleado">
-          <DataField>Empleado</DataField>
+        <Field Name="Especie">
+          <DataField>Especie</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>DSConsultasPorEmpleado</rd:DataSetName>
-        <rd:SchemaPath>C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\Interfaces\Reportes\ConsultasPorEmpleado\DSConsultasPorEmpleado.xsd</rd:SchemaPath>
-        <rd:TableName>DTConsultasXEmpleado</rd:TableName>
+        <rd:DataSetName>DSConsultasPorEspecie</rd:DataSetName>
+        <rd:SchemaPath>C:\2021\PAVI\Grupo12-Pav1-El-gatito-sad-0.2\WindowsFormsApp1\WindowsFormsApp1\Interfaces\Reportes\ConsultasPorEspecie\DSConsultasPorEspecie.xsd</rd:SchemaPath>
+        <rd:TableName>DTConsultasXEspecie</rd:TableName>
         <rd:TableAdapterFillMethod />
         <rd:TableAdapterGetDataMethod />
         <rd:TableAdapterName />
@@ -40,21 +40,50 @@
     <ReportSection>
       <Body>
         <ReportItems>
+          <Textbox Name="ParamFechaHoy">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=Parameters!ParamFechaHoy.Value</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>ParamFechaHoy</rd:DefaultName>
+            <Top>0.57891cm</Top>
+            <Left>0.54916cm</Left>
+            <Height>0.6cm</Height>
+            <Width>2.5cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
           <Chart Name="Chart1">
             <ChartCategoryHierarchy>
               <ChartMembers>
                 <ChartMember>
                   <Group Name="Chart1_CategoryGroup">
                     <GroupExpressions>
-                      <GroupExpression>=Fields!Empleado.Value</GroupExpression>
+                      <GroupExpression>=Fields!Especie.Value</GroupExpression>
                     </GroupExpressions>
                   </Group>
                   <SortExpressions>
                     <SortExpression>
-                      <Value>=Fields!Empleado.Value</Value>
+                      <Value>=Fields!Especie.Value</Value>
                     </SortExpression>
                   </SortExpressions>
-                  <Label>=Fields!Empleado.Value</Label>
+                  <Label>=Fields!Especie.Value</Label>
                 </ChartMember>
               </ChartMembers>
             </ChartCategoryHierarchy>
@@ -83,8 +112,7 @@
                       <DataElementOutput>Output</DataElementOutput>
                     </ChartDataPoint>
                   </ChartDataPoints>
-                  <Type>Shape</Type>
-                  <Subtype>ExplodedPie</Subtype>
+                  <Subtype>Stacked</Subtype>
                   <Style />
                   <ChartEmptyPoints>
                     <Style />
@@ -345,6 +373,7 @@
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>8pt</FontSize>
                 </Style>
+                <Position>TopLeft</Position>
                 <ChartLegendTitle>
                   <Caption />
                   <Style>
@@ -359,7 +388,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Cantidad de consultas atendidas por cada empleado</Caption>
+                <Caption>Especies con más consultas atendidas</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -388,11 +417,12 @@
                 <VerticalAlign>Top</VerticalAlign>
               </Style>
             </ChartNoDataMessage>
-            <DataSetName>DTConsultasXEmpleado</DataSetName>
-            <Top>0.55245cm</Top>
-            <Left>4.73287cm</Left>
+            <DataSetName>DTConsultasXEspecie</DataSetName>
+            <Top>0.57891cm</Top>
+            <Left>4.99416cm</Left>
             <Height>5cm</Height>
-            <Width>8.98167cm</Width>
+            <Width>8.18792cm</Width>
+            <ZIndex>1</ZIndex>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -402,38 +432,8 @@
               <BackgroundGradientType>None</BackgroundGradientType>
             </Style>
           </Chart>
-          <Textbox Name="ParamFechaHoy">
-            <CanGrow>true</CanGrow>
-            <KeepTogether>true</KeepTogether>
-            <Paragraphs>
-              <Paragraph>
-                <TextRuns>
-                  <TextRun>
-                    <Value>=Parameters!ParamFechaHoy.Value</Value>
-                    <Style />
-                  </TextRun>
-                </TextRuns>
-                <Style />
-              </Paragraph>
-            </Paragraphs>
-            <rd:DefaultName>ParamFechaHoy</rd:DefaultName>
-            <Top>0.55245cm</Top>
-            <Left>0.60537cm</Left>
-            <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
-            <ZIndex>1</ZIndex>
-            <Style>
-              <Border>
-                <Style>None</Style>
-              </Border>
-              <PaddingLeft>2pt</PaddingLeft>
-              <PaddingRight>2pt</PaddingRight>
-              <PaddingTop>2pt</PaddingTop>
-              <PaddingBottom>2pt</PaddingBottom>
-            </Style>
-          </Textbox>
         </ReportItems>
-        <Height>2.50892in</Height>
+        <Height>2.6235in</Height>
         <Style />
       </Body>
       <Width>6.5in</Width>
@@ -512,8 +512,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>0.83771cm</Top>
-              <Left>0.60537cm</Left>
+              <Top>0.86416cm</Top>
+              <Left>0.54916cm</Left>
               <Height>0.81167cm</Height>
               <Width>4.61667cm</Width>
               <Style>
@@ -526,7 +526,7 @@
                 <PaddingBottom>2pt</PaddingBottom>
               </Style>
             </Textbox>
-            <Textbox Name="Textbox1">
+            <Textbox Name="Textbox6">
               <CanGrow>true</CanGrow>
               <KeepTogether>true</KeepTogether>
               <Paragraphs>
@@ -540,9 +540,9 @@
                   <Style />
                 </Paragraph>
               </Paragraphs>
-              <rd:DefaultName>Textbox1</rd:DefaultName>
-              <Top>1.04938cm</Top>
-              <Left>13.46412cm</Left>
+              <rd:DefaultName>Textbox6</rd:DefaultName>
+              <Top>1.07584cm</Top>
+              <Left>11.00349cm</Left>
               <Height>0.6cm</Height>
               <Width>2.5cm</Width>
               <ZIndex>1</ZIndex>
@@ -594,5 +594,5 @@
     </GridLayoutDefinition>
   </ReportParametersLayout>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
-  <rd:ReportID>56ea82f3-7fee-4f33-ac7b-aa6115da4d21</rd:ReportID>
+  <rd:ReportID>05abb813-f590-4b61-9b55-e83b75fa52fe</rd:ReportID>
 </Report>
