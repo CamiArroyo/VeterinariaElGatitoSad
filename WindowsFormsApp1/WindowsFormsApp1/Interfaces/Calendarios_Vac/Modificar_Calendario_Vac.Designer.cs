@@ -29,36 +29,46 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.Btn_Ver_Mascotas = new System.Windows.Forms.Button();
             this.Dtp_Fecha_Inicio = new System.Windows.Forms.DateTimePicker();
-            this.Cmb_Nro_Historia_Clinica = new System.Windows.Forms.ComboBox();
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dSMascotas = new WindowsFormsApp1.DSMascotas();
             this.Lbl_Observaciones = new System.Windows.Forms.Label();
             this.Lbl_Fecha_Inicio = new System.Windows.Forms.Label();
             this.Lbl_Nro_Historia_Clinica = new System.Windows.Forms.Label();
+            this.mASCOTASTableAdapter = new WindowsFormsApp1.DSMascotasTableAdapters.MASCOTASTableAdapter();
+            this.Lbl_Estado = new System.Windows.Forms.Label();
+            this.Txt_Estado = new System.Windows.Forms.TextBox();
+            this.Lbl_Nro_Historia_Clinica_Selecc = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSMascotas)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(406, 286);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(415, 345);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 65;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Modificar
             // 
             this.Btn_Modificar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Modificar.Location = new System.Drawing.Point(241, 286);
+            this.Btn_Modificar.Location = new System.Drawing.Point(250, 345);
             this.Btn_Modificar.Name = "Btn_Modificar";
             this.Btn_Modificar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Modificar.TabIndex = 64;
             this.Btn_Modificar.Text = "Modificar";
             this.Btn_Modificar.UseVisualStyleBackColor = false;
+            this.Btn_Modificar.Click += new System.EventHandler(this.Btn_Modificar_Click);
             // 
             // Txt_Observaciones
             // 
@@ -85,13 +95,15 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Dtp_Fecha_Inicio.Size = new System.Drawing.Size(200, 20);
             this.Dtp_Fecha_Inicio.TabIndex = 61;
             // 
-            // Cmb_Nro_Historia_Clinica
+            // mASCOTASBindingSource
             // 
-            this.Cmb_Nro_Historia_Clinica.FormattingEnabled = true;
-            this.Cmb_Nro_Historia_Clinica.Location = new System.Drawing.Point(209, 24);
-            this.Cmb_Nro_Historia_Clinica.Name = "Cmb_Nro_Historia_Clinica";
-            this.Cmb_Nro_Historia_Clinica.Size = new System.Drawing.Size(200, 21);
-            this.Cmb_Nro_Historia_Clinica.TabIndex = 60;
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource.DataSource = this.dSMascotas;
+            // 
+            // dSMascotas
+            // 
+            this.dSMascotas.DataSetName = "DSMascotas";
+            this.dSMascotas.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Lbl_Observaciones
             // 
@@ -120,24 +132,57 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Lbl_Nro_Historia_Clinica.TabIndex = 57;
             this.Lbl_Nro_Historia_Clinica.Text = "Número de historia clínica:";
             // 
+            // mASCOTASTableAdapter
+            // 
+            this.mASCOTASTableAdapter.ClearBeforeFill = true;
+            // 
+            // Lbl_Estado
+            // 
+            this.Lbl_Estado.AutoSize = true;
+            this.Lbl_Estado.Location = new System.Drawing.Point(32, 284);
+            this.Lbl_Estado.Name = "Lbl_Estado";
+            this.Lbl_Estado.Size = new System.Drawing.Size(43, 13);
+            this.Lbl_Estado.TabIndex = 66;
+            this.Lbl_Estado.Text = "Estado:";
+            // 
+            // Txt_Estado
+            // 
+            this.Txt_Estado.Location = new System.Drawing.Point(209, 284);
+            this.Txt_Estado.Name = "Txt_Estado";
+            this.Txt_Estado.Size = new System.Drawing.Size(200, 20);
+            this.Txt_Estado.TabIndex = 67;
+            // 
+            // Lbl_Nro_Historia_Clinica_Selecc
+            // 
+            this.Lbl_Nro_Historia_Clinica_Selecc.AutoSize = true;
+            this.Lbl_Nro_Historia_Clinica_Selecc.Location = new System.Drawing.Point(209, 30);
+            this.Lbl_Nro_Historia_Clinica_Selecc.Name = "Lbl_Nro_Historia_Clinica_Selecc";
+            this.Lbl_Nro_Historia_Clinica_Selecc.Size = new System.Drawing.Size(0, 13);
+            this.Lbl_Nro_Historia_Clinica_Selecc.TabIndex = 68;
+            // 
             // Frm_Modificar_Calendario_Vac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(604, 346);
+            this.ClientSize = new System.Drawing.Size(604, 397);
+            this.Controls.Add(this.Lbl_Nro_Historia_Clinica_Selecc);
+            this.Controls.Add(this.Txt_Estado);
+            this.Controls.Add(this.Lbl_Estado);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Txt_Observaciones);
             this.Controls.Add(this.Btn_Ver_Mascotas);
             this.Controls.Add(this.Dtp_Fecha_Inicio);
-            this.Controls.Add(this.Cmb_Nro_Historia_Clinica);
             this.Controls.Add(this.Lbl_Observaciones);
             this.Controls.Add(this.Lbl_Fecha_Inicio);
             this.Controls.Add(this.Lbl_Nro_Historia_Clinica);
             this.Name = "Frm_Modificar_Calendario_Vac";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Modificar calendario de vacunación";
+            this.Load += new System.EventHandler(this.Frm_Modificar_Calendario_Vac_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSMascotas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,9 +195,14 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private System.Windows.Forms.TextBox Txt_Observaciones;
         private System.Windows.Forms.Button Btn_Ver_Mascotas;
         private System.Windows.Forms.DateTimePicker Dtp_Fecha_Inicio;
-        private System.Windows.Forms.ComboBox Cmb_Nro_Historia_Clinica;
         private System.Windows.Forms.Label Lbl_Observaciones;
         private System.Windows.Forms.Label Lbl_Fecha_Inicio;
         private System.Windows.Forms.Label Lbl_Nro_Historia_Clinica;
+        private DSMascotas dSMascotas;
+        private System.Windows.Forms.BindingSource mASCOTASBindingSource;
+        private DSMascotasTableAdapters.MASCOTASTableAdapter mASCOTASTableAdapter;
+        private System.Windows.Forms.Label Lbl_Estado;
+        private System.Windows.Forms.TextBox Txt_Estado;
+        private System.Windows.Forms.Label Lbl_Nro_Historia_Clinica_Selecc;
     }
 }

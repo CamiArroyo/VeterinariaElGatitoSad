@@ -90,5 +90,10 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             menu.Show();
             this.Dispose();
         }
+
+        private void Btn_Ver_Mascotas_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

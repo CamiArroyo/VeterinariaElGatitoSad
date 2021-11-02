@@ -186,6 +186,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Modificar_Calendario.TabIndex = 11;
             this.Btn_Modificar_Calendario.Text = "Modificar calendario";
             this.Btn_Modificar_Calendario.UseVisualStyleBackColor = false;
+            this.Btn_Modificar_Calendario.Click += new System.EventHandler(this.Btn_Modificar_Calendario_Click);
             // 
             // Btn_Salir
             // 

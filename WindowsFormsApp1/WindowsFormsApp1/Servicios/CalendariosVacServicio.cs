@@ -32,6 +32,18 @@ namespace WindowsFormsApp1.Servicios
             return false;
         }
 
+        public Calendario_Vacunacion GetCalendario(long ndh)
+        {
+            var calendario = cal_repo.GetCalendario(ndh);
+            return calendario;
+        }
+
+        public void ActualizarCalendario(Calendario_Vacunacion cal)
+        {
+            var filasAfectadas = cal_repo.ActualizarCalendario(cal);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar");
+        }
     }
 
 }

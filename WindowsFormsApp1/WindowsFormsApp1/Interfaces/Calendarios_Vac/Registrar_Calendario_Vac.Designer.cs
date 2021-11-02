@@ -34,16 +34,16 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Lbl_Fecha_Inicio = new System.Windows.Forms.Label();
             this.Lbl_Observaciones = new System.Windows.Forms.Label();
             this.Cmb_Nro_Historia_Clinica = new System.Windows.Forms.ComboBox();
+            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this._PAV_3K2_2021_12DataSet13 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet13();
             this.Dtp_Fecha_Inicio = new System.Windows.Forms.DateTimePicker();
             this.Btn_Ver_Mascotas = new System.Windows.Forms.Button();
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Registrar = new System.Windows.Forms.Button();
-            this._PAV_3K2_2021_12DataSet13 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet13();
-            this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.mASCOTASTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet13TableAdapters.MASCOTASTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Nro_Historia_Clinica
@@ -85,6 +85,16 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Cmb_Nro_Historia_Clinica.TabIndex = 4;
             this.Cmb_Nro_Historia_Clinica.ValueMember = "nro_historia_clinica";
             // 
+            // mASCOTASBindingSource
+            // 
+            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
+            this.mASCOTASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet13;
+            // 
+            // _PAV_3K2_2021_12DataSet13
+            // 
+            this._PAV_3K2_2021_12DataSet13.DataSetName = "_PAV_3K2_2021_12DataSet13";
+            this._PAV_3K2_2021_12DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // Dtp_Fecha_Inicio
             // 
             this.Dtp_Fecha_Inicio.Location = new System.Drawing.Point(208, 66);
@@ -101,6 +111,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Ver_Mascotas.TabIndex = 6;
             this.Btn_Ver_Mascotas.Text = "Ver mascotas";
             this.Btn_Ver_Mascotas.UseVisualStyleBackColor = false;
+            this.Btn_Ver_Mascotas.Click += new System.EventHandler(this.Btn_Ver_Mascotas_Click);
             // 
             // Txt_Observaciones
             // 
@@ -132,16 +143,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Registrar.UseVisualStyleBackColor = false;
             this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
-            // _PAV_3K2_2021_12DataSet13
-            // 
-            this._PAV_3K2_2021_12DataSet13.DataSetName = "_PAV_3K2_2021_12DataSet13";
-            this._PAV_3K2_2021_12DataSet13.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // mASCOTASBindingSource
-            // 
-            this.mASCOTASBindingSource.DataMember = "MASCOTAS";
-            this.mASCOTASBindingSource.DataSource = this._PAV_3K2_2021_12DataSet13;
-            // 
             // mASCOTASTableAdapter
             // 
             this.mASCOTASTableAdapter.ClearBeforeFill = true;
@@ -165,8 +166,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registrar calendario de vacunación";
             this.Load += new System.EventHandler(this.Frm_Registrar_Calendario_Vac_Load);
-            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mASCOTASBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet13)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

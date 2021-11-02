@@ -18,6 +18,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
     {
         private Mascota mas;
         private MascotasServicio mas_Servicios;
+
         public Frm_Modificar_Mascota(int ndh)
         {
             mas_Servicios = new MascotasServicio();
@@ -58,6 +59,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             consultar_mascotas.Show();
             this.Dispose();
         }
+
         private void TomarDatosMascota()
         {
             mas.nombre = Txt_Nombre.Text;
@@ -79,7 +81,6 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             this.Dispose();
         }
-
        
         private void CargarDatos()
         {
