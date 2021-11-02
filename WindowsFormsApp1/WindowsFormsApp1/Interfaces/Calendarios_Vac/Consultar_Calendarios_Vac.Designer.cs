@@ -176,6 +176,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Eliminar_Calendario.TabIndex = 10;
             this.Btn_Eliminar_Calendario.Text = "Eliminar calendario";
             this.Btn_Eliminar_Calendario.UseVisualStyleBackColor = false;
+            this.Btn_Eliminar_Calendario.Click += new System.EventHandler(this.Btn_Eliminar_Calendario_Click);
             // 
             // Btn_Modificar_Calendario
             // 

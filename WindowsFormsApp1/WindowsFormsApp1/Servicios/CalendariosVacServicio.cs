@@ -44,6 +44,13 @@ namespace WindowsFormsApp1.Servicios
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
+
+        public void DarBajaCalendario(Calendario_Vacunacion cal)
+        {
+            var filasAfectadas = cal_repo.DarBajaCalendario(cal);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 
 }

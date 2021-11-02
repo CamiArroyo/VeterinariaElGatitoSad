@@ -43,6 +43,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Cancelar.TabIndex = 11;
             this.Btn_Cancelar.Text = "Cancelar";
             this.Btn_Cancelar.UseVisualStyleBackColor = false;
+            this.Btn_Cancelar.Click += new System.EventHandler(this.Btn_Cancelar_Click);
             // 
             // Btn_Confirmar
             // 
@@ -53,6 +54,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Confirmar.TabIndex = 10;
             this.Btn_Confirmar.Text = "Confirmar";
             this.Btn_Confirmar.UseVisualStyleBackColor = false;
+            this.Btn_Confirmar.Click += new System.EventHandler(this.Btn_Confirmar_Click);
             // 
             // Lbl_Confirmar
             // 

@@ -74,7 +74,18 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
         }
 
-
+        //ELIMINAR UN CALENDARIO
+        private void Btn_Eliminar_Calendario_Click(object sender, EventArgs e)
+        {
+            var id_calendario = tomarCalendario();
+            if (id_calendario != 0)
+            {
+                Form modificar = new Frm_Eliminar_Calendario_Vac(id_calendario);
+                modificar.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
+        }
 
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
@@ -82,5 +93,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             menu.Show();
             this.Dispose();
         }
+
     }
 }

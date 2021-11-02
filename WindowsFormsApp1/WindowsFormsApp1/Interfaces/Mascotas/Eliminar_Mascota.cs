@@ -16,6 +16,7 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
     {
         private Mascota mas;
         private MascotasServicio mas_Servicios;
+
         public Frm_Eliminar_Mascota(long ndh)
         {
             mas_Servicios = new MascotasServicio();
