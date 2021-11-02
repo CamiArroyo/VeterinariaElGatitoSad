@@ -81,6 +81,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DSMascotas.xsd</DependentUpon>
     </Compile>
+    <Compile Include="DSMascotasSinCalendario.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DSMascotasSinCalendario.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Empleados.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -853,6 +858,17 @@
     </None>
     <None Include="DSMascotas.xss">
       <DependentUpon>DSMascotas.xsd</DependentUpon>
+    </None>
+    <None Include="DSMascotasSinCalendario.xsc">
+      <DependentUpon>DSMascotasSinCalendario.xsd</DependentUpon>
+    </None>
+    <None Include="DSMascotasSinCalendario.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSMascotasSinCalendario.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DSMascotasSinCalendario.xss">
+      <DependentUpon>DSMascotasSinCalendario.xsd</DependentUpon>
     </None>
     <None Include="Empleados.xsc">
       <DependentUpon>Empleados.xsd</DependentUpon>

@@ -26,6 +26,8 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
 
         private void Frm_Registrar_Calendario_Vac_Load(object sender, EventArgs e)
         {
+            // TODO: This line of code loads data into the 'dSMascotasSinCalendario.MASCOTAS' table. You can move, or remove it, as needed.
+            this.mASCOTASTableAdapter1.Fill(this.dSMascotasSinCalendario.MASCOTAS);
             // TODO: This line of code loads data into the '_PAV_3K2_2021_12DataSet13.MASCOTAS' table. You can move, or remove it, as needed.
             this.mASCOTASTableAdapter.Fill(this._PAV_3K2_2021_12DataSet13.MASCOTAS);
         }
