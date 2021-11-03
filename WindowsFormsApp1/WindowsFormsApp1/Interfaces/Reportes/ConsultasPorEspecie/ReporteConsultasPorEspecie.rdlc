@@ -100,7 +100,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!Cantidad.Value)</Y>
+                        <Y>=Fields!Cantidad.Value</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />

@@ -71,7 +71,7 @@
                   <ChartDataPoints>
                     <ChartDataPoint>
                       <ChartDataPointValues>
-                        <Y>=Count(Fields!cantidad_en_stock.Value)</Y>
+                        <Y>=Fields!cantidad_en_stock.Value</Y>
                       </ChartDataPointValues>
                       <ChartDataLabel>
                         <Style />
