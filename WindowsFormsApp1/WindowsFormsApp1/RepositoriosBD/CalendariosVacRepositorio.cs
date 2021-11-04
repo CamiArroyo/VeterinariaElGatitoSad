@@ -43,7 +43,7 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int ActualizarCalendario(Calendario_Vacunacion cal)
         {
-            var sentenciaSql = $"UPDATE CALENDARIO_VAC SET fecha_inicio='{cal.fecha_inicio}', observaciones='{cal.observaciones}', estado='{cal.estado}' WHERE nro_calendario_vac={cal.nro_calendario_vac}";
+            var sentenciaSql = $"UPDATE CALENDARIO_VAC SET fecha_inicio='{cal.fecha_inicio}', observaciones='{cal.observaciones}' WHERE nro_calendario_vac={cal.nro_calendario_vac}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }

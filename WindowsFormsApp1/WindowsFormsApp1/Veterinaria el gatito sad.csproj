@@ -182,6 +182,24 @@
     <Compile Include="Interfaces\Detalle_Calendario_Vac\Consultar_Detalle_Calendario_Vac.Designer.cs">
       <DependentUpon>Consultar_Detalle_Calendario_Vac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Eliminar_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Eliminar_Detalle.Designer.cs">
+      <DependentUpon>Eliminar_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Modificar_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Modificar_Detalle.Designer.cs">
+      <DependentUpon>Modificar_Detalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Registrar_Detalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Detalle_Calendario_Vac\Registrar_Detalle.Designer.cs">
+      <DependentUpon>Registrar_Detalle.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -676,6 +694,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Detalle_Calendario_Vac\Consultar_Detalle_Calendario_Vac.resx">
       <DependentUpon>Consultar_Detalle_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Detalle_Calendario_Vac\Eliminar_Detalle.resx">
+      <DependentUpon>Eliminar_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Detalle_Calendario_Vac\Modificar_Detalle.resx">
+      <DependentUpon>Modificar_Detalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Detalle_Calendario_Vac\Registrar_Detalle.resx">
+      <DependentUpon>Registrar_Detalle.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Diagnosticos\Consultar_Diagnosticos.resx">
       <DependentUpon>Consultar_Diagnosticos.cs</DependentUpon>

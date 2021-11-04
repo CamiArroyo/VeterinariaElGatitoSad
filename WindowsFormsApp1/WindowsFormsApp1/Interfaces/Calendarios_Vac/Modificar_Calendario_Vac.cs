@@ -29,7 +29,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             Lbl_Nro_Historia_Clinica_Selecc.Text = calendario.nro_historia_clinica;
             Dtp_Fecha_Inicio.Value = calendario.fecha_inicio;
             Txt_Observaciones.Text = calendario.observaciones;
-            Txt_Estado.Text = calendario.estado;
         }
 
         private void Frm_Modificar_Calendario_Vac_Load(object sender, EventArgs e)
@@ -69,7 +68,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             //no tomo el nro_historia_clinica porque es el mismo
             calendario.fecha_inicio = Dtp_Fecha_Inicio.Value;
             calendario.observaciones = Txt_Observaciones.Text;
-            calendario.estado = Txt_Estado.Text; //se puede cambiar el estado
         }
 
         private void ActualizarCalendario()

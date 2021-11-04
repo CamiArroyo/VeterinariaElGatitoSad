@@ -50,5 +50,26 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             menu.Show();
             this.Dispose();
         }
+
+        private void Btn_Agregar_Vacunacion_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Registrar_Detalle();
+            menu.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Modificar_Vacunacion_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Modificar_Detalle();
+            menu.Show();
+            this.Dispose();
+        }
+
+        private void Btn_Eliminar_Vacunacion_Click(object sender, EventArgs e)
+        {
+            Form menu = new Frm_Eliminar_Detalle();
+            menu.Show();
+            this.Dispose();
+        }
     }
 }
