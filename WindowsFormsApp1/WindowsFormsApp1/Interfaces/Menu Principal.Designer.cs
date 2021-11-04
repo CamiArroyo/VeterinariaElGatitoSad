@@ -37,22 +37,10 @@ namespace WindowsFormsApp1
             this.Btn_Sintomatologia = new System.Windows.Forms.Button();
             this.Btn_Animales = new System.Windows.Forms.Button();
             this.Btn_Reportes = new System.Windows.Forms.Button();
-            this.Btn_Listados = new System.Windows.Forms.Button();
             this.Btn_Menu_Mascotas = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.especieDeMascotaMasAtendidaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.usoDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dueñosYMascotasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.laboratoriosYMedicamentosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.diagnosticosYConsultasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Bienvenido
@@ -68,7 +56,7 @@ namespace WindowsFormsApp1
             // BtnMP_Salir
             // 
             this.BtnMP_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.BtnMP_Salir.Location = new System.Drawing.Point(549, 447);
+            this.BtnMP_Salir.Location = new System.Drawing.Point(548, 402);
             this.BtnMP_Salir.Name = "BtnMP_Salir";
             this.BtnMP_Salir.Size = new System.Drawing.Size(146, 56);
             this.BtnMP_Salir.TabIndex = 2;
@@ -79,7 +67,7 @@ namespace WindowsFormsApp1
             // Btn_Insumos
             // 
             this.Btn_Insumos.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Insumos.Location = new System.Drawing.Point(12, 135);
+            this.Btn_Insumos.Location = new System.Drawing.Point(12, 114);
             this.Btn_Insumos.Name = "Btn_Insumos";
             this.Btn_Insumos.Size = new System.Drawing.Size(146, 56);
             this.Btn_Insumos.TabIndex = 6;
@@ -90,7 +78,7 @@ namespace WindowsFormsApp1
             // Btn_Empleados
             // 
             this.Btn_Empleados.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Empleados.Location = new System.Drawing.Point(12, 55);
+            this.Btn_Empleados.Location = new System.Drawing.Point(12, 27);
             this.Btn_Empleados.Name = "Btn_Empleados";
             this.Btn_Empleados.Size = new System.Drawing.Size(146, 56);
             this.Btn_Empleados.TabIndex = 7;
@@ -101,7 +89,7 @@ namespace WindowsFormsApp1
             // Btn_Sintomatologia
             // 
             this.Btn_Sintomatologia.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Sintomatologia.Location = new System.Drawing.Point(12, 211);
+            this.Btn_Sintomatologia.Location = new System.Drawing.Point(12, 198);
             this.Btn_Sintomatologia.Name = "Btn_Sintomatologia";
             this.Btn_Sintomatologia.Size = new System.Drawing.Size(146, 56);
             this.Btn_Sintomatologia.TabIndex = 8;
@@ -112,7 +100,7 @@ namespace WindowsFormsApp1
             // Btn_Animales
             // 
             this.Btn_Animales.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Animales.Location = new System.Drawing.Point(12, 289);
+            this.Btn_Animales.Location = new System.Drawing.Point(12, 283);
             this.Btn_Animales.Name = "Btn_Animales";
             this.Btn_Animales.Size = new System.Drawing.Size(146, 56);
             this.Btn_Animales.TabIndex = 9;
@@ -123,22 +111,13 @@ namespace WindowsFormsApp1
             // Btn_Reportes
             // 
             this.Btn_Reportes.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Reportes.Location = new System.Drawing.Point(12, 371);
+            this.Btn_Reportes.Location = new System.Drawing.Point(12, 369);
             this.Btn_Reportes.Name = "Btn_Reportes";
             this.Btn_Reportes.Size = new System.Drawing.Size(146, 56);
             this.Btn_Reportes.TabIndex = 10;
-            this.Btn_Reportes.Text = "Reportes";
+            this.Btn_Reportes.Text = "Reportes y listados";
             this.Btn_Reportes.UseVisualStyleBackColor = false;
-            // 
-            // Btn_Listados
-            // 
-            this.Btn_Listados.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Listados.Location = new System.Drawing.Point(12, 447);
-            this.Btn_Listados.Name = "Btn_Listados";
-            this.Btn_Listados.Size = new System.Drawing.Size(146, 56);
-            this.Btn_Listados.TabIndex = 11;
-            this.Btn_Listados.Text = "Listados";
-            this.Btn_Listados.UseVisualStyleBackColor = false;
+            this.Btn_Reportes.Click += new System.EventHandler(this.Btn_Reportes_Click);
             // 
             // Btn_Menu_Mascotas
             // 
@@ -165,100 +144,21 @@ namespace WindowsFormsApp1
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 27);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 505);
+            this.pictureBox1.Size = new System.Drawing.Size(174, 534);
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
-            // reportesToolStripMenuItem
-            // 
-            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem,
-            this.especieDeMascotaMasAtendidaToolStripMenuItem,
-            this.usoDeMedicamentosToolStripMenuItem,
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem});
-            this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
-            this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
-            this.reportesToolStripMenuItem.Text = "Reportes";
-            // 
-            // cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem
-            // 
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem.Name = "cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem";
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem.Text = "Atencion de mascotas por empleado";
-            this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem_Click);
-            // 
-            // especieDeMascotaMasAtendidaToolStripMenuItem
-            // 
-            this.especieDeMascotaMasAtendidaToolStripMenuItem.Name = "especieDeMascotaMasAtendidaToolStripMenuItem";
-            this.especieDeMascotaMasAtendidaToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.especieDeMascotaMasAtendidaToolStripMenuItem.Text = "Especies de mascotas mas atendidas";
-            this.especieDeMascotaMasAtendidaToolStripMenuItem.Click += new System.EventHandler(this.especieDeMascotaMasAtendidaToolStripMenuItem_Click);
-            // 
-            // usoDeMedicamentosToolStripMenuItem
-            // 
-            this.usoDeMedicamentosToolStripMenuItem.Name = "usoDeMedicamentosToolStripMenuItem";
-            this.usoDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.usoDeMedicamentosToolStripMenuItem.Text = "Frecuencia de uso de medicamentos";
-            // 
-            // cantidadEnStockDeMedicamentosToolStripMenuItem
-            // 
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Name = "cantidadEnStockDeMedicamentosToolStripMenuItem";
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(268, 22);
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Text = "Cantidad en stock de medicamentos";
-            this.cantidadEnStockDeMedicamentosToolStripMenuItem.Click += new System.EventHandler(this.cantidadEnStockDeMedicamentosToolStripMenuItem_Click);
-            // 
-            // listadosToolStripMenuItem
-            // 
-            this.listadosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dueñosYMascotasToolStripMenuItem,
-            this.laboratoriosYMedicamentosToolStripMenuItem,
-            this.diagnosticosYConsultasToolStripMenuItem});
-            this.listadosToolStripMenuItem.Name = "listadosToolStripMenuItem";
-            this.listadosToolStripMenuItem.Size = new System.Drawing.Size(62, 20);
-            this.listadosToolStripMenuItem.Text = "Listados";
-            // 
-            // dueñosYMascotasToolStripMenuItem
-            // 
-            this.dueñosYMascotasToolStripMenuItem.Name = "dueñosYMascotasToolStripMenuItem";
-            this.dueñosYMascotasToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.dueñosYMascotasToolStripMenuItem.Text = "Dueños y mascotas";
-            // 
-            // laboratoriosYMedicamentosToolStripMenuItem
-            // 
-            this.laboratoriosYMedicamentosToolStripMenuItem.Name = "laboratoriosYMedicamentosToolStripMenuItem";
-            this.laboratoriosYMedicamentosToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.laboratoriosYMedicamentosToolStripMenuItem.Text = "Laboratorios y medicamentos";
-            // 
-            // diagnosticosYConsultasToolStripMenuItem
-            // 
-            this.diagnosticosYConsultasToolStripMenuItem.Name = "diagnosticosYConsultasToolStripMenuItem";
-            this.diagnosticosYConsultasToolStripMenuItem.Size = new System.Drawing.Size(231, 22);
-            this.diagnosticosYConsultasToolStripMenuItem.Text = "Diagnosticos y consultas";
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.AutoSize = false;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.reportesToolStripMenuItem,
-            this.listadosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(716, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
             // 
             // FrmMenu_Principal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(716, 531);
+            this.ClientSize = new System.Drawing.Size(716, 475);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.Btn_Menu_Mascotas);
-            this.Controls.Add(this.Btn_Listados);
             this.Controls.Add(this.Btn_Reportes);
             this.Controls.Add(this.Btn_Animales);
             this.Controls.Add(this.Btn_Sintomatologia);
@@ -267,16 +167,12 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.BtnMP_Salir);
             this.Controls.Add(this.Bienvenido);
-            this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "FrmMenu_Principal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu principal";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -290,19 +186,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button Btn_Sintomatologia;
         private System.Windows.Forms.Button Btn_Animales;
         private System.Windows.Forms.Button Btn_Reportes;
-        private System.Windows.Forms.Button Btn_Listados;
         private System.Windows.Forms.Button Btn_Menu_Mascotas;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem cantidadDeMascotasAtendidasPorEmpleadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem especieDeMascotaMasAtendidaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem usoDeMedicamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem listadosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dueñosYMascotasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem laboratoriosYMedicamentosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem diagnosticosYConsultasToolStripMenuItem;
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem cantidadEnStockDeMedicamentosToolStripMenuItem;
     }
 }
 

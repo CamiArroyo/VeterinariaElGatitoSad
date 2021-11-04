@@ -24,6 +24,8 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
     public partial class DSCantidadPorMedicamento : global::System.Data.DataSet {
         
+        private DTCantidadXVacunaDataTable tableDTCantidadXVacuna;
+        
         private DTCantidadXMedicamentoDataTable tableDTCantidadXMedicamento;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
@@ -54,6 +56,9 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
+                if ((ds.Tables["DTCantidadXVacuna"] != null)) {
+                    base.Tables.Add(new DTCantidadXVacunaDataTable(ds.Tables["DTCantidadXVacuna"]));
+                }
                 if ((ds.Tables["DTCantidadXMedicamento"] != null)) {
                     base.Tables.Add(new DTCantidadXMedicamentoDataTable(ds.Tables["DTCantidadXMedicamento"]));
                 }
@@ -73,6 +78,16 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
             base.Tables.CollectionChanged += schemaChangedHandler;
             this.Relations.CollectionChanged += schemaChangedHandler;
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        [global::System.ComponentModel.Browsable(false)]
+        [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
+        public DTCantidadXVacunaDataTable DTCantidadXVacuna {
+            get {
+                return this.tableDTCantidadXVacuna;
+            }
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -152,6 +167,9 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
+                if ((ds.Tables["DTCantidadXVacuna"] != null)) {
+                    base.Tables.Add(new DTCantidadXVacunaDataTable(ds.Tables["DTCantidadXVacuna"]));
+                }
                 if ((ds.Tables["DTCantidadXMedicamento"] != null)) {
                     base.Tables.Add(new DTCantidadXMedicamentoDataTable(ds.Tables["DTCantidadXMedicamento"]));
                 }
@@ -188,6 +206,12 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         internal void InitVars(bool initTable) {
+            this.tableDTCantidadXVacuna = ((DTCantidadXVacunaDataTable)(base.Tables["DTCantidadXVacuna"]));
+            if ((initTable == true)) {
+                if ((this.tableDTCantidadXVacuna != null)) {
+                    this.tableDTCantidadXVacuna.InitVars();
+                }
+            }
             this.tableDTCantidadXMedicamento = ((DTCantidadXMedicamentoDataTable)(base.Tables["DTCantidadXMedicamento"]));
             if ((initTable == true)) {
                 if ((this.tableDTCantidadXMedicamento != null)) {
@@ -204,8 +228,16 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             this.Namespace = "http://tempuri.org/DSCantidadPorMedicamento.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tableDTCantidadXVacuna = new DTCantidadXVacunaDataTable();
+            base.Tables.Add(this.tableDTCantidadXVacuna);
             this.tableDTCantidadXMedicamento = new DTCantidadXMedicamentoDataTable();
             base.Tables.Add(this.tableDTCantidadXMedicamento);
+        }
+        
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        private bool ShouldSerializeDTCantidadXVacuna() {
+            return false;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -270,7 +302,271 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public delegate void DTCantidadXVacunaRowChangeEventHandler(object sender, DTCantidadXVacunaRowChangeEvent e);
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         public delegate void DTCantidadXMedicamentoRowChangeEventHandler(object sender, DTCantidadXMedicamentoRowChangeEvent e);
+        
+        /// <summary>
+        ///Represents the strongly named DataTable class.
+        ///</summary>
+        [global::System.Serializable()]
+        [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
+        public partial class DTCantidadXVacunaDataTable : global::System.Data.TypedTableBase<DTCantidadXVacunaRow> {
+            
+            private global::System.Data.DataColumn columnCantidad;
+            
+            private global::System.Data.DataColumn columnVacuna;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaDataTable() {
+                this.TableName = "DTCantidadXVacuna";
+                this.BeginInit();
+                this.InitClass();
+                this.EndInit();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal DTCantidadXVacunaDataTable(global::System.Data.DataTable table) {
+                this.TableName = table.TableName;
+                if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
+                    this.CaseSensitive = table.CaseSensitive;
+                }
+                if ((table.Locale.ToString() != table.DataSet.Locale.ToString())) {
+                    this.Locale = table.Locale;
+                }
+                if ((table.Namespace != table.DataSet.Namespace)) {
+                    this.Namespace = table.Namespace;
+                }
+                this.Prefix = table.Prefix;
+                this.MinimumCapacity = table.MinimumCapacity;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected DTCantidadXVacunaDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+                    base(info, context) {
+                this.InitVars();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn CantidadColumn {
+                get {
+                    return this.columnCantidad;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataColumn VacunaColumn {
+                get {
+                    return this.columnVacuna;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            [global::System.ComponentModel.Browsable(false)]
+            public int Count {
+                get {
+                    return this.Rows.Count;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaRow this[int index] {
+                get {
+                    return ((DTCantidadXVacunaRow)(this.Rows[index]));
+                }
+            }
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DTCantidadXVacunaRowChangeEventHandler DTCantidadXVacunaRowChanging;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DTCantidadXVacunaRowChangeEventHandler DTCantidadXVacunaRowChanged;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DTCantidadXVacunaRowChangeEventHandler DTCantidadXVacunaRowDeleting;
+            
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public event DTCantidadXVacunaRowChangeEventHandler DTCantidadXVacunaRowDeleted;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void AddDTCantidadXVacunaRow(DTCantidadXVacunaRow row) {
+                this.Rows.Add(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaRow AddDTCantidadXVacunaRow(string Cantidad, string Vacuna) {
+                DTCantidadXVacunaRow rowDTCantidadXVacunaRow = ((DTCantidadXVacunaRow)(this.NewRow()));
+                object[] columnValuesArray = new object[] {
+                        Cantidad,
+                        Vacuna};
+                rowDTCantidadXVacunaRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowDTCantidadXVacunaRow);
+                return rowDTCantidadXVacunaRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public override global::System.Data.DataTable Clone() {
+                DTCantidadXVacunaDataTable cln = ((DTCantidadXVacunaDataTable)(base.Clone()));
+                cln.InitVars();
+                return cln;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataTable CreateInstance() {
+                return new DTCantidadXVacunaDataTable();
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal void InitVars() {
+                this.columnCantidad = base.Columns["Cantidad"];
+                this.columnVacuna = base.Columns["Vacuna"];
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            private void InitClass() {
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columnVacuna = new global::System.Data.DataColumn("Vacuna", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnVacuna);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaRow NewDTCantidadXVacunaRow() {
+                return ((DTCantidadXVacunaRow)(this.NewRow()));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
+                return new DTCantidadXVacunaRow(builder);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override global::System.Type GetRowType() {
+                return typeof(DTCantidadXVacunaRow);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanged(e);
+                if ((this.DTCantidadXVacunaRowChanged != null)) {
+                    this.DTCantidadXVacunaRowChanged(this, new DTCantidadXVacunaRowChangeEvent(((DTCantidadXVacunaRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowChanging(e);
+                if ((this.DTCantidadXVacunaRowChanging != null)) {
+                    this.DTCantidadXVacunaRowChanging(this, new DTCantidadXVacunaRowChangeEvent(((DTCantidadXVacunaRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleted(e);
+                if ((this.DTCantidadXVacunaRowDeleted != null)) {
+                    this.DTCantidadXVacunaRowDeleted(this, new DTCantidadXVacunaRowChangeEvent(((DTCantidadXVacunaRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
+                base.OnRowDeleting(e);
+                if ((this.DTCantidadXVacunaRowDeleting != null)) {
+                    this.DTCantidadXVacunaRowDeleting(this, new DTCantidadXVacunaRowChangeEvent(((DTCantidadXVacunaRow)(e.Row)), e.Action));
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void RemoveDTCantidadXVacunaRow(DTCantidadXVacunaRow row) {
+                this.Rows.Remove(row);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
+                global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
+                global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
+                DSCantidadPorMedicamento ds = new DSCantidadPorMedicamento();
+                global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
+                any1.Namespace = "http://www.w3.org/2001/XMLSchema";
+                any1.MinOccurs = new decimal(0);
+                any1.MaxOccurs = decimal.MaxValue;
+                any1.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any1);
+                global::System.Xml.Schema.XmlSchemaAny any2 = new global::System.Xml.Schema.XmlSchemaAny();
+                any2.Namespace = "urn:schemas-microsoft-com:xml-diffgram-v1";
+                any2.MinOccurs = new decimal(1);
+                any2.ProcessContents = global::System.Xml.Schema.XmlSchemaContentProcessing.Lax;
+                sequence.Items.Add(any2);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute1 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute1.Name = "namespace";
+                attribute1.FixedValue = ds.Namespace;
+                type.Attributes.Add(attribute1);
+                global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
+                attribute2.Name = "tableTypeName";
+                attribute2.FixedValue = "DTCantidadXVacunaDataTable";
+                type.Attributes.Add(attribute2);
+                type.Particle = sequence;
+                global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
+                if (xs.Contains(dsSchema.TargetNamespace)) {
+                    global::System.IO.MemoryStream s1 = new global::System.IO.MemoryStream();
+                    global::System.IO.MemoryStream s2 = new global::System.IO.MemoryStream();
+                    try {
+                        global::System.Xml.Schema.XmlSchema schema = null;
+                        dsSchema.Write(s1);
+                        for (global::System.Collections.IEnumerator schemas = xs.Schemas(dsSchema.TargetNamespace).GetEnumerator(); schemas.MoveNext(); ) {
+                            schema = ((global::System.Xml.Schema.XmlSchema)(schemas.Current));
+                            s2.SetLength(0);
+                            schema.Write(s2);
+                            if ((s1.Length == s2.Length)) {
+                                s1.Position = 0;
+                                s2.Position = 0;
+                                for (; ((s1.Position != s1.Length) 
+                                            && (s1.ReadByte() == s2.ReadByte())); ) {
+                                    ;
+                                }
+                                if ((s1.Position == s1.Length)) {
+                                    return type;
+                                }
+                            }
+                        }
+                    }
+                    finally {
+                        if ((s1 != null)) {
+                            s1.Close();
+                        }
+                        if ((s2 != null)) {
+                            s2.Close();
+                        }
+                    }
+                }
+                xs.Add(dsSchema);
+                return type;
+            }
+        }
         
         /// <summary>
         ///Represents the strongly named DataTable class.
@@ -279,9 +575,9 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
         public partial class DTCantidadXMedicamentoDataTable : global::System.Data.TypedTableBase<DTCantidadXMedicamentoRow> {
             
-            private global::System.Data.DataColumn columncantidad_en_stock;
+            private global::System.Data.DataColumn columnCantidad;
             
-            private global::System.Data.DataColumn columnnombre;
+            private global::System.Data.DataColumn columnMedicamento;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -318,17 +614,17 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn cantidad_en_stockColumn {
+            public global::System.Data.DataColumn CantidadColumn {
                 get {
-                    return this.columncantidad_en_stock;
+                    return this.columnCantidad;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn nombreColumn {
+            public global::System.Data.DataColumn MedicamentoColumn {
                 get {
-                    return this.columnnombre;
+                    return this.columnMedicamento;
                 }
             }
             
@@ -369,11 +665,11 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public DTCantidadXMedicamentoRow AddDTCantidadXMedicamentoRow(string cantidad_en_stock, string nombre) {
+            public DTCantidadXMedicamentoRow AddDTCantidadXMedicamentoRow(string Cantidad, string Medicamento) {
                 DTCantidadXMedicamentoRow rowDTCantidadXMedicamentoRow = ((DTCantidadXMedicamentoRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        cantidad_en_stock,
-                        nombre};
+                        Cantidad,
+                        Medicamento};
                 rowDTCantidadXMedicamentoRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowDTCantidadXMedicamentoRow);
                 return rowDTCantidadXMedicamentoRow;
@@ -396,17 +692,17 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
-                this.columncantidad_en_stock = base.Columns["cantidad_en_stock"];
-                this.columnnombre = base.Columns["nombre"];
+                this.columnCantidad = base.Columns["Cantidad"];
+                this.columnMedicamento = base.Columns["Medicamento"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             private void InitClass() {
-                this.columncantidad_en_stock = new global::System.Data.DataColumn("cantidad_en_stock", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columncantidad_en_stock);
-                this.columnnombre = new global::System.Data.DataColumn("nombre", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnnombre);
+                this.columnCantidad = new global::System.Data.DataColumn("Cantidad", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCantidad);
+                this.columnMedicamento = new global::System.Data.DataColumn("Medicamento", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMedicamento);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -536,6 +832,77 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
+        public partial class DTCantidadXVacunaRow : global::System.Data.DataRow {
+            
+            private DTCantidadXVacunaDataTable tableDTCantidadXVacuna;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            internal DTCantidadXVacunaRow(global::System.Data.DataRowBuilder rb) : 
+                    base(rb) {
+                this.tableDTCantidadXVacuna = ((DTCantidadXVacunaDataTable)(this.Table));
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Cantidad {
+                get {
+                    try {
+                        return ((string)(this[this.tableDTCantidadXVacuna.CantidadColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Cantidad\' in table \'DTCantidadXVacuna\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDTCantidadXVacuna.CantidadColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public string Vacuna {
+                get {
+                    try {
+                        return ((string)(this[this.tableDTCantidadXVacuna.VacunaColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Vacuna\' in table \'DTCantidadXVacuna\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableDTCantidadXVacuna.VacunaColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableDTCantidadXVacuna.CantidadColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetCantidadNull() {
+                this[this.tableDTCantidadXVacuna.CantidadColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public bool IsVacunaNull() {
+                return this.IsNull(this.tableDTCantidadXVacuna.VacunaColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public void SetVacunaNull() {
+                this[this.tableDTCantidadXVacuna.VacunaColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Represents strongly named DataRow class.
+        ///</summary>
         public partial class DTCantidadXMedicamentoRow : global::System.Data.DataRow {
             
             private DTCantidadXMedicamentoDataTable tableDTCantidadXMedicamento;
@@ -549,59 +916,92 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string cantidad_en_stock {
+            public string Cantidad {
                 get {
                     try {
-                        return ((string)(this[this.tableDTCantidadXMedicamento.cantidad_en_stockColumn]));
+                        return ((string)(this[this.tableDTCantidadXMedicamento.CantidadColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'cantidad_en_stock\' in table \'DTCantidadXMedicamento\' is DBN" +
-                                "ull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Cantidad\' in table \'DTCantidadXMedicamento\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTCantidadXMedicamento.cantidad_en_stockColumn] = value;
+                    this[this.tableDTCantidadXMedicamento.CantidadColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string nombre {
+            public string Medicamento {
                 get {
                     try {
-                        return ((string)(this[this.tableDTCantidadXMedicamento.nombreColumn]));
+                        return ((string)(this[this.tableDTCantidadXMedicamento.MedicamentoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'nombre\' in table \'DTCantidadXMedicamento\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Medicamento\' in table \'DTCantidadXMedicamento\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableDTCantidadXMedicamento.nombreColumn] = value;
+                    this[this.tableDTCantidadXMedicamento.MedicamentoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Iscantidad_en_stockNull() {
-                return this.IsNull(this.tableDTCantidadXMedicamento.cantidad_en_stockColumn);
+            public bool IsCantidadNull() {
+                return this.IsNull(this.tableDTCantidadXMedicamento.CantidadColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void Setcantidad_en_stockNull() {
-                this[this.tableDTCantidadXMedicamento.cantidad_en_stockColumn] = global::System.Convert.DBNull;
+            public void SetCantidadNull() {
+                this[this.tableDTCantidadXMedicamento.CantidadColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsnombreNull() {
-                return this.IsNull(this.tableDTCantidadXMedicamento.nombreColumn);
+            public bool IsMedicamentoNull() {
+                return this.IsNull(this.tableDTCantidadXMedicamento.MedicamentoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetnombreNull() {
-                this[this.tableDTCantidadXMedicamento.nombreColumn] = global::System.Convert.DBNull;
+            public void SetMedicamentoNull() {
+                this[this.tableDTCantidadXMedicamento.MedicamentoColumn] = global::System.Convert.DBNull;
+            }
+        }
+        
+        /// <summary>
+        ///Row event argument class
+        ///</summary>
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+        public class DTCantidadXVacunaRowChangeEvent : global::System.EventArgs {
+            
+            private DTCantidadXVacunaRow eventRow;
+            
+            private global::System.Data.DataRowAction eventAction;
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaRowChangeEvent(DTCantidadXVacunaRow row, global::System.Data.DataRowAction action) {
+                this.eventRow = row;
+                this.eventAction = action;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public DTCantidadXVacunaRow Row {
+                get {
+                    return this.eventRow;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
+            public global::System.Data.DataRowAction Action {
+                get {
+                    return this.eventAction;
+                }
             }
         }
         

@@ -12,11 +12,19 @@
   <xs:element name="DSCantidadPorMedicamento" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSCantidadPorMedicamento" msprop:Generator_UserDSName="DSCantidadPorMedicamento">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTCantidadXVacuna" msprop:Generator_TableClassName="DTCantidadXVacunaDataTable" msprop:Generator_TableVarName="tableDTCantidadXVacuna" msprop:Generator_TablePropName="DTCantidadXVacuna" msprop:Generator_RowDeletingName="DTCantidadXVacunaRowDeleting" msprop:Generator_RowChangingName="DTCantidadXVacunaRowChanging" msprop:Generator_RowEvHandlerName="DTCantidadXVacunaRowChangeEventHandler" msprop:Generator_RowDeletedName="DTCantidadXVacunaRowDeleted" msprop:Generator_UserTableName="DTCantidadXVacuna" msprop:Generator_RowChangedName="DTCantidadXVacunaRowChanged" msprop:Generator_RowEvArgName="DTCantidadXVacunaRowChangeEvent" msprop:Generator_RowClassName="DTCantidadXVacunaRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Vacuna" msprop:Generator_ColumnVarNameInTable="columnVacuna" msprop:Generator_ColumnPropNameInRow="Vacuna" msprop:Generator_ColumnPropNameInTable="VacunaColumn" msprop:Generator_UserColumnName="Vacuna" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
         <xs:element name="DTCantidadXMedicamento" msprop:Generator_TableClassName="DTCantidadXMedicamentoDataTable" msprop:Generator_TableVarName="tableDTCantidadXMedicamento" msprop:Generator_TablePropName="DTCantidadXMedicamento" msprop:Generator_RowDeletingName="DTCantidadXMedicamentoRowDeleting" msprop:Generator_RowChangingName="DTCantidadXMedicamentoRowChanging" msprop:Generator_RowEvHandlerName="DTCantidadXMedicamentoRowChangeEventHandler" msprop:Generator_RowDeletedName="DTCantidadXMedicamentoRowDeleted" msprop:Generator_UserTableName="DTCantidadXMedicamento" msprop:Generator_RowChangedName="DTCantidadXMedicamentoRowChanged" msprop:Generator_RowEvArgName="DTCantidadXMedicamentoRowChangeEvent" msprop:Generator_RowClassName="DTCantidadXMedicamentoRow">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="cantidad_en_stock" msprop:Generator_ColumnVarNameInTable="columncantidad_en_stock" msprop:Generator_ColumnPropNameInRow="cantidad_en_stock" msprop:Generator_ColumnPropNameInTable="cantidad_en_stockColumn" msprop:Generator_UserColumnName="cantidad_en_stock" type="xs:string" minOccurs="0" />
-              <xs:element name="nombre" msprop:Generator_ColumnVarNameInTable="columnnombre" msprop:Generator_ColumnPropNameInRow="nombre" msprop:Generator_ColumnPropNameInTable="nombreColumn" msprop:Generator_UserColumnName="nombre" type="xs:string" minOccurs="0" />
+              <xs:element name="Cantidad" msprop:Generator_ColumnVarNameInTable="columnCantidad" msprop:Generator_ColumnPropNameInRow="Cantidad" msprop:Generator_ColumnPropNameInTable="CantidadColumn" msprop:Generator_UserColumnName="Cantidad" type="xs:string" minOccurs="0" />
+              <xs:element name="Medicamento" msprop:Generator_ColumnVarNameInTable="columnMedicamento" msprop:Generator_ColumnPropNameInRow="Medicamento" msprop:Generator_ColumnPropNameInTable="MedicamentoColumn" msprop:Generator_UserColumnName="Medicamento" type="xs:string" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

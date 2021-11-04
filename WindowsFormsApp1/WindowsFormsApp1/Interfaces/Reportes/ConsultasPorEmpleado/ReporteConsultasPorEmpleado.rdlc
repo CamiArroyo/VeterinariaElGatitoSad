@@ -359,7 +359,7 @@
             </ChartLegends>
             <ChartTitles>
               <ChartTitle Name="Default">
-                <Caption>Cantidad de consultas atendidas por cada empleado</Caption>
+                <Caption>Cantidad de consultas por empleado</Caption>
                 <Style>
                   <BackgroundGradientType>None</BackgroundGradientType>
                   <FontSize>9pt</FontSize>
@@ -389,10 +389,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DTConsultasXEmpleado</DataSetName>
-            <Top>0.55245cm</Top>
-            <Left>4.73287cm</Left>
+            <Top>3.09245cm</Top>
+            <Left>3.03687cm</Left>
             <Height>5cm</Height>
-            <Width>8.98167cm</Width>
+            <Width>11.23391cm</Width>
             <Style>
               <Border>
                 <Color>LightGrey</Color>
@@ -417,10 +417,10 @@
               </Paragraph>
             </Paragraphs>
             <rd:DefaultName>ParamFechaHoy</rd:DefaultName>
-            <Top>0.55245cm</Top>
-            <Left>0.60537cm</Left>
+            <Top>0.42016cm</Top>
+            <Left>4.09787cm</Left>
             <Height>0.6cm</Height>
-            <Width>2.5cm</Width>
+            <Width>12.23604cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -432,11 +432,101 @@
               <PaddingBottom>2pt</PaddingBottom>
             </Style>
           </Textbox>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Fecha:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>0.42016cm</Top>
+            <Left>0.60537cm</Left>
+            <Height>0.6cm</Height>
+            <Width>1.38875cm</Width>
+            <ZIndex>2</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox5">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Objetivo del informe:</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox5</rd:DefaultName>
+            <Top>1.37266cm</Top>
+            <Left>0.60537cm</Left>
+            <Height>0.6cm</Height>
+            <Width>3.26729cm</Width>
+            <ZIndex>3</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="Textbox6">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Se muestra a continuación un gráfico con la cantidad de consultas a las mascotas atendidas por cada empleado.</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox6</rd:DefaultName>
+            <Top>1.37266cm</Top>
+            <Left>4.09787cm</Left>
+            <Height>1.02333cm</Height>
+            <Width>12.23604cm</Width>
+            <ZIndex>4</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
         </ReportItems>
-        <Height>2.50892in</Height>
+        <Height>3.42559in</Height>
         <Style />
       </Body>
-      <Width>6.5in</Width>
+      <Width>6.86459in</Width>
       <Page>
         <PageHeader>
           <Height>2.54cm</Height>
@@ -462,7 +552,7 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>0.86416cm</Top>
-              <Left>4.99416cm</Left>
+              <Left>6.31708cm</Left>
               <Height>0.81167cm</Height>
               <Width>6.52167cm</Width>
               <Style>
@@ -542,9 +632,9 @@
               </Paragraphs>
               <rd:DefaultName>Textbox1</rd:DefaultName>
               <Top>1.04938cm</Top>
-              <Left>13.46412cm</Left>
+              <Left>13.70224cm</Left>
               <Height>0.6cm</Height>
-              <Width>2.5cm</Width>
+              <Width>3.10854cm</Width>
               <ZIndex>1</ZIndex>
               <Style>
                 <Border>

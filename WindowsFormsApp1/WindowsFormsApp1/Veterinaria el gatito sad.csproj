@@ -278,6 +278,12 @@
     <Compile Include="Interfaces\Especies\Registrar_Especie.Designer.cs">
       <DependentUpon>Registrar_Especie.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\FrmReportesYListados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\FrmReportesYListados.Designer.cs">
+      <DependentUpon>FrmReportesYListados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Iniciar sesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -718,6 +724,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Especies\Registrar_Especie.resx">
       <DependentUpon>Registrar_Especie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\FrmReportesYListados.resx">
+      <DependentUpon>FrmReportesYListados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Iniciar sesion.resx">
       <DependentUpon>Iniciar sesion.cs</DependentUpon>

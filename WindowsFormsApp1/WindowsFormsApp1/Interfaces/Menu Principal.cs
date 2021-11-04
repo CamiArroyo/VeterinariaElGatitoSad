@@ -191,5 +191,12 @@ namespace WindowsFormsApp1
             var f = new FrmConsultasPorEspecie();
             f.ShowDialog();
         }
+
+        private void Btn_Reportes_Click(object sender, EventArgs e)
+        {
+            Form CDueño = new FrmReportesYListados();
+            CDueño.Show();
+            this.Dispose();
+        }
     }
 }

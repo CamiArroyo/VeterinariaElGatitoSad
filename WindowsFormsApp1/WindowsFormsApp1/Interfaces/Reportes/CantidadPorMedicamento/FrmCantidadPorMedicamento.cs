@@ -31,19 +31,27 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento
         private void CargarReporte()
         {
             //obtenemos los datos desde la BD
-            var datos = reporteRepo.ObtenerCantidadPorMedicamento();
+            var datosMedicamentos = reporteRepo.ObtenerCantidadPorMedicamento();
+            var datosVacunas = reporteRepo.ObtenerCantidadPorVacuna();
+
             //limpiamos los datos cargados en el Datasource
             this.RwCantidadPorMedicamento.LocalReport.DataSources.Clear();
+
             //asociamos los datos al Datasource que acabamos de limpiar
-            var ds = new ReportDataSource("DTCantidadXMedicamento", datos);
+            var dsMedicamentos = new ReportDataSource("DSCantidadXMedicamento", datosMedicamentos);
+            var dsVacunas = new ReportDataSource("DSCantidadXVacuna", datosVacunas);
+
             //asociamos el Datasource al reporte
-            this.RwCantidadPorMedicamento.LocalReport.DataSources.Add(ds);
+            this.RwCantidadPorMedicamento.LocalReport.DataSources.Add(dsMedicamentos);
+            this.RwCantidadPorMedicamento.LocalReport.DataSources.Add(dsVacunas);
+
             //agregamos al reporte el valor del parámetro
             var parametros = new List<ReportParameter>();
             var fechaHoy = DateTime.Now.ToString("dd/MM/yyyy hh:mm");
             var paramFechaHoy = new ReportParameter("ParamFechaHoy", fechaHoy);
             parametros.Add(paramFechaHoy);
             this.RwCantidadPorMedicamento.LocalReport.SetParameters(parametros);
+
             //cargamos el reporte
             this.RwCantidadPorMedicamento.RefreshReport();
         }
