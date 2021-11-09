@@ -4,6 +4,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp1.Entidades;
 
 namespace WindowsFormsApp1.RepositoriosBD
 {
@@ -18,7 +19,13 @@ namespace WindowsFormsApp1.RepositoriosBD
             data_med.Tables.Add(tablaResultado);
 
             return data_med;
+        }
 
+        public int RegistrarDetalle(Detalle_calendario_vac detalle)
+        {
+            var sentenciaSQL = $"INSERT INTO DETALLE_CALENDARIO_VAC(nro_historia_clinica, nro_calendario_vac, id_vacuna, fecha_prevista, fecha_real, dosis, id_empleado, estado) VALUES ({detalle.nro_historia_clinica}, {detalle.nro_calendario_vac}, {detalle.id_vacuna}, '{detalle.fecha_prevista}', '{detalle.fecha_real}', '{detalle.dosis}', {detalle.id_empleado}, 'Creado')";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSQL);
+            return filasAfectadas;
         }
     }
 }

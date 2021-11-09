@@ -29,6 +29,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.Lbl_Nro_Historia_Clinica = new System.Windows.Forms.Label();
             this.Lbl_Nro_Calendario_Vac = new System.Windows.Forms.Label();
             this.Lbl_Vacuna = new System.Windows.Forms.Label();
@@ -38,6 +39,8 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Dosis = new System.Windows.Forms.Label();
             this.Cmb_Vacuna = new System.Windows.Forms.ComboBox();
             this.Cmb_Empleado = new System.Windows.Forms.ComboBox();
+            this.eMPLEADOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.empleados = new WindowsFormsApp1.Empleados();
             this.Dtp_Fecha_Prevista = new System.Windows.Forms.DateTimePicker();
             this.Dtp_Fecha_Real = new System.Windows.Forms.DateTimePicker();
             this.Txt_Dosis = new System.Windows.Forms.TextBox();
@@ -46,6 +49,16 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Nro_HC = new System.Windows.Forms.Label();
             this.Lbl_Nro_CV = new System.Windows.Forms.Label();
             this.Lbl_Informacion = new System.Windows.Forms.Label();
+            this.eMPLEADOSTableAdapter = new WindowsFormsApp1.EmpleadosTableAdapters.EMPLEADOSTableAdapter();
+            this.dSVacunasConStock = new WindowsFormsApp1.DSVacunasConStock();
+            this.dSVacunasConStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vACUNASBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.vACUNASTableAdapter = new WindowsFormsApp1.DSVacunasConStockTableAdapters.VACUNASTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLEADOSBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleados)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStock)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStockBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Lbl_Nro_Historia_Clinica
@@ -114,19 +127,35 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // 
             // Cmb_Vacuna
             // 
+            this.Cmb_Vacuna.DataSource = this.vACUNASBindingSource;
+            this.Cmb_Vacuna.DisplayMember = "id_vacuna";
             this.Cmb_Vacuna.FormattingEnabled = true;
             this.Cmb_Vacuna.Location = new System.Drawing.Point(241, 141);
             this.Cmb_Vacuna.Name = "Cmb_Vacuna";
             this.Cmb_Vacuna.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Vacuna.TabIndex = 7;
+            this.Cmb_Vacuna.ValueMember = "id_vacuna";
             // 
             // Cmb_Empleado
             // 
+            this.Cmb_Empleado.DataSource = this.eMPLEADOSBindingSource;
+            this.Cmb_Empleado.DisplayMember = "id_empleado";
             this.Cmb_Empleado.FormattingEnabled = true;
             this.Cmb_Empleado.Location = new System.Drawing.Point(241, 289);
             this.Cmb_Empleado.Name = "Cmb_Empleado";
             this.Cmb_Empleado.Size = new System.Drawing.Size(200, 21);
             this.Cmb_Empleado.TabIndex = 8;
+            this.Cmb_Empleado.ValueMember = "id_empleado";
+            // 
+            // eMPLEADOSBindingSource
+            // 
+            this.eMPLEADOSBindingSource.DataMember = "EMPLEADOS";
+            this.eMPLEADOSBindingSource.DataSource = this.empleados;
+            // 
+            // empleados
+            // 
+            this.empleados.DataSetName = "Empleados";
+            this.empleados.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Dtp_Fecha_Prevista
             // 
@@ -169,6 +198,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Btn_Registrar.TabIndex = 57;
             this.Btn_Registrar.Text = "Registrar";
             this.Btn_Registrar.UseVisualStyleBackColor = false;
+            this.Btn_Registrar.Click += new System.EventHandler(this.Btn_Registrar_Click);
             // 
             // Lbl_Nro_HC
             // 
@@ -195,6 +225,29 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Informacion.TabIndex = 61;
             this.Lbl_Informacion.Text = "INFORMACIÓN: Solo se muestran las vacunas para las cuales hay stock disponible";
             // 
+            // eMPLEADOSTableAdapter
+            // 
+            this.eMPLEADOSTableAdapter.ClearBeforeFill = true;
+            // 
+            // dSVacunasConStock
+            // 
+            this.dSVacunasConStock.DataSetName = "DSVacunasConStock";
+            this.dSVacunasConStock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dSVacunasConStockBindingSource
+            // 
+            this.dSVacunasConStockBindingSource.DataSource = this.dSVacunasConStock;
+            this.dSVacunasConStockBindingSource.Position = 0;
+            // 
+            // vACUNASBindingSource
+            // 
+            this.vACUNASBindingSource.DataMember = "VACUNAS";
+            this.vACUNASBindingSource.DataSource = this.dSVacunasConStockBindingSource;
+            // 
+            // vACUNASTableAdapter
+            // 
+            this.vACUNASTableAdapter.ClearBeforeFill = true;
+            // 
             // Frm_Registrar_Detalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -220,6 +273,12 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Controls.Add(this.Lbl_Nro_Historia_Clinica);
             this.Name = "Frm_Registrar_Detalle";
             this.Text = "Registrar detalle";
+            this.Load += new System.EventHandler(this.Frm_Registrar_Detalle_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLEADOSBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.empleados)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStock)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStockBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -244,5 +303,12 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         private System.Windows.Forms.Label Lbl_Nro_HC;
         private System.Windows.Forms.Label Lbl_Nro_CV;
         private System.Windows.Forms.Label Lbl_Informacion;
+        private WindowsFormsApp1.Empleados empleados;
+        private System.Windows.Forms.BindingSource eMPLEADOSBindingSource;
+        private EmpleadosTableAdapters.EMPLEADOSTableAdapter eMPLEADOSTableAdapter;
+        private System.Windows.Forms.BindingSource dSVacunasConStockBindingSource;
+        private DSVacunasConStock dSVacunasConStock;
+        private System.Windows.Forms.BindingSource vACUNASBindingSource;
+        private DSVacunasConStockTableAdapters.VACUNASTableAdapter vACUNASTableAdapter;
     }
 }

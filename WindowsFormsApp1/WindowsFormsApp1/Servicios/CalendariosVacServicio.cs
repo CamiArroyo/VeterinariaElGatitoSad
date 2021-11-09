@@ -38,6 +38,12 @@ namespace WindowsFormsApp1.Servicios
             return calendario;
         }
 
+        public Calendario_Vacunacion GetCalendarioXNumCal(long nro)
+        {
+            var calendario = cal_repo.GetCalendarioXNumCal(nro);
+            return calendario;
+        }
+
         public void ActualizarCalendario(Calendario_Vacunacion cal)
         {
             var filasAfectadas = cal_repo.ActualizarCalendario(cal);
