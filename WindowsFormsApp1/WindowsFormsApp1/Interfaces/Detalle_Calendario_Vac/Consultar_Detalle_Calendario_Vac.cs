@@ -15,13 +15,16 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 {
     public partial class Frm_Consultar_Detalle_Calendario_Vac : Form
     {
+        public int nro_hist_clinica_select;
         public int nro_calendario_select;
+
         private DetalleCalendarioVacServicio consul_service;
 
-        public Frm_Consultar_Detalle_Calendario_Vac(int id)
+        public Frm_Consultar_Detalle_Calendario_Vac(int nro_hist_clinica, int nro_calendario)
         { //id es el nro de calendario
             consul_service = new DetalleCalendarioVacServicio();
-            nro_calendario_select = id;
+            nro_hist_clinica_select = nro_hist_clinica;
+            nro_calendario_select = nro_calendario;
             InitializeComponent();
         }
 
@@ -51,7 +54,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private void Btn_Agregar_Vacunacion_Click(object sender, EventArgs e)
         {
-            Form menu = new Frm_Registrar_Detalle(nro_calendario_select);
+            Form menu = new Frm_Registrar_Detalle(nro_hist_clinica_select, nro_calendario_select);
             menu.Show();
             this.Dispose();
         }

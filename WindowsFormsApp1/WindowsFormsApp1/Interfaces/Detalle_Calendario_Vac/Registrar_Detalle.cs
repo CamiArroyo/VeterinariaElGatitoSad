@@ -14,23 +14,19 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 {
     public partial class Frm_Registrar_Detalle : Form
     {
-        public int nro_calendario;
+        private int nro_calendario;
+        private int nro_hist_clinica;
 
         private Detalle_calendario_vac detalle;
         private DetalleCalendarioVacServicio detalle_servicio;
 
-        private Calendario_Vacunacion mi_calendario;
-        private CalendariosVacServicio calendario_servicio;
-
-        public Frm_Registrar_Detalle(int nro)
-        { //nro es el numero de calendario seleccionado
-
-            nro_calendario = nro;
+        public Frm_Registrar_Detalle(int ndc, int cal)
+        {
+            this.nro_hist_clinica = ndc;
+            this.nro_calendario = cal;
             detalle = new Detalle_calendario_vac();
             detalle_servicio = new DetalleCalendarioVacServicio();
 
-            calendario_servicio = new CalendariosVacServicio();
-            mi_calendario = calendario_servicio.GetCalendarioXNumCal(nro_calendario);
             InitializeComponent();
         }
 
@@ -41,8 +37,8 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private void CargarDatosDetalle()
         {
-            Lbl_Nro_HC.Text = mi_calendario.nro_historia_clinica;
-            Lbl_Nro_CV.Text = mi_calendario.nro_calendario_vac.ToString();
+            Lbl_Nro_HC.Text = nro_hist_clinica.ToString();
+            Lbl_Nro_CV.Text = nro_calendario.ToString();
         }
 
         private void Frm_Registrar_Detalle_Load(object sender, EventArgs e)
@@ -73,7 +69,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
                 MessageBox.Show("Ha ocurrido un problema, intente nuevamente", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Form menu = new Frm_Consultar_Detalle_Calendario_Vac(nro_calendario);
+            Form menu = new Frm_Consultar_Detalle_Calendario_Vac(nro_hist_clinica, nro_calendario);
             menu.Show();
             this.Dispose();
         }
@@ -88,7 +84,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private bool EsDetalleValido()
         {
-            var nro_historia_clinica = Convert.ToInt32(Lbl_Nro_HC);
+            var nro_historia_clinica = nro_hist_clinica;
             var nro_cal = nro_calendario;
             var id_vacuna = Convert.ToInt32(Cmb_Vacuna.Text);
             var dosis = Txt_Dosis.Text;
@@ -115,7 +111,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private void Btn_Cancelar_Click(object sender, EventArgs e)
         {
-            Form menu = new Frm_Consultar_Detalle_Calendario_Vac(nro_calendario);
+            Form menu = new Frm_Consultar_Detalle_Calendario_Vac(nro_hist_clinica, nro_calendario);
             menu.Show();
             this.Dispose();
         }

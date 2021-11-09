@@ -38,23 +38,42 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         //tomar un calendario
         public int tomarCalendario()
         {
-            var id_calendario = 0;
+            var nro_hist_clinica = 0;
             if (Dgv_Consultar_Calendario_Vac.SelectedRows.Count == 1)
             {
-                id_calendario = Convert.ToInt32(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["nDeHistoriaClínicaDataGridViewTextBoxColumn"].Value);
-                return id_calendario;
+                nro_hist_clinica = Convert.ToInt32(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["nDeHistoriaClínicaDataGridViewTextBoxColumn"].Value);
+
+                return nro_hist_clinica;
+
             }
             else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
-            return id_calendario;
+            return nro_hist_clinica;
+        }
+
+        public (int, int) tomarCalendario2()
+        {
+            var nro_hist_clinica = 0;
+            var nro_calendario = 0;
+            if (Dgv_Consultar_Calendario_Vac.SelectedRows.Count == 1)
+            {
+                nro_hist_clinica = Convert.ToInt32(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["nDeHistoriaClínicaDataGridViewTextBoxColumn"].Value);
+                nro_calendario = Convert.ToInt32(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["nDeCalendarioDataGridViewTextBoxColumn"].Value);
+
+                return (nro_hist_clinica, nro_calendario);
+
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return (nro_hist_clinica, nro_calendario);
         }
 
         //VER DETALLE DE UN CALENDARIO
         private void Btn_Ver_Detalle_Click(object sender, EventArgs e)
         {
-            var id_calendario = tomarCalendario();
-            if (id_calendario != 0)
+            var (nro_hist_clinica, nro_calendario) = tomarCalendario2();
+
+            if (nro_hist_clinica != 0)
             {
-                Form consultas = new Frm_Consultar_Detalle_Calendario_Vac(id_calendario);
+                Form consultas = new Frm_Consultar_Detalle_Calendario_Vac(nro_hist_clinica, nro_calendario);
                 consultas.Show();
                 this.Dispose();
             }

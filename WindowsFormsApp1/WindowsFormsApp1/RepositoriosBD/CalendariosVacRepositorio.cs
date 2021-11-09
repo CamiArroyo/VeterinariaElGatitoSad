@@ -29,18 +29,6 @@ namespace WindowsFormsApp1.RepositoriosBD
             return calendario;
         }
 
-        public Calendario_Vacunacion GetCalendarioXNumCal(long nro)
-        {
-            var calendario = new Calendario_Vacunacion();
-            var sentenciaSql = $"Select * from CALENDARIO_VAC where nro_calendario_vac={nro}";
-            var tablaResultado = DBHelper.GetDBHelper().ConsultaSQL(sentenciaSql);
-            foreach (DataRow fila in tablaResultado.Rows)
-            {
-                calendario = MapearCalendario(fila);
-            }
-            return calendario;
-        }
-
         private Calendario_Vacunacion MapearCalendario(DataRow fila)
         {
             var date1 = new DateTime(2022, 01, 01, 01, 01, 01);
