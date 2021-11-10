@@ -216,18 +216,18 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(26, 236);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 15;
-            this.label6.Text = "ID dueño:";
+            this.label6.Text = "Dueño:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(26, 118);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(44, 13);
+            this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 14;
-            this.label7.Text = "ID raza:";
+            this.label7.Text = "Raza:";
             // 
             // rAZASTableAdapter
             // 

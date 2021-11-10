@@ -35,6 +35,9 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
         private void Frm_Agregar_Consulta_Load(object sender, EventArgs e)
         {
+            this.Cb_Empleados.DisplayMember = "nombre";
+            this.Cb_Empleados.ValueMember = "id_empleado";
+
             // TODO: esta línea de código carga datos en la tabla 'empleados.EMPLEADOS' Puede moverla o quitarla según sea necesario.
             this.eMPLEADOSTableAdapter.EmpleadosActivos(this.empleados.EMPLEADOS);
 
@@ -73,7 +76,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         {
             var nro = nro_historia_clinica;
             var temperatura = Txt_Temperatura.Text;
-            var empleado = Convert.ToInt32(Cb_Empleados.Text);
+            var empleado = Convert.ToInt32(Cb_Empleados.SelectedValue);
             var fecha_ingreso = Convert.ToDateTime(Dtm_Fecha_Ingreso.Text);
             var fecha_egreso = Convert.ToDateTime(Dtm_Fecha_Egreso.Text);
             var observaciones = Txt_Observaciones.Text;

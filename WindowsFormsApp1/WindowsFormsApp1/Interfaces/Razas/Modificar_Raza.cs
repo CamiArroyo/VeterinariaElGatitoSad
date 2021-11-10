@@ -78,6 +78,9 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private void Frm_Modificar_Raza_Load(object sender, EventArgs e)
         {
+            this.Cmb_Especie.DisplayMember = "nombre";
+            this.Cmb_Especie.ValueMember = "id_especie";
+
             // TODO: This line of code loads data into the '_PAV_3K2_2021_12DataSet5.ESPECIES' table. You can move, or remove it, as needed.
             this.eSPECIESTableAdapter.Fill(this._PAV_3K2_2021_12DataSet5.ESPECIES);
 

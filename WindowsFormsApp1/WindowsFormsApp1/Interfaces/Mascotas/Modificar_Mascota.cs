@@ -28,6 +28,12 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
 
         private void Frm_Modificar_Mascota_Load(object sender, EventArgs e)
         {
+            this.Cmb_Id_Raza.DisplayMember = "nombre";
+            this.Cmb_Id_Raza.ValueMember = "id_raza";
+
+            this.Cmb_Id_Dueño.DisplayMember = "nombre";
+            this.Cmb_Id_Dueño.ValueMember = "id_dueño";
+
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12Dueños.DUEÑOS' Puede moverla o quitarla según sea necesario.
             this.dUEÑOSTableAdapter.Fill(this._PAV_3K2_2021_12Dueños.DUEÑOS);
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet4.RAZAS' Puede moverla o quitarla según sea necesario.
@@ -64,9 +70,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             mas.nombre = Txt_Nombre.Text;
             mas.fecha_nacimiento = Dtm_Fecha_Nacimiento.Value;
-            mas.id_raza = Cmb_Id_Raza.Text;
+            mas.id_raza = Convert.ToString(Cmb_Id_Raza.SelectedValue);
             mas.peso = Txt_Peso.Text;
-            mas.id_dueño = Cmb_Id_Dueño.Text;
+            mas.id_dueño = Convert.ToString(Cmb_Id_Dueño.SelectedValue);
             mas.altura = Txt_Altura.Text;
             mas.estado = Cmb_Estado.Text;
         }
@@ -86,8 +92,8 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             Txt_Nombre.Text = mas.nombre;
             Dtm_Fecha_Nacimiento.Value = mas.fecha_nacimiento;
-            Cmb_Id_Dueño.Text = mas.id_dueño;
-            Cmb_Id_Raza.Text = mas.id_raza;
+            Cmb_Id_Dueño.Text = Cmb_Id_Dueño.Text;
+            Cmb_Id_Raza.Text = Cmb_Id_Raza.Text;
             Txt_Peso.Text = mas.peso;
             Txt_Altura.Text = mas.altura;
             Cmb_Estado.Text = mas.estado;

@@ -24,6 +24,12 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
 
         private void Frm_Registrar_Mascota_Load(object sender, EventArgs e)
         {
+            this.Cmb_Id_Raza.DisplayMember = "nombre";
+            this.Cmb_Id_Raza.ValueMember = "id_raza";
+
+            this.Cmb_Id_Dueño.DisplayMember = "nombre";
+            this.Cmb_Id_Dueño.ValueMember = "id_dueño";
+
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet9.DUEÑOS' Puede moverla o quitarla según sea necesario.
             this.dUEÑOSTableAdapter.Fill(this._PAV_3K2_2021_12DataSet9.DUEÑOS);
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet8.RAZAS' Puede moverla o quitarla según sea necesario.
@@ -66,10 +72,10 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
         {
             var nombre = Txt_Nombre.Text;
             var fecha_nac = Dtm_Fecha_Nacimiento.Value;
-            var id_raza = Cmb_Id_Raza.Text;
+            var id_raza = Convert.ToString(Cmb_Id_Raza.SelectedValue);
             var peso = Txt_Peso.Text;
             var altura = Txt_Altura.Text;
-            var id_dueño = Cmb_Id_Dueño.Text;
+            var id_dueño = Convert.ToString(Cmb_Id_Dueño.SelectedValue);
             var estado = "Activo";
 
             var mas_ingresada = new Mascota(nombre, fecha_nac,id_raza,peso,altura,id_dueño,estado);

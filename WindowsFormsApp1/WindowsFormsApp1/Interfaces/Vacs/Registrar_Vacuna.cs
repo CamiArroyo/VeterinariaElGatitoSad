@@ -24,6 +24,10 @@ namespace WindowsFormsApp1.Interfaces.Vacs
 
         private void Frm_Registrar_Vacuna_Load(object sender, EventArgs e)
         {
+
+            this.Cb_id_lab.DisplayMember = "razon_social";
+            this.Cb_id_lab.ValueMember = "id_laboratorio";
+
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet.LABORATORIOS' Puede moverla o quitarla según sea necesario.
             this.lABORATORIOSTableAdapter.Fill(this._PAV_3K2_2021_12DataSet.LABORATORIOS);
 
@@ -79,7 +83,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
         {
             var nombre = Txt_Nombre.Text;
             var descripcion = Txt_Descripcion.Text;
-            var id_lab = Cb_id_lab.Text;
+            var id_lab = Convert.ToString(Cb_id_lab.SelectedValue);
             var canti = "0";
 
             var vacs = new Vacuna(descripcion, nombre, id_lab, canti);

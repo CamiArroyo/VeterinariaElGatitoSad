@@ -19,8 +19,8 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
 
         private void Frm_Consultar_Medicamentos_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'medicamentos.MEDICAMENTOS' Puede moverla o quitarla según sea necesario.
-            this.mEDICAMENTOSTableAdapter.Fill(this.medicamentos.MEDICAMENTOS);
+            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSetConsultarMedicamentos.MEDICAMENTOS' Puede moverla o quitarla según sea necesario.
+            this.mEDICAMENTOSTableAdapter1.Fill(this._PAV_3K2_2021_12DataSetConsultarMedicamentos.MEDICAMENTOS);
 
         }
 

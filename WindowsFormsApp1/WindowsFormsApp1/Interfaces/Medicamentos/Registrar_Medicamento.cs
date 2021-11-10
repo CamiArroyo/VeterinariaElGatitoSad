@@ -32,6 +32,9 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
 
         private void Frm_Registrar_Medicamento_Load(object sender, EventArgs e)
         {
+            this.Cb_Id_lab.DisplayMember = "razon_social";
+            this.Cb_Id_lab.ValueMember = "id_laboratorio";
+
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet.LABORATORIOS' Puede moverla o quitarla según sea necesario.
             this.lABORATORIOSTableAdapter.Fill(this._PAV_3K2_2021_12DataSet.LABORATORIOS);
 
@@ -74,7 +77,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         {
             var nombre = Txt_Nombre.Text;
             var descripcion = Txt_Descripcion.Text;
-            var id_lab = Cb_Id_lab.Text;
+            var id_lab = Convert.ToString(Cb_Id_lab.SelectedValue);
             var fecha = Date_Fecha_ultimaCompra.Value;
             var cantidadStock = Txt_Cantidad_Stock.Text;
 

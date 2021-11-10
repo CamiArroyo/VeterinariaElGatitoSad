@@ -26,6 +26,10 @@ namespace WindowsFormsApp1.Interfaces.Vacs
 
         private void Frm_Modificar_Vacuna_Load(object sender, EventArgs e)
         {
+
+            this.Cb_Id_Laboratorio.DisplayMember = "razon_social";
+            this.Cb_Id_Laboratorio.ValueMember = "id_laboratorio";
+
             // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSet.LABORATORIOS' Puede moverla o quitarla según sea necesario.
             this.lABORATORIOSTableAdapter.Fill(this._PAV_3K2_2021_12DataSet.LABORATORIOS);
             CargarDatos();
@@ -60,7 +64,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
         {
             vac.nombre = Txt_Nombre.Text;
             vac.descripcion = Txt_Descripcion.Text;
-            vac.id_laboratorio = Cb_Id_Laboratorio.Text;
+            vac.id_laboratorio = Convert.ToString(Cb_Id_Laboratorio.SelectedValue);
         }
 
         private void ActualizarVacuna()
@@ -78,7 +82,7 @@ namespace WindowsFormsApp1.Interfaces.Vacs
         {
             Txt_Nombre.Text = vac.nombre;
             Txt_Descripcion.Text = vac.descripcion;
-            Cb_Id_Laboratorio.Text = vac.id_laboratorio;
+            Cb_Id_Laboratorio.Text = Cb_Id_Laboratorio.Text;
         }
 
         private void BtnM_Cancelar_Click(object sender, EventArgs e)

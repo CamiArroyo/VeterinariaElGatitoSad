@@ -127,6 +127,7 @@ namespace WindowsFormsApp1.Interfaces
             this.Controls.Add(this.BtnReporte_ConsXEmp);
             this.Controls.Add(this.pictureBox1);
             this.Name = "FrmReportesYListados";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Reportes y listados";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

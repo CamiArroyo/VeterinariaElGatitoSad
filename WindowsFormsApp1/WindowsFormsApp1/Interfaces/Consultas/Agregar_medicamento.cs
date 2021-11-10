@@ -30,8 +30,12 @@ namespace WindowsFormsApp1.Interfaces.Consultas
 
         private void Frm_Agregar_Medicamento_Load(object sender, EventArgs e)
         {
-            // TODO: esta línea de código carga datos en la tabla 'medicamentos.MEDICAMENTOS' Puede moverla o quitarla según sea necesario.
-            this.mEDICAMENTOSTableAdapter.Fill(this.medicamentos.MEDICAMENTOS);
+
+            this.Cb_Agregar_medicamento.DisplayMember = "nombre";
+            this.Cb_Agregar_medicamento.ValueMember = "id_medicamento";
+
+            // TODO: esta línea de código carga datos en la tabla '_PAV_3K2_2021_12DataSetAgregarMedicamentos.MEDICAMENTOS' Puede moverla o quitarla según sea necesario.
+            this.mEDICAMENTOSTableAdapter1.Fill(this._PAV_3K2_2021_12DataSetAgregarMedicamentos.MEDICAMENTOS);
 
         }
 
@@ -73,7 +77,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         {
             var id_mascota = nro_historia_clinica;
             var nro_consulta = id_consulta;
-            var medicamento = Convert.ToInt32(Cb_Agregar_medicamento.Text);
+            var medicamento = Convert.ToInt32(Cb_Agregar_medicamento.SelectedValue);
             var dosis = Txt_Dosis.Text;
             var periodicidad = Txt_Periodicidad.Text;
             var MedicamentoIngresado = new MedicamentoXConsulta(id_mascota, nro_consulta, medicamento, dosis, periodicidad);
@@ -92,5 +96,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Dispose();
         }
 
+        private void Cb_Agregar_medicamento_SelectedIndexChanged(object sender, EventArgs e)
+        {
+        }
     }
 }

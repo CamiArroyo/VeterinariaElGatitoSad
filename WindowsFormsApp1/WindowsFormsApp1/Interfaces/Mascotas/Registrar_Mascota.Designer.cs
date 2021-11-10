@@ -79,9 +79,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(27, 114);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(44, 13);
+            this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "ID raza:";
+            this.label3.Text = "Raza:";
             // 
             // label4
             // 
@@ -106,9 +106,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(27, 237);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(54, 13);
+            this.label6.Size = new System.Drawing.Size(42, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "ID dueño:";
+            this.label6.Text = "Dueño:";
             // 
             // Txt_Nombre
             // 

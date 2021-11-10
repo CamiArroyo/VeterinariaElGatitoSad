@@ -54,7 +54,7 @@ namespace WindowsFormsApp1.Interfaces.Razas
         private bool SeRegistraRaza()
         {
             var nombre = Txt_Nombre.Text;
-            var id_especie = Cmb_Especie.Text;
+            var id_especie = Convert.ToString(Cmb_Especie.SelectedValue);
             var descr = Txt_Descripcion.Text;
             var peso = Txt_Peso_Medio.Text;
             var altura = Txt_Altura_Media.Text;
@@ -84,6 +84,10 @@ namespace WindowsFormsApp1.Interfaces.Razas
 
         private void Frm_Registrar_Raza_Load(object sender, EventArgs e)
         {
+
+            this.Cmb_Especie.DisplayMember = "nombre";
+            this.Cmb_Especie.ValueMember = "id_especie";
+
             // TODO: This line of code loads data into the '_PAV_3K2_2021_12DataSet1.ESPECIES' table. You can move, or remove it, as needed.
             this.eSPECIESTableAdapter.Fill(this._PAV_3K2_2021_12DataSet1.ESPECIES);
 

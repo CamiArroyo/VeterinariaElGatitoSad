@@ -126,9 +126,9 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.LBL_Empleado.AutoSize = true;
             this.LBL_Empleado.Location = new System.Drawing.Point(27, 257);
             this.LBL_Empleado.Name = "LBL_Empleado";
-            this.LBL_Empleado.Size = new System.Drawing.Size(193, 13);
+            this.LBL_Empleado.Size = new System.Drawing.Size(163, 13);
             this.LBL_Empleado.TabIndex = 67;
-            this.LBL_Empleado.Text = "ID del empleado que colocó la vacuna:";
+            this.LBL_Empleado.Text = "Empleado que colocó la vacuna:";
             // 
             // Lbl_Fecha_Prevista
             // 

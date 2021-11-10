@@ -31,21 +31,26 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         {
             this.components = new System.ComponentModel.Container();
             this.Dgv_Consultar_Medicamentos = new System.Windows.Forms.DataGridView();
-            this.mEDICAMENTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.medicamentos = new WindowsFormsApp1.Medicamentos();
-            this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1.MedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
-            this.Btn_Salir = new System.Windows.Forms.Button();
-            this.Btn_Registrar_Sintoma = new System.Windows.Forms.Button();
-            this.Frm_Eliminar_Medicamento = new System.Windows.Forms.Button();
             this.idmedicamentoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.descripcionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.idlaboratorioDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.fechaultimacompraDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadenstockDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mEDICAMENTOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medicamentos = new WindowsFormsApp1.Medicamentos();
+            this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1.MedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
+            this.Btn_Salir = new System.Windows.Forms.Button();
+            this.Btn_Registrar_Sintoma = new System.Windows.Forms.Button();
+            this.Frm_Eliminar_Medicamento = new System.Windows.Forms.Button();
+            this._PAV_3K2_2021_12DataSetConsultarMedicamentos = new WindowsFormsApp1._PAV_3K2_2021_12DataSetConsultarMedicamentos();
+            this.mEDICAMENTOSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.mEDICAMENTOSTableAdapter1 = new WindowsFormsApp1._PAV_3K2_2021_12DataSetConsultarMedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Medicamentos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSetConsultarMedicamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // Dgv_Consultar_Medicamentos
@@ -61,7 +66,7 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.idlaboratorioDataGridViewTextBoxColumn,
             this.fechaultimacompraDataGridViewTextBoxColumn,
             this.cantidadenstockDataGridViewTextBoxColumn});
-            this.Dgv_Consultar_Medicamentos.DataSource = this.mEDICAMENTOSBindingSource;
+            this.Dgv_Consultar_Medicamentos.DataSource = this.mEDICAMENTOSBindingSource1;
             this.Dgv_Consultar_Medicamentos.GridColor = System.Drawing.SystemColors.ActiveBorder;
             this.Dgv_Consultar_Medicamentos.Location = new System.Drawing.Point(26, 28);
             this.Dgv_Consultar_Medicamentos.Name = "Dgv_Consultar_Medicamentos";
@@ -70,6 +75,48 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Dgv_Consultar_Medicamentos.Size = new System.Drawing.Size(450, 300);
             this.Dgv_Consultar_Medicamentos.TabIndex = 0;
             this.Dgv_Consultar_Medicamentos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            // 
+            // idmedicamentoDataGridViewTextBoxColumn
+            // 
+            this.idmedicamentoDataGridViewTextBoxColumn.DataPropertyName = "id_medicamento";
+            this.idmedicamentoDataGridViewTextBoxColumn.HeaderText = "ID medicamento";
+            this.idmedicamentoDataGridViewTextBoxColumn.Name = "idmedicamentoDataGridViewTextBoxColumn";
+            this.idmedicamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nombreDataGridViewTextBoxColumn
+            // 
+            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
+            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
+            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
+            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // descripcionDataGridViewTextBoxColumn
+            // 
+            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
+            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
+            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
+            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // idlaboratorioDataGridViewTextBoxColumn
+            // 
+            this.idlaboratorioDataGridViewTextBoxColumn.DataPropertyName = "id_laboratorio";
+            this.idlaboratorioDataGridViewTextBoxColumn.HeaderText = "ID laboratorio";
+            this.idlaboratorioDataGridViewTextBoxColumn.Name = "idlaboratorioDataGridViewTextBoxColumn";
+            this.idlaboratorioDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // fechaultimacompraDataGridViewTextBoxColumn
+            // 
+            this.fechaultimacompraDataGridViewTextBoxColumn.DataPropertyName = "fecha_ultima_compra";
+            this.fechaultimacompraDataGridViewTextBoxColumn.HeaderText = "Fecha de última compra";
+            this.fechaultimacompraDataGridViewTextBoxColumn.Name = "fechaultimacompraDataGridViewTextBoxColumn";
+            this.fechaultimacompraDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cantidadenstockDataGridViewTextBoxColumn
+            // 
+            this.cantidadenstockDataGridViewTextBoxColumn.DataPropertyName = "cantidad_en_stock";
+            this.cantidadenstockDataGridViewTextBoxColumn.HeaderText = "Cantidad en stock";
+            this.cantidadenstockDataGridViewTextBoxColumn.Name = "cantidadenstockDataGridViewTextBoxColumn";
+            this.cantidadenstockDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // mEDICAMENTOSBindingSource
             // 
@@ -118,47 +165,19 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             this.Frm_Eliminar_Medicamento.UseVisualStyleBackColor = false;
             this.Frm_Eliminar_Medicamento.Click += new System.EventHandler(this.Frm_Eliminar_Medicamento_Click);
             // 
-            // idmedicamentoDataGridViewTextBoxColumn
+            // _PAV_3K2_2021_12DataSetConsultarMedicamentos
             // 
-            this.idmedicamentoDataGridViewTextBoxColumn.DataPropertyName = "id_medicamento";
-            this.idmedicamentoDataGridViewTextBoxColumn.HeaderText = "ID medicamento";
-            this.idmedicamentoDataGridViewTextBoxColumn.Name = "idmedicamentoDataGridViewTextBoxColumn";
-            this.idmedicamentoDataGridViewTextBoxColumn.ReadOnly = true;
+            this._PAV_3K2_2021_12DataSetConsultarMedicamentos.DataSetName = "_PAV_3K2_2021_12DataSetConsultarMedicamentos";
+            this._PAV_3K2_2021_12DataSetConsultarMedicamentos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // nombreDataGridViewTextBoxColumn
+            // mEDICAMENTOSBindingSource1
             // 
-            this.nombreDataGridViewTextBoxColumn.DataPropertyName = "nombre";
-            this.nombreDataGridViewTextBoxColumn.HeaderText = "Nombre";
-            this.nombreDataGridViewTextBoxColumn.Name = "nombreDataGridViewTextBoxColumn";
-            this.nombreDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mEDICAMENTOSBindingSource1.DataMember = "MEDICAMENTOS";
+            this.mEDICAMENTOSBindingSource1.DataSource = this._PAV_3K2_2021_12DataSetConsultarMedicamentos;
             // 
-            // descripcionDataGridViewTextBoxColumn
+            // mEDICAMENTOSTableAdapter1
             // 
-            this.descripcionDataGridViewTextBoxColumn.DataPropertyName = "descripcion";
-            this.descripcionDataGridViewTextBoxColumn.HeaderText = "Descripción";
-            this.descripcionDataGridViewTextBoxColumn.Name = "descripcionDataGridViewTextBoxColumn";
-            this.descripcionDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // idlaboratorioDataGridViewTextBoxColumn
-            // 
-            this.idlaboratorioDataGridViewTextBoxColumn.DataPropertyName = "id_laboratorio";
-            this.idlaboratorioDataGridViewTextBoxColumn.HeaderText = "ID laboratorio";
-            this.idlaboratorioDataGridViewTextBoxColumn.Name = "idlaboratorioDataGridViewTextBoxColumn";
-            this.idlaboratorioDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // fechaultimacompraDataGridViewTextBoxColumn
-            // 
-            this.fechaultimacompraDataGridViewTextBoxColumn.DataPropertyName = "fecha_ultima_compra";
-            this.fechaultimacompraDataGridViewTextBoxColumn.HeaderText = "Fecha de última compra";
-            this.fechaultimacompraDataGridViewTextBoxColumn.Name = "fechaultimacompraDataGridViewTextBoxColumn";
-            this.fechaultimacompraDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cantidadenstockDataGridViewTextBoxColumn
-            // 
-            this.cantidadenstockDataGridViewTextBoxColumn.DataPropertyName = "cantidad_en_stock";
-            this.cantidadenstockDataGridViewTextBoxColumn.HeaderText = "Cantidad en stock";
-            this.cantidadenstockDataGridViewTextBoxColumn.Name = "cantidadenstockDataGridViewTextBoxColumn";
-            this.cantidadenstockDataGridViewTextBoxColumn.ReadOnly = true;
+            this.mEDICAMENTOSTableAdapter1.ClearBeforeFill = true;
             // 
             // Frm_Consultar_Medicamentos
             // 
@@ -177,6 +196,8 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Medicamentos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSetConsultarMedicamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,5 +217,8 @@ namespace WindowsFormsApp1.Interfaces.Medicamentos
         private System.Windows.Forms.DataGridViewTextBoxColumn idlaboratorioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaultimacompraDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn cantidadenstockDataGridViewTextBoxColumn;
+        private _PAV_3K2_2021_12DataSetConsultarMedicamentos _PAV_3K2_2021_12DataSetConsultarMedicamentos;
+        private System.Windows.Forms.BindingSource mEDICAMENTOSBindingSource1;
+        private _PAV_3K2_2021_12DataSetConsultarMedicamentosTableAdapters.MEDICAMENTOSTableAdapter mEDICAMENTOSTableAdapter1;
     }
 }

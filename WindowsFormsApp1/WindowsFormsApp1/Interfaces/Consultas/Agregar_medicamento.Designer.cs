@@ -33,18 +33,23 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Btn_Agregar_Medicamento = new System.Windows.Forms.Button();
             this.Btn_Salir = new System.Windows.Forms.Button();
             this.Cb_Agregar_medicamento = new System.Windows.Forms.ComboBox();
+            this.mEDICAMENTOSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.medicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.medicamentos = new WindowsFormsApp1.Medicamentos();
             this.Txt_Dosis = new System.Windows.Forms.TextBox();
             this.Txt_Periodicidad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.medicamentos = new WindowsFormsApp1.Medicamentos();
-            this.medicamentosBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.mEDICAMENTOSBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.mEDICAMENTOSTableAdapter = new WindowsFormsApp1.MedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
+            this._PAV_3K2_2021_12DataSetAgregarMedicamentos = new WindowsFormsApp1._PAV_3K2_2021_12DataSetAgregarMedicamentos();
+            this.mEDICAMENTOSBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.mEDICAMENTOSTableAdapter1 = new WindowsFormsApp1._PAV_3K2_2021_12DataSetAgregarMedicamentosTableAdapters.MEDICAMENTOSTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSetAgregarMedicamentos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // Btn_Agregar_Medicamento
@@ -72,7 +77,7 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             // Cb_Agregar_medicamento
             // 
             this.Cb_Agregar_medicamento.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.mEDICAMENTOSBindingSource1, "id_medicamento", true));
-            this.Cb_Agregar_medicamento.DataSource = this.mEDICAMENTOSBindingSource1;
+            this.Cb_Agregar_medicamento.DataSource = this.mEDICAMENTOSBindingSource2;
             this.Cb_Agregar_medicamento.DisplayMember = "id_medicamento";
             this.Cb_Agregar_medicamento.FormattingEnabled = true;
             this.Cb_Agregar_medicamento.Location = new System.Drawing.Point(196, 12);
@@ -80,6 +85,22 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.Cb_Agregar_medicamento.Size = new System.Drawing.Size(211, 21);
             this.Cb_Agregar_medicamento.TabIndex = 2;
             this.Cb_Agregar_medicamento.ValueMember = "id_medicamento";
+            this.Cb_Agregar_medicamento.SelectedIndexChanged += new System.EventHandler(this.Cb_Agregar_medicamento_SelectedIndexChanged);
+            // 
+            // mEDICAMENTOSBindingSource1
+            // 
+            this.mEDICAMENTOSBindingSource1.DataMember = "MEDICAMENTOS";
+            this.mEDICAMENTOSBindingSource1.DataSource = this.medicamentosBindingSource;
+            // 
+            // medicamentosBindingSource
+            // 
+            this.medicamentosBindingSource.DataSource = this.medicamentos;
+            this.medicamentosBindingSource.Position = 0;
+            // 
+            // medicamentos
+            // 
+            this.medicamentos.DataSetName = "Medicamentos";
+            this.medicamentos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // Txt_Dosis
             // 
@@ -123,24 +144,23 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.label3.TabIndex = 7;
             this.label3.Text = "Periodicidad";
             // 
-            // medicamentos
-            // 
-            this.medicamentos.DataSetName = "Medicamentos";
-            this.medicamentos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // medicamentosBindingSource
-            // 
-            this.medicamentosBindingSource.DataSource = this.medicamentos;
-            this.medicamentosBindingSource.Position = 0;
-            // 
-            // mEDICAMENTOSBindingSource1
-            // 
-            this.mEDICAMENTOSBindingSource1.DataMember = "MEDICAMENTOS";
-            this.mEDICAMENTOSBindingSource1.DataSource = this.medicamentosBindingSource;
-            // 
             // mEDICAMENTOSTableAdapter
             // 
             this.mEDICAMENTOSTableAdapter.ClearBeforeFill = true;
+            // 
+            // _PAV_3K2_2021_12DataSetAgregarMedicamentos
+            // 
+            this._PAV_3K2_2021_12DataSetAgregarMedicamentos.DataSetName = "_PAV_3K2_2021_12DataSetAgregarMedicamentos";
+            this._PAV_3K2_2021_12DataSetAgregarMedicamentos.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // mEDICAMENTOSBindingSource2
+            // 
+            this.mEDICAMENTOSBindingSource2.DataMember = "MEDICAMENTOS";
+            this.mEDICAMENTOSBindingSource2.DataSource = this._PAV_3K2_2021_12DataSetAgregarMedicamentos;
+            // 
+            // mEDICAMENTOSTableAdapter1
+            // 
+            this.mEDICAMENTOSTableAdapter1.ClearBeforeFill = true;
             // 
             // Frm_Agregar_Medicamento
             // 
@@ -160,9 +180,11 @@ namespace WindowsFormsApp1.Interfaces.Consultas
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Medicamentos";
             this.Load += new System.EventHandler(this.Frm_Agregar_Medicamento_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.medicamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSetAgregarMedicamentos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mEDICAMENTOSBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -182,5 +204,8 @@ namespace WindowsFormsApp1.Interfaces.Consultas
         private WindowsFormsApp1.Medicamentos medicamentos;
         private System.Windows.Forms.BindingSource mEDICAMENTOSBindingSource1;
         private MedicamentosTableAdapters.MEDICAMENTOSTableAdapter mEDICAMENTOSTableAdapter;
+        private _PAV_3K2_2021_12DataSetAgregarMedicamentos _PAV_3K2_2021_12DataSetAgregarMedicamentos;
+        private System.Windows.Forms.BindingSource mEDICAMENTOSBindingSource2;
+        private _PAV_3K2_2021_12DataSetAgregarMedicamentosTableAdapters.MEDICAMENTOSTableAdapter mEDICAMENTOSTableAdapter1;
     }
 }

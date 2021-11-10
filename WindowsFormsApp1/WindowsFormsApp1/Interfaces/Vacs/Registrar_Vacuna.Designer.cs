@@ -69,9 +69,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.Lbl_Id_Lab.AutoSize = true;
             this.Lbl_Id_Lab.Location = new System.Drawing.Point(335, 50);
             this.Lbl_Id_Lab.Name = "Lbl_Id_Lab";
-            this.Lbl_Id_Lab.Size = new System.Drawing.Size(73, 13);
+            this.Lbl_Id_Lab.Size = new System.Drawing.Size(63, 13);
             this.Lbl_Id_Lab.TabIndex = 2;
-            this.Lbl_Id_Lab.Text = "ID laboratorio:";
+            this.Lbl_Id_Lab.Text = "Laboratorio:";
             // 
             // Btn_Confirmar
             // 

@@ -120,9 +120,9 @@ namespace WindowsFormsApp1.Interfaces.Vacs
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(348, 51);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(73, 13);
+            this.label2.Size = new System.Drawing.Size(63, 13);
             this.label2.TabIndex = 58;
-            this.label2.Text = "ID laboratorio:";
+            this.label2.Text = "Laboratorio:";
             // 
             // lABORATORIOSTableAdapter
             // 
