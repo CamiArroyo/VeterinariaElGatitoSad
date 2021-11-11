@@ -98,6 +98,7 @@
     </Compile>
     <Compile Include="Entidades\Calendario_Vacunacion.cs" />
     <Compile Include="Entidades\Consulta.cs" />
+    <Compile Include="Entidades\ConsXEmpFiltros.cs" />
     <Compile Include="Entidades\Detalle_calendario_vac.cs" />
     <Compile Include="Entidades\Diagnostico.cs" />
     <Compile Include="Entidades\DiagnosticoXConsulta.cs" />
