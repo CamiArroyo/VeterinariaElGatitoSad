@@ -174,7 +174,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Eliminar_Calendario.Name = "Btn_Eliminar_Calendario";
             this.Btn_Eliminar_Calendario.Size = new System.Drawing.Size(145, 40);
             this.Btn_Eliminar_Calendario.TabIndex = 10;
-            this.Btn_Eliminar_Calendario.Text = "Eliminar calendario";
+            this.Btn_Eliminar_Calendario.Text = "Definir calendario como \"Inactivo\"";
             this.Btn_Eliminar_Calendario.UseVisualStyleBackColor = false;
             this.Btn_Eliminar_Calendario.Click += new System.EventHandler(this.Btn_Eliminar_Calendario_Click);
             // 
@@ -207,7 +207,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Ver_Detalle.Name = "Btn_Ver_Detalle";
             this.Btn_Ver_Detalle.Size = new System.Drawing.Size(145, 40);
             this.Btn_Ver_Detalle.TabIndex = 8;
-            this.Btn_Ver_Detalle.Text = "Ver detalle";
+            this.Btn_Ver_Detalle.Text = "Ver vacunaciones del calendario";
             this.Btn_Ver_Detalle.UseVisualStyleBackColor = false;
             this.Btn_Ver_Detalle.Click += new System.EventHandler(this.Btn_Ver_Detalle_Click);
             // 

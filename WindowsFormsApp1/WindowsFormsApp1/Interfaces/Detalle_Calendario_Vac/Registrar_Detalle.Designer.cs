@@ -50,6 +50,8 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Informacion = new System.Windows.Forms.Label();
             this.eMPLEADOSTableAdapter = new WindowsFormsApp1.EmpleadosTableAdapters.EMPLEADOSTableAdapter();
             this.vACUNASTableAdapter = new WindowsFormsApp1.DSVacunasConStockTableAdapters.VACUNASTableAdapter();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStockBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStock)).BeginInit();
@@ -156,7 +158,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(256, 259);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(258, 301);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 58;
@@ -167,7 +169,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Registrar
             // 
             this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar.Location = new System.Drawing.Point(91, 259);
+            this.Btn_Registrar.Location = new System.Drawing.Point(93, 301);
             this.Btn_Registrar.Name = "Btn_Registrar";
             this.Btn_Registrar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Registrar.TabIndex = 57;
@@ -208,12 +210,32 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // 
             this.vACUNASTableAdapter.ClearBeforeFill = true;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(29, 256);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(391, 13);
+            this.label1.TabIndex = 62;
+            this.label1.Text = "INFORMACIÓN: En principio se registra como fecha real la misma que la prevista.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(109, 272);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(293, 13);
+            this.label2.TabIndex = 63;
+            this.label2.Text = "Cuando confirme la vacunación, podrá modificar dicho valor.";
+            // 
             // Frm_Registrar_Detalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(485, 321);
+            this.ClientSize = new System.Drawing.Size(485, 359);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Lbl_Informacion);
             this.Controls.Add(this.Lbl_Nro_CV);
             this.Controls.Add(this.Lbl_Nro_HC);
@@ -262,5 +284,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         private DSVacunasConStock dSVacunasConStock;
         private System.Windows.Forms.BindingSource vACUNASBindingSource;
         private DSVacunasConStockTableAdapters.VACUNASTableAdapter vACUNASTableAdapter;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
