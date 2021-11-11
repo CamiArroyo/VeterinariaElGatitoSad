@@ -31,6 +31,13 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         {
             this.components = new System.ComponentModel.Container();
             this.Dgv_Consultar_Detalle_Calendario_Vac = new System.Windows.Forms.DataGridView();
+            this.Nro_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Vacuna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Dosis_Vacuna = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha_Prevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Fecha_Real = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nombre_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Estado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dETALLECALENDARIOVACBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this._PAV_3K2_2021_12DataSet12 = new WindowsFormsApp1._PAV_3K2_2021_12DataSet12();
             this.dETALLE_CALENDARIO_VACTableAdapter = new WindowsFormsApp1._PAV_3K2_2021_12DataSet12TableAdapters.DETALLE_CALENDARIO_VACTableAdapter();
@@ -40,12 +47,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Btn_Modificar_Vacunacion = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Nro_Detalle = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Vacuna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Dosis_Vacuna = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha_Prevista = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha_Real = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nombre_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Detalle_Calendario_Vac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dETALLECALENDARIOVACBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this._PAV_3K2_2021_12DataSet12)).BeginInit();
@@ -64,90 +65,14 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Dosis_Vacuna,
             this.Fecha_Prevista,
             this.Fecha_Real,
-            this.Nombre_Empleado});
+            this.Nombre_Empleado,
+            this.Estado});
             this.Dgv_Consultar_Detalle_Calendario_Vac.Location = new System.Drawing.Point(49, 34);
             this.Dgv_Consultar_Detalle_Calendario_Vac.Name = "Dgv_Consultar_Detalle_Calendario_Vac";
             this.Dgv_Consultar_Detalle_Calendario_Vac.ReadOnly = true;
             this.Dgv_Consultar_Detalle_Calendario_Vac.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.Dgv_Consultar_Detalle_Calendario_Vac.Size = new System.Drawing.Size(645, 350);
             this.Dgv_Consultar_Detalle_Calendario_Vac.TabIndex = 14;
-            // 
-            // dETALLECALENDARIOVACBindingSource
-            // 
-            this.dETALLECALENDARIOVACBindingSource.DataMember = "DETALLE_CALENDARIO_VAC";
-            this.dETALLECALENDARIOVACBindingSource.DataSource = this._PAV_3K2_2021_12DataSet12;
-            // 
-            // _PAV_3K2_2021_12DataSet12
-            // 
-            this._PAV_3K2_2021_12DataSet12.DataSetName = "_PAV_3K2_2021_12DataSet12";
-            this._PAV_3K2_2021_12DataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // dETALLE_CALENDARIO_VACTableAdapter
-            // 
-            this.dETALLE_CALENDARIO_VACTableAdapter.ClearBeforeFill = true;
-            // 
-            // Btn_Salir
-            // 
-            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(767, 472);
-            this.Btn_Salir.Name = "Btn_Salir";
-            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Salir.TabIndex = 16;
-            this.Btn_Salir.Text = "Salir";
-            this.Btn_Salir.UseVisualStyleBackColor = false;
-            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
-            // 
-            // Btn_Agregar_Vacunacion
-            // 
-            this.Btn_Agregar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Agregar_Vacunacion.Location = new System.Drawing.Point(767, 34);
-            this.Btn_Agregar_Vacunacion.Name = "Btn_Agregar_Vacunacion";
-            this.Btn_Agregar_Vacunacion.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Agregar_Vacunacion.TabIndex = 17;
-            this.Btn_Agregar_Vacunacion.Text = "Agregar vacunación";
-            this.Btn_Agregar_Vacunacion.UseVisualStyleBackColor = false;
-            this.Btn_Agregar_Vacunacion.Click += new System.EventHandler(this.Btn_Agregar_Vacunacion_Click);
-            // 
-            // Btn_Eliminar_Vacunacion
-            // 
-            this.Btn_Eliminar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar_Vacunacion.Location = new System.Drawing.Point(767, 145);
-            this.Btn_Eliminar_Vacunacion.Name = "Btn_Eliminar_Vacunacion";
-            this.Btn_Eliminar_Vacunacion.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Eliminar_Vacunacion.TabIndex = 18;
-            this.Btn_Eliminar_Vacunacion.Text = "Eliminar vacunación";
-            this.Btn_Eliminar_Vacunacion.UseVisualStyleBackColor = false;
-            this.Btn_Eliminar_Vacunacion.Click += new System.EventHandler(this.Btn_Eliminar_Vacunacion_Click);
-            // 
-            // Btn_Modificar_Vacunacion
-            // 
-            this.Btn_Modificar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Modificar_Vacunacion.Location = new System.Drawing.Point(767, 90);
-            this.Btn_Modificar_Vacunacion.Name = "Btn_Modificar_Vacunacion";
-            this.Btn_Modificar_Vacunacion.Size = new System.Drawing.Size(145, 40);
-            this.Btn_Modificar_Vacunacion.TabIndex = 19;
-            this.Btn_Modificar_Vacunacion.Text = "Modificar vacunación";
-            this.Btn_Modificar_Vacunacion.UseVisualStyleBackColor = false;
-            this.Btn_Modificar_Vacunacion.Click += new System.EventHandler(this.Btn_Modificar_Vacunacion_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Pets_Multicolor;
-            this.pictureBox2.Location = new System.Drawing.Point(-41, 397);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(788, 133);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 15;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(753, -3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(174, 556);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // Nro_Detalle
             // 
@@ -184,6 +109,89 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Nombre_Empleado.HeaderText = "Nombre del empleado";
             this.Nombre_Empleado.Name = "Nombre_Empleado";
             this.Nombre_Empleado.ReadOnly = true;
+            // 
+            // Estado
+            // 
+            this.Estado.HeaderText = "Estado";
+            this.Estado.Name = "Estado";
+            this.Estado.ReadOnly = true;
+            // 
+            // dETALLECALENDARIOVACBindingSource
+            // 
+            this.dETALLECALENDARIOVACBindingSource.DataMember = "DETALLE_CALENDARIO_VAC";
+            this.dETALLECALENDARIOVACBindingSource.DataSource = this._PAV_3K2_2021_12DataSet12;
+            // 
+            // _PAV_3K2_2021_12DataSet12
+            // 
+            this._PAV_3K2_2021_12DataSet12.DataSetName = "_PAV_3K2_2021_12DataSet12";
+            this._PAV_3K2_2021_12DataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dETALLE_CALENDARIO_VACTableAdapter
+            // 
+            this.dETALLE_CALENDARIO_VACTableAdapter.ClearBeforeFill = true;
+            // 
+            // Btn_Salir
+            // 
+            this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Salir.Location = new System.Drawing.Point(767, 472);
+            this.Btn_Salir.Name = "Btn_Salir";
+            this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Salir.TabIndex = 16;
+            this.Btn_Salir.Text = "Salir";
+            this.Btn_Salir.UseVisualStyleBackColor = false;
+            this.Btn_Salir.Click += new System.EventHandler(this.Btn_Salir_Click);
+            // 
+            // Btn_Agregar_Vacunacion
+            // 
+            this.Btn_Agregar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Agregar_Vacunacion.Location = new System.Drawing.Point(767, 34);
+            this.Btn_Agregar_Vacunacion.Name = "Btn_Agregar_Vacunacion";
+            this.Btn_Agregar_Vacunacion.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Agregar_Vacunacion.TabIndex = 17;
+            this.Btn_Agregar_Vacunacion.Text = "Registrar vacunación pendiente";
+            this.Btn_Agregar_Vacunacion.UseVisualStyleBackColor = false;
+            this.Btn_Agregar_Vacunacion.Click += new System.EventHandler(this.Btn_Agregar_Vacunacion_Click);
+            // 
+            // Btn_Eliminar_Vacunacion
+            // 
+            this.Btn_Eliminar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Eliminar_Vacunacion.Location = new System.Drawing.Point(767, 258);
+            this.Btn_Eliminar_Vacunacion.Name = "Btn_Eliminar_Vacunacion";
+            this.Btn_Eliminar_Vacunacion.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Eliminar_Vacunacion.TabIndex = 18;
+            this.Btn_Eliminar_Vacunacion.Text = "Eliminar vacunación pendiente";
+            this.Btn_Eliminar_Vacunacion.UseVisualStyleBackColor = false;
+            this.Btn_Eliminar_Vacunacion.Click += new System.EventHandler(this.Btn_Eliminar_Vacunacion_Click);
+            // 
+            // Btn_Modificar_Vacunacion
+            // 
+            this.Btn_Modificar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Modificar_Vacunacion.Location = new System.Drawing.Point(767, 92);
+            this.Btn_Modificar_Vacunacion.Name = "Btn_Modificar_Vacunacion";
+            this.Btn_Modificar_Vacunacion.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Modificar_Vacunacion.TabIndex = 19;
+            this.Btn_Modificar_Vacunacion.Text = "Registrar vacunación confirmada";
+            this.Btn_Modificar_Vacunacion.UseVisualStyleBackColor = false;
+            this.Btn_Modificar_Vacunacion.Click += new System.EventHandler(this.Btn_Modificar_Vacunacion_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Pets_Multicolor;
+            this.pictureBox2.Location = new System.Drawing.Point(-41, 397);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(788, 133);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 15;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
+            this.pictureBox1.Location = new System.Drawing.Point(753, -3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(174, 556);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
             // 
             // Frm_Consultar_Detalle_Calendario_Vac
             // 
@@ -229,5 +237,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Prevista;
         private System.Windows.Forms.DataGridViewTextBoxColumn Fecha_Real;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nombre_Empleado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Estado;
     }
 }

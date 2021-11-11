@@ -33,19 +33,15 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Nro_Historia_Clinica = new System.Windows.Forms.Label();
             this.Lbl_Nro_Calendario_Vac = new System.Windows.Forms.Label();
             this.Lbl_Vacuna = new System.Windows.Forms.Label();
-            this.Lbl_Fecha_Real = new System.Windows.Forms.Label();
             this.Lbl_Fecha_Prevista = new System.Windows.Forms.Label();
-            this.LBL_Empleado = new System.Windows.Forms.Label();
             this.Lbl_Dosis = new System.Windows.Forms.Label();
             this.Cmb_Vacuna = new System.Windows.Forms.ComboBox();
             this.vACUNASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSVacunasConStockBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSVacunasConStock = new WindowsFormsApp1.DSVacunasConStock();
-            this.Cmb_Empleado = new System.Windows.Forms.ComboBox();
             this.eMPLEADOSBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.empleados = new WindowsFormsApp1.Empleados();
             this.Dtp_Fecha_Prevista = new System.Windows.Forms.DateTimePicker();
-            this.Dtp_Fecha_Real = new System.Windows.Forms.DateTimePicker();
             this.Txt_Dosis = new System.Windows.Forms.TextBox();
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Registrar = new System.Windows.Forms.Button();
@@ -88,15 +84,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Vacuna.TabIndex = 2;
             this.Lbl_Vacuna.Text = "Vacuna:";
             // 
-            // Lbl_Fecha_Real
-            // 
-            this.Lbl_Fecha_Real.AutoSize = true;
-            this.Lbl_Fecha_Real.Location = new System.Drawing.Point(28, 253);
-            this.Lbl_Fecha_Real.Name = "Lbl_Fecha_Real";
-            this.Lbl_Fecha_Real.Size = new System.Drawing.Size(60, 13);
-            this.Lbl_Fecha_Real.TabIndex = 3;
-            this.Lbl_Fecha_Real.Text = "Fecha real:";
-            // 
             // Lbl_Fecha_Prevista
             // 
             this.Lbl_Fecha_Prevista.AutoSize = true;
@@ -105,15 +92,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Lbl_Fecha_Prevista.Size = new System.Drawing.Size(80, 13);
             this.Lbl_Fecha_Prevista.TabIndex = 4;
             this.Lbl_Fecha_Prevista.Text = "Fecha prevista:";
-            // 
-            // LBL_Empleado
-            // 
-            this.LBL_Empleado.AutoSize = true;
-            this.LBL_Empleado.Location = new System.Drawing.Point(28, 292);
-            this.LBL_Empleado.Name = "LBL_Empleado";
-            this.LBL_Empleado.Size = new System.Drawing.Size(163, 13);
-            this.LBL_Empleado.TabIndex = 5;
-            this.LBL_Empleado.Text = "Empleado que colocó la vacuna:";
             // 
             // Lbl_Dosis
             // 
@@ -151,17 +129,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.dSVacunasConStock.DataSetName = "DSVacunasConStock";
             this.dSVacunasConStock.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Cmb_Empleado
-            // 
-            this.Cmb_Empleado.DataSource = this.eMPLEADOSBindingSource;
-            this.Cmb_Empleado.DisplayMember = "id_empleado";
-            this.Cmb_Empleado.FormattingEnabled = true;
-            this.Cmb_Empleado.Location = new System.Drawing.Point(241, 289);
-            this.Cmb_Empleado.Name = "Cmb_Empleado";
-            this.Cmb_Empleado.Size = new System.Drawing.Size(200, 21);
-            this.Cmb_Empleado.TabIndex = 8;
-            this.Cmb_Empleado.ValueMember = "id_empleado";
-            // 
             // eMPLEADOSBindingSource
             // 
             this.eMPLEADOSBindingSource.DataMember = "EMPLEADOS";
@@ -179,13 +146,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Dtp_Fecha_Prevista.Size = new System.Drawing.Size(200, 20);
             this.Dtp_Fecha_Prevista.TabIndex = 9;
             // 
-            // Dtp_Fecha_Real
-            // 
-            this.Dtp_Fecha_Real.Location = new System.Drawing.Point(241, 253);
-            this.Dtp_Fecha_Real.Name = "Dtp_Fecha_Real";
-            this.Dtp_Fecha_Real.Size = new System.Drawing.Size(200, 20);
-            this.Dtp_Fecha_Real.TabIndex = 10;
-            // 
             // Txt_Dosis
             // 
             this.Txt_Dosis.Location = new System.Drawing.Point(241, 178);
@@ -196,7 +156,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Cancelar
             // 
             this.Btn_Cancelar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Cancelar.Location = new System.Drawing.Point(261, 337);
+            this.Btn_Cancelar.Location = new System.Drawing.Point(256, 259);
             this.Btn_Cancelar.Name = "Btn_Cancelar";
             this.Btn_Cancelar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Cancelar.TabIndex = 58;
@@ -207,7 +167,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Registrar
             // 
             this.Btn_Registrar.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Registrar.Location = new System.Drawing.Point(96, 337);
+            this.Btn_Registrar.Location = new System.Drawing.Point(91, 259);
             this.Btn_Registrar.Name = "Btn_Registrar";
             this.Btn_Registrar.Size = new System.Drawing.Size(125, 40);
             this.Btn_Registrar.TabIndex = 57;
@@ -253,26 +213,22 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(485, 400);
+            this.ClientSize = new System.Drawing.Size(485, 321);
             this.Controls.Add(this.Lbl_Informacion);
             this.Controls.Add(this.Lbl_Nro_CV);
             this.Controls.Add(this.Lbl_Nro_HC);
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Registrar);
             this.Controls.Add(this.Txt_Dosis);
-            this.Controls.Add(this.Dtp_Fecha_Real);
             this.Controls.Add(this.Dtp_Fecha_Prevista);
-            this.Controls.Add(this.Cmb_Empleado);
             this.Controls.Add(this.Cmb_Vacuna);
             this.Controls.Add(this.Lbl_Dosis);
-            this.Controls.Add(this.LBL_Empleado);
             this.Controls.Add(this.Lbl_Fecha_Prevista);
-            this.Controls.Add(this.Lbl_Fecha_Real);
             this.Controls.Add(this.Lbl_Vacuna);
             this.Controls.Add(this.Lbl_Nro_Calendario_Vac);
             this.Controls.Add(this.Lbl_Nro_Historia_Clinica);
             this.Name = "Frm_Registrar_Detalle";
-            this.Text = "Registrar detalle";
+            this.Text = "Registrar vacunación pendiente";
             this.Load += new System.EventHandler(this.Frm_Registrar_Detalle_Load);
             ((System.ComponentModel.ISupportInitialize)(this.vACUNASBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dSVacunasConStockBindingSource)).EndInit();
@@ -289,14 +245,10 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         private System.Windows.Forms.Label Lbl_Nro_Historia_Clinica;
         private System.Windows.Forms.Label Lbl_Nro_Calendario_Vac;
         private System.Windows.Forms.Label Lbl_Vacuna;
-        private System.Windows.Forms.Label Lbl_Fecha_Real;
         private System.Windows.Forms.Label Lbl_Fecha_Prevista;
-        private System.Windows.Forms.Label LBL_Empleado;
         private System.Windows.Forms.Label Lbl_Dosis;
         private System.Windows.Forms.ComboBox Cmb_Vacuna;
-        private System.Windows.Forms.ComboBox Cmb_Empleado;
         private System.Windows.Forms.DateTimePicker Dtp_Fecha_Prevista;
-        private System.Windows.Forms.DateTimePicker Dtp_Fecha_Real;
         private System.Windows.Forms.TextBox Txt_Dosis;
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.Button Btn_Registrar;

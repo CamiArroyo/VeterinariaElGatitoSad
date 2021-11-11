@@ -31,6 +31,16 @@ namespace WindowsFormsApp1.Entidades
             estado = est;
         }
 
+        public Detalle_calendario_vac(int nro_hist, int nro_cal, int id_vac, DateTime fecha_pre, string dosi, string est)
+        {
+            nro_historia_clinica = nro_hist;
+            nro_calendario_vac = nro_cal;
+            id_vacuna = id_vac;
+            fecha_prevista = fecha_pre;
+            dosis = dosi;
+            estado = est;
+        }
+
         public Detalle_calendario_vac()
         {
 

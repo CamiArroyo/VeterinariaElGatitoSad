@@ -47,9 +47,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Cmb_Vacuna.DisplayMember = "nombre";
             this.Cmb_Vacuna.ValueMember = "id_vacuna";
 
-            this.Cmb_Empleado.DisplayMember = "nombre";
-            this.Cmb_Empleado.ValueMember = "id_empleado";
-
 
             // TODO: This line of code loads data into the 'dSVacunasConStock.VACUNAS' table. You can move, or remove it, as needed.
             this.vACUNASTableAdapter.Fill(this.dSVacunasConStock.VACUNAS);
@@ -97,11 +94,9 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             var id_vacuna = Convert.ToInt32(Cmb_Vacuna.SelectedValue);
             var dosis = Txt_Dosis.Text;
             var fecha_prev = Convert.ToDateTime(Dtp_Fecha_Prevista.Text);
-            var fecha_real = Convert.ToDateTime(Dtp_Fecha_Real.Text);
-            var id_empleado = Convert.ToInt32(Cmb_Empleado.SelectedValue);
             var estado = "Creado";
 
-            var det = new Detalle_calendario_vac(nro_historia_clinica, nro_cal, id_vacuna, fecha_prev, fecha_real, dosis, id_empleado, estado);
+            var det = new Detalle_calendario_vac(nro_historia_clinica, nro_cal, id_vacuna, fecha_prev, dosis, estado);
             detalle = det;
             return true;
         }

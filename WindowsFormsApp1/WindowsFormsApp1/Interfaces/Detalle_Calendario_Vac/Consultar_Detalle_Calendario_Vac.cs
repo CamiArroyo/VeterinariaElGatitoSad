@@ -41,7 +41,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             Dgv_Consultar_Detalle_Calendario_Vac.Rows.Clear();
             foreach (DataRow row in ds.Tables[0].Rows)
             {
-                Dgv_Consultar_Detalle_Calendario_Vac.Rows.Add(row["Nro_Detalle"], row["Nombre_Vacuna"], row["Dosis_Vacuna"], row["Fecha_Prevista"], row["Fecha_Real"], row["Nombre_Empleado"]);
+                Dgv_Consultar_Detalle_Calendario_Vac.Rows.Add(row["Nro_Detalle"], row["Nombre_Vacuna"], row["Dosis_Vacuna"], row["Fecha_Prevista"], row["Fecha_Real"], row["Nombre_Empleado"], row["Estado"]);
             }
         }
 
@@ -59,11 +59,32 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Dispose();
         }
 
+        //TOMO UN DETALLE DE CALENDARIO
+        public int tomarDetalleCalendario()
+        {
+            var nro_detalle = 0;
+            if (Dgv_Consultar_Detalle_Calendario_Vac.SelectedRows.Count == 1)
+            {
+                nro_detalle = Convert.ToInt32(Dgv_Consultar_Detalle_Calendario_Vac.SelectedRows[0].Cells["Nro_Detalle"].Value);
+
+                return nro_detalle;
+
+            }
+            else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
+            return nro_detalle;
+        }
+
+        //MODIFICAR UN DETALLE DE CALENDARIO
         private void Btn_Modificar_Vacunacion_Click(object sender, EventArgs e)
         {
-            Form menu = new Frm_Modificar_Detalle();
-            menu.Show();
-            this.Dispose();
+            var nro_detalle = tomarDetalleCalendario();
+            if (nro_detalle != 0)
+            {
+                Form modificar = new Frm_Modificar_Detalle(nro_detalle);
+                modificar.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No seleccionó ninguna vacunación", "Error", MessageBoxButtons.OK); }
         }
 
         private void Btn_Eliminar_Vacunacion_Click(object sender, EventArgs e)
