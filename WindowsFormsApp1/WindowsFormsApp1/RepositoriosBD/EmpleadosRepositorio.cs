@@ -93,5 +93,11 @@ namespace WindowsFormsApp1.RepositoriosBD
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
+
+        public int validarDNI() {
+            var sentenciaSql = $"SELECT nro_doc_emp from EMPLEADOS ";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
     }
 }  

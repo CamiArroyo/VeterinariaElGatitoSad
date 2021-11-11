@@ -87,6 +87,9 @@ namespace WindowsFormsApp1.Interfaces.Empleados
         private bool EsEmpleadoValido()
         {
             var DNI = Txt_DNI.Text;
+            if (validarDNIEmpleado(DNI)){
+                return false;
+            };
             var nombre = Txt_Nombre.Text;
             var apellido = Txt_Apellido.Text;
             var fecha_nac = DateP_Fecha_Nacimiento.Value;
@@ -132,6 +135,18 @@ namespace WindowsFormsApp1.Interfaces.Empleados
             Form menu = new Frm_Consultar_Empleado();
             menu.Show();
         }
+
+        private Boolean validarDNIEmpleado(String dni) {
+            var lista_emp = emp_serv.GetEmpleados();
+            for (int i = 0; i < lista_emp.Count; i++) {
+
+                if (lista_emp[i].nro_doc_empleado.Equals(dni))
+                {
+                    MessageBox.Show("El DNI Ingresado ya está registrado", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
-
