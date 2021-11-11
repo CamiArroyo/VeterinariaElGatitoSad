@@ -58,6 +58,13 @@ namespace WindowsFormsApp1.Servicios
             if (filasAfectadas != 1)
                 throw new ApplicationException("Hubo un problema al activar");
         }
+
+        public void BorrarCalendarioYDetalles(Calendario_Vacunacion cal)
+        {
+            var filasAfectadas = cal_repo.BorrarCalendarioYDetalles(cal);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 
 }

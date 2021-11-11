@@ -113,6 +113,12 @@
     <Compile Include="Entidades\Sintoma.cs" />
     <Compile Include="Entidades\Vacuna.cs" />
     <Compile Include="Entidades\Validador.cs" />
+    <Compile Include="Interfaces\Calendarios_Vac\Borrar_Calendario_Y_Detalles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Borrar_Calendario_Y_Detalles.Designer.cs">
+      <DependentUpon>Borrar_Calendario_Y_Detalles.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Calendarios_Vac\CalendariosVac.cs">
       <DependentUpon>CalendariosVac.xsd</DependentUpon>
     </Compile>
@@ -686,6 +692,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>_PAV_3K2_2021_12Dueños.xsd</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Borrar_Calendario_Y_Detalles.resx">
+      <DependentUpon>Borrar_Calendario_Y_Detalles.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Calendarios_Vac\Consultar_Calendarios_Vac.resx">
       <DependentUpon>Consultar_Calendarios_Vac.cs</DependentUpon>
     </EmbeddedResource>

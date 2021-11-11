@@ -35,7 +35,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Dispose();
         }
 
-        //tomar un calendario
+        //tomar un calendario + estado
         public (int,string) tomarCalendario()
         {
             var nro_hist_clinica = 0;
@@ -52,6 +52,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             return (nro_hist_clinica, estado);
         }
 
+        //tomar un calendario + nro de historia clínica
         public (int, int) tomarCalendario2()
         {
             var nro_hist_clinica = 0;
@@ -133,12 +134,30 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
         }
 
+        //BORRAR UN CALENDARIO Y TODOS SUS DETALLES
+        private void Btn_Borrar_Cal_Y_Det_Click(object sender, EventArgs e)
+        {
+            var (id_calendario, estado) = tomarCalendario();
+            if (id_calendario != 0)
+            {
+                if (estado == "Activo")
+                {
+                    MessageBox.Show("El calendario debe estar inactivo para poder eliminarse.", "No se puede eliminar", MessageBoxButtons.OK);
+                    return;
+                }
+
+                Form borrar = new Frm_Borrar_Cal_Y_Det(id_calendario);
+                borrar.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
+        }
+
         private void Btn_Salir_Click(object sender, EventArgs e)
         {
             Form menu = new Frm_Consultar_Mascota();
             menu.Show();
             this.Dispose();
         }
-
     }
 }

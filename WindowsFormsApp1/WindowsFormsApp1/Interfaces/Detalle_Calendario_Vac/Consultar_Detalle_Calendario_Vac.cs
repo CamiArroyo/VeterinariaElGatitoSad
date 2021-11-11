@@ -21,7 +21,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         private DetalleCalendarioVacServicio consul_service;
 
         public Frm_Consultar_Detalle_Calendario_Vac(int nro_hist_clinica, int nro_calendario)
-        { //id es el nro de calendario
+        {
             consul_service = new DetalleCalendarioVacServicio();
             nro_hist_clinica_select = nro_hist_clinica;
             nro_calendario_select = nro_calendario;
