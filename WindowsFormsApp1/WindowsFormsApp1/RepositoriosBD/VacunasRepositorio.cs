@@ -36,9 +36,17 @@ namespace WindowsFormsApp1.RepositoriosBD
             }
             return vacuna;
         }
+
         public int ActualizarStockVac(Vacuna vac)
         {
-            var sentenciaSql = $"UPDATE VACUNAS SET  cantidad_en_stock='{vac.cantidad_en_stock}' where id_vacuna={vac.id_vacuna}";
+            var sentenciaSql = $"UPDATE VACUNAS SET cantidad_en_stock='{vac.cantidad_en_stock}' where id_vacuna={vac.id_vacuna}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
+
+        public int RestarUnoStockVacuna(int id_vacuna)
+        {
+            var sentenciaSql = $"UPDATE VACUNAS SET cantidad_en_stock-=1 where id_vacuna={id_vacuna}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }

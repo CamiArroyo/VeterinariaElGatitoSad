@@ -45,6 +45,13 @@ namespace WindowsFormsApp1.Servicios
                 throw new ApplicationException("Hubo un problema al actualizar");
         }
 
+        public void RestarUnoStockVacuna(int id_vacuna)
+        {
+            var filasAfectadas = vacRepo.RestarUnoStockVacuna(id_vacuna);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al actualizar el stock de la vacuna");
+        }
+
         public void ActualizarStock(Vacuna vac)
         {
             var filasAfectadas = vacRepo.ActualizarStockVac(vac);

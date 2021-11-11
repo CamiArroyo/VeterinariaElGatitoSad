@@ -19,6 +19,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private Detalle_calendario_vac detalle;
         private DetalleCalendarioVacServicio detalle_servicio;
+        private VacunasServicio vacuna_servicio;
 
         public Frm_Registrar_Detalle(int ndc, int cal)
         {
@@ -26,6 +27,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.nro_calendario = cal;
             detalle = new Detalle_calendario_vac();
             detalle_servicio = new DetalleCalendarioVacServicio();
+            vacuna_servicio = new VacunasServicio();
 
             InitializeComponent();
         }
@@ -43,15 +45,11 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private void Frm_Registrar_Detalle_Load(object sender, EventArgs e)
         {
-
             this.Cmb_Vacuna.DisplayMember = "nombre";
             this.Cmb_Vacuna.ValueMember = "id_vacuna";
 
-
             // TODO: This line of code loads data into the 'dSVacunasConStock.VACUNAS' table. You can move, or remove it, as needed.
             this.vACUNASTableAdapter.Fill(this.dSVacunasConStock.VACUNAS);
-            // TODO: This line of code loads data into the 'empleados.EMPLEADOS' table. You can move, or remove it, as needed.
-            this.eMPLEADOSTableAdapter.Fill(this.empleados.EMPLEADOS);
             CargarDatosDetalle();
         }
 
@@ -108,7 +106,10 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
                 MessageBox.Show("Ocurrió un problema al registrar la consulta", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            MessageBox.Show("¡Se registro la consulta con exito!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            vacuna_servicio.RestarUnoStockVacuna(detalle.id_vacuna);
+
+            MessageBox.Show("¡Se registro la vacunación con exito, y se actualizó el stock de las vacunas!", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Dispose();
         }
 
