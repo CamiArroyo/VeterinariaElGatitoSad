@@ -54,5 +54,11 @@ namespace WindowsFormsApp1.Servicios
                 throw new ApplicationException("Hubo un problema al eliminar");
         }
 
+        public void BorrarCalendarioYDetalles(int nro_calendario)
+        {
+            var filasAfectadas = det_calendario_repo.BorrarCalendarioYDetalles(nro_calendario);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al eliminar");
+        }
     }
 }

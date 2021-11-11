@@ -16,9 +16,11 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
     {
         private Calendario_Vacunacion calendario;
         private CalendariosVacServicio calendario_servicio;
+        private DetalleCalendarioVacServicio detalle_servicio;
 
         public Frm_Borrar_Cal_Y_Det(long id)
         {
+            detalle_servicio = new DetalleCalendarioVacServicio();
             calendario_servicio = new CalendariosVacServicio();
             calendario = calendario_servicio.GetCalendario(id);
             InitializeComponent();
@@ -51,6 +53,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private void BorrarCalendarioYDetalles()
         {
             calendario_servicio.BorrarCalendarioYDetalles(calendario);
+            detalle_servicio.BorrarCalendarioYDetalles(calendario.nro_calendario_vac);
             MessageBox.Show("La operación se realizó con éxito", "Información", MessageBoxButtons.OK);
         }
 

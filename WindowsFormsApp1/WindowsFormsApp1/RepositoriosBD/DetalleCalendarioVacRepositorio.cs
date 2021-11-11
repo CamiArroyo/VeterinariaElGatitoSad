@@ -69,5 +69,12 @@ namespace WindowsFormsApp1.RepositoriosBD
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }
+        
+        public int BorrarCalendarioYDetalles(int nro_calendario)
+        {
+            var sentenciaSql = $"Delete from DETALLE_CALENDARIO_VAC where nro_calendario_vac={nro_calendario}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
     }
 }
