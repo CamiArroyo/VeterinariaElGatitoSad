@@ -58,7 +58,14 @@ namespace WindowsFormsApp1.RepositoriosBD
 
         public int ModificarDetalle(Detalle_calendario_vac det)
         {
-            var sentenciaSql = $"UPDATE DETALLE_CALENDARIO_VAC SET nro_historia_clinica={det.nro_historia_clinica}, nro_calendario_vac={det.nro_calendario_vac}, id_vacuna={det.id_vacuna}, fecha_prevista='{det.fecha_prevista}', fecha_real='{det.fecha_real}', dosis='{det.fecha_real}', id_empleado={det.id_empleado}, estado='Confirmada' WHERE nro_detalle_calendario={det.nro_detalle_calendario}";
+            var sentenciaSql = $"UPDATE DETALLE_CALENDARIO_VAC SET fecha_real='{det.fecha_real}', dosis='{det.dosis}', id_empleado={det.id_empleado}, estado='Confirmada' WHERE nro_detalle_calendario={det.nro_detalle_calendario}";
+            var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
+            return filasAfectadas;
+        }
+
+        public int EliminarDetallePendiente(Detalle_calendario_vac detalle)
+        {
+            var sentenciaSql = $"Delete from DETALLE_CALENDARIO_VAC where nro_detalle_calendario={detalle.nro_detalle_calendario}";
             var filasAfectadas = DBHelper.GetDBHelper().EjecutarSQL(sentenciaSql);
             return filasAfectadas;
         }

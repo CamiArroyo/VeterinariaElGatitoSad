@@ -67,11 +67,11 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.Fecha_Real,
             this.Nombre_Empleado,
             this.Estado});
-            this.Dgv_Consultar_Detalle_Calendario_Vac.Location = new System.Drawing.Point(49, 34);
+            this.Dgv_Consultar_Detalle_Calendario_Vac.Location = new System.Drawing.Point(19, 34);
             this.Dgv_Consultar_Detalle_Calendario_Vac.Name = "Dgv_Consultar_Detalle_Calendario_Vac";
             this.Dgv_Consultar_Detalle_Calendario_Vac.ReadOnly = true;
             this.Dgv_Consultar_Detalle_Calendario_Vac.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.Dgv_Consultar_Detalle_Calendario_Vac.Size = new System.Drawing.Size(645, 350);
+            this.Dgv_Consultar_Detalle_Calendario_Vac.Size = new System.Drawing.Size(745, 350);
             this.Dgv_Consultar_Detalle_Calendario_Vac.TabIndex = 14;
             // 
             // Nro_Detalle
@@ -133,7 +133,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Salir
             // 
             this.Btn_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Salir.Location = new System.Drawing.Point(767, 472);
+            this.Btn_Salir.Location = new System.Drawing.Point(805, 472);
             this.Btn_Salir.Name = "Btn_Salir";
             this.Btn_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Salir.TabIndex = 16;
@@ -144,7 +144,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Agregar_Vacunacion
             // 
             this.Btn_Agregar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Agregar_Vacunacion.Location = new System.Drawing.Point(767, 34);
+            this.Btn_Agregar_Vacunacion.Location = new System.Drawing.Point(805, 34);
             this.Btn_Agregar_Vacunacion.Name = "Btn_Agregar_Vacunacion";
             this.Btn_Agregar_Vacunacion.Size = new System.Drawing.Size(145, 40);
             this.Btn_Agregar_Vacunacion.TabIndex = 17;
@@ -155,7 +155,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Eliminar_Vacunacion
             // 
             this.Btn_Eliminar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar_Vacunacion.Location = new System.Drawing.Point(767, 258);
+            this.Btn_Eliminar_Vacunacion.Location = new System.Drawing.Point(805, 147);
             this.Btn_Eliminar_Vacunacion.Name = "Btn_Eliminar_Vacunacion";
             this.Btn_Eliminar_Vacunacion.Size = new System.Drawing.Size(145, 40);
             this.Btn_Eliminar_Vacunacion.TabIndex = 18;
@@ -166,18 +166,18 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // Btn_Modificar_Vacunacion
             // 
             this.Btn_Modificar_Vacunacion.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Modificar_Vacunacion.Location = new System.Drawing.Point(767, 92);
+            this.Btn_Modificar_Vacunacion.Location = new System.Drawing.Point(805, 92);
             this.Btn_Modificar_Vacunacion.Name = "Btn_Modificar_Vacunacion";
             this.Btn_Modificar_Vacunacion.Size = new System.Drawing.Size(145, 40);
             this.Btn_Modificar_Vacunacion.TabIndex = 19;
-            this.Btn_Modificar_Vacunacion.Text = "Registrar vacunación confirmada";
+            this.Btn_Modificar_Vacunacion.Text = "Confirmar vacunación";
             this.Btn_Modificar_Vacunacion.UseVisualStyleBackColor = false;
             this.Btn_Modificar_Vacunacion.Click += new System.EventHandler(this.Btn_Modificar_Vacunacion_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = global::WindowsFormsApp1.Properties.Resources.Pets_Multicolor;
-            this.pictureBox2.Location = new System.Drawing.Point(-41, 397);
+            this.pictureBox2.Location = new System.Drawing.Point(-17, 397);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(788, 133);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -187,7 +187,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
-            this.pictureBox1.Location = new System.Drawing.Point(753, -3);
+            this.pictureBox1.Location = new System.Drawing.Point(791, -3);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(174, 556);
             this.pictureBox1.TabIndex = 13;
@@ -198,7 +198,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(927, 542);
+            this.ClientSize = new System.Drawing.Size(969, 542);
             this.Controls.Add(this.Btn_Modificar_Vacunacion);
             this.Controls.Add(this.Btn_Eliminar_Vacunacion);
             this.Controls.Add(this.Btn_Agregar_Vacunacion);

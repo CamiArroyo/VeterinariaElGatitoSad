@@ -37,7 +37,7 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
 
         private void Frm_Modificar_Detalle_Load(object sender, EventArgs e)
         {
-            this.Cmb_Empleado.DisplayMember = "apellido";
+            this.Cmb_Empleado.DisplayMember = "nombre";
             this.Cmb_Empleado.ValueMember = "id_empleado";
 
             // TODO: This line of code loads data into the 'empleados.EMPLEADOS' table. You can move, or remove it, as needed.
@@ -78,7 +78,6 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             detalle.fecha_real = Dtp_Fecha_Real.Value;
             var id_emp = Convert.ToInt32(Cmb_Empleado.SelectedValue);
             detalle.id_empleado = id_emp;
-
         }
 
         private void ModificarDetalle()

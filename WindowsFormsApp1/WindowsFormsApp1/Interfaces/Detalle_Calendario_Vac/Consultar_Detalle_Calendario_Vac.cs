@@ -60,26 +60,31 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
         }
 
         //TOMO UN DETALLE DE CALENDARIO
-        public int tomarDetalleCalendario()
+        public (int,string) tomarDetalleCalendario()
         {
             var nro_detalle = 0;
+            var estado = "";
             if (Dgv_Consultar_Detalle_Calendario_Vac.SelectedRows.Count == 1)
             {
                 nro_detalle = Convert.ToInt32(Dgv_Consultar_Detalle_Calendario_Vac.SelectedRows[0].Cells["Nro_Detalle"].Value);
-
-                return nro_detalle;
-
+                estado = Convert.ToString(Dgv_Consultar_Detalle_Calendario_Vac.SelectedRows[0].Cells["Estado"].Value);
+                return (nro_detalle, estado);
             }
             else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
-            return nro_detalle;
+            return (nro_detalle, estado);
         }
 
-        //MODIFICAR UN DETALLE DE CALENDARIO
+        //MODIFICAR UNA VACUNACIÓN, DE "PENDIENTE" A "CONFIRMADA"
         private void Btn_Modificar_Vacunacion_Click(object sender, EventArgs e)
         {
-            var nro_detalle = tomarDetalleCalendario();
+            var (nro_detalle, estado) = tomarDetalleCalendario();
             if (nro_detalle != 0)
             {
+                if (estado == "Confirmada")
+                {
+                    MessageBox.Show("Esta vacunación ya está confirmada.", "No se puede confirmar", MessageBoxButtons.OK);
+                    return;
+                }
                 Form modificar = new Frm_Modificar_Detalle(nro_detalle);
                 modificar.Show();
                 this.Dispose();
@@ -87,11 +92,22 @@ namespace WindowsFormsApp1.Interfaces.Detalle_Calendario_Vac
             else { MessageBox.Show("No seleccionó ninguna vacunación", "Error", MessageBoxButtons.OK); }
         }
 
+        //ELIMINAR UNA VACUNACIÓN "PENDIENTE"
         private void Btn_Eliminar_Vacunacion_Click(object sender, EventArgs e)
         {
-            Form menu = new Frm_Eliminar_Detalle();
-            menu.Show();
-            this.Dispose();
+            var (nro_detalle, estado) = tomarDetalleCalendario();
+            if (nro_detalle != 0)
+            {
+                if (estado == "Confirmada")
+                {
+                    MessageBox.Show("Solo pueden eliminarse vacunaciones pendientes, es decir, que aún no han sido confirmadas.", "No se puede eliminar", MessageBoxButtons.OK);
+                    return;
+                }
+                Form eliminar = new Frm_Eliminar_Detalle(nro_detalle);
+                eliminar.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No seleccionó ninguna vacunación", "Error", MessageBoxButtons.OK); }
         }
     }
 }
