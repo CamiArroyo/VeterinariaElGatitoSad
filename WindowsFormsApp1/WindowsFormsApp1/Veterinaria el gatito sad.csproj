@@ -133,6 +133,12 @@
     <Compile Include="Interfaces\Calendarios_Vac\Eliminar_Calendario_Vac.Designer.cs">
       <DependentUpon>Eliminar_Calendario_Vac.cs</DependentUpon>
     </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Frm_Activar_Calendario_Vac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Interfaces\Calendarios_Vac\Frm_Activar_Calendario_Vac.Designer.cs">
+      <DependentUpon>Frm_Activar_Calendario_Vac.cs</DependentUpon>
+    </Compile>
     <Compile Include="Interfaces\Calendarios_Vac\Modificar_Calendario_Vac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -685,6 +691,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Calendarios_Vac\Eliminar_Calendario_Vac.resx">
       <DependentUpon>Eliminar_Calendario_Vac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Interfaces\Calendarios_Vac\Frm_Activar_Calendario_Vac.resx">
+      <DependentUpon>Frm_Activar_Calendario_Vac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Interfaces\Calendarios_Vac\Modificar_Calendario_Vac.resx">
       <DependentUpon>Modificar_Calendario_Vac.cs</DependentUpon>

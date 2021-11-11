@@ -36,18 +36,20 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         }
 
         //tomar un calendario
-        public int tomarCalendario()
+        public (int,string) tomarCalendario()
         {
             var nro_hist_clinica = 0;
+            var estado = "";
             if (Dgv_Consultar_Calendario_Vac.SelectedRows.Count == 1)
             {
                 nro_hist_clinica = Convert.ToInt32(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["nDeHistoriaClínicaDataGridViewTextBoxColumn"].Value);
+                estado = Convert.ToString(Dgv_Consultar_Calendario_Vac.SelectedRows[0].Cells["estadoDataGridViewTextBoxColumn"].Value);
 
-                return nro_hist_clinica;
+                return (nro_hist_clinica, estado);
 
             }
             else { MessageBox.Show("Debe seleccionar solo un registro.", "Información", MessageBoxButtons.OK); }
-            return nro_hist_clinica;
+            return (nro_hist_clinica, estado);
         }
 
         public (int, int) tomarCalendario2()
@@ -83,7 +85,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         //MODIFICAR UN CALENDARIO
         private void Btn_Modificar_Calendario_Click(object sender, EventArgs e)
         {
-            var id_calendario = tomarCalendario();
+            var (id_calendario, estado) = tomarCalendario();
             if (id_calendario != 0)
             {
                 Form modificar = new Frm_Modificar_Calendario_Vac(id_calendario);
@@ -93,13 +95,38 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
         }
 
-        //ELIMINAR UN CALENDARIO
+        //PASAR UN CALENDARIO A "INACTIVO"
         private void Btn_Eliminar_Calendario_Click(object sender, EventArgs e)
         {
-            var id_calendario = tomarCalendario();
+            var (id_calendario, estado) = tomarCalendario();
             if (id_calendario != 0)
             {
+                if (estado == "Inactivo")
+                {
+                    MessageBox.Show("Este calendario ya está inactivo.", "No se puede desactivar", MessageBoxButtons.OK);
+                    return;
+                }
+
                 Form modificar = new Frm_Eliminar_Calendario_Vac(id_calendario);
+                modificar.Show();
+                this.Dispose();
+            }
+            else { MessageBox.Show("No seleccionó ningún calendario.", "Error", MessageBoxButtons.OK); }
+        }
+
+        //PASAR UN CALENDARIO A "ACTIVO"
+        private void Btn_Activar_Calendario_Click(object sender, EventArgs e)
+        {
+            var (id_calendario, estado) = tomarCalendario();
+            if (id_calendario != 0)
+            {
+                if (estado == "Activo")
+                {
+                    MessageBox.Show("Este calendario ya está activo.", "No se puede activar", MessageBoxButtons.OK);
+                    return;
+                }
+
+                Form modificar = new Frm_Activar_Calendario_Vac(id_calendario);
                 modificar.Show();
                 this.Dispose();
             }

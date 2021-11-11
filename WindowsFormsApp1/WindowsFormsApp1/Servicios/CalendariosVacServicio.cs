@@ -49,7 +49,14 @@ namespace WindowsFormsApp1.Servicios
         {
             var filasAfectadas = cal_repo.DarBajaCalendario(cal);
             if (filasAfectadas != 1)
-                throw new ApplicationException("Hubo un problema al eliminar");
+                throw new ApplicationException("Hubo un problema al desactivar");
+        }
+
+        public void DarAltaCalendario(Calendario_Vacunacion cal)
+        {
+            var filasAfectadas = cal_repo.DarAltaCalendario(cal);
+            if (filasAfectadas != 1)
+                throw new ApplicationException("Hubo un problema al activar");
         }
     }
 

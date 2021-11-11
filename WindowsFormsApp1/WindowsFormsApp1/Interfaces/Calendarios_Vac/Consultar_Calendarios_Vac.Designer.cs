@@ -54,6 +54,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataTable1TableAdapter = new WindowsFormsApp1.Interfaces.Calendarios_Vac.CalendariosVacTableAdapters.DataTable1TableAdapter();
+            this.Btn_Activar_Calendario = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Dgv_Consultar_Calendario_Vac)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataTable1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.calendariosVac)).BeginInit();
@@ -170,7 +171,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             // Btn_Eliminar_Calendario
             // 
             this.Btn_Eliminar_Calendario.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Eliminar_Calendario.Location = new System.Drawing.Point(784, 144);
+            this.Btn_Eliminar_Calendario.Location = new System.Drawing.Point(784, 145);
             this.Btn_Eliminar_Calendario.Name = "Btn_Eliminar_Calendario";
             this.Btn_Eliminar_Calendario.Size = new System.Drawing.Size(145, 40);
             this.Btn_Eliminar_Calendario.TabIndex = 10;
@@ -203,7 +204,7 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             // Btn_Ver_Detalle
             // 
             this.Btn_Ver_Detalle.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Ver_Detalle.Location = new System.Drawing.Point(784, 254);
+            this.Btn_Ver_Detalle.Location = new System.Drawing.Point(784, 338);
             this.Btn_Ver_Detalle.Name = "Btn_Ver_Detalle";
             this.Btn_Ver_Detalle.Size = new System.Drawing.Size(145, 40);
             this.Btn_Ver_Detalle.TabIndex = 8;
@@ -252,12 +253,24 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             // 
             this.dataTable1TableAdapter.ClearBeforeFill = true;
             // 
+            // Btn_Activar_Calendario
+            // 
+            this.Btn_Activar_Calendario.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.Btn_Activar_Calendario.Location = new System.Drawing.Point(784, 203);
+            this.Btn_Activar_Calendario.Name = "Btn_Activar_Calendario";
+            this.Btn_Activar_Calendario.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Activar_Calendario.TabIndex = 14;
+            this.Btn_Activar_Calendario.Text = "Definir calendario como \"Activo\"";
+            this.Btn_Activar_Calendario.UseVisualStyleBackColor = false;
+            this.Btn_Activar_Calendario.Click += new System.EventHandler(this.Btn_Activar_Calendario_Click);
+            // 
             // Frm_Consultar_Calendarios_Vac
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(944, 542);
+            this.Controls.Add(this.Btn_Activar_Calendario);
             this.Controls.Add(this.Btn_Salir);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.Btn_Modificar_Calendario);
@@ -309,5 +322,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private System.Windows.Forms.DataGridViewTextBoxColumn fechaDeInicioDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn observacionesDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn estadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.Button Btn_Activar_Calendario;
     }
 }
