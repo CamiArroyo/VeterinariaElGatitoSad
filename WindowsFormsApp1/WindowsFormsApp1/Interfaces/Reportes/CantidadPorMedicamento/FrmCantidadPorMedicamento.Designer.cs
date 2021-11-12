@@ -47,10 +47,11 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.PaleGreen;
             this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.RwCantidadPorMedicamento);
             this.Name = "FrmCantidadPorMedicamento";
-            this.Text = "Cantidad de medicamentos en stock";
+            this.Text = "Cantidad de medicamentos y vacunas en stock";
             this.Load += new System.EventHandler(this.FrmCantidadPorMedicamento_Load);
             this.ResumeLayout(false);
 

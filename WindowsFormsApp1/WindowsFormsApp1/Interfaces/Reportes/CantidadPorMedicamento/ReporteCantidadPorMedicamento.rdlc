@@ -532,7 +532,7 @@
             <DataSetName>DSCantidadXMedicamento</DataSetName>
             <Top>3.46287cm</Top>
             <Left>1.02869cm</Left>
-            <Height>5.79375cm</Height>
+            <Height>6.21708cm</Height>
             <Width>17.81875cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
@@ -889,9 +889,9 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DSCantidadXVacuna</DataSetName>
-            <Top>10.05099cm</Top>
+            <Top>10.36849cm</Top>
             <Left>1.02869cm</Left>
-            <Height>5.87312cm</Height>
+            <Height>6.37583cm</Height>
             <Width>17.81875cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
@@ -904,7 +904,7 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>6.66517in</Height>
+        <Height>6.92559in</Height>
         <Style />
       </Body>
       <Width>7.86818in</Width>
