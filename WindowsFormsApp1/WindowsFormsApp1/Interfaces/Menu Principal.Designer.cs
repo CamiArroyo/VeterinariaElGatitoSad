@@ -115,7 +115,7 @@ namespace WindowsFormsApp1
             this.Btn_Reportes.Name = "Btn_Reportes";
             this.Btn_Reportes.Size = new System.Drawing.Size(146, 56);
             this.Btn_Reportes.TabIndex = 10;
-            this.Btn_Reportes.Text = "Reportes y listados";
+            this.Btn_Reportes.Text = "Reportes ";
             this.Btn_Reportes.UseVisualStyleBackColor = false;
             this.Btn_Reportes.Click += new System.EventHandler(this.Btn_Reportes_Click);
             // 

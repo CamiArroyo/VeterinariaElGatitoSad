@@ -34,7 +34,6 @@ namespace WindowsFormsApp1.Interfaces
             this.BtnReporte_StockMedYVac = new System.Windows.Forms.Button();
             this.BtnReporte_ConsXEsp = new System.Windows.Forms.Button();
             this.Lbl_Reportes = new System.Windows.Forms.Label();
-            this.Lbl_Listados = new System.Windows.Forms.Label();
             this.Btn_Animales_Salir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,7 +43,7 @@ namespace WindowsFormsApp1.Interfaces
             this.pictureBox1.BackColor = System.Drawing.Color.SeaGreen;
             this.pictureBox1.Location = new System.Drawing.Point(2, -32);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(144, 505);
+            this.pictureBox1.Size = new System.Drawing.Size(144, 326);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -92,20 +91,10 @@ namespace WindowsFormsApp1.Interfaces
             this.Lbl_Reportes.Text = "Reportes";
             this.Lbl_Reportes.Click += new System.EventHandler(this.Lbl_Reportes_Click);
             // 
-            // Lbl_Listados
-            // 
-            this.Lbl_Listados.BackColor = System.Drawing.Color.SeaGreen;
-            this.Lbl_Listados.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lbl_Listados.Location = new System.Drawing.Point(26, 226);
-            this.Lbl_Listados.Name = "Lbl_Listados";
-            this.Lbl_Listados.Size = new System.Drawing.Size(107, 32);
-            this.Lbl_Listados.TabIndex = 22;
-            this.Lbl_Listados.Text = "Listados";
-            // 
             // Btn_Animales_Salir
             // 
             this.Btn_Animales_Salir.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Animales_Salir.Location = new System.Drawing.Point(382, 378);
+            this.Btn_Animales_Salir.Location = new System.Drawing.Point(382, 218);
             this.Btn_Animales_Salir.Name = "Btn_Animales_Salir";
             this.Btn_Animales_Salir.Size = new System.Drawing.Size(145, 40);
             this.Btn_Animales_Salir.TabIndex = 23;
@@ -118,9 +107,8 @@ namespace WindowsFormsApp1.Interfaces
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleGreen;
-            this.ClientSize = new System.Drawing.Size(539, 430);
+            this.ClientSize = new System.Drawing.Size(539, 285);
             this.Controls.Add(this.Btn_Animales_Salir);
-            this.Controls.Add(this.Lbl_Listados);
             this.Controls.Add(this.Lbl_Reportes);
             this.Controls.Add(this.BtnReporte_ConsXEsp);
             this.Controls.Add(this.BtnReporte_StockMedYVac);
@@ -141,7 +129,6 @@ namespace WindowsFormsApp1.Interfaces
         private System.Windows.Forms.Button BtnReporte_StockMedYVac;
         private System.Windows.Forms.Button BtnReporte_ConsXEsp;
         private System.Windows.Forms.Label Lbl_Reportes;
-        private System.Windows.Forms.Label Lbl_Listados;
         private System.Windows.Forms.Button Btn_Animales_Salir;
     }
 }

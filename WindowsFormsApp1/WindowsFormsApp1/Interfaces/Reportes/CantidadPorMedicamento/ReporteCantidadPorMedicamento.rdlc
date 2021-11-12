@@ -300,6 +300,7 @@
                     <CrossAt>NaN</CrossAt>
                     <Minimum>NaN</Minimum>
                     <Maximum>NaN</Maximum>
+                    <LabelsAutoFitDisabled>true</LabelsAutoFitDisabled>
                     <ChartAxisScaleBreak>
                       <Style />
                     </ChartAxisScaleBreak>
@@ -530,9 +531,9 @@
             </ChartNoDataMessage>
             <DataSetName>DSCantidadXMedicamento</DataSetName>
             <Top>3.46287cm</Top>
-            <Left>2.96015cm</Left>
-            <Height>5.52917cm</Height>
-            <Width>11.52167cm</Width>
+            <Left>1.02869cm</Left>
+            <Height>5.79375cm</Height>
+            <Width>17.81875cm</Width>
             <ZIndex>4</ZIndex>
             <Style>
               <Border>
@@ -888,10 +889,10 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DSCantidadXVacuna</DataSetName>
-            <Top>9.70703cm</Top>
-            <Left>2.96015cm</Left>
-            <Height>5.55562cm</Height>
-            <Width>11.52167cm</Width>
+            <Top>10.05099cm</Top>
+            <Left>1.02869cm</Left>
+            <Height>5.87312cm</Height>
+            <Width>17.81875cm</Width>
             <ZIndex>5</ZIndex>
             <Style>
               <Border>
@@ -903,10 +904,10 @@
             </Style>
           </Chart>
         </ReportItems>
-        <Height>6.40475in</Height>
+        <Height>6.66517in</Height>
         <Style />
       </Body>
-      <Width>6.92026in</Width>
+      <Width>7.86818in</Width>
       <Page>
         <PageHeader>
           <Height>2.54cm</Height>

@@ -40,14 +40,14 @@ namespace WindowsFormsApp1.Interfaces.Reportes.CantidadPorMedicamento
             this.RwCantidadPorMedicamento.Location = new System.Drawing.Point(0, 0);
             this.RwCantidadPorMedicamento.Name = "RwCantidadPorMedicamento";
             this.RwCantidadPorMedicamento.ServerReport.BearerToken = null;
-            this.RwCantidadPorMedicamento.Size = new System.Drawing.Size(800, 450);
+            this.RwCantidadPorMedicamento.Size = new System.Drawing.Size(846, 450);
             this.RwCantidadPorMedicamento.TabIndex = 0;
             // 
             // FrmCantidadPorMedicamento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(846, 450);
             this.Controls.Add(this.RwCantidadPorMedicamento);
             this.Name = "FrmCantidadPorMedicamento";
             this.Text = "Cantidad de medicamentos en stock";

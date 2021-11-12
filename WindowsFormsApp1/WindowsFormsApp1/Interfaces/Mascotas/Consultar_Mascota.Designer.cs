@@ -263,9 +263,9 @@ namespace WindowsFormsApp1.Interfaces.Mascotas
             // Btn_Ver_Calendarios_Vac
             // 
             this.Btn_Ver_Calendarios_Vac.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Ver_Calendarios_Vac.Location = new System.Drawing.Point(941, 406);
+            this.Btn_Ver_Calendarios_Vac.Location = new System.Drawing.Point(941, 380);
             this.Btn_Ver_Calendarios_Vac.Name = "Btn_Ver_Calendarios_Vac";
-            this.Btn_Ver_Calendarios_Vac.Size = new System.Drawing.Size(145, 40);
+            this.Btn_Ver_Calendarios_Vac.Size = new System.Drawing.Size(145, 66);
             this.Btn_Ver_Calendarios_Vac.TabIndex = 9;
             this.Btn_Ver_Calendarios_Vac.Text = "Ver calendarios de vacunación";
             this.Btn_Ver_Calendarios_Vac.UseVisualStyleBackColor = false;

@@ -33,7 +33,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Btn_Cancelar = new System.Windows.Forms.Button();
             this.Btn_Modificar = new System.Windows.Forms.Button();
             this.Txt_Observaciones = new System.Windows.Forms.TextBox();
-            this.Btn_Ver_Mascotas = new System.Windows.Forms.Button();
             this.Dtp_Fecha_Inicio = new System.Windows.Forms.DateTimePicker();
             this.mASCOTASBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dSMascotas = new WindowsFormsApp1.DSMascotas();
@@ -75,16 +74,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Txt_Observaciones.Name = "Txt_Observaciones";
             this.Txt_Observaciones.Size = new System.Drawing.Size(356, 154);
             this.Txt_Observaciones.TabIndex = 63;
-            // 
-            // Btn_Ver_Mascotas
-            // 
-            this.Btn_Ver_Mascotas.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.Btn_Ver_Mascotas.Location = new System.Drawing.Point(440, 24);
-            this.Btn_Ver_Mascotas.Name = "Btn_Ver_Mascotas";
-            this.Btn_Ver_Mascotas.Size = new System.Drawing.Size(125, 40);
-            this.Btn_Ver_Mascotas.TabIndex = 62;
-            this.Btn_Ver_Mascotas.Text = "Ver mascotas";
-            this.Btn_Ver_Mascotas.UseVisualStyleBackColor = false;
             // 
             // Dtp_Fecha_Inicio
             // 
@@ -152,7 +141,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
             this.Controls.Add(this.Btn_Cancelar);
             this.Controls.Add(this.Btn_Modificar);
             this.Controls.Add(this.Txt_Observaciones);
-            this.Controls.Add(this.Btn_Ver_Mascotas);
             this.Controls.Add(this.Dtp_Fecha_Inicio);
             this.Controls.Add(this.Lbl_Observaciones);
             this.Controls.Add(this.Lbl_Fecha_Inicio);
@@ -173,7 +161,6 @@ namespace WindowsFormsApp1.Interfaces.Calendarios_Vac
         private System.Windows.Forms.Button Btn_Cancelar;
         private System.Windows.Forms.Button Btn_Modificar;
         private System.Windows.Forms.TextBox Txt_Observaciones;
-        private System.Windows.Forms.Button Btn_Ver_Mascotas;
         private System.Windows.Forms.DateTimePicker Dtp_Fecha_Inicio;
         private System.Windows.Forms.Label Lbl_Observaciones;
         private System.Windows.Forms.Label Lbl_Fecha_Inicio;
